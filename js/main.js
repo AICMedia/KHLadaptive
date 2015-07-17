@@ -1,18 +1,62 @@
 // Inits
 $(document).ready(function(){
 
+  slider_lock = 0;
+
   HideShow();
   FooterFix();
   SwitcherBtn();
   SlideTable();
 
   $(window).resize(function(){
-    SmartCol();  
+    winW = $(window).width();
+    FloatNews();
+    SmartCol();
+
+    if(winW < 1280){
+      if(slider_lock == 0){
+        $('.b-news_feed_cover.m-slick_slider').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1
+              }
+            }                        
+          ]        
+        });
+        slider_lock = 1;
+      }
+    } else {
+      setTimeout(function() {
+        $('.b-news_feed_cover.m-slick_slider').unslick();
+        slider_lock = 0;
+      }, 100);
+      slider_lock = 0;
+    }
+
   }).resize();
 
-  $(window).scroll(function(){
-    FloatNews();
-  });
 
   $('input, select').styler();
 
@@ -44,6 +88,24 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 5
         }
+      },
+        {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+        {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+        {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
+        }
       }
     ]
   });
@@ -52,13 +114,9 @@ $(document).ready(function(){
     $(this).knob();
     var that =  $(this),
         num = that.attr('value');
-    that.animate({animatedVal: num}, {
-      step: function() { 
-        that.val(Math.ceil(this.animatedVal)).trigger('change'); 
-      }   
-    });    
+        that.animate({animatedVal: num});    
   });
-   
+
 
 });
 
@@ -88,46 +146,45 @@ function FooterFix() {
 
 // Float news 
 function FloatNews() {
+  $(window).scroll(function(){
+    if(winW > 1280){
+      if($('.b-news_feed').length){
+        var startBlock = $('.m-video').offset().top;
+        var heightBlock = $(window).height();
+        var endBlock = ($('#footer').offset().top)-($('.b-news_feed').height());
+        var stopBlock = $('body').height()-$('#footer').height()-$(window).height()-$(window).scrollTop();
 
-  if($('.b-news_feed').length){
-    var startBlock = $('.m-teaser').offset().top;
-    var heightBlock = $(window).height();
-    var endBlock = ($('#footer').offset().top)-($('.b-news_feed').height());
-
-    var stopBlock = $('body').height()-$('#footer').height()-$(window).height()-$(window).scrollTop();
-
-    console.log(stopBlock)
-
-
-    if ($(window).scrollTop() < startBlock ) {
-      $(".b-news_feed").css({
-        position: 'absolute',
-        top: '-453px',
-        height: 'auto'
-      });
-    } else if ($(window).scrollTop() < endBlock) {
-      $(".b-news_feed").css({
-        position: 'fixed',
-        top: 0,
-        height: heightBlock
-      });
-    } else if ($(window).scrollTop() > endBlock) {
-      $(".b-news_feed").css({
-        top: stopBlock
-      });
+        if ($(window).scrollTop() < startBlock ) {
+          $(".b-news_feed").css({
+            position: 'absolute',
+            top: '0px',
+            height: 'auto'
+          });
+        } else if ($(window).scrollTop() < endBlock) {
+          $(".b-news_feed").css({
+            position: 'fixed',
+            top: 0,
+            height: heightBlock
+          });
+        } else if ($(window).scrollTop() > endBlock) {
+          $(".b-news_feed").css({
+            top: stopBlock
+          });
+        }
+      }
     }
-  }
-} 
-
+  }); 
+}
 
 // Smart col
-function SmartCol() { 
-  $('.m-smart_col').css({ 'width' : '100%'});  
+function SmartCol() {  
   var colWrap = $('.m-smart_col').width();
   var colNum = Math.floor(colWrap / 210);
+  if(winW < 480){
+    var colNum = Math.floor(colWrap / 145);
+  }
   var colFixed = Math.floor(colWrap / colNum);
-  $('.m-smart_col').css({ 'width' : colWrap});
-  $('.m-smart_col li').css({ 'width' : colFixed});
+  $('.m-smart_col li').css({ 'width' : colFixed-1});
 }  
 
 

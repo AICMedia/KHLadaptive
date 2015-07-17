@@ -55,7 +55,6 @@ BODY {
   font:16px 'latoregular'; 
   min-width:320px; 
   max-width: 1920px; 
-  margin: 0 auto;
 }
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
@@ -177,6 +176,7 @@ UL.m-list>LI:before {
 
 .e-logo_main {
   position: absolute;
+  display: inline-block;
   left: 35px;
   top: 30px;
   width: 188px;
@@ -300,6 +300,10 @@ UL.m-list>LI:before {
 
 .e-lang_btn:hover {
   color: #02a7fd;
+}
+
+.e-mobile_menu_btn {
+  display: none;
 }
 
 .b-header_menu_cover {
@@ -614,6 +618,15 @@ UL.m-list>LI:before {
   padding: 0 0 1em 0;
 }
 
+.e-logo_main_footer {
+  position: relative;
+  display: inline-block;
+  width: 188px;
+  height: 62px;
+  background: url('../img/khl_logo_2.png') 50% 50% no-repeat;
+  cursor: pointer;
+}
+
 .b-bottom_menu {
   margin-bottom: 30px;
 }
@@ -713,14 +726,46 @@ UL.m-list>LI:before {
 }
 
 
-/*news*/
-.b-news_feed {
+/*bnr*/
+.b-news_bnr {
   width: 260px;
   position: absolute;
   top: -453px;
   left: 0;
+}
+
+.b-news_bnr_item.m-bnr {
+  height: 151px;
+}
+
+.b-news_bnr_item .m-cover_link {
+  padding:20px;
+}
+
+.b-news_bnr_item .e-bevel {
+  color: #fff!important;
+}
+
+.b-news_bnr_item .e-bevel {
+  font-size: 12px;
+}
+
+.b-news_bnr_item.m-bnr H5 {
+  position: absolute;
+  margin-bottom: 20px;
+  bottom: 0px;
+  color: #fff!important;
+}
+
+
+/*news*/
+.b-news_feed {
+  width: 260px;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 .b-news_feed_item {
@@ -853,6 +898,7 @@ UL.m-list>LI:before {
   bottom: 60px;
   font-size: 48px;
   line-height: 1.1;
+  padding: 0 30px 0 0;
 }
 
 
@@ -1021,7 +1067,7 @@ UL.m-list>LI:before {
 }
 
 .b-title_tab_cover {
-  margin: 20px 0 0 0;
+  margin: 20px 200px 0 0;
   float: left;
   z-index: 2;
 }
@@ -1083,7 +1129,8 @@ UL.m-list>LI:before {
 
 .b-title_cover .e-go_to {
   margin-top: 38px;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .b-video_block {
@@ -1195,7 +1242,7 @@ UL.m-list>LI:before {
 }
 
 .e-description_name {
-  padding: 20px 0 20px 2.5%;
+  padding: 20px 2.5%;
   float: left;
   width: 20%;
   font:24px 'latoheavy';
@@ -1490,6 +1537,10 @@ UL.m-list>LI:before {
   padding-top: 30px;
 }
 
+.b-title_cover.m-none_tab H2 {
+  margin-right: 200px;
+}
+
 .b-product_list {
   overflow: hidden;
   margin: 0 -3%;
@@ -1503,6 +1554,12 @@ UL.m-list>LI:before {
 
 .b-product_list_item .m-cover_link {
   color: #000;
+}
+
+.b-product_list_item .m-align IMG {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .b-product_list_item H4,
@@ -1615,17 +1672,167 @@ UL.m-list>LI:before {
 @media (max-width:1280px) {
 /******************************* Main Page ******************************
 ******************************* Header ******************************/
-body {
-  display: none;
+.b-header_top_cover {
+  padding-left: 110px;
 }
+
+.e-logo_main {
+  background: rgba(0, 0, 0, 0) url("../img/khl_logo_1_1.png") no-repeat scroll 50% 50%;
+  height: 62px;
+  width: 57px;
+  left: 25px;
+}
+
+.e-header_menu_item A {
+  margin: 0 0.8%;
+}
+
+.e-header_apps {
+  width: 18%;
+}
+
+.e-header_social {
+  width: 39%;
+}
+
+.e-header_search {
+  width: 20%;
+}
+
 
 /******************************* Header end ******************************
 ******************************* Footer ******************************/
+.b-footer_nav,
+.m-adaptive_footer_bottom .m-left {
+  width: 220px;
+}
 
+.b-footer_links,
+.m-adaptive_footer_bottom .m-right {
+  margin-right: -220px;
+  padding-right: 220px;
+}
+
+.e-logo_main_footer {
+  background: rgba(0, 0, 0, 0) url("../img/khl_logo_2_1.png") no-repeat scroll 50% 50%;
+  height: 62px;
+  width: 57px;
+}
+
+.e-bottom_menu_item {
+  padding-left: 0;
+}
+
+.e-copyright_copy {
+  margin-left: 0;
+}
 
 /******************************* Footer end ******************************
 ******************************* Content ******************************/
+.b-content_section {
+  padding: 0;
+}
 
+.b-news_bnr {
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.b-news_bnr_item {
+  float: left;
+  width: 33.33333%;
+  border: 1px solid #d7e6ee;
+  border-left:none;
+}
+
+.b-news_feed {
+  overflow: none!important;
+  position: relative!important;
+  top: auto!important;
+  width: auto!important;
+  height: 105px!important;
+}
+
+.b-news_feed_cover {
+  padding: 0 5%;
+}
+
+.b-news_feed_cover .slick-prev,
+.b-news_feed_cover .slick-next {
+  position: absolute;
+  top: 0;
+  height: 105px;
+  width: 5%;
+  background: none;
+  border: none;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+
+.b-news_feed_cover .slick-prev {
+  left: 0;
+}
+
+.b-news_feed_cover .slick-next {
+  right: 0;
+}
+
+.b-news_feed_cover .slick-prev:before,
+.b-news_feed_cover .slick-next:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 0 0 -0.5em;
+  color: #02a7fd;
+  font-family: 'icomoon';
+  font-size: 12px;
+  transition-duration: 0.25s;
+}
+
+.b-news_feed_cover .slick-prev:before {
+  content: '"';
+}
+
+.b-news_feed_cover .slick-next:before {
+  content: '#';
+}
+
+.b-news_feed_cover .slick-prev:hover:before,
+.b-news_feed_cover .slick-next:hover:before {
+  color: #0d6eb3;
+}
+
+.b-news_feed_item {
+  border-bottom: none;
+}
+
+.b-news_feed_item.m-bnr {
+  height: 105px;
+}
+
+.b-news_feed_item H5 {
+  font-size: 14px;
+  height: 2.9em;
+  overflow: hidden;
+}
+
+.b-news_feed_item.m-bnr H5 {
+  margin-bottom: 10px;
+}
+
+.b-news_feed_cover .m-cover_link {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 105px;
+  padding: 15px 20px;
+}
 
 /******************************* Content end ******************************
 ******************************* Main Page end ******************************/  
@@ -1636,14 +1843,286 @@ body {
 @media (max-width:1024px) {
 /******************************* Main Page ******************************
 ******************************* Header ******************************/
+.b-header_nav_cover DIV,
+.b-header_menu_cover {
+  display: none;
+}
+
+.e-mobile_menu_btn {
+  display: block;
+}
 
 
 /******************************* Header end ******************************
 ******************************* Footer ******************************/
+.m-adaptive_footer_bottom {
+  display: none;
+}
+
+.b-footer_links_cover {
+  padding: 0;
+}
+
+.b-partners_list {
+  padding: 30px 3.5% 0 3.5%;
+  border-bottom: 1px solid #434648;
+}
+
+.e-copyright, 
+.b-rules_cover {
+  display: block;
+}
+
+.b-rules_cover {
+  margin-bottom: 0;
+  padding: 30px 3.5% 20px 3.5%; 
+}
+
+.e-counter {
+  top: 38px;
+  margin: 0;
+  right: 3.5%;
+}
+
+.b-footer_links {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.b-footer_nav {
+  margin: 0;
+  padding: 30px 3.5%;
+  width: 100%;
+}
+
+.e-logo_main_footer {
+  background: url("../img/khl_logo_2.png") no-repeat 50% 50%;
+  background-size: cover;
+  height: 43px;
+  left: 0;
+  top: 0;
+  width: 128px;  
+}
+
+.b-bottom_menu {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0 0 1em 160px;
+  min-height: 45px;
+}
+
+.e-bottom_menu_item {
+  float: left;
+  margin-right: 2%;
+}
+
+.e-bottom_menu_item.m-first {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.e-copyright {
+  margin: 0 0 0 175px; 
+}
 
 
 /******************************* Footer end ******************************
 ******************************* Content ******************************/
+H2 {font-size: 48px;}
+
+.e-logo_main {
+  background: url("../img/khl_logo_1.png") no-repeat scroll 50% 50%;
+  height: 42px;
+  top: 10px;
+  left: 25px;
+  width: 128px;
+  background-size: cover;
+}
+
+.b-header_nav_cover {
+  background: #fff;
+  border-bottom:none;
+  color: #000;
+  height: 60px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.b-header_top_cover {
+  padding-left: 210px;
+}
+
+.b-header_nav_cover A {
+  color: #000;
+}
+
+.e-search_field {
+  color: #000;
+  height: 60px;
+  line-height: 60px;
+}
+
+.e-search_btn {
+  color: #000;
+  border-left: 1px solid #d7e6ee;
+  height: 60px;
+  line-height: 60px;
+}
+
+.e-lang_btn {
+  text-align: center;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+}
+
+.e-mobile_menu_btn {
+  display: inline-block;
+  width:15%; 
+  border-left: 1px solid #d7e6ee;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+
+.e-header_search {
+  vertical-align: top;
+  width: 65%;
+  border-left: 1px solid #d7e6ee;
+  border-right: 1px solid #d7e6ee;
+}
+
+.e-header_search,
+.e-mobile_menu_btn,
+.e-lang_btn {
+  display: inline-block;
+  float: none;
+}
+
+.b-content_section.m-teaser {
+  height: auto;
+}
+
+.b-middle_block {
+  padding: 30px 3.5%;
+  width: 100%;
+}
+
+.b-short_block {
+  padding: 0 3.5%;
+  width: 100%;
+}
+
+.m-teaser .b-short_block {
+  height: auto;
+  padding: 20px 3.5% 10px 3.5%;
+}
+
+.b-score_table_cover {
+  width: 45%;
+  float: left;
+}
+
+.b-score_table_cover.m-west {
+  margin-right: 5%;
+}
+
+.b-score_table_cover.m-east {
+  margin-left: 5%;
+}
+
+.m-video .b-short_block_cover {
+  width: 48.25%;
+  float: left;
+}
+
+.b-short_block_cover.m-left {
+  margin-right: 1.75%;
+}
+
+.b-short_block_cover.m-right {
+  margin-left: 1.75%;
+}
+
+.m-video HR {
+  display: none;
+}
+
+.e-description_name {
+  width: 30%;
+}
+
+.e-description_txt {
+  width: 70%;
+}
+
+.m-leader .b-middle_block {
+  margin-bottom: 40px;
+}
+
+.m-leader .b-short_block {
+  border-left: none; 
+  padding: 0 3.5%;
+}
+ 
+.b-short_block .b-details  {
+  float: left;
+  width: 20%;
+  border-top: 1px solid #d7e6ee;
+  padding: 40px 7% 20px 0;
+}
+
+.b-short_block .e-details_img IMG {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.m-leader .b-short_block .m-align {
+  clear: both;
+}
+
+.b-short_block .b-details_txt {
+  padding: 0;
+  margin-top: -20px;
+}
+
+.b-short_block .e-details_img {
+  float: none;
+  width: auto;
+  position: relative;
+}
+
+.m-photo_list LI {
+  width: 100%;
+}
+
+.m-photo_list .m-right {
+  display: none;
+}
+
+.m-store .b-middle_block {
+  margin: 0 0 30px 0;
+}
+
+.m-store .b-short_block {
+  border-left: none;
+  padding: 0 6.5%;
+}
+
+.b-short_block .b-product_list {
+  border-top: 1px solid #d7e6ee;
+}
+
+.b-short_block .b-product_list_item {
+  float: left;
+  margin: 0 3%;
+  padding-top: 40px;
+  width: 44%;
+}
 
 
 /******************************* Content end ******************************
@@ -1651,8 +2130,8 @@ body {
 }
 
 
-/**************************************** MOBILE < 640 ****************************************/
-@media (max-width:640px) {
+/**************************************** MOBILE < 800 ****************************************/
+@media (max-width:800px) {
 /******************************* Main Page ******************************
 ******************************* Header ******************************/
 
@@ -1663,8 +2142,223 @@ body {
 
 /******************************* Footer end ******************************
 ******************************* Content ******************************/
+.m-teaser H3 {
+  font-size: 36px;
+}
+
+.b-details_txt.m-stats {
+  width: 100%;
+}
+
+.e-round_diagram_item {
+  width: 50%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.e-round_diagram_item LABEL {
+  width: 100%;
+}
+
+.m-leader .b-short_block .b-details {
+  display: none;
+}
 
 
 /******************************* Content end ******************************
 ******************************* Main Page end ******************************/  
 }  
+
+
+/**************************************** MOBILE < 640 ****************************************/
+@media (max-width:640px) {
+/******************************* Main Page ******************************
+******************************* Header ******************************/
+
+
+/******************************* Header end ******************************
+******************************* Footer ******************************/
+.b-rules_cover,
+.e-bottom_menu_item {
+  display: none;
+}
+
+.e-bottom_menu_item.m-first {
+  display: block;
+}
+
+.e-copyright {
+  margin: -43px 0 0 175px;
+}
+
+/******************************* Footer end ******************************
+******************************* Content ******************************/
+H2 {
+  font-size: 36px;
+}
+
+H3 {
+  font-size: 24px;
+}
+
+H4 {
+  font-size: 18px;
+}
+
+H5 {
+  font-size: 16px;
+}
+
+.b-header_top_cover {
+  padding-left: 110px;
+}
+
+.e-header_search {
+  width: 30%;
+  border-left: none;
+}
+
+.e-lang_btn {
+  width: 30%;
+}
+
+.e-mobile_menu_btn {
+  width: 30%;
+}
+
+.e-logo_main {
+  background: url("../img/khl_logo_1_1.png") no-repeat scroll 50% 50%;
+  background-size: cover; 
+  height: 39px;
+  left: 25px;
+  width: 35px;
+}
+
+.e-search_field {
+  display: none;
+}
+
+.e-search_btn {
+  width: 100%;
+}
+
+.b-score_table_cover.m-west,
+.b-score_table_cover.m-east {
+  margin: 0;
+}
+
+.b-score_table_cover {
+  float: none;
+  width: auto;
+}
+
+.b-news_bnr_item {
+  float: none;
+  width: auto;
+  border: none;
+}
+
+.b-news_feed_cover .m-cover_link {
+  width: 100%;
+}
+
+.b-news_feed_cover .m-bnr .m-cover_link {
+  width: 180px;
+}
+
+.m-leader .b-middle_block {
+  margin-bottom: 0;
+}
+
+.m-leader .b-short_block {
+  margin-bottom: 30px;
+}
+
+.b-video_block {
+  height: 160px;
+}
+
+.b-short_block_cover.m-left {
+  border-top: 1px solid #d7e6ee;
+  border-bottom: 1px solid #d7e6ee;
+  padding: 20px 0 30px 0;
+}
+
+.b-short_block_cover.m-right {
+  padding: 20px 0 0 0;
+}
+
+.b-short_block_cover.m-left,
+.b-short_block_cover.m-right {
+  margin: 0;
+}
+
+.m-video .b-short_block_cover {
+  width: 100%;
+}
+
+.b-description {
+  margin: 20px -3.5% 0 -3.5%;
+}
+
+.e-description_name {
+  width: 100%;
+  padding: 20px 3.5% 0 3.5%;
+}
+
+.e-description_txt {
+  width: 100%;
+  padding: 0 3.5% 10px 3.5%;
+}
+
+.e-description_txt .m-list LI:before {
+  display: none;
+}
+
+.e-stats_one, .e-stats_all {
+  width: 50%;
+}
+
+.m-leader H5 {
+  text-align: center;
+}
+
+.b-details_info .e-club {
+  margin-bottom: -30px
+}
+
+.b-details_info .e-num {
+  font-size: 48px;
+  float: none;
+  display: inline-block;
+  margin-left: 120px
+}
+
+.b-details_txt.m-details {
+  width: 100%;
+  padding: 0;
+}
+
+.e-stats_all {
+  text-align: right;
+}
+
+.b-product_list {
+  margin: 0;
+}
+
+.b-product_list_item {
+  float: none;
+  margin: 0;
+  width: auto;
+}
+
+.m-cover_link IMG {
+  width: 100%;
+  height: auto;
+}
+
+
+/******************************* Content end ******************************
+******************************* Main Page end ******************************/  
+} 
