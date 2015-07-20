@@ -1527,7 +1527,6 @@ UL.m-list>LI:before {
   color: #000!important;
   font: 48px 'latoregular'!important;
   height: 40px!important;
-  position: relative!important;
   z-index: 3!important;
 }
 
