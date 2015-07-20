@@ -2,16 +2,17 @@
 $(document).ready(function(){
 
   slider_lock = 0;
+  table_lock = 0;
 
   HideShow();
   FooterFix();
-  SwitcherBtn();
-  SlideTable();
+  SwitcherBtn();  
 
   $(window).resize(function(){
     winW = $(window).width();
     FloatNews();
     SmartCol();
+    SlideTable();
 
     if(winW < 1280){
       if(slider_lock == 0){
@@ -110,6 +111,7 @@ $(document).ready(function(){
     ]
   });
 
+
   $('.m-round_diagram').each(function() {
     $(this).knob();
     var that =  $(this),
@@ -117,6 +119,28 @@ $(document).ready(function(){
         that.animate({animatedVal: num});    
   });
 
+
+  $('.m-scroll_block').draggable({
+    cursor: "move",
+    axis: "x",
+    drag: function( event, ui ) {
+      var left = ui.position.left;
+      var width = $(this).width();
+      var maxwidth = $(this).parent().width();
+
+      if (width > maxwidth){      
+        if(left > 0){
+          $(this).css({left: 0+'px'});
+          return false;
+        } else if(Math.abs(left) > (width-maxwidth)){
+          $(this).css({left: (maxwidth-width)+'px'});
+          return false;
+        }
+      } else {
+        return false;
+      }
+    }
+  });  
 
 });
 
@@ -131,7 +155,9 @@ function HideShow() {
     $(this).find('.e-matches_popup_links').fadeOut();
   });
 
-      
+  $('.e-slide_link').on('click', function(){
+    $(this).toggleClass('m-up');
+  });      
  
 }
 
@@ -239,16 +265,31 @@ function SwitcherBtn() {
 
 // Slide table
 function SlideTable() {
-  $('.e-slide_link.m-top').on('click',function(){
-    if (!$('.m-west .b-score_table_top:visible').length){
-      $('.m-west .b-score_table_top').slideDown();
-    } else {
-      $(this).parent().find('.b-score_table_bottom').slideToggle();
-    }     
-  });
-  $('.e-slide_link.m-bottom').on('click',function(){
-    $('.b-score_table_cover.m-west').slideToggle();
-    $(this).parent().find('.b-score_table_bottom').slideToggle();
-  });
+  if(table_lock == 0) {
+    table_lock = 1;
+    $('.e-slide_link.m-top').on('click',function(){
+      table_lock = 1; 
+      if (!$('.m-west .b-score_table_top:visible').length){
+        $('.m-west .b-score_table_top').slideDown();
+      } else {
+        $(this).parent().find('.b-score_table_bottom').slideToggle();
+      } 
+    });
+
+    $('.e-slide_link.m-bottom').on('click',function(){
+      table_lock = 1; 
+      if( winW > 640 && winW < 1024){
+        if (!$('.m-east .b-score_table_top:visible').length){
+          $('.m-east .b-score_table_top').slideDown();
+        } else {
+          $(this).parent().find('.b-score_table_bottom').slideToggle();
+        } 
+      } else {
+        $('.b-score_table_cover.m-west').slideToggle();
+        $(this).parent().find('.b-score_table_bottom').slideToggle();
+      }
+    });
+  }  
+
 }
       
