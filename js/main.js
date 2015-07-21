@@ -6,7 +6,9 @@ $(document).ready(function(){
 
   HideShow();
   FooterFix();
-  SwitcherBtn();  
+  SwitcherBtn();
+  DiagramData(); 
+  AjaxData(); 
 
   $(window).resize(function(){
     winW = $(window).width();
@@ -54,6 +56,16 @@ $(document).ready(function(){
         slider_lock = 0;
       }, 100);
       slider_lock = 0;
+    }
+
+    if(winW < 640){
+      $('.m-round_diagram').trigger('configure',{
+          'width':140
+      });
+    } else {
+      $('.m-round_diagram').trigger('configure',{
+          'width':155
+      });
     }
 
   }).resize();
@@ -149,16 +161,26 @@ $(document).ready(function(){
 function HideShow() {  
 
   $('.b-feed_matches_item').on('mouseenter', function(){
-    $(this).find('.e-matches_popup_links').fadeIn();
+    $(this).find('.e-matches_popup_links').fadeIn(250);
   });
   $('.b-feed_matches_item').on('mouseleave', function(){
-    $(this).find('.e-matches_popup_links').fadeOut();
+    $(this).find('.e-matches_popup_links').fadeOut(250);
   });
 
   $('.e-slide_link').on('click', function(){
     $(this).toggleClass('m-up');
+  });
+
+  $('.e-title_tab_item').on('click', function(){
+    $(this).parent().find('.e-title_tab_item').removeClass('m-active');
+    $(this).addClass('m-active');
   });      
  
+  $('.b-details.m-ajax').on('click', function(){
+    $(this).parent().find('.b-details').removeClass('m-active');
+    $(this).addClass('m-active');
+  }); 
+
 }
 
 
@@ -290,6 +312,40 @@ function SlideTable() {
       }
     });
   }  
+
+}
+
+// Diagram 
+function DiagramData() {
+
+  $('.b-short_block .b-details').on('click',function(){
+    $('.m-round_diagram').each(function() {
+
+      var fakeData = Math.floor(Math.random() * (21 - 0 + 1)) + 0;
+
+      $(this).knob();
+      var that =  $(this);
+          that.animate({animatedVal: fakeData}, {
+            step: function() {
+              that.val(Math.ceil(this.animatedVal)).trigger('change');
+            }  
+          }); 
+    });
+  });
+
+}
+
+// Ajax
+function AjaxData() {
+
+  $('.m-ajax').on('click', function(){
+    var choiseOne = $(this).parent().attr('id');
+    var choiseTwo = $(this).attr('id');
+    $('.' + choiseOne).fadeOut(250);
+    setTimeout(function() {
+      $('.' + choiseOne).load('ajax.html ' + '.' + choiseTwo).fadeIn(250);
+    }, 200);
+  });
 
 }
       

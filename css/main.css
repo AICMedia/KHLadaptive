@@ -72,7 +72,7 @@ INPUT:focus::-ms-clear {display: none;}
 
 A {text-decoration:none; color: #02a7fd; transition:color 0.25s linear;}
 
-A:hover {color: #0d6eb3;}
+A:hover {color: #57ccfd;}
 
 HR {
   display: block; 
@@ -536,7 +536,7 @@ UL.m-list>LI:before {
 
 .b-header_bottom_cover .slick-prev:hover:before,
 .b-header_bottom_cover .slick-next:hover:before {
-  color: #0d6eb3;
+  color: #57ccfd;
 }
 
 /******************************* Header end ******************************
@@ -946,7 +946,7 @@ UL.m-list>LI:before {
 }
 
 .e-switcher_item:hover {
-  color: #02a7fd;
+  color: #e3f2f9;
 }
 
 .e-switcher_item.m-active {
@@ -1007,6 +1007,7 @@ UL.m-list>LI:before {
   padding: 0 0 0.8em 0;
   opacity: 0.6;
   border-bottom: 1px solid #267dbb;
+  letter-spacing: 1px;
 }
 
 .b-score_table TD {
@@ -1049,7 +1050,7 @@ UL.m-list>LI:before {
 }
 
 .m-teaser .e-slide_link:hover {
-  color:#02a7fd; 
+  color:#e3f2f9; 
 }
 
 .b-score_table_cover HR {
@@ -1140,7 +1141,7 @@ UL.m-list>LI:before {
 }
 
 .e-title_tab_item:hover {
-  color: #0d6eb3;
+  color: #57ccfd;
 }
 
 .e-title_tab_item.m-active {
@@ -1182,7 +1183,7 @@ UL.m-list>LI:before {
 }
 
 .e-go_to:hover:after {
-  color: #0d6eb3;
+  color: #57ccfd;
 }
 
 
@@ -1206,7 +1207,7 @@ UL.m-list>LI:before {
 }
 
 .m-go_to:hover:after {
-  color: #0d6eb3;
+  color: #57ccfd;
 }
 
 
@@ -1582,19 +1583,12 @@ UL.m-list>LI:before {
 }
 
 .m-photo_list .e-photo {
-  border: 10px solid #2c3941;
   display: block;
   height: 340px;
-  margin: -10px;
   margin-bottom: 20px;
   cursor: pointer;
-  box-sizing: border-box;
-  transition: background-size 0.25s ease;
 }
 
-.m-photo_list .e-photo:hover {
-  background-size: 102% auto!important;
-}
 
 .m-photo .e-title_tab_item.m-active {
   color: #fff;
@@ -1665,13 +1659,15 @@ UL.m-list>LI:before {
   height: auto;
 }
 
-.b-product_list_item IMG:hover {
+/*
+.b-product_list_item IMG {
   transition-duration: 0.25s;
 }
 
 .b-product_list_item IMG:hover {
   transform: scale(1.05);
 }
+*/
 
 .b-product_list_item H4,
 .b-product_list_item H5 {
@@ -1728,6 +1724,18 @@ UL.m-list>LI:before {
 
 .m-store .b-details_info_title {
   margin-bottom: 20px;
+}
+
+.b-details.m-active .e-bevel {
+  background: #e81c3e;
+}
+
+.b-details.m-active .e-bevel:before {
+  background: url('../img/bevel_red.png') 0 100% no-repeat;  
+}
+
+.b-details.m-active .e-bevel:after {
+  background: url('../img/bevel_red.png') 100% 0 no-repeat;  
 }
 
 .e-old {
@@ -1922,7 +1930,7 @@ UL.m-list>LI:before {
 
 .b-news_feed_cover .slick-prev:hover:before,
 .b-news_feed_cover .slick-next:hover:before {
-  color: #0d6eb3;
+  color: #57ccfd;
 }
 
 .b-news_feed_item {
@@ -2396,6 +2404,48 @@ H5 {
 .b-score_table_cover {
   float: none;
   width: auto;
+}
+
+.m-mobile_cover {
+  width: 100%;
+  margin-right: 0;
+  float: none;
+}
+
+.m-mobile_cover .b-score_table {
+  float: none;
+  width: 100%;
+}
+
+.m-video .b-short_block_cover {
+  width: 100%;
+  float: none;
+}
+
+.b-short_block_cover.m-left {
+  margin-right: 0;
+}
+
+.b-short_block_cover.m-right {
+  margin-left: 0;
+}
+
+.s-playoff .m-quarter {
+  left: 0;
+  position: relative;
+  top: 0.8em;
+  width: 100%;
+}
+
+.s-playoff .b-score_table {
+  margin: 0.8em 0;
+}
+
+.m-champ_final {
+  float: none;
+  position: relative;
+  top: 0;
+  width: 100%;
 }
 
 .b-news_bnr_item {
