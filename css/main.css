@@ -1551,7 +1551,7 @@ UL.m-list>LI:before {
   padding: 30px 3.5%;
 }
 
-.m-photo.b-wide_block.m-pad {
+.m-photo .b-wide_block.m-pad {
   padding-top: 60px;
 }
 
