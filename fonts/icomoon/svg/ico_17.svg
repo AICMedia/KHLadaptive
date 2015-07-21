@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="60" height="60" viewBox="0 0 60 60">
-  <defs>
-    <style>
-
-      .cls-2 {
-        fill: #ffffff;
-      }
-    </style>
-  </defs>
-  <path d="M30.000,60.000 C13.432,60.000 0.000,46.569 0.000,30.000 C0.000,13.432 13.432,-0.000 30.000,-0.000 C46.568,-0.000 60.000,13.432 60.000,30.000 C60.000,46.569 46.568,60.000 30.000,60.000 ZM24.904,18.047 C24.904,18.047 24.904,41.960 24.904,41.960 C24.904,41.960 43.259,30.004 43.259,30.004 C43.259,30.004 24.904,18.047 24.904,18.047 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-2094.8 2096.2 59.5 59.5" enable-background="new -2094.8 2096.2 59.5 59.5" xml:space="preserve">
+<path id="path-1" d="M-2065,2155.7c-16.4,0-29.8-13.3-29.8-29.8c0-16.4,13.3-29.8,29.8-29.8c16.4,0,29.8,13.3,29.8,29.8
+	C-2035.2,2142.4-2048.6,2155.7-2065,2155.7z M-2070,2114.3v23.9l18.4-12L-2070,2114.3z"/>
 </svg>

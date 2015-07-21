@@ -1172,22 +1172,17 @@ UL.m-list>LI:before {
   position: absolute;
   display: block;
   font-family: 'icomoon';
-  content: '#';
-  font-size: 9px;
-  top: 3px;
+  content: ',';
+  font-size: 20px;
+  top: 0.3em;
   right: -30px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  border-radius: 20px;
-  background: #02a7fd;
-  color: #fff;
-  text-align: center;
+  margin-top: -4px;
+  color: #02a7fd;
   transition-duration: 0.25s;
 }
 
 .e-go_to:hover:after {
-  background: #0d6eb3;
+  color: #0d6eb3;
 }
 
 
@@ -1201,23 +1196,17 @@ UL.m-list>LI:before {
   position: absolute;
   display: block;
   font-family: 'icomoon';
-  content: '#';
-  font-size: 9px;
-  top: 50%;
+  content: ',';
+  font-size: 20px;
+  top: 0.55em;
   right: -30px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  border-radius: 20px;
-  background: #02a7fd;
   margin-top: -4px;
-  color: #fff;
-  text-align: center;
+  color: #02a7fd;
   transition-duration: 0.25s;
 }
 
 .m-go_to:hover:after {
-  background: #0d6eb3;
+  color: #0d6eb3;
 }
 
 
@@ -1268,6 +1257,7 @@ UL.m-list>LI:before {
   position: absolute;
   display: inline-block;
   font-size: 60px;
+  line-height: 62px;
   color: #fff;
   left: 30px;
   top: 30px;
@@ -1281,6 +1271,7 @@ UL.m-list>LI:before {
 
 .b-short_block .e-play_btn {
   font-size: 30px;
+  line-height: 32px;
   left: 20px;
   top: 20px;
 }
@@ -1523,10 +1514,10 @@ UL.m-list>LI:before {
 }
 
 .e-round_diagram_item INPUT {
-  margin-top: 40px!important;
+  margin-top: 30px!important;
   color: #000!important;
   font: 48px 'latoregular'!important;
-  height: 40px!important;
+  height: 60px!important;
   z-index: 3!important;
 }
 

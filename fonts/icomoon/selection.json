@@ -20,8 +20,8 @@
 			],
 			"properties": {
 				"order": 22,
-				"id": 20,
-				"prevSize": 20,
+				"id": 21,
+				"prevSize": 24,
 				"code": 33,
 				"name": "ico_1"
 			},
@@ -48,8 +48,8 @@
 			],
 			"properties": {
 				"order": 23,
-				"id": 19,
-				"prevSize": 20,
+				"id": 20,
+				"prevSize": 24,
 				"code": 34,
 				"name": "ico_2"
 			},
@@ -76,8 +76,8 @@
 			],
 			"properties": {
 				"order": 24,
-				"id": 18,
-				"prevSize": 20,
+				"id": 19,
+				"prevSize": 24,
 				"code": 35,
 				"name": "ico_3"
 			},
@@ -104,8 +104,8 @@
 			],
 			"properties": {
 				"order": 25,
-				"id": 17,
-				"prevSize": 20,
+				"id": 18,
+				"prevSize": 24,
 				"code": 36,
 				"name": "ico_4"
 			},
@@ -141,8 +141,8 @@
 			],
 			"properties": {
 				"order": 26,
-				"id": 16,
-				"prevSize": 20,
+				"id": 17,
+				"prevSize": 24,
 				"code": 37,
 				"name": "ico_5"
 			},
@@ -172,8 +172,8 @@
 			],
 			"properties": {
 				"order": 27,
-				"id": 15,
-				"prevSize": 20,
+				"id": 16,
+				"prevSize": 24,
 				"code": 38,
 				"name": "ico_6"
 			},
@@ -200,8 +200,8 @@
 			],
 			"properties": {
 				"order": 28,
-				"id": 14,
-				"prevSize": 20,
+				"id": 15,
+				"prevSize": 24,
 				"code": 39,
 				"name": "ico_7"
 			},
@@ -228,8 +228,8 @@
 			],
 			"properties": {
 				"order": 29,
-				"id": 13,
-				"prevSize": 20,
+				"id": 14,
+				"prevSize": 24,
 				"code": 40,
 				"name": "ico_8"
 			},
@@ -256,8 +256,8 @@
 			],
 			"properties": {
 				"order": 30,
-				"id": 12,
-				"prevSize": 20,
+				"id": 13,
+				"prevSize": 24,
 				"code": 41,
 				"name": "ico_9"
 			},
@@ -284,8 +284,8 @@
 			],
 			"properties": {
 				"order": 31,
-				"id": 11,
-				"prevSize": 20,
+				"id": 12,
+				"prevSize": 24,
 				"code": 42,
 				"name": "ico_10"
 			},
@@ -312,8 +312,8 @@
 			],
 			"properties": {
 				"order": 32,
-				"id": 10,
-				"prevSize": 20,
+				"id": 11,
+				"prevSize": 24,
 				"code": 43,
 				"name": "ico_11"
 			},
@@ -340,8 +340,8 @@
 			],
 			"properties": {
 				"order": 33,
-				"id": 9,
-				"prevSize": 20,
+				"id": 10,
+				"prevSize": 24,
 				"code": 44,
 				"name": "ico_12"
 			},
@@ -368,8 +368,8 @@
 			],
 			"properties": {
 				"order": 34,
-				"id": 8,
-				"prevSize": 20,
+				"id": 9,
+				"prevSize": 24,
 				"code": 45,
 				"name": "ico_13"
 			},
@@ -396,8 +396,8 @@
 			],
 			"properties": {
 				"order": 35,
-				"id": 7,
-				"prevSize": 20,
+				"id": 8,
+				"prevSize": 24,
 				"code": 46,
 				"name": "ico_14"
 			},
@@ -427,8 +427,8 @@
 			],
 			"properties": {
 				"order": 36,
-				"id": 6,
-				"prevSize": 20,
+				"id": 7,
+				"prevSize": 24,
 				"code": 47,
 				"name": "ico_15"
 			},
@@ -455,8 +455,8 @@
 			],
 			"properties": {
 				"order": 37,
-				"id": 5,
-				"prevSize": 20,
+				"id": 6,
+				"prevSize": 24,
 				"code": 48,
 				"name": "ico_16"
 			},
@@ -467,7 +467,7 @@
 		{
 			"icon": {
 				"paths": [
-					"M512 1024c-282.761 0-512-229.222-512-512 0-282.761 229.239-512 512-512s512 229.239 512 512c0 282.778-229.239 512-512 512zM425.028 308.002c0 0 0 408.115 0 408.115s313.259-204.049 313.259-204.049c0 0-313.259-204.066-313.259-204.066z"
+					"M512.861 1024c-282.245 0-512.861-228.894-512.861-512.861 0-282.245 228.894-512.861 512.861-512.861 282.245 0 512.861 228.894 512.861 512.861s-230.615 512.861-512.861 512.861zM426.81 311.503v411.321l316.666-206.521-316.666-204.8z"
 				],
 				"attrs": [
 					{}
@@ -483,8 +483,8 @@
 			],
 			"properties": {
 				"order": 38,
-				"id": 4,
-				"prevSize": 20,
+				"id": 5,
+				"prevSize": 24,
 				"code": 49,
 				"name": "ico_17"
 			},
@@ -511,8 +511,8 @@
 			],
 			"properties": {
 				"order": 39,
-				"id": 3,
-				"prevSize": 20,
+				"id": 4,
+				"prevSize": 24,
 				"code": 50,
 				"name": "ico_18"
 			},
@@ -539,8 +539,8 @@
 			],
 			"properties": {
 				"order": 40,
-				"id": 2,
-				"prevSize": 20,
+				"id": 3,
+				"prevSize": 24,
 				"code": 51,
 				"name": "ico_19"
 			},
@@ -567,8 +567,8 @@
 			],
 			"properties": {
 				"order": 41,
-				"id": 1,
-				"prevSize": 20,
+				"id": 2,
+				"prevSize": 24,
 				"code": 52,
 				"name": "ico_20"
 			},
@@ -595,14 +595,42 @@
 			],
 			"properties": {
 				"order": 42,
-				"id": 0,
-				"prevSize": 20,
+				"id": 1,
+				"prevSize": 24,
 				"code": 53,
 				"name": "ico_21"
 			},
 			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 20
+		},
+		{
+			"icon": {
+				"paths": [
+					"M0 870.4c0 0 0-102.4 0-102.4s1024 0 1024 0c0 0 0 102.4 0 102.4s-1024 0-1024 0zM0 460.8c0 0 1024 0 1024 0s0 102.4 0 102.4c0 0-1024 0-1024 0s0-102.4 0-102.4zM0 153.6c0 0 1024 0 1024 0s0 102.4 0 102.4c0 0-1024 0-1024 0s0-102.4 0-102.4z"
+				],
+				"attrs": [
+					{}
+				],
+				"isMulticolor": false,
+				"grid": 0,
+				"tags": [
+					"ico_22"
+				]
+			},
+			"attrs": [
+				{}
+			],
+			"properties": {
+				"order": 43,
+				"id": 0,
+				"prevSize": 24,
+				"code": 54,
+				"name": "ico_22"
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 21
 		}
 	],
 	"height": 1024,
@@ -629,7 +657,7 @@
 			"resetPoint": 33,
 			"ie7": false,
 			"showSelector": true,
-			"embed": true
+			"embed": false
 		},
 		"imagePref": {
 			"prefix": "icon-",
