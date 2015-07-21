@@ -10,6 +10,13 @@ $(document).ready(function(){
   DiagramData(); 
   AjaxData(); 
 
+  $('.m-round_diagram').each(function() {
+    $(this).knob();
+    var that =  $(this),
+        num = that.attr('value');
+        that.animate({animatedVal: num});    
+  });
+
   $(window).resize(function(){
     winW = $(window).width();
     FloatNews();
@@ -58,9 +65,9 @@ $(document).ready(function(){
       slider_lock = 0;
     }
 
-    if(winW < 640){
+    if(winW < 800){
       $('.m-round_diagram').trigger('configure',{
-          'width':140
+          'width':135
       });
     } else {
       $('.m-round_diagram').trigger('configure',{
@@ -122,15 +129,6 @@ $(document).ready(function(){
       }
     ]
   });
-
-
-  $('.m-round_diagram').each(function() {
-    $(this).knob();
-    var that =  $(this),
-        num = that.attr('value');
-        that.animate({animatedVal: num});    
-  });
-
 
   $('.m-scroll_block').draggable({
     cursor: "move",

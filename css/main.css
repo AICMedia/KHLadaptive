@@ -2304,14 +2304,13 @@ H2 {font-size: 48px;}
   width: 100%;
 }
 
-.e-round_diagram_item {
-  width: 50%;
-  margin-bottom: 40px;
-  text-align: center;
+.e-round_diagram_item LABEL {
+  width: 135px;
+  top: 75px;
 }
 
-.e-round_diagram_item LABEL {
-  width: 100%;
+.e-round_diagram_item INPUT {
+  margin-top: 20px !important;
 }
 
 .m-leader .b-short_block .b-details {
@@ -2533,6 +2532,16 @@ H5 {
 
 .e-stats_one, .e-stats_all {
   width: 50%;
+}
+
+.e-round_diagram_item {
+  width: 50%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.e-round_diagram_item LABEL {
+  width: 100%;
 }
 
 .m-leader H5 {
