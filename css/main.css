@@ -50,7 +50,7 @@
 HTML {height:100%;}
 BODY { 
   min-height:100%; 
-  background:#fff; 
+  background:#e3f2f9; 
   color:#000; 
   font:16px 'latoregular'; 
   min-width:320px; 
@@ -175,7 +175,7 @@ UL.m-list>LI:before {
 }
 
 #header {
-
+  background: #fff;
 }
 
 .b-header_top_cover {
@@ -211,7 +211,19 @@ UL.m-list>LI:before {
   width: 8%;
   border-right: 1px solid #333;
   height: 50px;
-  background: url('../img/logo_1.png') 50% 50% no-repeat;
+  text-align: center;
+  background: url('../img/logo_1.png') no-repeat 50% 50%;
+}
+
+.e-logo_ico IMG {
+  top: 12px;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0.25s;
+}
+
+.e-logo_ico:hover IMG {
+  opacity: 1;
 }
 
 .e-header_apps {
@@ -1983,7 +1995,8 @@ UL.m-list>LI:before {
 /******************************* Main Page ******************************
 ******************************* Header ******************************/
 .b-header_nav_cover DIV,
-.b-header_menu_cover {
+.b-header_menu_cover,
+.b-header_nav_cover .e-logo_ico {
   display: none;
 }
 
