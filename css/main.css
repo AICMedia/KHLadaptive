@@ -751,6 +751,11 @@ UL.m-list>LI:before {
 
 .b-news_bnr_item .m-cover_link {
   padding:20px;
+  transition: background-color 0.25s ease;
+}
+
+.b-news_bnr_item .m-cover_link:hover {
+  background-color: rgba(0, 0, 0, 0.4)!important;
 }
 
 .b-news_bnr_item .e-bevel {
@@ -795,7 +800,7 @@ UL.m-list>LI:before {
 }
 
 .b-news_feed_item .m-cover_link {
-  padding:20px;
+  padding: 20px 35px 20px 20px;
 }
 
 .b-news_feed_item.m-bnr {
@@ -1013,9 +1018,11 @@ UL.m-list>LI:before {
 .b-score_table TD {
   font: 12px 'latoregular';
   padding: 0.25em 0;
+  color: #9ec5e1;
 }
 
 .b-score_table TD B {
+  color: #fff;
   font: 12px 'latoheavy';
 }
 
@@ -1091,7 +1098,7 @@ UL.m-list>LI:before {
 .b-title_cover H2 {
   float: left;
   position: relative;
-  margin:0 1.5em -20px 0;
+  margin:0 2em -20px 0;
   z-index: 2;
 }
 
@@ -1108,6 +1115,14 @@ UL.m-list>LI:before {
 
 .m-photo .b-title_cover H2:before {
   background: #2c3941;
+}
+
+.m-photo .m-cover_link {
+  color: #fff;
+}
+
+.m-photo .m-cover_link:hover {
+  color: #02a7fd;
 }
 
 .b-title_tab_cover {
@@ -1133,7 +1148,7 @@ UL.m-list>LI:before {
 
 .e-title_tab_item {
   font:14px 'latobold';
-  padding-right: 1em;
+  padding: 0 1em 10px 0;
   display: table-cell;
   cursor: pointer;
   color: #02a7fd;
@@ -1147,13 +1162,12 @@ UL.m-list>LI:before {
 .e-title_tab_item.m-active {
   color: #000;
   cursor: default;
-  padding: 0 1em 0 0;
 }
 
 
 .e-title_tab_item.m-active:after {
   background: #000;
-  bottom: -30px;
+  bottom: -40px;
   clear: both;
   content: "";
   display: block;
@@ -1198,12 +1212,12 @@ UL.m-list>LI:before {
   display: block;
   font-family: 'icomoon';
   content: ',';
-  font-size: 20px;
+  font-size: 24px;
   top: 0.55em;
-  right: -30px;
-  margin-top: -4px;
+  right: -50px;
+  margin-top: -0.31em;
   color: #02a7fd;
-  transition-duration: 0.25s;
+  transition:color 0.25s linear;
 }
 
 .m-go_to:hover:after {
@@ -2160,9 +2174,6 @@ H2 {font-size: 48px;}
 }
 
 .m-champ_final {
-  float: right;
-  position: relative;
-  top: -2.4em;
   width: 46.5%;
 }
 
@@ -2313,8 +2324,22 @@ H2 {font-size: 48px;}
   margin-top: 20px !important;
 }
 
-.m-leader .b-short_block .b-details {
+.m-leader .b-blocks_cover {
+  padding: 280px 0 0;
+}
+
+.m-leader .b-short_block {
+  position: absolute;
+  top:30px;
+}
+
+.m-leader .b-short_block .b-details DD {
   display: none;
+}
+
+.b-short_block .e-details_img IMG {
+  height: auto;
+  width: 100%;
 }
 
 
@@ -2363,28 +2388,26 @@ H5 {
 }
 
 .b-header_top_cover {
-  padding-left: 110px;
+  padding-left: 180px;
 }
 
 .e-header_search {
-  width: 30%;
-  border-left: none;
+  /*width: 30%;
+  border-left: none;*/
+  display: none;
 }
 
 .e-lang_btn {
-  width: 30%;
+  width: 40%;
+  border-left: 1px solid #d7e6ee;
 }
 
 .e-mobile_menu_btn {
-  width: 30%;
+  width: 40%;
 }
 
-.e-logo_main {
-  background: url("../img/khl_logo_1_1.png") no-repeat scroll 50% 50%;
-  background-size: 100% auto; 
+.e-logo_main { 
   height: 39px;
-  left: 25px;
-  width: 35px;
 }
 
 .e-search_field {
@@ -2419,6 +2442,18 @@ H5 {
 .m-video .b-short_block_cover {
   width: 100%;
   float: none;
+}
+
+.e-play_btn {
+  font-size: 30px;
+  left: 20px;
+  line-height: 32px;
+  top: 20px;
+}
+
+.e-bevel.m-left_side {
+  font: 18px "latoheavy";
+  top: 20px;
 }
 
 .b-short_block_cover.m-left {
@@ -2466,7 +2501,15 @@ H5 {
 }
 
 .m-leader .b-short_block {
-  margin-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.m-leader .b-blocks_cover {
+  padding: 230px 0 0;
+}
+
+.b-short_block .b-details {
+  padding: 40px 3.5% 20px 0;
 }
 
 .b-video_block {
@@ -2496,20 +2539,13 @@ H5 {
   padding: 0 0 10px;
 }
 
-.b-title_cover H2 {
-  margin: 0 1.5em -23px 0;
-}
-
-.b-title_cover H2:before {
-  bottom: -12px;
+.m-go_to::after {
+  font-size: 20px;
+  right: -40px;
 }
 
 .e-title_tab_item.m-active:after {
   bottom: -20px;
-}
-
-.e-title_tab_item.m-active {
-  padding: 0 1em 10px 0;
 }
 
 .b-description {

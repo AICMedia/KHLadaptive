@@ -83,47 +83,54 @@ $(document).ready(function(){
 
   $('.b-feed_matches.m-slick_slider').slick({
     slidesToShow: 9,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1600,
         settings: {
+          slidesToScroll: 4,
           slidesToShow: 8
         }
       },    
       {
         breakpoint: 1400,
         settings: {
+          slidesToScroll: 4,
           slidesToShow: 7
         }
       },    
       {
         breakpoint: 1280,
         settings: {
+          slidesToScroll: 3,
           slidesToShow: 6
         }
       },
         {
         breakpoint: 1024,
         settings: {
+          slidesToScroll: 3,
           slidesToShow: 5
         }
       },
         {
         breakpoint: 800,
         settings: {
+          slidesToScroll: 2,          
           slidesToShow: 4
         }
       },
         {
         breakpoint: 640,
         settings: {
+          slidesToScroll: 2,
           slidesToShow: 3
         }
       },
         {
         breakpoint: 480,
         settings: {
+          slidesToScroll: 1,
           slidesToShow: 2
         }
       }
