@@ -17,15 +17,29 @@ $(document).ready(function(){
         that.animate({animatedVal: num});    
   });
 
+  $("#detail").slider({ 
+    range: "min",
+    min: 0,
+    max: 3,
+    step: 1
+  });
+
+  $("#season").slider({ 
+    range: "min",
+    min: 0,
+    max: 7,
+    step: 1
+  });
+
   $(window).resize(function(){
     winW = $(window).width();
-    FloatNews();
+    FloatPanel();
     SmartCol();
     SlideTable();
 
     if(winW < 1280){
       if(slider_lock == 0){
-        $('.b-news_feed_cover.m-slick_slider').slick({
+        $('.b-float_panel_cover.m-slick_slider').slick({
           slidesToShow: 5,
           slidesToScroll: 1,
           responsive: [
@@ -59,7 +73,7 @@ $(document).ready(function(){
       }
     } else {
       setTimeout(function() {
-        $('.b-news_feed_cover.m-slick_slider').unslick();
+        $('.b-float_panel_cover.m-slick_slider').unslick();
         slider_lock = 0;
       }, 100);
       slider_lock = 0;
@@ -197,30 +211,30 @@ function FooterFix() {
 }
 
 
-// Float news 
-function FloatNews() {
+// Float panel 
+function FloatPanel() {
   $(window).scroll(function(){
     if(winW > 1280){
-      if($('.b-news_feed').length){
-        var startBlock = $('.m-video').offset().top;
+      if($('.b-float_panel').length){
+        var startBlock = $('.s-float_panel_start').offset().top;
         var heightBlock = $(window).height();
-        var endBlock = ($('#footer').offset().top)-($('.b-news_feed').height());
+        var endBlock = ($('#footer').offset().top)-($('.b-float_panel').height());
         var stopBlock = $('body').height()-$('#footer').height()-$(window).height()-$(window).scrollTop();
 
         if ($(window).scrollTop() < startBlock ) {
-          $(".b-news_feed").css({
+          $(".b-float_panel").css({
             position: 'absolute',
             top: '0px',
             height: 'auto'
           });
         } else if ($(window).scrollTop() < endBlock) {
-          $(".b-news_feed").css({
+          $(".b-float_panel").css({
             position: 'fixed',
             top: 0,
             height: heightBlock
           });
         } else if ($(window).scrollTop() > endBlock) {
-          $(".b-news_feed").css({
+          $(".b-float_panel").css({
             top: stopBlock
           });
         }
