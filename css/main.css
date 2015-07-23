@@ -800,7 +800,7 @@ UL.m-list>LI:before {
   width: 260px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -260px;
   z-index: 2;
   overflow: hidden;
 }
