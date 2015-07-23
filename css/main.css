@@ -729,7 +729,7 @@ UL.m-list>LI:before {
 
 /******************************* Main Page ******************************/
 .b-content_section {
-  padding: 0 0 0 260px;
+  margin: 0 0 0 260px;
   background: #f1fafe;
 }
 
@@ -763,7 +763,7 @@ UL.m-list>LI:before {
   width: 260px;
   position: absolute;
   top: -453px;
-  left: 0;
+  left: -260px;
 }
 
 .b-news_bnr_item.m-bnr {
@@ -941,7 +941,7 @@ UL.m-list>LI:before {
 .m-teaser .b-short_block {
   background: #0d6eb3;
   color: #fff;
-  padding: 20px 3.5% 0 2%;
+  padding: 20px 1.75% 0 1.75%;
   height: 454px;
 }
 
@@ -990,6 +990,7 @@ UL.m-list>LI:before {
   background: #000;
   border-radius: 10px;
   margin: 0 0.5em;
+  top:0.1em;
 }
 
 .e-switcher_btn B {
@@ -1127,7 +1128,7 @@ UL.m-list>LI:before {
   position: absolute;
   display: block;
   left: -100%;
-  bottom: -15px;
+  bottom: -18px;
   content: '';
   width: 200%;
   height: 15px;
@@ -1148,7 +1149,7 @@ UL.m-list>LI:before {
 
 .b-title_tab_cover {
   max-width: 100%;
-  margin: 35px 0 0 0;
+  margin: 40px 0 0 0;
   float: left;
   z-index: 1;
 }
@@ -1169,7 +1170,7 @@ UL.m-list>LI:before {
 
 .e-title_tab_item {
   font:14px 'latobold';
-  padding: 0 1em 10px 0;
+  padding: 0 1em 0 0;
   display: table-cell;
   cursor: pointer;
   color: #02a7fd;
@@ -1188,7 +1189,7 @@ UL.m-list>LI:before {
 
 .e-title_tab_item.m-active:after {
   background: #000;
-  bottom: -40px;
+  bottom: -30px;
   clear: both;
   content: "";
   display: block;
@@ -1357,7 +1358,7 @@ UL.m-list>LI:before {
 }
 
 .b-description {
-  margin-top: 40px;
+  margin-top: 30px;
   overflow: hidden;
   background: #f1fafe;
 }
@@ -1577,6 +1578,7 @@ UL.m-list>LI:before {
 
 .m-align {
   text-align: center;
+  clear: both;
 }
 
 
@@ -1914,6 +1916,97 @@ UL.m-list>LI:before {
   left: -0.6em;
 }
 
+.e-gloss_btn {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  font-family: 'latoheavy';
+  cursor: pointer;
+  color: #02a7fd; 
+  transition:color 0.25s linear;
+}
+
+.e-gloss_btn:hover {
+  color: #57ccfd;
+}
+
+.b-gloss {
+  background: #f1fafe;
+  margin: 30px -1.75% 0 -1.75%;
+  padding: 30px 1.75% 0 1.75%;
+}
+
+.b-gloss_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding: 0 3.5% 30px 0;
+}
+
+.e-gloss_abbreviation {
+  font: 18px 'latoheavy';
+}
+
+.e-gloss_transcript {
+  font-size: 14px;
+}
+
+.e-local_search {
+
+}
+
+.e-local_search  .e-search_btn {
+  color: #02a7fd;
+}
+
+.b-subtitle_tab_cover .e-tab_subtitle {
+  display: table-cell;
+  position: static;
+  top: auto;
+  padding-right: 1em;
+}
+
+.b-subtitle_tab_cover .e-title_tab_item.m-active::after {
+  display: none;
+}
+
+.b-player_list_cover {
+
+}
+
+.b-player_list_item {
+  width: 20%;
+  float: left;
+  padding: 0 3.5% 0 0;
+}
+
+.b-player_list_item .b-details_info_title:after {
+  display: none;
+}
+
+.b-player_list_item .b-details_info_title .e-bevel {
+  font-size: 18px;
+}
+
+.b-player_list_item .b-details {
+  overflow: visible;
+}
+
+.b-player_list_item .e-details_img {
+  float: none;
+  width: auto;
+}
+
+.b-player_list_item .e-details_img IMG {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.e-diagram {
+  width: 300%;
+  margin-left: -100%;
+}
+
 /******************************* Statistics Page end ******************************/
 
 
@@ -1979,7 +2072,7 @@ UL.m-list>LI:before {
 
 /******************************* Main Page ******************************/
 .b-content_section {
-  padding: 0;
+  margin: 0;
 }
 
 .b-news_bnr {
@@ -2001,6 +2094,7 @@ UL.m-list>LI:before {
   overflow: none!important;
   position: relative!important;
   top: auto!important;
+  left: auto!important;
   width: auto!important;
   height: 105px!important;
 }
@@ -2409,7 +2503,9 @@ H2 {font-size: 48px;}
 
 /******************************* Main Page end ****************************** 
 ******************************* Statistics Page ******************************/
-
+.b-gloss_item {
+  width: 33.33333%;
+}
 
 /******************************* Statistics Page end ******************************/  
 
@@ -2657,8 +2753,16 @@ H5 {
   width: 100%;
 }
 
+.b-title_tab_cover {
+  margin: 25px 0 0;
+}
+
 .m-scroll_block {
-  padding: 0 0 10px;
+  padding: 0 0 25px;
+}
+
+.b-title_cover H2 {
+  margin: 0 2em -5px 0;
 }
 
 .m-go_to::after {
@@ -2667,7 +2771,7 @@ H5 {
 }
 
 .e-title_tab_item.m-active:after {
-  bottom: -20px;
+  bottom: -25px;
 }
 
 .b-description {
@@ -2751,7 +2855,9 @@ H5 {
 
 /******************************* Main Page end ****************************** 
 ******************************* Statistics Page ******************************/
-
+.b-gloss_item {
+  width: 50%;
+}
 /******************************* Statistics Page end ******************************/ 
 
 } 

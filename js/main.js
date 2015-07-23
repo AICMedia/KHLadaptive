@@ -7,8 +7,11 @@ $(document).ready(function(){
   HideShow();
   FooterFix();
   SwitcherBtn();
-  DiagramData(); 
-  AjaxData(); 
+  DiagramData();
+  AjaxData();
+  if($('.e-diagram').length){
+    ChartRadar();
+  }    
 
   $('.m-round_diagram').each(function() {
     $(this).knob();
@@ -225,11 +228,13 @@ function FloatPanel() {
           $(".b-float_panel").css({
             position: 'absolute',
             top: '0px',
+            left: '-260px',
             height: 'auto'
           });
         } else if ($(window).scrollTop() < endBlock) {
           $(".b-float_panel").css({
             position: 'fixed',
+            left: 0,
             top: 0,
             height: heightBlock
           });
@@ -334,7 +339,8 @@ function SlideTable() {
 
 }
 
-// Diagram 
+
+// Round Diagram 
 function DiagramData() {
 
   $('.b-short_block .b-details').on('click',function(){
@@ -354,6 +360,7 @@ function DiagramData() {
 
 }
 
+
 // Ajax
 function AjaxData() {
 
@@ -365,6 +372,123 @@ function AjaxData() {
       $('.' + choiseOne).load('ajax.html ' + '.' + choiseTwo).fadeIn(250);
     }, 200);
   });
+
+}
+
+
+// Chart Radar  
+function ChartRadar() {
+
+  var radarChartData_01 = {
+    labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
+    datasets: [
+      {
+        fillColor: "rgba(1,145,237,0.7)",
+        strokeColor: "rgba(1,145,237,0)",
+        data: [21,16,8,13,7,20]
+      }
+    ]
+  };
+
+  window.myRadar = new Chart(document.getElementById("canvas_01").getContext("2d")).Radar(radarChartData_01, { 
+    scaleLineColor: "rgba(182,185,187,1)",
+    angleLineColor: "rgba(182,185,187,1)",
+    responsive: true,
+    pointDot: false, 
+    scaleOverride: true,  
+    scaleSteps: 2,  
+    scaleStepWidth: 11, 
+    scaleStartValue: 0,
+  });
+
+
+  var radarChartData_02 = {
+    labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
+    datasets: [
+      {
+        fillColor: "rgba(1,145,237,0.7)",
+        strokeColor: "rgba(1,145,237,0)",
+        data: [16,22,7,18,9,17]
+      }
+    ]
+  };
+
+  window.myRadar = new Chart(document.getElementById("canvas_02").getContext("2d")).Radar(radarChartData_02, { 
+    scaleLineColor: "rgba(182,185,187,1)",
+    angleLineColor: "rgba(182,185,187,1)",
+    responsive: true,
+    pointDot: false, 
+    scaleOverride: true,  
+    scaleSteps: 2,  
+    scaleStepWidth: 11, 
+    scaleStartValue: 0,
+  }); 
+
+  var radarChartData_03 = {
+    labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
+    datasets: [
+      {
+        fillColor: "rgba(1,145,237,0.7)",
+        strokeColor: "rgba(1,145,237,0)",
+        data: [19,4,12,10,15,21]
+      }
+    ]
+  };
+
+  window.myRadar = new Chart(document.getElementById("canvas_03").getContext("2d")).Radar(radarChartData_03, { 
+    scaleLineColor: "rgba(182,185,187,1)",
+    angleLineColor: "rgba(182,185,187,1)",
+    responsive: true,
+    pointDot: false, 
+    scaleOverride: true,  
+    scaleSteps: 2,  
+    scaleStepWidth: 11, 
+    scaleStartValue: 0,
+  }); 
+
+  var radarChartData_04 = {
+    labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
+    datasets: [
+      {
+        fillColor: "rgba(1,145,237,0.7)",
+        strokeColor: "rgba(1,145,237,0)",
+        data: [21,20,7,10,3,19]
+      }
+    ]
+  };
+
+  window.myRadar = new Chart(document.getElementById("canvas_04").getContext("2d")).Radar(radarChartData_04, { 
+    scaleLineColor: "rgba(182,185,187,1)",
+    angleLineColor: "rgba(182,185,187,1)",
+    responsive: true,
+    pointDot: false, 
+    scaleOverride: true,  
+    scaleSteps: 2,  
+    scaleStepWidth: 11, 
+    scaleStartValue: 0,
+  });
+
+  var radarChartData_05 = {
+    labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
+    datasets: [
+      {
+        fillColor: "rgba(1,145,237,0.7)",
+        strokeColor: "rgba(1,145,237,0)",
+        data: [19,20,17,18,14,17]
+      }
+    ]
+  };
+
+  window.myRadar = new Chart(document.getElementById("canvas_05").getContext("2d")).Radar(radarChartData_05, { 
+    scaleLineColor: "rgba(182,185,187,1)",
+    angleLineColor: "rgba(182,185,187,1)",
+    responsive: true,
+    pointDot: false, 
+    scaleOverride: true,  
+    scaleSteps: 2,  
+    scaleStepWidth: 11, 
+    scaleStartValue: 0,
+  });    
 
 }
       
