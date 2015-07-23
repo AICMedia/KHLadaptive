@@ -21,6 +21,7 @@ $(document).ready(function(){
   });
 
   $("#detail").slider({ 
+    animate: 250,
     range: "min",
     min: 0,
     max: 3,
@@ -28,6 +29,7 @@ $(document).ready(function(){
   });
 
   $("#season").slider({ 
+    animate: 250,
     range: "min",
     min: 0,
     max: 7,
@@ -247,6 +249,7 @@ function FloatPanel() {
     }
   }); 
 }
+
 
 // Smart col
 function SmartCol() {  

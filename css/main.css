@@ -1186,9 +1186,8 @@ UL.m-list>LI:before {
   cursor: default;
 }
 
-
-.e-title_tab_item.m-active:after {
-  background: #000;
+.e-title_tab_item:after {
+  background: transparent;
   bottom: -30px;
   clear: both;
   content: "";
@@ -1196,6 +1195,12 @@ UL.m-list>LI:before {
   height: 1px;
   position: relative;
   width: 100%;
+  transition-duration: 0.25s;
+}
+
+
+.e-title_tab_item.m-active:after {
+  background: #000;
 }
 
 .e-go_to {
