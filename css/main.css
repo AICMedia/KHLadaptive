@@ -170,15 +170,20 @@ UL.m-list>LI:before {
 #wrapper {
   width:100%;
   overflow:hidden;
+  background: #f1fafe;
 }
 
 #header {
   background: #fff;
+  border-bottom: 1px solid #d7e6ee;
 }
 
 .b-header_top_cover {
   border-bottom: 1px solid #d7e6ee;
   padding-left: 260px;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
 }
 
 .e-logo_main {
@@ -730,7 +735,6 @@ UL.m-list>LI:before {
 /******************************* Main Page ******************************/
 .b-content_section {
   margin: 0 0 0 260px;
-  background: #f1fafe;
 }
 
 .b-blocks_cover {
@@ -1259,7 +1263,7 @@ UL.m-list>LI:before {
 }
 
 .b-video_block {
-  height: 410px;
+  height: 483px;
   cursor: pointer;
 }
 
@@ -1806,12 +1810,14 @@ UL.m-list>LI:before {
 
 /******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
-.b-content_section.m-stats {
-  border-top: 1px solid #d7e6ee;
-}
-
+/*float panel*/
 .b-float_panel_block {
   padding: 30px;
+}
+
+.e-point_switcher_title {
+  font-size: 12px;
+  margin: 1.8em 0 0.5em 0;
 }
 
 .b-point_switcher_cover {
@@ -1906,6 +1912,7 @@ UL.m-list>LI:before {
   color: #999;
   height: 1.5em;
   overflow: hidden;
+  margin-bottom: 1em;
 }
 
 .e-point_scale.m-pad {
@@ -1920,6 +1927,35 @@ UL.m-list>LI:before {
   position: relative;
   left: -0.6em;
 }
+
+/*form field*/
+.b-field_cover {
+  padding: 0 0 30px 0;
+}
+
+.b-float_panel_block .b-field_cover,
+.b-float_panel_block .jq-selectbox__select-text {
+  font-size: 12px;
+}
+
+.jqselect {
+  width: 100%;
+}
+
+.b-float_panel_block .jq-checkbox {
+  margin-right: 1em; 
+}
+
+.m-select LABEL {
+  display: inline-block;
+  padding: 0 0 1em 0;
+}
+
+.jq-selectbox LI {
+  font-size: 12px;
+}
+
+/*glossary*/
 
 .e-gloss_btn {
   position: absolute;
@@ -1956,12 +1992,26 @@ UL.m-list>LI:before {
   font-size: 14px;
 }
 
+/*stats*/
 .e-local_search {
+  width: 30%;
+  border: 1px solid transparent;
+}
 
+.e-local_search:hover {
+  border: 1px solid #02a7fd;
+  background: #FFF;
+}
+
+.e-local_search .e-search_field {
+  width: 75%;
+  color: #000;
+  padding: 0;
 }
 
 .e-local_search  .e-search_btn {
   color: #02a7fd;
+  width: 15%;
 }
 
 .b-subtitle_tab_cover .e-tab_subtitle {
@@ -2207,6 +2257,10 @@ UL.m-list>LI:before {
 
 .e-mobile_menu_btn {
   display: block;
+}
+
+.b-mobile_move {
+  height: 60px;
 }
 
 /******************************* Header end ******************************
