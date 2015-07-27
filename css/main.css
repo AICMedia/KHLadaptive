@@ -211,7 +211,8 @@ UL.m-list>LI:before {
 
 .e-logo_ico {
   float: left;
-  width: 8%;
+  width: 10%;
+  margin-right: 60%;
   border-right: 1px solid #333;
   box-sizing: border-box;
   height: 50px;
@@ -231,11 +232,15 @@ UL.m-list>LI:before {
 }
 
 .e-header_apps {
-  float: left;
-  width: 17%;
+  position: absolute;
+  width: 20%;
   border-right: 1px solid #333;
-  line-height: 50px;
+  line-height: 48px;
+  height: 48px;
+  top: -50px;
+  left: 10%;
   text-align: center;
+  color: #fff;
 }
 
 .e-header_apps SPAN {
@@ -246,14 +251,19 @@ UL.m-list>LI:before {
 .e-header_apps SPAN,
 .e-header_apps A {
   margin-right: 3%;
+  color: #fff;
 }
 
 .e-header_social {
-  float: left;
-  width: 35%;
+  position: absolute;
+  top: -50px;
+  left: 30%;
+  width: 40%;
   border-right: 1px solid #333;
-  line-height: 50px;
+  line-height: 48px;
+  height: 48px;
   text-align: center;
+  color: #fff;
 }
 
 .e-header_social SPAN {
@@ -264,6 +274,7 @@ UL.m-list>LI:before {
 .e-header_social SPAN,
 .e-header_social A {
   margin-right: 3%;
+  color: #fff;
 }
 
 .m-ico_apple:hover {color: #cecece;}
@@ -279,8 +290,7 @@ UL.m-list>LI:before {
 .e-header_search {
   display: block;
   float: left;
-  width: 25%;
-  border-right: 1px solid #333;
+  width: 30%;
   line-height: 50px;
   text-align: center;
   transition:background 0.25s ease;
@@ -291,8 +301,8 @@ UL.m-list>LI:before {
 }
 
 .e-search_field {
-  width: 70%;
-  padding: 0 0 0 10%;
+  width: 68%;
+  padding: 0 0 0 7%;
   height: 50px;
   line-height: 50px;
   font-size: 18px;
@@ -307,7 +317,7 @@ UL.m-list>LI:before {
 }
 
 .e-search_btn {
-  width: 20%;
+  width: 25%;
   height: 50px;
   line-height: 50px;
   border: none;
@@ -316,6 +326,8 @@ UL.m-list>LI:before {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+  text-align: right;
+  padding-right: 11.66666%;
   transition:color 0.25s linear;
 }
 
@@ -324,13 +336,14 @@ UL.m-list>LI:before {
 }
 
 .e-lang_btn {
-  font-size: 12px;
-  display: block;
   box-sizing: border-box;
-  line-height: 50px;
-  padding-left: 3%;
-  float: left;
-  width: 15%;
+  color: #000;
+  display: block;
+  float: right;
+  line-height: 80px;
+  padding-right: 3.5%;
+  text-align: right;
+  width: 10%;
 }
 
 .e-lang_btn:hover {
@@ -342,15 +355,13 @@ UL.m-list>LI:before {
 }
 
 .b-header_menu_cover {
-  overflow: hidden;
   font-size: 14px;
 }
 
 .b-header_menu {
   float: left;
   text-align: center;
-  width: 85%;
-  border-right: 1px solid #d7e6ee;
+  width: 90%;
 }
 
 .e-header_menu_item {
@@ -364,19 +375,8 @@ UL.m-list>LI:before {
   margin: 0 1%;
 }
 
-.e-header_menu_item A:hover,
-.e-enter_btn:hover {
+.e-header_menu_item A:hover {
   color: #02a7fd;
-}
-
-.e-enter_btn {
-  display: block;
-  box-sizing: border-box;
-  line-height: 80px;
-  padding-left: 3%;
-  float: left;
-  width: 15%;
-  color: #000;
 }
 
 
@@ -1993,6 +1993,10 @@ UL.m-list>LI:before {
 }
 
 /*stats*/
+.b-subtitle_nav_cover {
+  overflow: hidden;
+}
+
 .e-local_search {
   width: 30%;
   border: 1px solid transparent;
@@ -2014,15 +2018,25 @@ UL.m-list>LI:before {
   width: 15%;
 }
 
-.b-subtitle_tab_cover .e-tab_subtitle {
-  display: table-cell;
-  position: static;
-  top: auto;
-  padding-right: 1em;
+.m-light .e-switcher_item {
+  color: #02a7fd;
 }
 
-.b-subtitle_tab_cover .e-title_tab_item.m-active::after {
-  display: none;
+.m-light .e-switcher_item:hover {
+  color: #57ccfd;
+}
+
+.m-light .e-switcher_item.m-active {
+  color: #000;
+}
+
+.m-light .e-switcher_btn {
+  background: #02a7fd;
+}
+
+.m-light .e-switcher_btn B {
+  border: 2px solid #02a7fd;
+  background: #fff;
 }
 
 .b-player_list_cover {
@@ -2084,17 +2098,6 @@ UL.m-list>LI:before {
   margin: 0 0.8%;
 }
 
-.e-header_apps {
-  width: 18%;
-}
-
-.e-header_social {
-  width: 39%;
-}
-
-.e-header_search {
-  width: 20%;
-}
 
 /******************************* Header end ******************************
 ******************************* Footer ******************************/
@@ -2251,16 +2254,179 @@ UL.m-list>LI:before {
 /******************************* Header ******************************/
 .b-header_nav_cover DIV,
 .b-header_menu_cover,
-.b-header_nav_cover .e-logo_ico {
+.b-header_nav_cover .e-logo_ico,
+.e-lang_btn {
   display: none;
 }
 
 .e-mobile_menu_btn {
   display: block;
+  position: relative;
+}
+
+.e-mobile_menu_btn:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: '6';
+  opacity: 1;
+  transition-duration: 0.25s;
+}
+
+.e-mobile_menu_btn:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: '8';
+  opacity: 0;
+  transition-duration: 0.25s;
+}
+
+.e-mobile_menu_btn.m-active:before {
+  opacity: 0;
+}
+
+.e-mobile_menu_btn.m-active:after {
+  opacity: 1;
 }
 
 .b-mobile_move {
   height: 60px;
+}
+
+.b-header_menu_cover {
+  background: #fff;
+  border-top: 1px solid #d7e6ee;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  padding: 0 3.5% 20px 3.5%;
+}
+
+.b-header_menu_cover .b-header_menu {
+  width: 100%;
+  text-align: left;  
+  padding: 20px 0 5px 0;
+}
+
+.b-header_menu_cover .e-header_menu_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  height: auto;
+  line-height:1.8em; 
+  margin-bottom: 1em;
+}
+
+.e-header_search {
+  vertical-align: top;
+  width: 65%;
+  border-left: 1px solid #d7e6ee;
+  border-right: 1px solid #d7e6ee;
+  padding: 0;
+}
+
+.e-logo_main {
+  background: url("../img/khl_logo_1.png") no-repeat scroll 50% 50%;
+  height: 42px;
+  top: 10px;
+  left: 25px;
+  width: 128px;
+  background-size: 100% auto;
+}
+
+.b-header_nav_cover {
+  background: #fff;
+  border-bottom:none;
+  color: #000;
+  height: 60px;
+  overflow: visible;
+}
+
+.b-header_top_cover {
+  padding-left: 210px;
+  text-align: right;
+}
+
+.b-header_nav_cover A {
+  color: #000;
+}
+
+.b-header_menu {
+  float: none;
+}
+
+.e-header_social,
+.e-header_apps {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-right: none;
+  line-height: 1.8em;
+  height: auto;
+  text-align: left;
+}
+
+.e-header_social A,
+.e-header_apps A {
+  color: #000;
+  font-size: 28px;
+  display: inline-block;
+  margin: 0 3.5% 20px 0;
+}
+
+.e-header_social SPAN,
+.e-header_apps SPAN {
+  display: block;
+  color: #000;
+  opacity: 0.6;
+  margin-bottom: 0.5em;
+}
+
+.e-search_field {
+  color: #000;
+  padding: 0 7%;
+  height: 60px;
+  line-height: 60px;
+  width: 61%;
+}
+
+.e-search_btn {
+  color: #000;
+  border-left: 1px solid #d7e6ee;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 25%;
+  padding-right: 0;
+}
+
+.e-lang_btn {
+  text-align: center;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+}
+
+.e-mobile_menu_btn {
+  display: inline-block;
+  width:15%; 
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.e-header_search,
+.e-mobile_menu_btn {
+  display: inline-block;
+  float: none;
 }
 
 /******************************* Header end ******************************
@@ -2342,75 +2508,6 @@ UL.m-list>LI:before {
 
 /******************************* Main Page ******************************/
 H2 {font-size: 48px;}
-
-.e-logo_main {
-  background: url("../img/khl_logo_1.png") no-repeat scroll 50% 50%;
-  height: 42px;
-  top: 10px;
-  left: 25px;
-  width: 128px;
-  background-size: 100% auto;
-}
-
-.b-header_nav_cover {
-  background: #fff;
-  border-bottom:none;
-  color: #000;
-  height: 60px;
-  overflow: hidden;
-  text-align: right;
-}
-
-.b-header_top_cover {
-  padding-left: 210px;
-}
-
-.b-header_nav_cover A {
-  color: #000;
-}
-
-.e-search_field {
-  color: #000;
-  height: 60px;
-  line-height: 60px;
-}
-
-.e-search_btn {
-  color: #000;
-  border-left: 1px solid #d7e6ee;
-  height: 60px;
-  line-height: 60px;
-}
-
-.e-lang_btn {
-  text-align: center;
-  padding: 0;
-  height: 60px;
-  line-height: 60px;
-}
-
-.e-mobile_menu_btn {
-  display: inline-block;
-  width:15%; 
-  border-left: 1px solid #d7e6ee;
-  text-align: center;
-  height: 60px;
-  line-height: 60px;
-}
-
-.e-header_search {
-  vertical-align: top;
-  width: 65%;
-  border-left: 1px solid #d7e6ee;
-  border-right: 1px solid #d7e6ee;
-}
-
-.e-header_search,
-.e-mobile_menu_btn,
-.e-lang_btn {
-  display: inline-block;
-  float: none;
-}
 
 .b-content_section.m-teaser {
   height: auto;
@@ -2629,6 +2726,13 @@ H2 {font-size: 48px;}
 /**************************************** MOBILE < 640 ****************************************/
 @media (max-width:640px) {
 /******************************* Header ******************************/
+.b-header_menu_cover {
+  padding: 0 25px 20px;
+}
+
+.b-header_menu_cover .e-header_menu_item {
+  width: 50%;
+}
 
 /******************************* Header end ******************************
 ******************************* Footer ******************************/
@@ -2681,6 +2785,7 @@ H5 {
 
 .e-mobile_menu_btn {
   width: 40%;
+  border-left: 1px solid #d7e6ee;
 }
 
 .e-logo_main { 

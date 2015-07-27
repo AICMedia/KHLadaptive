@@ -5,6 +5,7 @@ $(document).ready(function(){
   table_lock = 0;
 
   HideShow();
+  MobileMenu();
   FooterFix();
   SwitcherBtn();
   DiagramData();
@@ -89,6 +90,10 @@ $(document).ready(function(){
       }, 100);
       slider_lock = 0;
     }
+
+    if(winW > 1024){
+      $('.b-header_menu_cover').show();
+    }      
 
     if(winW < 800){
       $('.m-round_diagram').trigger('configure',{
@@ -211,6 +216,15 @@ function HideShow() {
     $(this).addClass('m-active');
   }); 
 
+}
+
+
+// Mobile menu
+function MobileMenu() {  
+  $('.e-mobile_menu_btn').on('click', function(){
+    $(this).toggleClass('m-active');
+    $('.b-header_menu_cover').slideToggle();
+  });     
 }
 
 

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-hnezi6');
-	src:url('fonts/icomoon.eot?#iefix-hnezi6') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?-hnezi6') format('truetype'),
-		url('fonts/icomoon.woff?-hnezi6') format('woff'),
-		url('fonts/icomoon.svg?-hnezi6#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-h2ofq4');
+	src:url('fonts/icomoon.eot?#iefix-h2ofq4') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-h2ofq4') format('truetype'),
+		url('fonts/icomoon.woff?-h2ofq4') format('woff'),
+		url('fonts/icomoon.svg?-h2ofq4#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -88,4 +88,37 @@
 }
 .icon-ico_22:before {
 	content: "\36";
+}
+.icon-ico_23:before {
+	content: "\37";
+}
+.icon-ico_24:before {
+	content: "\38";
+}
+.icon-ico_25:before {
+	content: "\39";
+}
+.icon-ico_26:before {
+	content: "\3a";
+}
+.icon-ico_27:before {
+	content: "\3b";
+}
+.icon-ico_28:before {
+	content: "\3c";
+}
+.icon-ico_29:before {
+	content: "\3d";
+}
+.icon-ico_30:before {
+	content: "\3e";
+}
+.icon-ico_31:before {
+	content: "\3f";
+}
+.icon-ico_32:before {
+	content: "\40";
+}
+.icon-ico_33:before {
+	content: "\41";
 }
