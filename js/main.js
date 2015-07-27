@@ -214,7 +214,15 @@ function HideShow() {
   $('.b-details.m-ajax').on('click', function(){
     $(this).parent().find('.b-details').removeClass('m-active');
     $(this).addClass('m-active');
+  });
+
+  $('.e-gloss_btn').on('click', function(){
+    var choise = $(this).attr('id');
+    $('body').find('.' + choise).slideToggle();
   }); 
+
+
+  $("div").next() 
 
 }
 
