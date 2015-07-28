@@ -12,6 +12,9 @@ $(document).ready(function(){
   AjaxData();
   if($('.e-diagram').length){
     ChartRadar();
+  } 
+  if($('#s-map').length){
+    CustomMap();
   }    
 
   $('.m-round_diagram').each(function() {
@@ -398,7 +401,7 @@ function SlideTable() {
 }
 
 
-// Round Diagram 
+// Round diagram 
 function DiagramData() {
 
   $('.b-short_block .b-details').on('click',function(){
@@ -434,7 +437,7 @@ function AjaxData() {
 }
 
 
-// Chart Radar  
+// Chart radar  
 function ChartRadar() {
 
   var radarChartData_01 = {
@@ -548,5 +551,207 @@ function ChartRadar() {
     scaleStartValue: 0,
   });    
 
+}
+
+// Custom map
+function CustomMap() {
+  google.maps.event.addDomListener(window, 'load', init);
+  var map;
+  function init() {
+    var mapOptions = {
+        center: new google.maps.LatLng(54.537932,77.889403),
+        zoom: 3,
+        zoomControl: false,
+        disableDoubleClickZoom: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        panControl: false,
+        streetViewControl: false,
+        draggable : true,
+        overviewMapControl: false,
+        overviewMapControlOptions: {
+          opened: false,
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [
+          {
+              "featureType": "administrative",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "administrative",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "color": "#2c3941"
+                  }
+              ]
+          },
+          {
+              "featureType": "administrative",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                  {
+                      "color": "#96bdce"
+                  },
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "landscape",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "color": "#2b3a40"
+                  },
+                  {
+                      "lightness": "-57"
+                  },
+                  {
+                      "gamma": "1.92"
+                  },
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "poi",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "road",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "saturation": -100
+                  },
+                  {
+                      "lightness": 45
+                  },
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "simplified"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.arterial",
+              "elementType": "labels.icon",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "transit",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "water",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "gamma": "0.17"
+                  },
+                  {
+                      "color": "#2c3941"
+                  }
+              ]
+          }
+        ],
+    }
+    var mapElement = document.getElementById('s-map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+    var locations = [
+      ['Динамо', 'undefined', 'undefined', 'undefined', 'undefined', 53.90453979999999, 27.561524400000053, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Динамо', 'undefined', 'undefined', 'undefined', 'undefined', 56.9496487, 24.10518639999998, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Йокерит', 'undefined', 'undefined', 'undefined', 'undefined', 60.17332440000001, 24.941024800000037, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Медвешчак', 'undefined', 'undefined', 'undefined', 'undefined', 45.8150108, 15.981919000000062, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['СКА', 'undefined', 'undefined', 'undefined', 'undefined', 59.9342802, 30.335098600000038, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Слован', 'undefined', 'undefined', 'undefined', 'undefined', 48.14543414323719, 17.103704072460914, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Спартак', 'undefined', 'undefined', 'undefined', 'undefined', 55.769154168834, 37.596700634765625, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Динамо', 'undefined', 'undefined', 'undefined', 'undefined', 55.740367347065686, 37.636182751464844, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Локомотив', 'undefined', 'undefined', 'undefined', 'undefined', 57.62607440000001, 39.88447080000003, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Северсталь', 'undefined', 'undefined', 'undefined', 'undefined', 59.132333, 37.90918110000007, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Торпедо', 'undefined', 'undefined', 'undefined', 'undefined', 56.2965039, 43.936058900000035, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['ХК сочи', 'undefined', 'undefined', 'undefined', 'undefined', 43.585278, 39.72027800000001, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['ЦСКА', 'undefined', 'undefined', 'undefined', 'undefined', 55.755826, 37.6173, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png'],['Автомобилист', 'undefined', 'undefined', 'undefined', 'undefined', 56.83892609999999, 60.60570250000001, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Ак Барс', 'undefined', 'undefined', 'undefined', 'undefined', 55.790278, 49.13472200000001, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Лада', 'undefined', 'undefined', 'undefined', 'undefined', 53.5086002, 49.41983440000001, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Металлург', 'undefined', 'undefined', 'undefined', 'undefined', 53.4129429, 59.001623300000006, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Нефтехимик', 'undefined', 'undefined', 'undefined', 'undefined', 55.633333, 51.81666700000005, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Трактор', 'undefined', 'undefined', 'undefined', 'undefined', 55.1644419, 61.43684310000003, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Югра', 'undefined', 'undefined', 'undefined', 'undefined', 61.00909189999999, 69.03745959999992, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['авангард', 'undefined', 'undefined', 'undefined', 'undefined', 54.98333299999999, 73.366667, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Адмирал', 'undefined', 'undefined', 'undefined', 'undefined', 43.133333, 131.89999999999998, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Амур', 'undefined', 'undefined', 'undefined', 'undefined', 48.5027313, 135.06625989999998, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Барыс', 'undefined', 'undefined', 'undefined', 'undefined', 51.16052269999999, 71.4703558, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Металлург', 'undefined', 'undefined', 'undefined', 'undefined', 53.7595935, 87.12157049999996, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Салават Юлаев', 'undefined', 'undefined', 'undefined', 'undefined', 54.7387621, 55.972055400000045, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png'],['Сибирь', 'undefined', 'undefined', 'undefined', 'undefined', 55.00835259999999, 82.93573270000002, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png']
+    ];
+
+    for (i = 0; i < locations.length; i++) {
+      if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+      if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+      if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+      if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+      if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+      marker = new google.maps.Marker({
+          icon: markericon,
+          position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+          map: map,
+          title: locations[i][0],
+          desc: description,
+          tel: telephone,
+          email: email,
+          web: web
+      });
+
+      if (web.substring(0, 7) != "http://") {
+      link = "http://" + web;
+      } else {
+      link = web;
+      }
+      bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+    }
+
+    function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+      var infoWindowVisible = (function () {
+        var currentlyVisible = false;
+        return function (visible) {
+          if (visible !== undefined) {
+              currentlyVisible = visible;
+          }
+          return currentlyVisible;
+        };
+      }());
+
+      iw = new google.maps.InfoWindow();
+      google.maps.event.addListener(marker, 'click', function() {
+        if (infoWindowVisible()) {
+          iw.close();
+          infoWindowVisible(false);
+        } else {
+          var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"+title+"</h4><p>"+desc+"<p><p>"+telephone+"<p><a href='mailto:"+email+"' >"+email+"<a><a href='"+link+"'' >"+web+"<a></div>";
+          iw = new google.maps.InfoWindow({content:html});
+          iw.open(map,marker);
+          infoWindowVisible(true);
+        }
+      });
+      google.maps.event.addListener(iw, 'closeclick', function () {
+          infoWindowVisible(false);
+      });
+    }
+  }
 }
       

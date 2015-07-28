@@ -763,6 +763,21 @@ UL.m-list>LI:before {
 
 
 /*bnr*/
+.b-bnr_cover {
+  overflow: hidden;
+  width: 100%;
+  padding: 60px 0 0 0;
+}
+
+.e-bnr {
+  min-height: 100px;
+}
+
+.e-bnr IMG {
+  width: 100%;
+  height: auto;
+}
+
 .b-news_bnr {
   width: 260px;
   position: absolute;
