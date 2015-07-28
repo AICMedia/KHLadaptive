@@ -302,63 +302,68 @@
 
     <div class="b-content_section m-stats s-float_panel_start">
       <div class="b-float_panel m-statistic_parameters">
-        <div class="b-float_panel_cover">                   
+        <div class="b-float_panel_cover">
           <form class="b-float_panel_block">
             <h5 class="b-float_panel_title">Параметры статистики</h5>
+            <div class="g-row">
+              <div class="g-col g-col-md-3">
+                <div class="e-point_switcher_title">Детализация</div>
+                <div id="detail" class="b-point_switcher_cover">
+                  <ul class="e-point_switcher">
+                    <li style="left:0%"></li>
+                    <li style="left:33.33333%"></li>
+                    <li style="left:66.66666%"></li>
+                    <li style="left:100%"></li>
+                  </ul>
+                </div>
+                <ul class="e-point_scale">
+                  <li class="m-fl">общая</li>
+                  <li class="m-fr">подробная</li>
+                </ul>
+              </div>
 
-            <div class="e-point_switcher_title">Детализация</div>
-            <div id="detail" class="b-point_switcher_cover">
-              <ul class="e-point_switcher">
-                <li style="left:0%"></li>
-                <li style="left:33.33333%"></li>
-                <li style="left:66.66666%"></li>
-                <li style="left:100%"></li>
-              </ul>
+              <div class="g-col g-col-md-4">
+                <div class="e-point_switcher_title">Сезон</div>
+
+                <div id="season" class="b-point_switcher_cover m-pad">
+                  <ul class="e-point_switcher">
+                    <li style="left:0%"></li>
+                    <li style="left:14.28571%"></li>
+                    <li style="left:28.57142%"></li>
+                    <li style="left:42.85714%"></li>
+                    <li style="left:57.14285%"></li>
+                    <li style="left:71.42857%"></li>
+                    <li style="left:85.71428%"></li>
+                    <li style="left:100%"></li>
+                  </ul>
+                </div>
+                <ul class="e-point_scale m-pad">
+                    <li style="left:0%"><span>08</span></li>
+                    <li style="left:12.5%"><span>09</span></li>
+                    <li style="left:25%"><span>10</span></li>
+                    <li style="left:37.5%"><span>11</span></li>
+                    <li style="left:50%"><span>12</span></li>
+                    <li style="left:62.5%"><span>13</span></li>
+                    <li style="left:75%"><span>14</span></li>
+                    <li style="left:87.5%"><span>15</span></li>
+                    <li style="left:100%"><span>16</span></li>
+                </ul>
+
+                <div class="b-field_cover m-checkbox">
+                  <input type="checkbox" /><label>выбрать все сезоны</label>
+                </div>
+              </div>
+
+              <div class="b-field_cover m-select">
+                <label>Этап, кубки</label>
+                <select>
+                  <option>Плей-офф</option>
+                  <option>Плей-офф</option>
+                  <option>Плей-офф</option>
+                </select>
+              </div>
+
             </div>
-            <ul class="e-point_scale">
-              <li class="m-fl">общая</li>
-              <li class="m-fr">подробная</li>
-            </ul>
-
-            <div class="e-point_switcher_title">Сезон</div>
-
-            <div id="season" class="b-point_switcher_cover m-pad">
-              <ul class="e-point_switcher">
-                <li style="left:0%"></li>
-                <li style="left:14.28571%"></li>
-                <li style="left:28.57142%"></li>
-                <li style="left:42.85714%"></li>
-                <li style="left:57.14285%"></li>
-                <li style="left:71.42857%"></li>
-                <li style="left:85.71428%"></li>
-                <li style="left:100%"></li>
-              </ul>
-            </div>
-            <ul class="e-point_scale m-pad">
-                <li style="left:0%"><span>08</span></li>
-                <li style="left:12.5%"><span>09</span></li>
-                <li style="left:25%"><span>10</span></li>
-                <li style="left:37.5%"><span>11</span></li>
-                <li style="left:50%"><span>12</span></li>
-                <li style="left:62.5%"><span>13</span></li>
-                <li style="left:75%"><span>14</span></li>
-                <li style="left:87.5%"><span>15</span></li>
-                <li style="left:100%"><span>16</span></li>
-            </ul>
-
-            <div class="b-field_cover m-checkbox">
-              <input type="checkbox" /><label>выбрать все сезоны</label>
-            </div>
-
-            <div class="b-field_cover m-select">
-              <label>Этап, кубки</label>
-              <select>
-                <option>Плей-офф</option>
-                <option>Плей-офф</option>
-                <option>Плей-офф</option>
-              </select>
-            </div>
-
           </form>
         </div>
       </div>

@@ -3202,3 +3202,24 @@ H5 {
 /******************************* Statistics Page end ******************************/
 
 }
+
+
+.g-row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.g-col {
+  float: left;
+  padding: 0 20px;
+}
+
+@media (max-width:1280px) {
+  .g-col-md-3 {
+    width: 30%;
+  }
+
+  .g-col-md-4 {
+    width: 40%;
+  }
+}
