@@ -1807,6 +1807,10 @@ UL.m-list>LI:before {
 /******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
 /*float panel*/
+.m-top_panel {
+  position: static;
+}
+
 .b-float_panel_block {
   padding: 30px;
 }
@@ -1999,6 +2003,10 @@ UL.m-list>LI:before {
 }
 
 /*stats*/
+.b-wide_block.m-not_pad {
+  padding-bottom: 0px;
+}
+
 .b-subtitle_nav_cover {
   padding: 30px 0;
 }
