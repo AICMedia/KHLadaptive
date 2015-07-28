@@ -301,74 +301,7 @@
     </div>
 
     <div class="b-content_section m-stats s-float_panel_start">
-      <div class="b-float_panel m-statistic_parameters">
-        <div class="b-float_panel_cover">
-          <form class="b-float_panel_block">
-            <h5 class="b-float_panel_title">Параметры статистики</h5>
-            <div class="g-row">
-              <div class="g-col g-col-md-3">
-                <div class="e-point_switcher_title">Детализация</div>
-                <div id="detail" class="b-point_switcher_cover">
-                  <ul class="e-point_switcher">
-                    <li style="left:0%"></li>
-                    <li style="left:33.33333%"></li>
-                    <li style="left:66.66666%"></li>
-                    <li style="left:100%"></li>
-                  </ul>
-                </div>
-                <ul class="e-point_scale">
-                  <li class="m-fl">общая</li>
-                  <li class="m-fr">подробная</li>
-                </ul>
-              </div>
-
-              <div class="g-col g-col-md-4">
-                <div class="e-point_switcher_title">Сезон</div>
-
-                <div id="season" class="b-point_switcher_cover m-pad">
-                  <ul class="e-point_switcher">
-                    <li style="left:0%"></li>
-                    <li style="left:14.28571%"></li>
-                    <li style="left:28.57142%"></li>
-                    <li style="left:42.85714%"></li>
-                    <li style="left:57.14285%"></li>
-                    <li style="left:71.42857%"></li>
-                    <li style="left:85.71428%"></li>
-                    <li style="left:100%"></li>
-                  </ul>
-                </div>
-                <ul class="e-point_scale m-pad">
-                    <li style="left:0%"><span>08</span></li>
-                    <li style="left:12.5%"><span>09</span></li>
-                    <li style="left:25%"><span>10</span></li>
-                    <li style="left:37.5%"><span>11</span></li>
-                    <li style="left:50%"><span>12</span></li>
-                    <li style="left:62.5%"><span>13</span></li>
-                    <li style="left:75%"><span>14</span></li>
-                    <li style="left:87.5%"><span>15</span></li>
-                    <li style="left:100%"><span>16</span></li>
-                </ul>
-
-                <div class="b-field_cover m-checkbox">
-                  <input type="checkbox" /><label>выбрать все сезоны</label>
-                </div>
-              </div>
-
-              <div class="b-field_cover m-select">
-                <label>Этап, кубки</label>
-                <select>
-                  <option>Плей-офф</option>
-                  <option>Плей-офф</option>
-                  <option>Плей-офф</option>
-                </select>
-              </div>
-
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="b-wide_block">
+      <div class="b-wide_block m-not_pad">
         <div class="b-title_cover">
           <h2>Статистика</h2>
           <div class="b-title_tab_cover">
@@ -380,400 +313,464 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="s-ajax_cover_1">
+      <div class="m-top_panel">
+        <div class="b-float_panel">
+          <div class="b-float_panel_cover">
+            <form class="b-float_panel_block">
+              <h5 class="b-float_panel_title">Параметры статистики</h5>
 
-          <div class="b-data_row">
-            <div class="b-subtitle_nav_cover m-clear">
-              <h4 class="m-fl">Бомбардиры</h4>
-
-              <form class="e-local_search m-fl">
-                <input class="e-search_btn m-icomoon" type="button" value=")" name=""><input class="e-search_field" type="text" placeholder="" value="" name="">
-              </form>
-
-              <div class="m-fr">
-                <div class="b-switcher m-light">
-                  <span class="e-switcher_item m-first">таблица</span>
-                  <span class="e-switcher_btn"><b style="left: 12px;"></b></span>
-                  <span class="e-switcher_item m-last m-active">диаграмма</span>
-                </div>
-
-                <span id="s-gloss_1" class="e-gloss_btn">Глоссарий</span>
+              <div class="e-point_switcher_title">Детализация</div>
+              <div id="detail" class="b-point_switcher_cover">
+                <ul class="e-point_switcher">
+                  <li style="left:0%"></li>
+                  <li style="left:33.33333%"></li>
+                  <li style="left:66.66666%"></li>
+                  <li style="left:100%"></li>
+                </ul>
               </div>
-            </div>
 
-            <div class="b-gloss s-gloss_1">
-              <b class="e-close_btn"></b>
-              <dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">И</dt>
-                <dd class="e-gloss_transcript">количество проведенных игр</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ИБ</dt>
-                <dd class="e-gloss_transcript">игры с буллитными сериями</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ОБ</dt>
-                <dd class="e-gloss_transcript">отраженные броски</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">Ш</dt>
-                <dd class="e-gloss_transcript">заброшенные шайбы</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">Штр</dt>
-                <dd class="e-gloss_transcript">штрафное время</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">В</dt>
-                <dd class="e-gloss_transcript">выигрыши</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">Бр</dt>
-                <dd class="e-gloss_transcript">броски в створ ворот</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">%ОБ</dt>
-                <dd class="e-gloss_transcript">процент отраженных бросков</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">А</dt>
-                <dd class="e-gloss_transcript">голевые передачи</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ВП</dt>
-                <dd class="e-gloss_transcript">время на площадке</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">П</dt>
-                <dd class="e-gloss_transcript">проигрыши</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ПШ</dt>
-                <dd class="e-gloss_transcript">пропущено шайб</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">КН</dt>
-                <dd class="e-gloss_transcript">коэффициент надежности<br/><nobr>= 60 мин × ПШ / ВП</nobr></dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">И &laquo;0&raquo;</dt>
-                <dd class="e-gloss_transcript">сухие игры</dd>
-              </dl>
-            </div>
-
-            <div class="b-diagram_view">
-              <ul class="b-player_list_cover">
-                <li class="b-player_list_item">
-                  <dl class="b-details">
-                    <dt class="e-details_img">
-                      <img alt="" src="img/player_1.jpg">
-                    </dt>
-                    <dd class="b-details_txt">
-                      <div class="b-details_info_title">
-                        <span class="e-bevel m-fl">1</span>
-                      </div>
-                      <h5 class="e-player_name">Радулов Александр</h5>
-                      <p class="e-club_num">ЦСКА, № 47</p>
-
-                      <div class="e-diagram">
-                        <canvas id="canvas_01"></canvas>
-                      </div>
-
-                    </dd>
-                  </dl>
-                </li>
-                <li class="b-player_list_item">
-                  <dl class="b-details">
-                    <dt class="e-details_img">
-                      <img alt="" src="img/player_1.jpg">
-                    </dt>
-                    <dd class="b-details_txt">
-                      <div class="b-details_info_title">
-                        <span class="e-bevel m-fl">1</span>
-                      </div>
-                      <h5 class="e-player_name">Радулов Александр</h5>
-                      <p class="e-club_num">ЦСКА, № 47</p>
-
-                      <div class="e-diagram">
-                        <canvas id="canvas_02"></canvas>
-                      </div>
-
-                    </dd>
-                  </dl>
-                </li>
-                <li class="b-player_list_item">
-                  <dl class="b-details">
-                    <dt class="e-details_img">
-                      <img alt="" src="img/player_1.jpg">
-                    </dt>
-                    <dd class="b-details_txt">
-                      <div class="b-details_info_title">
-                        <span class="e-bevel m-fl">1</span>
-                      </div>
-                      <h5 class="e-player_name">Радулов Александр</h5>
-                      <p class="e-club_num">ЦСКА, № 47</p>
-
-                      <div class="e-diagram">
-                        <canvas id="canvas_03"></canvas>
-                      </div>
-
-                    </dd>
-                  </dl>
-                </li>
-                <li class="b-player_list_item">
-                  <dl class="b-details">
-                    <dt class="e-details_img">
-                      <img alt="" src="img/player_1.jpg">
-                    </dt>
-                    <dd class="b-details_txt">
-                      <div class="b-details_info_title">
-                        <span class="e-bevel m-fl">1</span>
-                      </div>
-                      <h5 class="e-player_name">Радулов Александр</h5>
-                      <p class="e-club_num">ЦСКА, № 47</p>
-
-                      <div class="e-diagram">
-                        <canvas id="canvas_04"></canvas>
-                      </div>
-
-                    </dd>
-                  </dl>
-                </li>
-                <li class="b-player_list_item">
-                  <dl class="b-details">
-                    <dt class="e-details_img">
-                      <img alt="" src="img/player_1.jpg">
-                    </dt>
-                    <dd class="b-details_txt">
-                      <div class="b-details_info_title">
-                        <span class="e-bevel m-fl">1</span>
-                      </div>
-                      <h5 class="e-player_name">Радулов Александр</h5>
-                      <p class="e-club_num">ЦСКА, № 47</p>
-
-                      <div class="e-diagram">
-                        <canvas id="canvas_05"></canvas>
-                      </div>
-
-                    </dd>
-                  </dl>
-                </li>
+              <ul class="e-point_scale">
+                <li class="m-fl">общая</li>
+                <li class="m-fr">подробная</li>
               </ul>
+
+              <div class="e-point_switcher_title">Сезон</div>
+
+              <div id="season" class="b-point_switcher_cover m-pad">
+                <ul class="e-point_switcher">
+                  <li style="left:0%"></li>
+                  <li style="left:14.28571%"></li>
+                  <li style="left:28.57142%"></li>
+                  <li style="left:42.85714%"></li>
+                  <li style="left:57.14285%"></li>
+                  <li style="left:71.42857%"></li>
+                  <li style="left:85.71428%"></li>
+                  <li style="left:100%"></li>
+                </ul>
+              </div>
+              <ul class="e-point_scale m-pad">
+                  <li style="left:0%"><span>08</span></li>
+                  <li style="left:12.5%"><span>09</span></li>
+                  <li style="left:25%"><span>10</span></li>
+                  <li style="left:37.5%"><span>11</span></li>
+                  <li style="left:50%"><span>12</span></li>
+                  <li style="left:62.5%"><span>13</span></li>
+                  <li style="left:75%"><span>14</span></li>
+                  <li style="left:87.5%"><span>15</span></li>
+                  <li style="left:100%"><span>16</span></li>
+              </ul>
+
+              <div class="b-field_cover m-checkbox">
+                <input type="checkbox" /><label>выбрать все сезоны</label>
+              </div>
+
+              <div class="b-field_cover m-select">
+                <label>Этап, кубки</label>
+                <select>
+                  <option>Плей-офф</option>
+                  <option>Плей-офф</option>
+                  <option>Плей-офф</option>
+                </select>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="b-wide_block">
+          <div class="s-ajax_cover_1">
+            <div class="b-data_row">
+              <div class="b-subtitle_nav_cover m-clear">
+                <h4 class="m-fl">Бомбардиры</h4>
+
+                <form class="e-local_search m-fl">
+                  <input class="e-search_btn m-icomoon" type="button" value=")" name=""><input class="e-search_field" type="text" placeholder="" value="" name="">
+                </form>
+
+                <div class="m-fr">
+                  <div class="b-switcher m-light">
+                    <span class="e-switcher_item m-first">таблица</span>
+                    <span class="e-switcher_btn"><b style="left: 12px;"></b></span>
+                    <span class="e-switcher_item m-last m-active">диаграмма</span>
+                  </div>
+
+                  <span id="s-gloss_1" class="e-gloss_btn">Глоссарий</span>
+                </div>
+              </div>
+
+              <div class="b-gloss s-gloss_1">
+                <b class="e-close_btn"></b>
+                <dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">И</dt>
+                  <dd class="e-gloss_transcript">количество проведенных игр</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ИБ</dt>
+                  <dd class="e-gloss_transcript">игры с буллитными сериями</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ОБ</dt>
+                  <dd class="e-gloss_transcript">отраженные броски</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">Ш</dt>
+                  <dd class="e-gloss_transcript">заброшенные шайбы</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">Штр</dt>
+                  <dd class="e-gloss_transcript">штрафное время</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">В</dt>
+                  <dd class="e-gloss_transcript">выигрыши</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">Бр</dt>
+                  <dd class="e-gloss_transcript">броски в створ ворот</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">%ОБ</dt>
+                  <dd class="e-gloss_transcript">процент отраженных бросков</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">А</dt>
+                  <dd class="e-gloss_transcript">голевые передачи</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ВП</dt>
+                  <dd class="e-gloss_transcript">время на площадке</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">П</dt>
+                  <dd class="e-gloss_transcript">проигрыши</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ПШ</dt>
+                  <dd class="e-gloss_transcript">пропущено шайб</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">КН</dt>
+                  <dd class="e-gloss_transcript">коэффициент надежности<br/><nobr>= 60 мин × ПШ / ВП</nobr></dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">И &laquo;0&raquo;</dt>
+                  <dd class="e-gloss_transcript">сухие игры</dd>
+                </dl>
+              </div>
+
+              <div class="b-diagram_view">
+                <ul class="b-player_list_cover">
+                  <li class="b-player_list_item">
+                    <dl class="b-details">
+                      <dt class="e-details_img">
+                        <img alt="" src="img/player_1.jpg">
+                      </dt>
+                      <dd class="b-details_txt">
+                        <div class="b-details_info_title">
+                          <span class="e-bevel m-fl">1</span>
+                        </div>
+                        <h5 class="e-player_name">Радулов Александр</h5>
+                        <p class="e-club_num">ЦСКА, № 47</p>
+
+                        <div class="e-diagram">
+                          <canvas id="canvas_01"></canvas>
+                        </div>
+
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-player_list_item">
+                    <dl class="b-details">
+                      <dt class="e-details_img">
+                        <img alt="" src="img/player_1.jpg">
+                      </dt>
+                      <dd class="b-details_txt">
+                        <div class="b-details_info_title">
+                          <span class="e-bevel m-fl">1</span>
+                        </div>
+                        <h5 class="e-player_name">Радулов Александр</h5>
+                        <p class="e-club_num">ЦСКА, № 47</p>
+
+                        <div class="e-diagram">
+                          <canvas id="canvas_02"></canvas>
+                        </div>
+
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-player_list_item">
+                    <dl class="b-details">
+                      <dt class="e-details_img">
+                        <img alt="" src="img/player_1.jpg">
+                      </dt>
+                      <dd class="b-details_txt">
+                        <div class="b-details_info_title">
+                          <span class="e-bevel m-fl">1</span>
+                        </div>
+                        <h5 class="e-player_name">Радулов Александр</h5>
+                        <p class="e-club_num">ЦСКА, № 47</p>
+
+                        <div class="e-diagram">
+                          <canvas id="canvas_03"></canvas>
+                        </div>
+
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-player_list_item">
+                    <dl class="b-details">
+                      <dt class="e-details_img">
+                        <img alt="" src="img/player_1.jpg">
+                      </dt>
+                      <dd class="b-details_txt">
+                        <div class="b-details_info_title">
+                          <span class="e-bevel m-fl">1</span>
+                        </div>
+                        <h5 class="e-player_name">Радулов Александр</h5>
+                        <p class="e-club_num">ЦСКА, № 47</p>
+
+                        <div class="e-diagram">
+                          <canvas id="canvas_04"></canvas>
+                        </div>
+
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="b-player_list_item">
+                    <dl class="b-details">
+                      <dt class="e-details_img">
+                        <img alt="" src="img/player_1.jpg">
+                      </dt>
+                      <dd class="b-details_txt">
+                        <div class="b-details_info_title">
+                          <span class="e-bevel m-fl">1</span>
+                        </div>
+                        <h5 class="e-player_name">Радулов Александр</h5>
+                        <p class="e-club_num">ЦСКА, № 47</p>
+
+                        <div class="e-diagram">
+                          <canvas id="canvas_05"></canvas>
+                        </div>
+
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="b-paging m-align">
-            <span class="e-among">Игроки 11-20 из 124</span>
+            <div class="b-paging m-align">
+              <span class="e-among">Игроки 11-20 из 124</span>
 
-            <span class="e-go_to m-prev m-leftward" href="#">Предыдущие</span>
-            <span class="e-page">1</span>
-            <span class="e-go_to m-next m-active" href="#">Следующие</span>
-          </div>
+              <span class="e-go_to m-prev m-leftward" href="#">Предыдущие</span>
+              <span class="e-page">1</span>
+              <span class="e-go_to m-next m-active" href="#">Следующие</span>
+            </div>
 
-          <div class="b-data_row">
-            <div class="b-subtitle_nav_cover m-clear">
-              <h4 class="m-fl">Бомбардиры-защитники</h4>
+            <div class="b-data_row">
+              <div class="b-subtitle_nav_cover m-clear">
+                <h4 class="m-fl">Бомбардиры-защитники</h4>
 
-              <form class="e-local_search m-fl">
-                <input class="e-search_btn m-icomoon" type="button" value=")" name=""><input class="e-search_field" type="text" placeholder="" value="" name="">
-              </form>
+                <form class="e-local_search m-fl">
+                  <input class="e-search_btn m-icomoon" type="button" value=")" name=""><input class="e-search_field" type="text" placeholder="" value="" name="">
+                </form>
 
-              <div class="m-fr">
-                <div class="b-switcher m-light">
-                  <span class="e-switcher_item m-first m-active">таблица</span>
-                  <span class="e-switcher_btn"><b></b></span>
-                  <span class="e-switcher_item m-last">диаграмма</span>
+                <div class="m-fr">
+                  <div class="b-switcher m-light">
+                    <span class="e-switcher_item m-first m-active">таблица</span>
+                    <span class="e-switcher_btn"><b></b></span>
+                    <span class="e-switcher_item m-last">диаграмма</span>
+                  </div>
+
+                  <span id="s-gloss_2" class="e-gloss_btn">Глоссарий</span>
+                </div>
+              </div>
+
+              <div class="b-gloss s-gloss_2">
+                <b class="e-close_btn"></b>
+                <dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">И</dt>
+                  <dd class="e-gloss_transcript">количество проведенных игр</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ИБ</dt>
+                  <dd class="e-gloss_transcript">игры с буллитными сериями</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ОБ</dt>
+                  <dd class="e-gloss_transcript">отраженные броски</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">Ш</dt>
+                  <dd class="e-gloss_transcript">заброшенные шайбы</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">Штр</dt>
+                  <dd class="e-gloss_transcript">штрафное время</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">В</dt>
+                  <dd class="e-gloss_transcript">выигрыши</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">Бр</dt>
+                  <dd class="e-gloss_transcript">броски в створ ворот</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">%ОБ</dt>
+                  <dd class="e-gloss_transcript">процент отраженных бросков</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">А</dt>
+                  <dd class="e-gloss_transcript">голевые передачи</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ВП</dt>
+                  <dd class="e-gloss_transcript">время на площадке</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">П</dt>
+                  <dd class="e-gloss_transcript">проигрыши</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">ПШ</dt>
+                  <dd class="e-gloss_transcript">пропущено шайб</dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">КН</dt>
+                  <dd class="e-gloss_transcript">коэффициент надежности<br/><nobr>= 60 мин × ПШ / ВП</nobr></dd>
+                </dl><dl class="b-gloss_item">
+                  <dt class="e-gloss_abbreviation">И &laquo;0&raquo;</dt>
+                  <dd class="e-gloss_transcript">сухие игры</dd>
+                </dl>
+              </div>
+
+              <div class="b-table_view">
+                <table class="b-data_table">
+                  <tr>
+                    <th><b>Игрок</b></th>
+                    <th><b>№</b></th>
+                    <th><b>Клуб</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>И</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>Ш</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>А</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>О</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>+/-</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>Штр</b></th>
+                    <th><div class="e-prompt"><span>Подсказка</span></div><b>ВП/И</b></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <dl class="b-details">
+                        <dt class="e-details_img">
+                          <img alt="" src="img/player_1.jpg">
+                        </dt>
+                        <dd class="b-details_txt">
+                          <div class="b-details_info_title">
+                            <span class="e-bevel m-fl">1</span>
+                          </div>
+                          <h5 class="e-player_name">Радулов Александр</h5>
+                        </dd>
+                      </dl>
+                    </td>
+                    <td>47</td>
+                    <td>СКА</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>19:57</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <dl class="b-details">
+                        <dt class="e-details_img">
+                          <img alt="" src="img/player_1.jpg">
+                        </dt>
+                        <dd class="b-details_txt">
+                          <div class="b-details_info_title">
+                            <span class="e-bevel m-fl">1</span>
+                          </div>
+                          <h5 class="e-player_name">Радулов Александр</h5>
+                        </dd>
+                      </dl>
+                    </td>
+                    <td>47</td>
+                    <td>СКА</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>19:57</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <dl class="b-details">
+                        <dt class="e-details_img">
+                          <img alt="" src="img/player_1.jpg">
+                        </dt>
+                        <dd class="b-details_txt">
+                          <div class="b-details_info_title">
+                            <span class="e-bevel m-fl">1</span>
+                          </div>
+                          <h5 class="e-player_name">Радулов Александр</h5>
+                        </dd>
+                      </dl>
+                    </td>
+                    <td>47</td>
+                    <td>СКА</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>19:57</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <dl class="b-details">
+                        <dt class="e-details_img">
+                          <img alt="" src="img/player_1.jpg">
+                        </dt>
+                        <dd class="b-details_txt">
+                          <div class="b-details_info_title">
+                            <span class="e-bevel m-fl">1</span>
+                          </div>
+                          <h5 class="e-player_name">Радулов Александр</h5>
+                        </dd>
+                      </dl>
+                    </td>
+                    <td>47</td>
+                    <td>СКА</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>19:57</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <dl class="b-details">
+                        <dt class="e-details_img">
+                          <img alt="" src="img/player_1.jpg">
+                        </dt>
+                        <dd class="b-details_txt">
+                          <div class="b-details_info_title">
+                            <span class="e-bevel m-fl">1</span>
+                          </div>
+                          <h5 class="e-player_name">Радулов Александр</h5>
+                        </dd>
+                      </dl>
+                    </td>
+                    <td>47</td>
+                    <td>СКА</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>19:57</td>
+                  </tr>
+                </table>
+
+                <div class="b-paging m-align">
+                  <span class="e-among">Игроки 11-20 из 124</span>
+
+                  <span class="e-go_to m-prev m-active m-leftward" href="#">Предыдущие</span>
+                  <span class="e-page">2</span>
+                  <span class="e-go_to m-next m-active" href="#">Следующие</span>
                 </div>
 
-                <span id="s-gloss_2" class="e-gloss_btn">Глоссарий</span>
               </div>
             </div>
 
-            <div class="b-gloss s-gloss_2">
-              <b class="e-close_btn"></b>
-              <dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">И</dt>
-                <dd class="e-gloss_transcript">количество проведенных игр</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ИБ</dt>
-                <dd class="e-gloss_transcript">игры с буллитными сериями</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ОБ</dt>
-                <dd class="e-gloss_transcript">отраженные броски</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">Ш</dt>
-                <dd class="e-gloss_transcript">заброшенные шайбы</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">Штр</dt>
-                <dd class="e-gloss_transcript">штрафное время</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">В</dt>
-                <dd class="e-gloss_transcript">выигрыши</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">Бр</dt>
-                <dd class="e-gloss_transcript">броски в створ ворот</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">%ОБ</dt>
-                <dd class="e-gloss_transcript">процент отраженных бросков</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">А</dt>
-                <dd class="e-gloss_transcript">голевые передачи</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ВП</dt>
-                <dd class="e-gloss_transcript">время на площадке</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">П</dt>
-                <dd class="e-gloss_transcript">проигрыши</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">ПШ</dt>
-                <dd class="e-gloss_transcript">пропущено шайб</dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">КН</dt>
-                <dd class="e-gloss_transcript">коэффициент надежности<br/><nobr>= 60 мин × ПШ / ВП</nobr></dd>
-              </dl><dl class="b-gloss_item">
-                <dt class="e-gloss_abbreviation">И &laquo;0&raquo;</dt>
-                <dd class="e-gloss_transcript">сухие игры</dd>
-              </dl>
-            </div>
-
-            <div class="b-table_view">
-              <table class="b-data_table">
-                <tr>
-                  <th><b>Игрок</b></th>
-                  <th><b>№</b></th>
-                  <th><b>Клуб</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>И</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>Ш</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>А</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>О</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>+/-</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>Штр</b></th>
-                  <th><div class="e-prompt"><span>Подсказка</span></div><b>ВП/И</b></th>
-                </tr>
-                <tr>
-                  <td>
-                    <dl class="b-details">
-                      <dt class="e-details_img">
-                        <img alt="" src="img/player_1.jpg">
-                      </dt>
-                      <dd class="b-details_txt">
-                        <div class="b-details_info_title">
-                          <span class="e-bevel m-fl">1</span>
-                        </div>
-                        <h5 class="e-player_name">Радулов Александр</h5>
-                      </dd>
-                    </dl>
-                  </td>
-                  <td>47</td>
-                  <td>СКА</td>
-                  <td>12</td>
-                  <td>3</td>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>19:57</td>
-                </tr>
-                <tr>
-                  <td>
-                    <dl class="b-details">
-                      <dt class="e-details_img">
-                        <img alt="" src="img/player_1.jpg">
-                      </dt>
-                      <dd class="b-details_txt">
-                        <div class="b-details_info_title">
-                          <span class="e-bevel m-fl">1</span>
-                        </div>
-                        <h5 class="e-player_name">Радулов Александр</h5>
-                      </dd>
-                    </dl>
-                  </td>
-                  <td>47</td>
-                  <td>СКА</td>
-                  <td>12</td>
-                  <td>3</td>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>19:57</td>
-                </tr>
-                <tr>
-                  <td>
-                    <dl class="b-details">
-                      <dt class="e-details_img">
-                        <img alt="" src="img/player_1.jpg">
-                      </dt>
-                      <dd class="b-details_txt">
-                        <div class="b-details_info_title">
-                          <span class="e-bevel m-fl">1</span>
-                        </div>
-                        <h5 class="e-player_name">Радулов Александр</h5>
-                      </dd>
-                    </dl>
-                  </td>
-                  <td>47</td>
-                  <td>СКА</td>
-                  <td>12</td>
-                  <td>3</td>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>19:57</td>
-                </tr>
-                <tr>
-                  <td>
-                    <dl class="b-details">
-                      <dt class="e-details_img">
-                        <img alt="" src="img/player_1.jpg">
-                      </dt>
-                      <dd class="b-details_txt">
-                        <div class="b-details_info_title">
-                          <span class="e-bevel m-fl">1</span>
-                        </div>
-                        <h5 class="e-player_name">Радулов Александр</h5>
-                      </dd>
-                    </dl>
-                  </td>
-                  <td>47</td>
-                  <td>СКА</td>
-                  <td>12</td>
-                  <td>3</td>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>19:57</td>
-                </tr>
-                <tr>
-                  <td>
-                    <dl class="b-details">
-                      <dt class="e-details_img">
-                        <img alt="" src="img/player_1.jpg">
-                      </dt>
-                      <dd class="b-details_txt">
-                        <div class="b-details_info_title">
-                          <span class="e-bevel m-fl">1</span>
-                        </div>
-                        <h5 class="e-player_name">Радулов Александр</h5>
-                      </dd>
-                    </dl>
-                  </td>
-                  <td>47</td>
-                  <td>СКА</td>
-                  <td>12</td>
-                  <td>3</td>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>19:57</td>
-                </tr>
-              </table>
-
-              <div class="b-paging m-align">
-                <span class="e-among">Игроки 11-20 из 124</span>
-
-                <span class="e-go_to m-prev m-active m-leftward" href="#">Предыдущие</span>
-                <span class="e-page">2</span>
-                <span class="e-go_to m-next m-active" href="#">Следующие</span>
-              </div>
-
-            </div>
           </div>
-
         </div>
       </div>
     </div>
-
   </div>
 
   <div id="footer">
