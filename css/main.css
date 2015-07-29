@@ -48,13 +48,13 @@
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY { 
-  min-height:100%; 
-  background:#e3f2f9; 
-  color:#000; 
-  font:16px 'latoregular'; 
-  min-width:320px; 
-  max-width: 1920px; 
+BODY {
+  min-height:100%;
+  background:#e3f2f9;
+  color:#000;
+  font:16px 'latoregular';
+  min-width:320px;
+  max-width: 1920px;
 }
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
@@ -75,7 +75,7 @@ A {text-decoration:none; color: #02a7fd; transition:color 0.25s linear;}
 A:hover {color: #57ccfd;}
 
 HR {
-  display: block; 
+  display: block;
   height: 1px;
   border: none;
   background: #d7e6ee;
@@ -104,7 +104,7 @@ UL.m-list>LI:before {
 }
 
 .m-list LI {
-  line-height:1.8em; 
+  line-height:1.8em;
   margin-bottom: 1em;
 }
 
@@ -124,7 +124,7 @@ UL.m-list>LI:before {
 }
 
 .m-pseudo {
-  border-bottom:1px dashed; 
+  border-bottom:1px dashed;
   cursor: pointer;
 }
 
@@ -149,14 +149,14 @@ UL.m-list>LI:before {
 .m-fl {float: left;}
 .m-fr {float: right;}
 
-.m-color_0 {color: #02a7fd;} 
-.m-bg_color_0 {background-color: #02a7fd;} 
+.m-color_0 {color: #02a7fd;}
+.m-bg_color_0 {background-color: #02a7fd;}
 
-.m-color_1 {color: #e81c3e;} 
-.m-bg_color_1 {background-color: #e81c3e;} 
+.m-color_1 {color: #e81c3e;}
+.m-bg_color_1 {background-color: #e81c3e;}
 
-.m-color_2 {color: #fff;} 
-.m-bg_color_2 {background-color: #fff;} 
+.m-color_2 {color: #fff;}
+.m-bg_color_2 {background-color: #fff;}
 
 /**************************************** DESCTOP ****************************************/
 /******************************* Header ******************************/
@@ -285,7 +285,7 @@ UL.m-list>LI:before {
 .m-ico_ok:hover {color: #f6881f;}
 .m-ico_fb:hover {color: #4972c7;}
 .m-ico_in:hover {color: #d3b884;}
-.m-ico_gp:hover {color: #fc543b;} 
+.m-ico_gp:hover {color: #fc543b;}
 
 .e-header_search {
   display: block;
@@ -423,7 +423,7 @@ UL.m-list>LI:before {
   display: block;
   width: 1px;
   height: 55px;
-  background: #d7e6ee;  
+  background: #d7e6ee;
 }
 
 .b-matches_data_middle .e-matches_data_left:before {
@@ -462,7 +462,7 @@ UL.m-list>LI:before {
   content: '';
   top:0;
   right: 0;
-  width: 3em; 
+  width: 3em;
   height: 2em;
   background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(241,250,254,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f1fafe',GradientType=1 );
@@ -835,7 +835,7 @@ UL.m-list>LI:before {
 }
 
 .b-float_panel_item P {
-  line-height: 1.3em; 
+  line-height: 1.3em;
   margin-bottom: 1.5em;
 }
 
@@ -869,7 +869,7 @@ UL.m-list>LI:before {
   left: -1.4em;
   width: 1.4em;
   height: 100%;
-  background: url('../img/bevel_blue.png') 0 100% no-repeat;  
+  background: url('../img/bevel_blue.png') 0 100% no-repeat;
 }
 
 .e-bevel:after {
@@ -880,7 +880,7 @@ UL.m-list>LI:before {
   right: -1.4em;
   width: 1.4em;
   height: 100%;
-  background: url('../img/bevel_blue.png') 100% 0 no-repeat;  
+  background: url('../img/bevel_blue.png') 100% 0 no-repeat;
 }
 
 .m-bg_color_2.e-bevel {
@@ -888,11 +888,11 @@ UL.m-list>LI:before {
 }
 
 .m-bg_color_2.e-bevel:before {
-  background: url('../img/bevel_white.png') 0 100% no-repeat;  
+  background: url('../img/bevel_white.png') 0 100% no-repeat;
 }
 
 .m-bg_color_2.e-bevel:after {
-  background: url('../img/bevel_white.png') 100% 0 no-repeat;  
+  background: url('../img/bevel_white.png') 100% 0 no-repeat;
 }
 
 .m-bg_color_1.e-bevel {
@@ -900,11 +900,11 @@ UL.m-list>LI:before {
 }
 
 .m-bg_color_1.e-bevel:before {
-  background: url('../img/bevel_red.png') 0 100% no-repeat;  
+  background: url('../img/bevel_red.png') 0 100% no-repeat;
 }
 
 .m-bg_color_1.e-bevel:after {
-  background: url('../img/bevel_red.png') 100% 0 no-repeat;  
+  background: url('../img/bevel_red.png') 100% 0 no-repeat;
 }
 
 .b-float_panel_item .e-bevel {
@@ -949,7 +949,7 @@ UL.m-list>LI:before {
 
 .m-teaser .b-middle_block .m-cover_link {
   color: #fff!important;
-  padding:40px 3.5%; 
+  padding:40px 3.5%;
   transition: background 0.25s ease;
 }
 
@@ -1029,7 +1029,7 @@ UL.m-list>LI:before {
 }
 
 .b-score_table {
-  width: 100%;  
+  width: 100%;
 }
 
 .s-regular .b-score_table_top {
@@ -1094,11 +1094,11 @@ UL.m-list>LI:before {
 
 .m-teaser .e-slide_link {
   font-size: 14px;
-  color:#91d9ff; 
+  color:#91d9ff;
 }
 
 .m-teaser .e-slide_link:hover {
-  color:#e3f2f9; 
+  color:#e3f2f9;
 }
 
 .b-score_table_cover HR {
@@ -1226,7 +1226,7 @@ UL.m-list>LI:before {
   display: inline-block;
   position: relative;
   font:16px 'latobold';
-  margin-right: 30px; 
+  margin-right: 30px;
 }
 
 .e-go_to:after {
@@ -1374,7 +1374,7 @@ UL.m-list>LI:before {
   display: block;
   height: 100%;
   position: absolute;
-  width: 1px; 
+  width: 1px;
 }
 
 .b-description {
@@ -1526,7 +1526,7 @@ UL.m-list>LI:before {
 .e-stats_all:before {
   font-size: 18px;
   content: '-';
-} 
+}
 
 .e-score {
   font:24px 'latoheavy';
@@ -1754,7 +1754,7 @@ UL.m-list>LI:before {
   display: block;
   height: 100%;
   position: absolute;
-  width: 1px; 
+  width: 1px;
 }
 
 .m-store .b-short_block {
@@ -1788,11 +1788,11 @@ UL.m-list>LI:before {
 }
 
 .b-details.m-active .e-bevel:before {
-  background: url('../img/bevel_red.png') 0 100% no-repeat;  
+  background: url('../img/bevel_red.png') 0 100% no-repeat;
 }
 
 .b-details.m-active .e-bevel:after {
-  background: url('../img/bevel_red.png') 100% 0 no-repeat;  
+  background: url('../img/bevel_red.png') 100% 0 no-repeat;
 }
 
 .e-old {
@@ -1845,7 +1845,7 @@ UL.m-list>LI:before {
   margin: 0 auto;
 }
 
-.m-pad .e-point_switcher:before, 
+.m-pad .e-point_switcher:before,
 .m-pad .e-point_switcher:after {
   display: block;
   position: absolute;
@@ -1853,7 +1853,7 @@ UL.m-list>LI:before {
   width: 2px;
   height: 10px;
   background: #b5b5b5;
-  top: -4px;  
+  top: -4px;
 }
 
 .m-pad .e-point_switcher:before {
@@ -1912,8 +1912,8 @@ UL.m-list>LI:before {
   position: absolute;
   width: 20px;
   z-index: 2;
-  background: #02a7fd; 
-  border-radius: 20px;  
+  background: #02a7fd;
+  border-radius: 20px;
 }
 
 .ui-slider-horizontal .ui-slider-handle {
@@ -1958,7 +1958,7 @@ UL.m-list>LI:before {
 }
 
 .b-float_panel_block .jq-checkbox {
-  margin-right: 1em; 
+  margin-right: 1em;
 }
 
 .m-select LABEL {
@@ -1978,7 +1978,7 @@ UL.m-list>LI:before {
   bottom: 30px;
   font-family: 'latobold';
   cursor: pointer;
-  color: #02a7fd; 
+  color: #02a7fd;
   transition:color 0.25s linear;
 }
 
@@ -2186,7 +2186,7 @@ UL.m-list>LI:before {
 }
 
 .b-data_table TR:hover TD {
-  background:#f1fafe; 
+  background:#f1fafe;
 }
 
 .b-data_table TH {
@@ -2434,10 +2434,31 @@ UL.m-list>LI:before {
   padding: 15px 20px;
 }
 
-/******************************* Main Page end ****************************** 
+/******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
+.m-statistic_parameters {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible;
+}
 
-/******************************* Statistics Page end ******************************/  
+.m-statistic_parameters .b-float_panel_cover {
+  padding: 30px 3.5%;
+  overflow: visible;
+}
+
+.m-statistic_parameters .b-float_panel_block {
+  padding: 0;
+}
+
+.m-stats .b-switcher {
+  display: none;
+}
+
+.m-stats .s-ajax_cover_1 {
+  display: none;
+}
+/******************************* Statistics Page end ******************************/
 
 }
 
@@ -2502,7 +2523,7 @@ UL.m-list>LI:before {
 
 .b-header_menu_cover .b-header_menu {
   width: 100%;
-  text-align: left;  
+  text-align: left;
   padding: 20px 0 5px 0;
 }
 
@@ -2511,7 +2532,7 @@ UL.m-list>LI:before {
   vertical-align: top;
   width: 25%;
   height: auto;
-  line-height:1.8em; 
+  line-height:1.8em;
   margin-bottom: 1em;
 }
 
@@ -2609,7 +2630,7 @@ UL.m-list>LI:before {
 
 .e-mobile_menu_btn {
   display: inline-block;
-  width:15%; 
+  width:15%;
   text-align: center;
   height: 60px;
   line-height: 60px;
@@ -2637,14 +2658,14 @@ UL.m-list>LI:before {
   border-bottom: 1px solid #434648;
 }
 
-.e-copyright, 
+.e-copyright,
 .b-rules_cover {
   display: block;
 }
 
 .b-rules_cover {
   margin-bottom: 0;
-  padding: 30px 3.5% 20px 3.5%; 
+  padding: 30px 3.5% 20px 3.5%;
 }
 
 .e-counter {
@@ -2671,7 +2692,7 @@ UL.m-list>LI:before {
   height: 43px;
   left: 0;
   top: 0;
-  width: 128px;  
+  width: 128px;
 }
 
 .b-bottom_menu {
@@ -2694,7 +2715,7 @@ UL.m-list>LI:before {
 }
 
 .e-copyright {
-  margin: 0 0 0 175px; 
+  margin: 0 0 0 175px;
 }
 
 /******************************* Footer end ******************************/
@@ -2790,10 +2811,10 @@ H2 {font-size: 48px;}
 }
 
 .m-leader .b-short_block {
-  border-left: none; 
+  border-left: none;
   padding: 0 3.5%;
 }
- 
+
 .b-short_block .b-details  {
   float: left;
   width: 20%;
@@ -2850,13 +2871,13 @@ H2 {font-size: 48px;}
   width: 44%;
 }
 
-/******************************* Main Page end ****************************** 
+/******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
 .b-gloss_item {
   width: 33.33333%;
 }
 
-/******************************* Statistics Page end ******************************/  
+/******************************* Statistics Page end ******************************/
 
 }
 
@@ -2907,12 +2928,12 @@ H2 {font-size: 48px;}
   width: 100%;
 }
 
-/******************************* Main Page end ****************************** 
+/******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
 
-/******************************* Statistics Page end ******************************/ 
+/******************************* Statistics Page end ******************************/
 
-}  
+}
 
 
 
@@ -2981,7 +3002,7 @@ H5 {
   border-left: 1px solid #d7e6ee;
 }
 
-.e-logo_main { 
+.e-logo_main {
   height: 39px;
 }
 
@@ -3210,11 +3231,11 @@ H5 {
   padding-top: 0;
 }
 
-/******************************* Main Page end ****************************** 
+/******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
 .b-gloss_item {
   width: 50%;
 }
-/******************************* Statistics Page end ******************************/ 
+/******************************* Statistics Page end ******************************/
 
-} 
+}
