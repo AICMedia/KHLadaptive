@@ -12,19 +12,19 @@ $(document).ready(function(){
   AjaxData();
   if($('.e-diagram').length){
     ChartRadar();
-  } 
+  }
   if($('#s-map').length){
     CustomMap();
-  }    
+  }
 
   $('.m-round_diagram').each(function() {
     $(this).knob();
     var that =  $(this),
         num = that.attr('value');
-        that.animate({animatedVal: num});    
+        that.animate({animatedVal: num});
   });
 
-  $("#detail").slider({ 
+  $("#detail").slider({
     animate: 250,
     range: "min",
     min: 0,
@@ -32,7 +32,7 @@ $(document).ready(function(){
     step: 1
   });
 
-  $("#season").slider({ 
+  $("#season").slider({
     animate: 250,
     range: "min",
     min: 0,
@@ -81,8 +81,8 @@ $(document).ready(function(){
               settings: {
                 slidesToShow: 1
               }
-            }                        
-          ]        
+            }
+          ]
         });
         slider_lock = 1;
       }
@@ -96,7 +96,7 @@ $(document).ready(function(){
 
     if(winW > 1024){
       $('.b-header_menu_cover').show();
-    }      
+    }
 
     if(winW < 800){
       $('.m-round_diagram').trigger('configure',{
@@ -124,14 +124,14 @@ $(document).ready(function(){
           slidesToScroll: 4,
           slidesToShow: 8
         }
-      },    
+      },
       {
         breakpoint: 1400,
         settings: {
           slidesToScroll: 4,
           slidesToShow: 7
         }
-      },    
+      },
       {
         breakpoint: 1280,
         settings: {
@@ -149,7 +149,7 @@ $(document).ready(function(){
         {
         breakpoint: 800,
         settings: {
-          slidesToScroll: 2,          
+          slidesToScroll: 2,
           slidesToShow: 4
         }
       },
@@ -178,7 +178,7 @@ $(document).ready(function(){
       var width = $(this).width();
       var maxwidth = $(this).parent().width();
 
-      if (width > maxwidth){      
+      if (width > maxwidth){
         if(left > 0){
           $(this).css({left: 0+'px'});
           return false;
@@ -190,13 +190,13 @@ $(document).ready(function(){
         return false;
       }
     }
-  });  
+  });
 
 });
 
 
 // Hide_Show
-function HideShow() {  
+function HideShow() {
 
   $('.b-feed_matches_item').on('mouseenter', function(){
     $(this).find('.e-matches_popup_links').fadeIn(250);
@@ -212,8 +212,8 @@ function HideShow() {
   $('.e-title_tab_item').on('click', function(){
     $(this).parent().find('.e-title_tab_item').removeClass('m-active');
     $(this).addClass('m-active');
-  });      
- 
+  });
+
   $('.b-details.m-ajax').on('click', function(){
     $(this).parent().find('.b-details').removeClass('m-active');
     $(this).addClass('m-active');
@@ -222,20 +222,20 @@ function HideShow() {
   $('.e-gloss_btn').on('click', function(){
     var choise = $(this).attr('id');
     $('body').find('.' + choise).slideToggle();
-  }); 
+  });
 
 
-  $("div").next() 
+  $("div").next()
 
 }
 
 
 // Mobile menu
-function MobileMenu() {  
+function MobileMenu() {
   $('.e-mobile_menu_btn').on('click', function(){
     $(this).toggleClass('m-active');
     $('.b-header_menu_cover').slideToggle();
-  });     
+  });
 }
 
 
@@ -247,7 +247,7 @@ function FooterFix() {
 }
 
 
-// Float panel 
+// Float panel
 function FloatPanel() {
   if(winW > 1264){
     if($('.b-float_panel').length){
@@ -264,8 +264,8 @@ function FloatPanel() {
           height: 'auto'
         });
         $(".b-float_panel_cover").css({
-          'min-height': heightBlock-startBlock 
-        });          
+          'min-height': heightBlock-startBlock
+        });
       } else if ($(window).scrollTop() < endBlock) {
         $(".b-float_panel").css({
           position: 'fixed',
@@ -279,11 +279,11 @@ function FloatPanel() {
         });
       }
     }
-  } 
+  }
 }
 
 
-// Float panel 
+// Float panel
 function FloatMenu() {
 
   if(winW < 1008){
@@ -292,7 +292,7 @@ function FloatMenu() {
       $(".b-header_top_cover").css({
         position: 'fixed',
         top: 0
-      });         
+      });
     } else {
       $(".b-header_top_cover").css({
         position: 'relative',
@@ -304,13 +304,13 @@ function FloatMenu() {
       position: 'relative',
       top: 'auto'
     });
-  } 
+  }
 
 }
 
 
 // Smart col
-function SmartCol() {  
+function SmartCol() {
   var colWrap = $('.m-smart_col').width();
   var colNum = Math.floor(colWrap / 210);
   if(winW < 480){
@@ -318,7 +318,7 @@ function SmartCol() {
   }
   var colFixed = Math.floor(colWrap / colNum);
   $('.m-smart_col li').css({ 'width' : colFixed-1});
-}  
+}
 
 
 // Switcher
@@ -375,33 +375,33 @@ function SlideTable() {
   if(table_lock == 0) {
     table_lock = 1;
     $('.e-slide_link.m-top').on('click',function(){
-      table_lock = 1; 
+      table_lock = 1;
       if (!$('.m-west .b-score_table_top:visible').length){
         $('.m-west .b-score_table_top').slideDown();
       } else {
         $(this).parent().find('.b-score_table_bottom').slideToggle();
-      } 
+      }
     });
 
     $('.e-slide_link.m-bottom').on('click',function(){
-      table_lock = 1; 
+      table_lock = 1;
       if( winW > 640 && winW < 1024){
         if (!$('.m-east .b-score_table_top:visible').length){
           $('.m-east .b-score_table_top').slideDown();
         } else {
           $(this).parent().find('.b-score_table_bottom').slideToggle();
-        } 
+        }
       } else {
         $('.b-score_table_cover.m-west').slideToggle();
         $(this).parent().find('.b-score_table_bottom').slideToggle();
       }
     });
-  }  
+  }
 
 }
 
 
-// Round diagram 
+// Round diagram
 function DiagramData() {
 
   $('.b-short_block .b-details').on('click',function(){
@@ -414,8 +414,8 @@ function DiagramData() {
           that.animate({animatedVal: fakeData}, {
             step: function() {
               that.val(Math.ceil(this.animatedVal)).trigger('change');
-            }  
-          }); 
+            }
+          });
     });
   });
 
@@ -437,7 +437,7 @@ function AjaxData() {
 }
 
 
-// Chart radar  
+// Chart radar
 function ChartRadar() {
 
   var radarChartData_01 = {
@@ -451,14 +451,14 @@ function ChartRadar() {
     ]
   };
 
-  window.myRadar = new Chart(document.getElementById("canvas_01").getContext("2d")).Radar(radarChartData_01, { 
+  window.myRadar = new Chart(document.getElementById("canvas_01").getContext("2d")).Radar(radarChartData_01, {
     scaleLineColor: "rgba(182,185,187,1)",
     angleLineColor: "rgba(182,185,187,1)",
     responsive: true,
-    pointDot: false, 
-    scaleOverride: true,  
-    scaleSteps: 2,  
-    scaleStepWidth: 11, 
+    pointDot: false,
+    scaleOverride: true,
+    scaleSteps: 2,
+    scaleStepWidth: 11,
     scaleStartValue: 0,
   });
 
@@ -474,16 +474,16 @@ function ChartRadar() {
     ]
   };
 
-  window.myRadar = new Chart(document.getElementById("canvas_02").getContext("2d")).Radar(radarChartData_02, { 
+  window.myRadar = new Chart(document.getElementById("canvas_02").getContext("2d")).Radar(radarChartData_02, {
     scaleLineColor: "rgba(182,185,187,1)",
     angleLineColor: "rgba(182,185,187,1)",
     responsive: true,
-    pointDot: false, 
-    scaleOverride: true,  
-    scaleSteps: 2,  
-    scaleStepWidth: 11, 
+    pointDot: false,
+    scaleOverride: true,
+    scaleSteps: 2,
+    scaleStepWidth: 11,
     scaleStartValue: 0,
-  }); 
+  });
 
   var radarChartData_03 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
@@ -496,16 +496,16 @@ function ChartRadar() {
     ]
   };
 
-  window.myRadar = new Chart(document.getElementById("canvas_03").getContext("2d")).Radar(radarChartData_03, { 
+  window.myRadar = new Chart(document.getElementById("canvas_03").getContext("2d")).Radar(radarChartData_03, {
     scaleLineColor: "rgba(182,185,187,1)",
     angleLineColor: "rgba(182,185,187,1)",
     responsive: true,
-    pointDot: false, 
-    scaleOverride: true,  
-    scaleSteps: 2,  
-    scaleStepWidth: 11, 
+    pointDot: false,
+    scaleOverride: true,
+    scaleSteps: 2,
+    scaleStepWidth: 11,
     scaleStartValue: 0,
-  }); 
+  });
 
   var radarChartData_04 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
@@ -518,14 +518,14 @@ function ChartRadar() {
     ]
   };
 
-  window.myRadar = new Chart(document.getElementById("canvas_04").getContext("2d")).Radar(radarChartData_04, { 
+  window.myRadar = new Chart(document.getElementById("canvas_04").getContext("2d")).Radar(radarChartData_04, {
     scaleLineColor: "rgba(182,185,187,1)",
     angleLineColor: "rgba(182,185,187,1)",
     responsive: true,
-    pointDot: false, 
-    scaleOverride: true,  
-    scaleSteps: 2,  
-    scaleStepWidth: 11, 
+    pointDot: false,
+    scaleOverride: true,
+    scaleSteps: 2,
+    scaleStepWidth: 11,
     scaleStartValue: 0,
   });
 
@@ -540,16 +540,16 @@ function ChartRadar() {
     ]
   };
 
-  window.myRadar = new Chart(document.getElementById("canvas_05").getContext("2d")).Radar(radarChartData_05, { 
+  window.myRadar = new Chart(document.getElementById("canvas_05").getContext("2d")).Radar(radarChartData_05, {
     scaleLineColor: "rgba(182,185,187,1)",
     angleLineColor: "rgba(182,185,187,1)",
     responsive: true,
-    pointDot: false, 
-    scaleOverride: true,  
-    scaleSteps: 2,  
-    scaleStepWidth: 11, 
+    pointDot: false,
+    scaleOverride: true,
+    scaleSteps: 2,
+    scaleStepWidth: 11,
     scaleStartValue: 0,
-  });    
+  });
 
 }
 
@@ -754,4 +754,3 @@ function CustomMap() {
     }
   }
 }
-      

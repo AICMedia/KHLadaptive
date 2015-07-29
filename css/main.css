@@ -2438,12 +2438,12 @@ UL.m-list>LI:before {
 ******************************* Statistics Page ******************************/
 .m-statistic_parameters {
   height: auto !important;
-  min-height: 0 !important;
   overflow: visible;
 }
 
 .m-statistic_parameters .b-float_panel_cover {
   padding: 30px 3.5%;
+  min-height: 0 !important;
   overflow: visible;
 }
 
@@ -2455,7 +2455,7 @@ UL.m-list>LI:before {
   display: none;
 }
 
-.m-stats .s-ajax_cover_1 {
+.m-stats .b-diagram_view {
   display: none;
 }
 /******************************* Statistics Page end ******************************/
