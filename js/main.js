@@ -257,9 +257,7 @@ function MobileMenu() {
 
 // Footer fix
 function FooterFix() {
-  $(window).resize(function(){
 
-  }).resize();
 }
 
 
@@ -451,6 +449,13 @@ function AjaxData() {
       });
     }, 200);
   });
+
+  $('.e-point_switcher li').on('click', function(){
+    $('.b-wide_tile').fadeOut(450);
+    setTimeout(function() {
+      $('.s-ajax_cover_cup').load('ajax.html ' + '.b-wide_tile').fadeIn(450);
+    }, 400);
+  });  
 
 }
 
