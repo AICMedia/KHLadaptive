@@ -176,6 +176,84 @@ UL.m-list>LI:before {
   overflow: hidden;
 }
 
+.b-data_table_sort {
+  width: 100%;
+}
+
+.b-data_table_sort th {
+  padding: 10px;
+  font-family: 'latoheavy';
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #d7e6ee;
+  cursor: pointer;
+}
+
+.b-data_table_sort th:first-child {
+  text-align: left;
+}
+
+.b-data_table_sort td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.b-data_table_sort td:first-child {
+  text-align: left;
+}
+
+
+.e-team_name {
+  font-family: 'latoheavy';
+  vertical-align: middle;
+}
+
+.e-team_logo {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.m-tr_even td {
+  background-color: #f1fafe;
+}
+
+
+.e-sortable {
+  position: relative;
+  color: #03a7fc;
+}
+
+.e-sortable_up,
+.e-sortable_down {
+  color: #000;
+}
+
+.e-sortable_up::after,
+.e-sortable_down::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.e-sortable_up::after {
+  border-width: 0 6px 8px 6px;
+  border-color: transparent transparent #03a7fc transparent;
+}
+
+.e-sortable_down::after {
+  border-width: 8px 6px 0 6px;
+  border-color: #03a7fc transparent transparent transparent;
+}
+
+
+
 #wrapper {
   width:100%;
   overflow:hidden;
@@ -2191,10 +2269,18 @@ UL.m-list>LI:before {
 
 .e-page {
   display: inline-block;
-  width: 3.5%;
   text-align: center;
   color: #02a7fd;
-  font-family: 'latobold'
+  font-family: 'latobold';
+  width: 50px;
+  font-size: inherit;
+  border: none;
+  margin: 0 1.75%;
+}
+
+.e-page:focus {
+  outline: 1px solid #02a7fd;
+  outline-offset: 2px;
 }
 
 .b-data_table {
