@@ -332,7 +332,7 @@ function SwitcherBtn() {
       $(this).parent().find('.e-switcher_item.m-first').addClass('m-active');
       $(this).find('b').animate({left: 0}, 200);
 
-      $('body').find('.' + choiseOne).show();
+      $('body').find('.' + choiseOne).fadeIn();
       $('body').find('.' + choiseTwo).hide();
     } else {
       $(this).parent().find('.e-switcher_item').removeClass('m-active');
@@ -340,7 +340,7 @@ function SwitcherBtn() {
       $(this).find('b').animate({left: 12}, 200);
 
       $('body').find('.' + choiseOne).hide();
-      $('body').find('.' + choiseTwo).show();
+      $('body').find('.' + choiseTwo).fadeIn();
     };
   });
 
@@ -430,7 +430,9 @@ function AjaxData() {
     var choiseTwo = $(this).attr('id');
     $('.' + choiseOne).fadeOut(250);
     setTimeout(function() {
-      $('.' + choiseOne).load('ajax.html ' + '.' + choiseTwo).fadeIn(250);
+      $('.' + choiseOne).load('ajax.html ' + '.' + choiseTwo).fadeIn(250, function() {
+        SwitcherBtn();
+      });
     }, 200);
   });
 
