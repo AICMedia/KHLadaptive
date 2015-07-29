@@ -36,6 +36,15 @@
 }
 
 @font-face {
+  font-family: 'latolight';
+  src: url('../fonts/lato-light-webfont.eot');
+  src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot');
   src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
@@ -2275,10 +2284,272 @@ UL.m-list>LI:before {
   opacity: 1;
 }
 
+/******************************* Statistics Page end ******************************
+******************************* Clubs Page ******************************/
+.b-title_cover.m-no_tab H2 {
+  margin-bottom: 20px;
+}
 
-/******************************* Statistics Page end ******************************/
+.b-title_cover.m-no_tab H2:before {
+  display: none;
+}
+
+.m-conf-west .b-title_cover:after,
+.m-conf-east .b-title_cover:after {
+  display: none;
+}
+
+.m-conf-west .b-middle_block,
+.m-conf-east .b-middle_block {
+  padding: 0px 3.5%;
+}
+
+/*right block*/
+.b-score_table TH {
+  border-bottom: 1px solid #d7e6ee;
+}
+
+.m-conf .b-score_table TD {
+  color: #000;  
+}
+
+.m-conf .b-score_table TD B {
+  color: #000;
+  font: 12px "latoheavy";
+}
+
+.m-conf .e-bnr {
+  margin: 40px 0 20px 0;
+}
+
+/*tile*/
+.b-short_tile {
+  margin:0 -2.5%;
+  padding: 20px 0 0 0;
+}
+
+.b-short_tile_item {
+  width: 45%;
+  margin: 0 2.5% 40px 2.5%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 3.5%;
+  border: 1px solid #d7e6ee;
+}
+
+.b-details.m-club {
+  padding: 0;
+}
+
+.m-club .e-details_img {
+  width: 30%;
+}
+
+.m-club .b-details_txt {
+  width: 70%;
+}
+
+.m-club .e-details_img IMG {
+  border-radius: 0;
+  height: auto;
+  max-height: 80px;
+  max-width: 80px;
+  overflow: none;
+  width: 100%;
+}
+
+.e-club_sity {
+  font-size: 12px;
+  position: relative;
+}
+
+.e-club_sity IMG {
+  position: relative;
+  top: 2px;
+  margin: 0 0 0 0.5em;
+}
+
+.e-cup_date {
+  position: absolute;
+  right: 0;
+}
+
+.e-cup_date:before {
+  position: absolute;
+  font-family: 'icomoon';
+  content: 'D';
+  font-size: 30px;
+  color: #e81c3e; 
+  top:-25px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.m-club .m-clear {
+  font: 14px 'latobold';
+}
+
+/*geografy*/
+.m-geography H2 {
+  color: #fff;
+}
+
+.m-geography .b-wide_block {
+  background: #2c3941;
+  padding-bottom: 20px; 
+}
+
+.m-geography .b-title_cover:after {
+  background: #606d75;
+}
+
+#s-map {
+  margin-top: 40px;
+  width: 100%;
+  height: 400px;
+}
+
+#s-map:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 30px;
+  background: #2c3941;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+
+/*Gagatin*/
+.m-gagarin .b-point_switcher_cover {
+  margin-top: 60px;
+}
+
+.e-point_switcher LI IMG {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -60px;
+  left: -15px;
+  transition-duration: 0.25s;
+}
+
+.e-point_switcher LI.m-active IMG {
+  top:-70px;
+  transform: scale(1.5);
+}
+
+.m-gagarin .e-point_scale SPAN {
+  left: -1.1em;
+  font-size: 16px;
+}
+
+.e-point_scale LI {
+  transition-duration: 0.5s;
+}
+
+.e-point_scale LI.m-active {
+  color:#000;
+}
+
+.b-final_cup_date {
+  padding: 30px 0;
+}
+
+.b-final_cup_date .e-bevel {
+  font-size: 14px;
+  color: #fff;
+}
+
+.b-final_cup_date B {
+  margin-left: 1em;
+  font:18px 'latobold';
+}
+
+.b-wide_tile_item {
+  overflow: hidden;
+  border: 1px solid #d7e6ee;
+  padding: 20px 3.5%;
+  margin-top: -1px;
+}
+
+.b-wide_tile .b-details {
+  width: 35%;
+  float: left; 
+  margin-top: 1.1em;
+}
+
+.b-score {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+.b-details.m-rightward {
+  text-align: right;
+}
+
+.b-details.m-rightward  .b-details_txt {
+  padding: 0 5% 0 0;
+}
+
+.b-wide_tile .e-round {
+  border-radius: 22px;
+  height: 22px;
+  line-height: 20px;
+  margin-top: 0px;
+  width: 22px;
+  font: 13px 'latobold';
+}
+
+.b-total_score H3 {
+  margin: -0.35em 0 0 0;
+  color: #666;
+  font-family: 'latolight';
+}
+
+.b-total_score H3 B {
+  margin: -0.35em 0 0 0;
+  color: #000;
+  font-family: 'latoblack';
+}
+
+.b-wide_tile .e-club_name {
+  color: #666;
+  font-family: 'latoregular';
+}
+
+.b-wide_tile .e-club_name B {
+  color: #000;
+  font-weight: normal;
+  font-family: 'latobold';
+}
+
+.b-period_score {
+  color: #666;
+}
+
+.b-gagerin_cup_info {
+  text-align: center;
+  padding: 30px 3.5%;
+  background: #f1fafe;
+}
+
+.b-gagerin_cup_info IMG {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.b-gagerin_cup_info P {
+  font-size: 14px;
+  line-height: 1.5em;
+}
 
 
+/******************************* Clubs Page end ******************************/
 
 /**************************************** MOBILE < 1280 ****************************************/
 @media (max-width:1280px) {
