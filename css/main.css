@@ -682,6 +682,13 @@ UL.m-list>LI:before {
   left: -1.4em;
 }
 
+.e-aic_logo {
+  cursor: pointer;
+  font-size: 23px;
+  vertical-align: top;
+  color: #fff;
+}
+
 .b-rules_cover {
   margin-bottom: 30px;
   display: none;
