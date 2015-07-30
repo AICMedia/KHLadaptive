@@ -176,11 +176,21 @@ UL.m-list>LI:before {
   overflow: hidden;
 }
 
-.b-data_table_sort {
+.sorttable {
   width: 100%;
 }
 
-.b-data_table_sort th {
+.sorttable colgroup.hover {
+  background-color: #d9f2ff !important;
+  z-index: 999;
+}
+
+.sorttable tr.hover td {
+  background-color: #d9f2ff;
+
+}
+
+.sorttable th {
   padding: 10px;
   font-family: 'latoheavy';
   font-size: 12px;
@@ -190,17 +200,17 @@ UL.m-list>LI:before {
   cursor: pointer;
 }
 
-.b-data_table_sort th:first-child {
+.sorttable th:first-child {
   text-align: left;
 }
 
-.b-data_table_sort td {
+.sorttable td {
   padding: 10px;
   text-align: center;
   vertical-align: middle;
 }
 
-.b-data_table_sort td:first-child {
+.sorttable td:first-child {
   text-align: left;
 }
 
@@ -215,23 +225,11 @@ UL.m-list>LI:before {
   margin-right: 10px;
 }
 
-.m-tr_even td {
-  background-color: #f1fafe;
-}
+/*.m-tr_even td {*/
+  /*background-color: #f1fafe;*/
+/*}*/
 
-
-.e-sortable {
-  position: relative;
-  color: #03a7fc;
-}
-
-.e-sortable_up,
-.e-sortable_down {
-  color: #000;
-}
-
-.e-sortable_up::after,
-.e-sortable_down::after {
+.sorting-asc::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -240,16 +238,33 @@ UL.m-list>LI:before {
   width: 0;
   height: 0;
   border-style: solid;
+  border-width: 8px 6px 0 6px;
+  border-color: #03a7fc transparent transparent transparent;
 }
 
-.e-sortable_up::after {
+
+
+.sorting-desc::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
   border-width: 0 6px 8px 6px;
   border-color: transparent transparent #03a7fc transparent;
 }
 
-.e-sortable_down::after {
-  border-width: 8px 6px 0 6px;
-  border-color: #03a7fc transparent transparent transparent;
+.e-sortable {
+  position: relative;
+  color: #03a7fc;
+}
+
+.sorting-asc,
+.sorting-desc {
+  color: #000;
 }
 
 
@@ -2117,7 +2132,7 @@ UL.m-list>LI:before {
 }
 
 .b-subtitle_nav_cover {
-  padding: 30px 0;
+  padding: 0 0 30px;
 }
 
 .e-local_search {
@@ -2396,7 +2411,7 @@ UL.m-list>LI:before {
 }
 
 .m-conf .b-score_table TD {
-  color: #000;  
+  color: #000;
 }
 
 .m-conf .b-score_table TD B {
@@ -2465,7 +2480,7 @@ UL.m-list>LI:before {
   font-family: 'icomoon';
   content: 'D';
   font-size: 30px;
-  color: #e81c3e; 
+  color: #e81c3e;
   top:-25px;
   left: 50%;
   margin-left: -15px;
@@ -2482,7 +2497,7 @@ UL.m-list>LI:before {
 
 .m-geography .b-wide_block {
   background: #2c3941;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .m-geography .b-title_cover:after {
@@ -2562,7 +2577,7 @@ UL.m-list>LI:before {
 
 .b-wide_tile .b-details {
   width: 35%;
-  float: left; 
+  float: left;
   margin-top: 1.1em;
 }
 
@@ -3606,4 +3621,9 @@ H5 {
 }
 /******************************* Statistics Page end ******************************/
 
+}
+
+/*** Utilities classes ***/
+.u-text_left {
+  text-align: left !important;
 }

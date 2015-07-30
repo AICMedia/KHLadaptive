@@ -39,7 +39,7 @@ $(document).ready(function(){
     max: 7,
     step: 1,
     slide: function( event, ui ) {
-      
+
     }
   });
 
@@ -128,6 +128,21 @@ $(document).ready(function(){
 
 
   $('input, select').styler();
+
+  // таблицы с сортировкой
+  $('.sorttable').stupidtable();
+
+
+  $(".sorttable").delegate('td','mouseover mouseleave', function(e) {
+      if (e.type == 'mouseover') {
+        $(this).parent().addClass("hover");
+        $("colgroup").eq($(this).index()).addClass("hover");
+      }
+      else {
+        $(this).parent().removeClass("hover");
+        $("colgroup").eq($(this).index()).removeClass("hover");
+      }
+  });
 
 
   $('.b-feed_matches.m-slick_slider').slick({
@@ -455,7 +470,7 @@ function AjaxData() {
     setTimeout(function() {
       $('.s-ajax_cover_cup').load('ajax.html ' + '.b-wide_tile').fadeIn(450);
     }, 400);
-  });  
+  });
 
 }
 

@@ -15,6 +15,7 @@
   <script type="text/javascript" src="js/lib/slick.js"></script>
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
   <script type="text/javascript" src="js/lib/chart.min.js"></script>
+  <script type="text/javascript" src="js/lib/stupidtable.min.js"></script>
 
   <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -384,9 +385,9 @@
                 <div class="b-subtitle_nav_cover m-clear">
                   <h4 class="m-fl">Клубы</h4>
 
-                  <form class="e-local_search m-fl">
+                  <!-- <form class="e-local_search m-fl">
                     <input class="e-search_btn m-icomoon" type="button" value=")" name=""><input class="e-search_field" type="text" placeholder="" value="" name="">
-                  </form>
+                  </form> -->
 
                   <div class="m-fr">
                     <span id="s-gloss_1" class="e-gloss_btn">Глоссарий</span>
@@ -439,124 +440,154 @@
                   </dl>
                 </div>
                 <div class="b-table_view">
-                  <table class="b-data_table_sort">
-                    <tr>
-                      <th class='e-sortable'><b>Название клуба</b></th>
-                      <th class='e-sortable'><b>№</b></th>
-                      <th class='e-sortable'><b>И</b></th>
-                      <th class='e-sortable'><b>В</b></th>
-                      <th class='e-sortable'><b>ВО</b></th>
-                      <th class='e-sortable'><b>ВБ</b></th>
-                      <th class='e-sortable'><b>ПБ</b></th>
-                      <th class='e-sortable e-sortable_down'><b>ПО</b></th>
-                      <th class='e-sortable'><b>П</b></th>
-                      <th class='e-sortable'><b>Ибз</b></th>
-                      <th class='e-sortable'><b>Ибп</b></th>
-                      <th class='e-sortable'><b>ЗШ</b></th>
-                      <th class='e-sortable'><b>ПШ</b></th>
-                      <th class='e-sortable'><b>Штр</b></th>
-                      <th class='e-sortable'><b>ШтрС</b></th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img class="e-team_logo" src="img/ska.png" alt="" />
-                        <span class="e-team_name">СКА</span>
-                      </td>
-                      <td>1</td>
-                      <td>22</td>
-                      <td>9</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>64</td>
-                      <td>38</td>
-                      <td>236</td>
-                      <td>375</td>
-                    </tr>
-                    <tr class='m-tr_even'>
-                      <td>
-                        <img class="e-team_logo" src="img/ska.png" alt="" />
-                        <span class="e-team_name">СКА</span>
-                      </td>
-                      <td>1</td>
-                      <td>22</td>
-                      <td>9</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>64</td>
-                      <td>38</td>
-                      <td>236</td>
-                      <td>375</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img class="e-team_logo" src="img/ska.png" alt="" />
-                        <span class="e-team_name">СКА</span>
-                      </td>
-                      <td>1</td>
-                      <td>22</td>
-                      <td>9</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>64</td>
-                      <td>38</td>
-                      <td>236</td>
-                      <td>375</td>
-                    </tr>
-                    <tr class='m-tr_even'>
-                      <td>
-                        <img class="e-team_logo" src="img/ska.png" alt="" />
-                        <span class="e-team_name">СКА</span>
-                      </td>
-                      <td>1</td>
-                      <td>22</td>
-                      <td>9</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>64</td>
-                      <td>38</td>
-                      <td>236</td>
-                      <td>375</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img class="e-team_logo" src="img/ska.png" alt="" />
-                        <span class="e-team_name">СКА</span>
-                      </td>
-                      <td>1</td>
-                      <td>22</td>
-                      <td>9</td>
-                      <td>3</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>64</td>
-                      <td>38</td>
-                      <td>236</td>
-                      <td>375</td>
-                    </tr>
+                  <table class="sorttable">
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <thead>
+                      <tr>
+                        <th class='e-sortable' colspan="2">Название клуба</th>
+                        <th class='e-sortable' data-sort="int">№</th>
+                        <th class='e-sortable' data-sort="int">И</th>
+                        <th class='e-sortable' data-sort="int">В</th>
+                        <th class='e-sortable' data-sort="int">ВО</th>
+                        <th class='e-sortable' data-sort="int">ВБ</th>
+                        <th class='e-sortable' data-sort="int">ПБ</th>
+                        <th class='e-sortable' data-sort="int">ПО</th>
+                        <th class='e-sortable' data-sort="int">П</th>
+                        <th class='e-sortable' data-sort="int">Ибз</th>
+                        <th class='e-sortable' data-sort="int">Ибп</th>
+                        <th class='e-sortable' data-sort="int">ЗШ</th>
+                        <th class='e-sortable' data-sort="int">ПШ</th>
+                        <th class='e-sortable' data-sort="int">Штр</th>
+                        <th class='e-sortable' data-sort="int">ШтрС</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td width="1">
+                          <img src="img/ska.png" alt="" />
+                        </td>
+                        <td class="u-text_left">
+                          <span class="e-team_name">А</span>
+                        </td>
+                        <td>1</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>64</td>
+                        <td>38</td>
+                        <td>236</td>
+                        <td>375</td>
+                      </tr>
+                      <tr class='m-tr_even'>
+                        <td>
+                          <img src="img/ska.png" alt="" />
+                        </td>
+                        <td class="u-text_left">
+                          <span class="e-team_name">СКА</span>
+                        </td>
+                        <td>2</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>64</td>
+                        <td>38</td>
+                        <td>236</td>
+                        <td>375</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="img/ska.png" alt="" />
+                        </td>
+                        <td class="u-text_left">
+                          <span class="e-team_name">СКА</span>
+                        </td>
+                        <td>3</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>64</td>
+                        <td>38</td>
+                        <td>236</td>
+                        <td>375</td>
+                      </tr>
+                      <tr class='m-tr_even'>
+                        <td>
+                          <img src="img/ska.png" alt="" />
+                        </td>
+                        <td class="u-text_left">
+                          <span class="e-team_name">СКА</span>
+                        </td>
+                        <td>4</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>64</td>
+                        <td>38</td>
+                        <td>236</td>
+                        <td>375</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="img/ska.png" alt="" />
+                        </td>
+                        <td class="u-text_left">
+                          <span class="e-team_name">СКА</span>
+                        </td>
+                        <td>5</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>64</td>
+                        <td>38</td>
+                        <td>236</td>
+                        <td>375</td>
+                      </tr>
+                    </tbody>
                   </table>
 
                 </div>
