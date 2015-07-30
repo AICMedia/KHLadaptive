@@ -10,6 +10,8 @@ $(document).ready(function(){
   SwitcherBtn();
   DiagramData();
   AjaxData();
+  DraggableTables();
+
   if($('.e-diagram').length){
     ChartRadar();
   }
@@ -312,6 +314,32 @@ function FloatPanel() {
   }
 }
 
+
+function DraggableTables() {
+  $.each($('.m-draggable'), function(i, e){
+    Draggable.create(e, {
+      type:"scrollLeft",
+      edgeResistance:0.5,
+      lockAxis:true,
+      onDrag: function() {
+        var xPosition = this.x
+        if (xPosition < this.minX) { xPosition = this.minX }
+        $('table tr>td:first-child, table tr>th:first-child', $(this.target)).css({
+          left: - xPosition
+        })
+      }
+    });
+    $(e).css({ overflow: 'hidden' });
+  });
+
+  $('.m-draggable table tr>td:first-child, .m-draggable table tr>th:first-child').css({
+    position: 'relative',
+    left: 0,
+    background: '#fff',
+    'z-index': 999,
+    'white-space': 'nowrap'
+  });
+}
 
 // Float panel
 function FloatMenu() {

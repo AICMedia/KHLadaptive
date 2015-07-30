@@ -16,6 +16,8 @@
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
   <script type="text/javascript" src="js/lib/chart.min.js"></script>
   <script type="text/javascript" src="js/lib/stupidtable.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
 
   <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -439,9 +441,8 @@
                     <dd class="e-gloss_transcript">сухие игры</dd>
                   </dl>
                 </div>
-                <div class="b-table_view">
+                <div class="b-table_view m-draggable">
                   <table class="sorttable">
-                    <colgroup></colgroup>
                     <colgroup></colgroup>
                     <colgroup></colgroup>
                     <colgroup></colgroup>
@@ -459,7 +460,7 @@
                     <colgroup></colgroup>
                     <thead>
                       <tr>
-                        <th class='e-sortable' colspan="2">Название клуба</th>
+                        <th class='e-sortable'>Название клуба</th>
                         <th class='e-sortable' data-sort="int">№</th>
                         <th class='e-sortable' data-sort="int">И</th>
                         <th class='e-sortable' data-sort="int">В</th>
@@ -478,11 +479,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td width="1">
-                          <img src="img/ska.png" alt="" />
-                        </td>
                         <td class="u-text_left">
-                          <span class="u-weight_bold">А</span>
+                          <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                          <span class="u-weight_bold">СКА</span>
                         </td>
                         <td>1</td>
                         <td>22</td>
@@ -500,11 +499,9 @@
                         <td>375</td>
                       </tr>
                       <tr class='m-tr_even'>
-                        <td>
-                          <img src="img/ska.png" alt="" />
-                        </td>
                         <td class="u-text_left">
-                          <span class="u-weight_bold">СКА</span>
+                          <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                          <span class="u-weight_bold">ЦСКА</span>
                         </td>
                         <td>2</td>
                         <td>22</td>
@@ -522,11 +519,9 @@
                         <td>375</td>
                       </tr>
                       <tr>
-                        <td>
-                          <img src="img/ska.png" alt="" />
-                        </td>
                         <td class="u-text_left">
-                          <span class="u-weight_bold">СКА</span>
+                          <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                          <span class="u-weight_bold">Динамо Мск</span>
                         </td>
                         <td>3</td>
                         <td>22</td>
@@ -544,11 +539,9 @@
                         <td>375</td>
                       </tr>
                       <tr class='m-tr_even'>
-                        <td>
-                          <img src="img/ska.png" alt="" />
-                        </td>
                         <td class="u-text_left">
-                          <span class="u-weight_bold">СКА</span>
+                          <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                          <span class="u-weight_bold">Салават Юлаев</span>
                         </td>
                         <td>4</td>
                         <td>22</td>
@@ -566,11 +559,9 @@
                         <td>375</td>
                       </tr>
                       <tr>
-                        <td>
-                          <img src="img/ska.png" alt="" />
-                        </td>
                         <td class="u-text_left">
-                          <span class="u-weight_bold">СКА</span>
+                          <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                          <span class="u-weight_bold">Автомобилист</span>
                         </td>
                         <td>5</td>
                         <td>22</td>

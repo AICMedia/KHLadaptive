@@ -186,12 +186,13 @@ UL.m-list>LI:before {
 }
 
 .sorttable tr.hover td {
-  background-color: #d9f2ff;
+  background-color: #d9f2ff !important;
 
 }
 
 .sorttable th {
   padding: 10px 5px;
+  white-space: nowrap;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
