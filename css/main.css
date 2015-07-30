@@ -191,7 +191,12 @@ UL.m-list>LI:before {
 }
 
 .sorttable th {
-  padding: 10px;
+  padding: 10px 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   font-family: 'latoheavy';
   font-size: 12px;
   text-align: center;
@@ -205,7 +210,7 @@ UL.m-list>LI:before {
 }
 
 .sorttable td {
-  padding: 10px;
+  padding: 10px 5px;
   text-align: center;
   vertical-align: middle;
 }
@@ -215,7 +220,7 @@ UL.m-list>LI:before {
 }
 
 
-.e-team_name {
+.u-weight_bold {
   font-family: 'latoheavy';
   vertical-align: middle;
 }
@@ -267,7 +272,13 @@ UL.m-list>LI:before {
   color: #000;
 }
 
+.m-table_small {
+  font-size: 12px;
+}
 
+table img {
+  vertical-align: middle;
+}
 
 #wrapper {
   width:100%;
@@ -1338,6 +1349,13 @@ UL.m-list>LI:before {
   margin-right: 30px;
 }
 
+.i-prev {
+  font-family: 'icomoon';
+  content: '=,';
+  font-size: 20px;
+  display: block;
+}
+
 .e-go_to:after {
   position: absolute;
   display: block;
@@ -2239,8 +2257,20 @@ UL.m-list>LI:before {
 }
 
 .b-paging {
+  text-align: left;
   padding: 30px 0 60px 0;
   border-top: 1px solid #d7e6ee;
+}
+
+.b-paging_controls {
+  position: absolute;
+  white-space: nowrap;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .b-paging .e-go_to {
@@ -2263,8 +2293,6 @@ UL.m-list>LI:before {
 }
 
 .e-among {
-  position: absolute;
-  left: 0;
   opacity: 0.6;
   font-size: 12px;
 }
@@ -2290,6 +2318,7 @@ UL.m-list>LI:before {
   width: 50px;
   font-size: inherit;
   border: none;
+  vertical-align: top;
   margin: 0 1.75%;
 }
 
@@ -3258,6 +3287,23 @@ H2 {font-size: 48px;}
 ******************************* Statistics Page ******************************/
 .b-gloss_item {
   width: 33.33333%;
+}
+
+.b-paging_controls {
+  left: initial;
+  right: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.e-go_to {
+  height: 23px;
+}
+
+.e-go_to > span {
+  display: none;
 }
 
 /******************************* Statistics Page end ******************************/

@@ -134,13 +134,14 @@ $(document).ready(function(){
 
 
   $(".sorttable").delegate('td','mouseover mouseleave', function(e) {
+      thisTable = $(this).parents('table');
       if (e.type == 'mouseover') {
         $(this).parent().addClass("hover");
-        $("colgroup").eq($(this).index()).addClass("hover");
+        $("colgroup", thisTable).eq($(this).index()).addClass("hover");
       }
       else {
         $(this).parent().removeClass("hover");
-        $("colgroup").eq($(this).index()).removeClass("hover");
+        $("colgroup", thisTable).eq($(this).index()).removeClass("hover");
       }
   });
 
