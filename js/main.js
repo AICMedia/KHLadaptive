@@ -300,12 +300,11 @@ function FloatShortBlock() {
       if (top && bottom) {
         TweenMax.set($(e).find('.b-score_table_cover'), {
           position: 'fixed',
-          top: 0,
-          left: $(e).offset().left
+          top: 0
         })
       } else {
-        if (top) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover').innerHeight(), left: 0})}
-        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: 0, left: 0, width: $(e).width()})}
+        if (top) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover').innerHeight()})}
+        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: 0})}
       }
     })
   }
