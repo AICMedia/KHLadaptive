@@ -292,22 +292,23 @@ function FooterFix() {
 
 
 function FloatShortBlock() {
-  $.each($('.b-short_block'), function(i, e){
-    var cover = $(e).parent();
-    var top = $(window).scrollTop() > $(e).parent().offset().top
-    var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).innerHeight()
-    if (top && bottom) {
-      TweenMax.set($(e), {
-        width: $(e).innerWidth(),
-        position: 'fixed',
-        top: 0,
-        right: 0
-      })
-    } else {
-      if (top) { TweenMax.set($(e), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).innerHeight()})}
-      if (bottom) { TweenMax.set($(e), {position: 'absolute', top: 0, right: 0})}
-    }
-  })
+  if (Modernizr.mq('(min-width: 1025px)')) {
+    $.each($('.b-short_block'), function(i, e){
+      var cover = $(e).parent();
+      var top = $(window).scrollTop() > $(e).parent().offset().top
+      var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).find('.b-score_table_cover').innerHeight()
+      if (top && bottom) {
+        TweenMax.set($(e).find('.b-score_table_cover'), {
+          position: 'fixed',
+          top: 0,
+          left: $(e).offset().left
+        })
+      } else {
+        if (top) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover').innerHeight(), left: 0})}
+        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: 0, left: 0, width: $(e).width()})}
+      }
+    })
+  }
 }
 
 // Float panel
