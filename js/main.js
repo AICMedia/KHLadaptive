@@ -1,4 +1,5 @@
 // Inits
+
 $(document).ready(function(){
 
   slider_lock = 0;
@@ -61,6 +62,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     FloatPanel();
     FloatMenu();
+    FloatShortBlock();
   });
 
   $(window).resize(function(){
@@ -288,6 +290,25 @@ function FooterFix() {
 
 }
 
+
+function FloatShortBlock() {
+  $.each($('.b-short_block'), function(i, e){
+    var cover = $(e).parent();
+    var top = $(window).scrollTop() > $(e).parent().offset().top
+    var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).innerHeight()
+    if (top && bottom) {
+      TweenMax.set($(e), {
+        width: $(e).innerWidth(),
+        position: 'fixed',
+        top: 0,
+        right: 0
+      })
+    } else {
+      if (top) { TweenMax.set($(e), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).innerHeight()})}
+      if (bottom) { TweenMax.set($(e), {position: 'absolute', top: 0, right: 0})}
+    }
+  })
+}
 
 // Float panel
 function FloatPanel() {
