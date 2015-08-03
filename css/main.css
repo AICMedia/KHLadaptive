@@ -1520,11 +1520,14 @@ UL.m-list>LI:before {
   line-height: 90px;
 }
 
-.b-details_info .e-num SUP {
+.e-num SUP {
   margin-top: 1.3em;
   font:bold 16px 'Arial';
-  vertical-align: top;
   display: inline-block;
+}
+
+.b-details_info .e-num SUP {
+  vertical-align: top;
 }
 
 .b-stats {
@@ -1604,6 +1607,8 @@ UL.m-list>LI:before {
   font: 48px 'latoregular'!important;
   height: 60px!important;
   z-index: 3!important;
+  width: 95px!important;
+  margin-left: -125px!important;
 }
 
 .e-round_diagram_item LABEL {
@@ -3442,6 +3447,7 @@ H2 {font-size: 48px;}
 
 .e-round_diagram_item INPUT {
   margin-top: 20px !important;
+  margin-left: -115px!important;
 }
 
 .m-leader .b-blocks_cover {

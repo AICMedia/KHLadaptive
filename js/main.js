@@ -13,9 +13,22 @@ $(document).ready(function(){
   AjaxData();
   DraggableTables();
 
-  if($('.e-diagram').length){
-    ChartRadar();
+  if($('#canvas_01').length){
+    ChartRadar1();
   }
+  if($('#canvas_02').length){
+    ChartRadar2();
+  }
+  if($('#canvas_03').length){
+    ChartRadar3();
+  }
+  if($('#canvas_04').length){
+    ChartRadar4();
+  }
+  if($('#canvas_05').length){
+    ChartRadar5();
+  }
+
   if($('#s-map').length){
     CustomMap();
   }
@@ -555,7 +568,7 @@ function AjaxData() {
 
 
 // Chart radar
-function ChartRadar() {
+function ChartRadar1() {
 
   var radarChartData_01 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
@@ -578,8 +591,8 @@ function ChartRadar() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
-
-
+}
+function ChartRadar2() {
   var radarChartData_02 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
     datasets: [
@@ -601,7 +614,8 @@ function ChartRadar() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
-
+}
+function ChartRadar3() {
   var radarChartData_03 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
     datasets: [
@@ -623,7 +637,8 @@ function ChartRadar() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
-
+}
+function ChartRadar4() {
   var radarChartData_04 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
     datasets: [
@@ -645,7 +660,8 @@ function ChartRadar() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
-
+}
+function ChartRadar5() {
   var radarChartData_05 = {
     labels: ["О", "И", "Ш", "А", "+/-", "Штр"],
     datasets: [
@@ -667,7 +683,6 @@ function ChartRadar() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
-
 }
 
 // Custom map
