@@ -2354,7 +2354,7 @@ UL.m-list>LI:before {
   overflow: hidden;
 }
 
-.b-table_view:after {
+.b-table_view.m-draggable_enabled:after {
   content: '';
   height: 100%;
   width: 10px;
@@ -2418,9 +2418,9 @@ B.e-player_name {
   font-weight: 'latoheavy';
 }
 
-.b-sorttable .m-brd:after,
-.b-sorttable .e-player_name:after,
-.b-sorttable .e-club_name:after {
+.m-draggable_enabled .b-sorttable .m-brd:after,
+.m-draggable_enabled .b-sorttable .e-player_name:after,
+.m-draggable_enabled .b-sorttable .e-club_name:after {
   content: '';
   position: absolute;
   top: 0;
@@ -3761,4 +3761,3 @@ H5 {
 /******************************* Statistics Page end ******************************/
 
 }
-

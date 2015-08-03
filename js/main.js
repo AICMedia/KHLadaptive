@@ -374,13 +374,23 @@ function DraggableTables() {
   $(window).on('resize', function(){
     $('.m-draggable > div').css({'padding-right': 0})
     TweenMax.set($('.m-draggable'), {scrollLeft: 0})
-    $('.m-draggable table tr>td:first-child, .m-draggable table tr>th:first-child').css({
-      left: 0
-    });
-
+    $('.m-draggable table tr>td:first-child, .m-draggable table tr>th:first-child').css({ left: 0 });
+    DraggableTablesEnabled();
   });
+
+  DraggableTablesEnabled();
 }
 
+
+function DraggableTablesEnabled() {
+  $.each($('.b-table_view'), function(i, e){
+    if ($('table', e).innerWidth() > $('.m-draggable').innerWidth()){
+      $(e).addClass('m-draggable_enabled')
+    } else {
+      $(e).removeClass('m-draggable_enabled')
+    }
+  })
+}
 // Float panel
 function FloatMenu() {
 
