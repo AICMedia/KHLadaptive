@@ -2113,6 +2113,10 @@ table img {
 
 .e-params_btn {
   display: none;
+  float: right;
+  margin-top: 40px;
+  padding: 0;
+  height: 23px;
 }
 
 .e-params_btn:before {
@@ -2901,7 +2905,7 @@ table img {
 }
 
 .e-params_btn {
-  display: inline;
+  display: inline-block;
 }
 
 .e-params_close {
@@ -3349,6 +3353,10 @@ H2 {font-size: 48px;}
   display: none;
 }
 
+.e-params_btn > span {
+  display: none;
+}
+
 /******************************* Statistics Page end ******************************/
 
 }
@@ -3707,6 +3715,10 @@ H5 {
 ******************************* Statistics Page ******************************/
 .b-gloss_item {
   width: 50%;
+}
+
+.e-params_btn {
+  margin-top: 25px;
 }
 /******************************* Statistics Page end ******************************/
 
