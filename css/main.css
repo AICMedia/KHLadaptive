@@ -3401,7 +3401,7 @@ H2 {font-size: 48px;}
 
 .b-score_table_cover {
   position: static !important;
-  width: 100% !important;
+  width: 47.5% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -3772,8 +3772,45 @@ H5 {
 
 /******************************* Clubs Page ******************************/
 
-.b-short_tile_item {
+/*.b-short_tile_item {
   width: 95%;
+}*/
+
+.b-period_score {
+  font-size: 12px;
+}
+
+.b-score_table_cover {
+  width: 100% !important;
+}
+
+.m-club .e-details_img  {
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.b-wide_tile .b-details {
+  margin-top: 0;
+}
+
+.b-wide_tile_item IMG {
+  display: none;
+}
+
+.b-details.m-club .e-cup_date {
+  display: none;
+}
+
+.m-club .b-details_txt {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.m-gagarin .e-point_scale SPAN {
+  font-size: 12px;
 }
 
 /******************************* Clubs Page end ******************************/
