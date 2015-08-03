@@ -176,128 +176,6 @@ UL.m-list>LI:before {
   overflow: hidden;
 }
 
-.sorttable {
-  width: 100%;
-}
-
-/*.m-draggable::before {
-  content: '';
-  height: 100%;
-  width: 10px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: -moz-linear-gradient(left,  rgba(215,230,238,0) 0%, rgba(215,230,238,1) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(215,230,238,0)), color-stop(100%,rgba(215,230,238,1)));
-  background: -webkit-linear-gradient(left,  rgba(215,230,238,0) 0%,rgba(215,230,238,1) 100%);
-  background: -o-linear-gradient(left,  rgba(215,230,238,0) 0%,rgba(215,230,238,1) 100%);
-  background: -ms-linear-gradient(left,  rgba(215,230,238,0) 0%,rgba(215,230,238,1) 100%);
-  background: linear-gradient(to right,  rgba(215,230,238,0) 0%,rgba(215,230,238,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d7e6ee', endColorstr='#d7e6ee',GradientType=1 );
-}*/
-
-.sorttable colgroup.hover {
-  background-color: #d9f2ff !important;
-  z-index: 999;
-}
-
-.sorttable tr.hover td {
-  background-color: #d9f2ff !important;
-
-}
-
-.sorttable th {
-  padding: 10px 5px;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  font-family: 'latoheavy';
-  font-size: 12px;
-  text-align: center;
-  vertical-align: middle;
-  border-bottom: 1px solid #d7e6ee;
-  cursor: pointer;
-}
-
-.sorttable th:first-child {
-  text-align: left;
-}
-
-.sorttable td {
-  padding: 10px 5px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.sorttable td:first-child {
-  text-align: left;
-}
-
-
-.u-weight_bold {
-  font-family: 'latoheavy';
-  vertical-align: middle;
-}
-
-.e-team_logo {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-/*.m-tr_even td {*/
-  /*background-color: #f1fafe;*/
-/*}*/
-
-.sorting-asc::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  margin-left: -6px;
-  bottom: -4px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 8px 6px 0 6px;
-  border-color: #03a7fc transparent transparent transparent;
-}
-
-
-
-.sorting-desc::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  margin-left: -6px;
-  bottom: -4px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 6px 8px 6px;
-  border-color: transparent transparent #03a7fc transparent;
-}
-
-.e-sortable {
-  position: relative;
-  color: #03a7fc;
-}
-
-.sorting-asc,
-.sorting-desc {
-  color: #000;
-}
-
-.m-table_small {
-  font-size: 12px;
-}
-
-table img {
-  vertical-align: middle;
-}
-
 #wrapper {
   width:100%;
   overflow:hidden;
@@ -954,6 +832,7 @@ table img {
 
 /*news*/
 .b-float_panel {
+  height: auto;
   width: 260px;
   position: absolute;
   top: 0;
@@ -1251,6 +1130,10 @@ table img {
 
 .m-video .m-cover_link {
   color: #000;
+}
+
+.m-video .m-cover_link H5 {
+  min-height: 2.55em;
 }
 
 .m-video H4,
@@ -2463,6 +2346,133 @@ table img {
   opacity: 1;
 }
 
+.b-sorttable {
+  width: 100%;
+}
+
+.m-draggable {
+  overflow: hidden;
+}
+
+.b-table_view:after {
+  content: '';
+  height: 100%;
+  width: 10px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right,  rgba(215,230,238,0) 0%,rgba(215,230,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d7e6ee', endColorstr='#d7e6ee',GradientType=1 );
+}
+
+.b-sorttable colgroup.hover {
+  background-color: #d9f2ff !important;
+  z-index: 999;
+}
+
+.b-sorttable tr.hover TD {
+  background-color: #d9f2ff !important;
+
+}
+
+.b-sorttable TH {
+  padding: 10px 5px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font:12px 'latoheavy';
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #d7e6ee;
+  cursor: pointer;
+}
+
+.b-sorttable TH:first-child {
+  text-align: left;
+}
+
+.b-sorttable TD {
+  padding: 10px 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.b-sorttable TD:first-child {
+  text-align: left;
+}
+
+.m-text_left {
+  text-align: left !important;
+}
+
+.e-team_logo {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+B.e-player_name {
+  font-weight: 'latoheavy';
+}
+
+.b-sorttable .m-brd:after,
+B.e-player_name:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+}
+
+.sorting-asc:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 6px 0 6px;
+  border-color: #03a7fc transparent transparent transparent;
+}
+
+.sorting-desc:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 8px 6px;
+  border-color: transparent transparent #03a7fc transparent;
+}
+
+.e-sortable {
+  position: relative;
+  color: #03a7fc;
+}
+
+.sorting-asc,
+.sorting-desc {
+  color: #000;
+}
+
+.m-table_small {
+  font-size: 12px;
+}
+
+.b-sorttable IMG {
+  vertical-align: middle;
+}
+
 /******************************* Statistics Page end ******************************
 ******************************* Clubs Page ******************************/
 .b-title_cover.m-no_tab H2 {
@@ -2804,7 +2814,7 @@ table img {
   top: auto!important;
   left: auto!important;
   width: auto!important;
-  height: 105px!important;
+  /*height: 105px!important;*/
 }
 
 .b-float_panel_cover {
@@ -2894,7 +2904,6 @@ table img {
 /******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
 .m-statistic_parameters {
-  height: auto !important;
   overflow: visible;
   display: none;
 }
@@ -3752,7 +3761,3 @@ H5 {
 
 }
 
-/*** Utilities classes ***/
-.u-text_left {
-  text-align: left !important;
-}
