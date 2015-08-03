@@ -132,10 +132,10 @@ $(document).ready(function(){
   $('input, select').styler();
 
   // таблицы с сортировкой
-  $('.sorttable').stupidtable();
+  $('.b-sorttable').stupidtable();
 
 
-  $(".sorttable").delegate('td','mouseover mouseleave', function(e) {
+  $(".b-sorttable").delegate('td','mouseover mouseleave', function(e) {
       thisTable = $(this).parents('table');
       if (e.type == 'mouseover') {
         $(this).parent().addClass("hover");

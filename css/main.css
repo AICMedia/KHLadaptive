@@ -2419,7 +2419,8 @@ B.e-player_name {
 }
 
 .b-sorttable .m-brd:after,
-B.e-player_name:after {
+.b-sorttable .e-player_name:after,
+.b-sorttable .e-club_name:after {
   content: '';
   position: absolute;
   top: 0;
