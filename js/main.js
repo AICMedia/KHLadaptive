@@ -332,7 +332,6 @@ function DraggableTables() {
       edgeResistance:0.5,
       lockAxis:true,
       onDrag: function() {
-        console.log(this)
         var xPosition = this.x
         if (xPosition < this.minX) { xPosition = this.minX }
         $('table tr>td:first-child, table tr>th:first-child', $(this.target)).css({
@@ -349,6 +348,15 @@ function DraggableTables() {
     background: '#fff',
     'z-index': 999,
     'white-space': 'nowrap'
+  });
+
+  $(window).on('resize', function(){
+    $('.m-draggable > div').css({'padding-right': 0})
+    TweenMax.set($('.m-draggable'), {scrollLeft: 0})
+    $('.m-draggable table tr>td:first-child, .m-draggable table tr>th:first-child').css({
+      left: 0
+    });
+
   });
 }
 
