@@ -2099,7 +2099,8 @@ table img {
 }
 
 /*glossary*/
-.e-gloss_btn {
+.e-gloss_btn,
+.e-params_btn {
   right: 0;
   padding-left: 30px;
   font-size: 16px;
@@ -2108,6 +2109,20 @@ table img {
   cursor: pointer;
   color: #02a7fd;
   transition:color 0.25s linear;
+}
+
+.e-params_btn {
+  display: none;
+}
+
+.e-params_btn:before {
+  font-size: 14px;
+  font-family: 'icomoon';
+  position: relative;
+  content: '9';
+  display: inline-block;
+  margin-right: .4em;
+  content: ":";
 }
 
 .e-gloss_btn:before {
@@ -2119,8 +2134,19 @@ table img {
   margin-right: 0.4em;
 }
 
-.e-gloss_btn:hover {
+.e-gloss_btn:hover,
+.e-params_btn:hover {
   color: #57ccfd;
+}
+
+.e-params_close {
+  position: absolute;
+  right: 3.5%;
+  z-index: 9;
+}
+.e-params_close:before {
+  content: '8';
+  font-family: 'icomoon';
 }
 
 .b-gloss {
@@ -2848,6 +2874,7 @@ table img {
 .m-statistic_parameters {
   height: auto !important;
   overflow: visible;
+  display: none;
 }
 
 .m-statistic_parameters .b-float_panel_cover {
@@ -2870,6 +2897,10 @@ table img {
 
 .m-stats .b-table_view {
   display: block !important;
+}
+
+.e-params_btn {
+  display: inline;
 }
 /******************************* Statistics Page end ******************************/
 

@@ -204,6 +204,16 @@ $(document).ready(function(){
     ]
   });
 
+  $(document)
+    .on('click', '.e-params_btn', function(e) {
+      e.preventDefault();
+      $('.m-statistic_parameters').slideToggle();
+    })
+    .on('click', '.e-params_close', function(e) {
+      e.preventDefault();
+      $('.m-statistic_parameters').slideUp();
+    })
+
   $('.m-scroll_block').draggable({
     cursor: "move",
     axis: "x",
@@ -322,6 +332,7 @@ function DraggableTables() {
       edgeResistance:0.5,
       lockAxis:true,
       onDrag: function() {
+        console.log(this)
         var xPosition = this.x
         if (xPosition < this.minX) { xPosition = this.minX }
         $('table tr>td:first-child, table tr>th:first-child', $(this.target)).css({
