@@ -2911,6 +2911,17 @@ table img {
 .e-params_close {
   display: block;
 }
+
+
+.b-fields {
+  margin: 0 -1.75%;
+}
+
+.b-field_wrap {
+  float: left;
+  width: 50%;
+  padding: 0 1.75%;
+}
 /******************************* Statistics Page end ******************************/
 
 }
