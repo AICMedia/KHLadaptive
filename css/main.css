@@ -2142,6 +2142,7 @@ table img {
 .e-params_close {
   position: absolute;
   right: 3.5%;
+  display: none;
   z-index: 9;
 }
 .e-params_close:before {
@@ -2902,8 +2903,18 @@ table img {
 .e-params_btn {
   display: inline;
 }
+
+.e-params_close {
+  display: block;
+}
 /******************************* Statistics Page end ******************************/
 
+}
+
+@media (min-width:1280px) {
+  .m-statistic_parameters {
+    display: block !important;
+  }
 }
 
 
