@@ -1024,6 +1024,7 @@ UL.m-list>LI:before {
 
 .m-teaser .b-middle_block .m-cover_link {
   color: #fff!important;
+  background: rgba(0, 0, 0, 0.2);
   padding:40px 3.5%;
   transition: background 0.25s ease;
 }
