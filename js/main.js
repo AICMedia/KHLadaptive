@@ -877,7 +877,7 @@ function CustomMap() {
         }, 100);
 
         iw.close();
-        var html= "<div style='color:#000;background-color:#fff;padding:0px;width:310px;' class=''><div class='gm-window-topbar'><h4>"+title+"</h4></div><dl class='gm-window-inner'><dt>Адрес</dt><dd>"+desc+"</dd><dt>Телефон</dt><dd>"+telephone+"</dd><dt>E-mail</dt><dd><a href='mailto:"+email+"' >"+email+"<a></dd><a href='"+link+"'' >"+web+"<a></div>";
+        var html= "<div style='color:#000;background-color:#fff;padding:0px;width:310px;' class='gm-cover'><div class='gm-window-topbar'><h4>"+title+"</h4></div><dl class='gm-window-inner'><dt>Адрес</dt><dd>"+desc+"</dd><dt>Телефон</dt><dd>"+telephone+"</dd><dt>E-mail</dt><dd><a href='mailto:"+email+"' >"+email+"<a></dd><a href='"+link+"'' >"+web+"<a></div>";
         iw = new google.maps.InfoWindow({content:html});
         iw.open(map,marker);
 
