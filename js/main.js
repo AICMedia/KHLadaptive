@@ -887,8 +887,8 @@ function CustomMap() {
           iwCloseBtn.css({
             opacity: '1',
             right: '38px', top: '3px',
-            border: '7px solid #48b5e9'
-            'border-radius': '13px',
+            border: '7px solid #48b5e9',
+            'border-radius': '13px'
             });
 
           iwCloseBtn.mouseout(function(){
