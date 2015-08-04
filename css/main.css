@@ -3851,7 +3851,7 @@ H5 {
 }*/
 
 .b-period_score {
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .b-score_table_cover {
@@ -3884,8 +3884,20 @@ H5 {
 }
 
 .m-gagarin .e-point_scale SPAN {
-  font-size: 12px;
+  font-size: 10px;
 }
+
+.m-gagarin .e-point_switcher LI IMG {
+  width: 25px;
+  top: -45px;
+  height: 25px;
+  left: -7px;
+}
+
+.b-short_tile_item .m-clear > A {
+  float: none !important;
+}
+
 
 /******************************* Clubs Page end ******************************/
 
