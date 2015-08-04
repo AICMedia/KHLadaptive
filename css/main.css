@@ -171,61 +171,6 @@ UL.m-list>LI:before {
 
 /**************************************** DESCTOP ****************************************/
 /******************************* Header ******************************/
-/*
-.gm-style-iw {
-  min-width: 310px;
-  padding: 0 5%;
-}*/
-.gm-window-inner::after,
-.gm-window-inner::before {
-  content: '';
-  display: table;
-}
-
-.gm-window-inner::after {
-  clear: both;
-}
-.gm-window-inner {
-  padding: 20px 5% 0;
-}
-
-.gm-window-topbar {
-  /*position: absolute;*/
-  /*left: -15px;*/
-  /*top: -9px;*/
-  padding: 0 5%;
-  background-color: #f1fafe;
-  height: 60px;
-  line-height: 60px;
-  width: 360px;
-}
-.gm-style-iw {
-  width: 363px !important;
-   top: 1px !important;
-   left: 1px !important;
-   border-radius: 0;
-}
-
-.gm-style-iw DIV {
-  overflow: visible!important;
-}
-
-.gm-style-iw h4 {
-  font-size: 14px;
-  line-height: 60px;
-}
-.gm-style-iw dl {}
-.gm-style-iw dl dt {
-  float: left;
-  width: 40%;
-  font-weight: bold;
-}
-.gm-style-iw dl dd {
-  float: left;
-  width: 60%;
-  margin-bottom: 20px;
-}
-
 
 .e-top_main_bnr {
   height: 100px;
@@ -2800,6 +2745,65 @@ B.e-player_name {
 .b-gagerin_cup_info P {
   font-size: 14px;
   line-height: 1.5em;
+}
+
+.gm-window-close::before {
+  font-family: 'icomoon';
+  content: "8";
+}
+.gm-window-inner::after,
+.gm-window-inner::before {
+  content: '';
+  display: table;
+}
+
+.gm-window-inner::after {
+  clear: both;
+}
+.gm-window-inner {
+  padding: 20px 5% 0;
+}
+
+.gm-window-topbar > IMG {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.gm-window-topbar {
+  padding: 0 5%;
+  background-color: #f1fafe;
+  height: 60px;
+  line-height: 60px;
+  width: 360px;
+}
+.gm-style-iw {
+  width: 363px !important;
+   top: 1px !important;
+   left: 1px !important;
+   border-radius: 0;
+}
+
+.gm-style-iw DIV {
+  overflow: visible!important;
+}
+
+.gm-style-iw H4 {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.gm-style-iw dl {}
+.gm-style-iw dl dt {
+  float: left;
+  width: 40%;
+  font-weight: bold;
+}
+.gm-style-iw dl dd {
+  float: left;
+  width: 60%;
+  margin-bottom: 20px;
 }
 
 /******************************* Clubs Page end ******************************
