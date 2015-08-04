@@ -309,15 +309,15 @@ function FloatShortBlock() {
     $.each($('.b-short_block'), function(i, e){
       var cover = $(e).parent();
       var top = $(window).scrollTop() > $(e).parent().offset().top
-      var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).find('.b-score_table_cover').innerHeight()
+      var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).find('.b-score_table_cover.m-scrollable').innerHeight()
       if (top && bottom) {
-        TweenMax.set($(e).find('.b-score_table_cover'), {
+        TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {
           position: 'fixed',
           top: 0
         })
       } else {
-        if (top) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover').innerHeight()})}
-        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: 0})}
+        if (top) { TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover.m-scrollable').innerHeight()})}
+        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {position: 'absolute', top: 0})}
       }
     })
   }
