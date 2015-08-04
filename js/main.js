@@ -309,15 +309,15 @@ function FloatShortBlock() {
     $.each($('.b-short_block'), function(i, e){
       var cover = $(e).parent();
       var top = $(window).scrollTop() > $(e).parent().offset().top
-      var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).find('.m-scrollable').innerHeight()
+      var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).find('.b-score_table_cover').innerHeight()
       if (top && bottom) {
-        TweenMax.set($(e).find('.m-scrollable'), {
+        TweenMax.set($(e).find('.b-score_table_cover'), {
           position: 'fixed',
           top: 0
         })
       } else {
-        if (top) { TweenMax.set($(e).find('.m-scrollable'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.m-scrollable').innerHeight()})}
-        if (bottom) { TweenMax.set($(e).find('.m-scrollable'), {position: 'absolute', top: 0})}
+        if (top) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover').innerHeight()})}
+        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover'), {position: 'absolute', top: 0})}
       }
     })
   }
@@ -868,40 +868,21 @@ function CustomMap() {
         };
       }());
 
+
       iw = new google.maps.InfoWindow();
       google.maps.event.addListener(marker, 'click', function() {
-        if (infoWindowVisible()) {
-          iw.close();
-          infoWindowVisible(false);
-        } else {
-          var html= "<div style='color:#000;background-color:#fff;padding:0px;width:310px;' class=''><div class='gm-window-topbar'><h4>"+title+"</h4></div><dl class='gm-window-inner'><dt>Адрес</dt><dd>"+desc+"</dd><dt>Телефон</dt><dd>"+telephone+"</dd><dt>E-mail</dt><dd><a href='mailto:"+email+"' >"+email+"<a></dd><a href='"+link+"'' >"+web+"<a></div>";
-          iw = new google.maps.InfoWindow({content:html});
-          var iwOuter = $('.gm-style-iw');
-          var iwBackground = iwOuter.prev();
-          iwOuter.parent().parent().css({left: '30px', top: '40px'});
-          iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 140px !important; top: 190px !important;'});
-          iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 140px !important; top: 190px !important;'});
-          iwBackground.children(':nth-child(2)').css({'display' : 'none'});
-          iwBackground.children(':nth-child(4)').css({'display' : 'none'});
-          var iwCloseBtn = iwOuter.next();
-          iwCloseBtn.css({
-            opacity: '1',
-            right: '38px', top: '3px',
-            border: '7px solid #48b5e9',
-            'border-radius': '13px'
-            });
 
-          iwCloseBtn.mouseout(function(){
-            $(this).css({opacity: '1'});
-          });
-          google.maps.event.addListener(iw, 'domready', function() {
-              console.log('sdf')
+        setTimeout(function() {
+          $('.gm-style-iw').next().html('<b>111</b>');
+        }, 100);
 
-          });
-          iw.open(map,marker);
-          infoWindowVisible(true);
-        }
+        iw.close();
+        var html= "<div style='color:#000;background-color:#fff;padding:0px;width:310px;' class=''><div class='gm-window-topbar'><h4>"+title+"</h4></div><dl class='gm-window-inner'><dt>Адрес</dt><dd>"+desc+"</dd><dt>Телефон</dt><dd>"+telephone+"</dd><dt>E-mail</dt><dd><a href='mailto:"+email+"' >"+email+"<a></dd><a href='"+link+"'' >"+web+"<a></div>";
+        iw = new google.maps.InfoWindow({content:html});
+        iw.open(map,marker);
+
       });
+
       google.maps.event.addListener(iw, 'closeclick', function () {
           infoWindowVisible(false);
       });

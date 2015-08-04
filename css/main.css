@@ -197,13 +197,19 @@ UL.m-list>LI:before {
   background-color: #f1fafe;
   height: 60px;
   line-height: 60px;
+  width: 360px;
 }
 .gm-style-iw {
-  width: 350px !important;
+  width: 363px !important;
    top: 1px !important;
    left: 1px !important;
    border-radius: 0;
 }
+
+.gm-style-iw DIV {
+  overflow: visible!important;
+}
+
 .gm-style-iw h4 {
   font-size: 14px;
   line-height: 60px;
