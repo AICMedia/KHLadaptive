@@ -2659,11 +2659,12 @@ B.e-player_name {
 .b-final_cup_date .e-bevel {
   font-size: 14px;
   color: #fff;
+  margin-right: 3em;
 }
 
 .b-final_cup_date B {
-  margin-left: 1em;
   font:18px 'latobold';
+  white-space: nowrap;
 }
 
 .b-wide_tile_item {
