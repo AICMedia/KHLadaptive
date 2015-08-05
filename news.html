@@ -14,10 +14,14 @@
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
-  <script type="text/javascript" src="js/lib/chart.min.js"></script>
-
+  <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+  <script type="text/javascript" src="js/lib/stupidtable.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
+
 
 <body id="statistics">
 
@@ -300,7 +304,7 @@
       </div>
     </div>
 
-    <div class="b-content_section m-stats s-float_panel_start">
+    <div class="b-content_section m-news s-float_panel_start">
       <div class="b-wide_block m-not_pad">
         <div class="b-title_cover">
           <h2>Новости</h2>
@@ -322,9 +326,148 @@
           </div>
         </div>
       </div>
-
+      <div class="b-wide_block">
+        <div class="e-bevel m-color_white">1 июня</div>
+      </div>
+      <div class="b-blocks_cover">
+        <div class="b-middle_block">
+          <div class="b-news m-size_large">
+            <div class="e-photo" style="height: 410px; background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size: cover;">
+            </div>
+            <a href="#" class="m-cover_link">
+              <h4>Санкт-Петербург, 19:30. Финал Кубка Гагарина, действие четвертое <span class="e-timestamp">15:10</span></h4>
+            </a>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="b-short_block_cover m-left">
+            <div class="b-news">
+              <div class="e-photo" style="height: 160px; background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size: cover;">
+              </div>
+              <a href="#" class="m-cover_link">
+                <h5>Санкт-Петербург, 19:30. Финал Кубка Гагарина, действие четвертое <span class="e-timestamp">15:10</span></h5>
+              </a>
+            </div>
+          </div>
+          <div class="b-short_block_cover m-right">
+            <div class="b-news">
+              <div class="e-photo" style="height: 160px; background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size: cover;">
+              </div>
+              <a href="#" class="m-cover_link">
+                <h5>Санкт-Петербург, 19:30. Финал Кубка Гагарина, действие четвертое <span class="e-timestamp">15:10</span></h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-blocks_cover m-text_articles">
+        <div class="b-middle_block">
+          <h5>Другие новости</h5>
+          <div class="b-row">
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="e-bnr">
+            <img src="img/bnr_2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="b-wide_block">
+        <div class="e-bevel m-color_white">1 июня</div>
+      </div>
+      <div class="b-blocks_cover">
+        <div class="b-middle_block">
+          <div class="b-news m-size_large">
+            <div class="e-photo" style="height: 410px; background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size: cover;">
+            </div>
+            <a href="#" class="m-cover_link">
+              <h4>Санкт-Петербург, 19:30. Финал Кубка Гагарина, действие четвертое <span class="e-timestamp">15:10</span></h4>
+            </a>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="b-short_block_cover m-left">
+            <div class="b-news">
+              <div class="e-photo" style="height: 160px; background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size: cover;">
+              </div>
+              <a href="#" class="m-cover_link">
+                <h5>Санкт-Петербург, 19:30. Финал Кубка Гагарина, действие четвертое <span class="e-timestamp">15:10</span></h5>
+              </a>
+            </div>
+          </div>
+          <div class="b-short_block_cover m-right">
+            <div class="b-news">
+              <div class="e-photo" style="height: 160px; background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size: cover;">
+              </div>
+              <a href="#" class="m-cover_link">
+                <h5>Санкт-Петербург, 19:30. Финал Кубка Гагарина, действие четвертое <span class="e-timestamp">15:10</span></h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-blocks_cover m-text_articles">
+        <div class="b-middle_block">
+          <h5>Другие новости</h5>
+          <div class="b-row">
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+            <div class="b-text_article">
+              <a href="#" class="m-cover_link">
+                <p>Международная космическая станция смотрит финал Кубка Гагарина <span class="e-timestamp">15:10</span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="e-bnr">
+            <img src="img/bnr_2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="b-wide_block">
+        <a href="#" class='e-loadmore'>Загрузить еще</a>
+        <div class="b-subscribe m-clear">
+          <div class="b-subscribe_col"><label>Подпишитесь на еженедельную новостную рассылку КХЛ:</label></div>
+          <div class="b-subscribe_col"><input type="text" name="name" value="" class="input" placeholder="Введите ваш e-mail"></div>
+          <div class="b-subscribe_col m-text_center"><a href="#" class="e-submit_link">Подписаться</a></div>
+        </div>
+      </div>
       <div class="m-top_panel">
-        <div class="b-float_panel m-statistic_parameters">
+        <div class="b-float_panel m-news-parameters">
           <div class="b-float_panel_cover">
             <form class="b-float_panel_block">
               <h5 class="b-float_panel_title">Параметры Новостей</h5>
@@ -339,24 +482,61 @@
               </div>
 
               <div class="b-field_cover m-select">
-                <label>Интервал</label>
-                <span class="m-w_50">
+                <label class="m-w_100">Интервал</label>
+                <span class="m-w_45 m-fl m-pr_1_25">
                   <select>
                     <option>Начало</option>
                   </select>
                 </span>
-                <span class="m-w_50">
+                <span class="m-w_45 m-fr m-pl_1_25">
                   <select>
                     <option>Конец</option>
                   </select>
                 </span>
-              </div>              
+              </div>
 
             </form>
-          </div>
-        </div>
-        <div class="b-wide_block">
 
+            <div class="b-float_panel_block">
+              <h5 class="b-float_panel_title">Последние фото</h5>
+              <a href="#" class="m-cover_link">
+                <i class="e-photo" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size: cover;"></i>
+              </a>
+              <div class="b-info_bottom">
+                <span class="e-date">1 июня 2015</span>
+                <span class="e-view m-fr">2 047</span>
+                <span class="e-photos m-fr">7</span>
+              </div>
+              <a href="#" class="m-cover_link">
+                <i class="e-photo" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size: cover;"></i>
+              </a>
+              <div class="b-info_bottom">
+                <span class="e-date">1 июня 2015</span>
+                <span class="e-view m-fr">2 047</span>
+                <span class="e-photos m-fr">7</span>
+              </div>
+            </div>
+
+            <div class="b-float_panel_block">
+              <h5 class="b-float_panel_title">Популярные видео</h5>
+              <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <div class="b-info_bottom">
+                <span class="e-date m-fl">1 июня 2015</span>
+                <span class="e-view m-fr">2 047</span>
+              </div>
+              <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <div class="b-info_bottom">
+                <span class="e-date m-fl">1 июня 2015</span>
+                <span class="e-view m-fr">2 047</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
