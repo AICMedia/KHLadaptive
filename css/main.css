@@ -3166,12 +3166,14 @@ h4 > .e-timestamp {
 
 /******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
-.m-statistic_parameters {
+.m-statistic_parameters,
+.m-news-parameters {
   overflow: visible;
   display: none;
 }
 
-.m-statistic_parameters .b-float_panel_cover {
+.m-statistic_parameters .b-float_panel_cover,
+.m-news-parameters .b-float_panel_cover {
   padding: 30px 3.5%;
   min-height: 0 !important;
   overflow: visible;
@@ -3237,10 +3239,20 @@ h4 > .e-timestamp {
 .m-news-parameters {
   height: auto !important;
 }
+
+
+.m-hide-below {
+  display: none;
+}
+
+.m-news .b-title_cover H2 {
+  float: none;
+}
 }
 
 @media (min-width:1280px) {
-  .m-statistic_parameters {
+  .m-statistic_parameters,
+  .m-news_parameters {
     display: block !important;
   }
 }

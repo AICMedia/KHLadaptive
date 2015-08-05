@@ -222,11 +222,11 @@ $(document).ready(function(){
   $(document)
     .on('click', '.e-params_btn', function(e) {
       e.preventDefault();
-      $('.m-statistic_parameters').slideToggle();
+      $('.b-float_panel').slideToggle();
     })
     .on('click', '.e-params_close', function(e) {
       e.preventDefault();
-      $('.m-statistic_parameters').slideUp();
+      $('.b-float_panel').slideUp();
     })
 
   $('.m-scroll_block').draggable({
