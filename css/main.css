@@ -2810,8 +2810,268 @@ B.e-player_name {
 
 /******************************* Clubs Page end ******************************
 ******************************* Player Page ******************************/
-.e-alfabet .jq-radio {
+.b-float_panel_block .e-local_search {
+  margin:0;
+  width: 200px;
+  border: 1px solid #d7e6ee;
+  background: #FFF;
+  transition: border 0.25s linear;
+}
+
+.b-float_panel_block .e-local_search:hover {
+  border: 1px solid #02a7fd;
+}
+
+.b-float_panel_block .e-local_search .e-search_field {
+  width: 140px;
+  padding: 0 8px 0 0;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+.b-float_panel_block .e-local_search  .e-search_btn {
+  color: #02a7fd;
+  width: 40px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.e-alfabet {
+  padding: 30px 0;
+}
+
+.e-alfabet .jq-radio,
+.e-alfabet INPUT {
   display: none!important;
+}
+
+.e-alfabet LI {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.5em;
+  font: 12px 'latobold';
+  color: #666;
+}
+
+.e-alfabet LABEL {
+  cursor: pointer;
+}
+
+.b-player_list {
+
+}
+
+.b-float_panel_block .e-club_title {
+  margin-bottom: 1em;
+}
+
+.e-player_list_item {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.e-player_list_item IMG {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 0.5em;
+  float: left;
+}
+
+.e-player_list_item .e-player_name {
+  font: 12px 'latoheavy';
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.m-player .e-details_img {
+  width: 25%;
+}
+
+.m-player .b-details_txt {
+  width: 75%;
+}
+
+.m-player .e-diagram {
+    margin-left: -25%;
+    padding: 30px 0;
+    width: 125%;
+}
+
+.m-player .e-player_name .e-bevel {
+  font: 24px 'latoheavy';
+  color: #fff; 
+}
+
+.e-translit_name {
+  font-size: 18px;
+  margin-top: -1em;
+}
+
+.m-player .e-club I {
+  margin: 0 0 0 30px;
+}
+
+.m-player .e-stats_all {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.b-player_data {
+  width: 100%;
+  border: 1px solid #d7e6ee;
+}
+
+.b-player_data TD {
+  position: relative;
+  padding: 20px 3.5%;
+}
+
+.b-player_data TD P {
+  margin-bottom: 0;
+}
+
+.b-player_data H4 IMG {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid #d7e6ee;
+  position: relative;
+  margin:0 0 -0.3em 0.5em;
+}
+
+.b-player_data TD:before {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 50px;
+  width: 1px;
+  background: #d7e6ee;
+  top: 50%;
+  left: -1px;
+  margin-top: -25px;
+}
+
+TABLE.m-brd {
+  border-bottom: 1px solid #d7e6ee;
+}
+
+.m-not_fix TD:first-child,
+.m-not_fix TH:first-child {
+  background: none!important;
+  left: auto!important;
+  position: static!important;
+}
+
+.b-short_block.m-brd {
+  padding: 0 3.5%;
+  border-left: 1px solid #d7e6ee;
+}
+
+.m-season_score_title {
+  clear: both;
+  margin-bottom: 270px;
+}
+
+.m-season_score .e-point_switcher LI {
+  width: 14.28571%;
+  background: none;
+}
+
+.m-season_score .b-data_col {
+  position: absolute;
+  left: -50%;
+  width: 100%;
+  background: rgba(0,166,255, 0.2);
+  bottom: 5px;
+  margin-left: 5px;
+  z-index: 2;
+  text-align: center;
+  transition: background 0.25s linear;
+}
+
+.m-season_score .m-active .b-data_col {
+  background: rgba(0,166,255, 1);
+}
+
+.m-season_score .b-data_col:after {
+  position: absolute;
+  content: '';
+  display: block;
+  right: -1px;
+  width: 1px;
+  height: 100%;
+  background: rgba(0,166,255, 0.2);
+  bottom: 0px;
+}
+
+.e-score_total {
+  font: 36px 'latoregular';
+}
+
+.e-score_sum {
+  font: 18px 'latoregular';
+  opacity: 0.6;
+  display: inline-block;
+  margin-bottom: 0.5em; 
+}
+
+.m-season_score .e-cup_date {
+  position: absolute;
+  right: auto;
+  bottom: -2em;
+}
+
+.m-season_score .e-cup_date:before {
+  color: #00a6ff;
+  transition: color 0.25s linear;
+}
+
+.m-season_score .m-active .e-cup_date:before {
+  color: #d9f2ff;
+}
+
+.b-score_data_cover {
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+}
+
+.b-player_time_scale_cover {
+  
+}
+
+.b-player_time_scale_row {
+  
+}
+
+.b-player_time_scale {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 25px 0; 
+}
+
+.b-player_time_scale IMG {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5em; 
+}
+
+.b-player_time_scale SPAN {
+  font: 16px 'latoheavy';
+  line-height: 30px;
+  vertical-align: top;
+}
+
+.b-player_time_scale DD {
+  margin-top: 0.5em; 
+  height: 8px;
+  border-radius: 8px;
+  background: #00a6ff;
+  width: 99%;
 }
 
 /******************************* Player Page end ******************************/

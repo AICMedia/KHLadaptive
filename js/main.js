@@ -72,6 +72,20 @@ $(document).ready(function(){
     }
   });
 
+  $("#season_score").slider({
+    animate: 250,
+    range: "min",
+    min: 0,
+    max: 7,
+    step: 1,
+    slide: function( event, ui ) {
+      $('.e-point_scale li, .e-point_switcher li').removeClass('m-active');
+      $('.e-point_switcher').find('.m-n_' + ui.value).addClass('m-active');
+      $('.e-point_scale').find('.m-n_' + ui.value).addClass('m-active').next().addClass('m-active');
+    }
+  });
+
+
   $(window).scroll(function(){
     FloatPanel();
     FloatMenu();
