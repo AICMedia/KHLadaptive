@@ -2044,9 +2044,12 @@ UL.m-list>LI:before {
 .e-params_btn {
   display: none;
   float: right;
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 0;
   height: 23px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .e-params_btn:before {
@@ -4103,7 +4106,7 @@ H5 {
 }
 
 .e-params_btn {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 /******************************* Statistics Page end ******************************/
 
