@@ -3065,7 +3065,7 @@ h4 > .e-timestamp {
 
 
 .b-article_references {
-  margin: 30px 0;
+  margin: 0 0 30px;
 }
 
 .b-article_reference {
@@ -3142,6 +3142,21 @@ h4 > .e-timestamp {
   float: left;
   margin-right: 20px;
   margin-top: 10px;
+}
+
+.m-teaser-short H1 {
+  margin: 30px 0;
+  line-height: 60px;
+}
+
+.m-teaser-short .e-date {
+  opacity: .6;
+  font-size: 14px;
+}
+
+.m-typo .b-video_block {
+  height: 410px;
+  margin: 25px 0;
 }
 /******************************* News Page End ******************************/
 
@@ -4347,6 +4362,10 @@ H5 {
    width: 100%;
    margin-bottom: 14px;
  }
+
+.m-typo .b-video_block {
+  height: 160px;
+}
 
 /******************************* News Page End ******************************/
 
