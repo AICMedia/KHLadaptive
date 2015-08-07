@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1.6, minimum-scale=0.25, user-scalable=no" />
   <title>KHL</title>
 
+  <link rel="stylesheet" href="css/dataTables.css">
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+
 
   <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
   <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+  <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+  </script>
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
@@ -415,68 +420,41 @@
           <div class="b-table_view">
             <div class="m-draggable" style="overflow: hidden; cursor: move; -webkit-user-select: none;"><div style="display: block; width: 100%; padding-right: 0px; position: relative; overflow: visible; vertical-align: top; padding-bottom: 0px; z-index: 0; -webkit-transform: translate3d(0px, 0px, 0px);">
               <table class="b-sorttable m-table_small">
-                <colgroup class=""></colgroup>
-                <colgroup></colgroup>
-                <colgroup class=""></colgroup>
-                <colgroup class=""></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup class=""></colgroup>
-                <colgroup class="hover"></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
-                <colgroup></colgroup>
                 <thead>
                   <tr>
-                    <th class="e-sortable" style="position: relative; left: 0px; background-color: rgb(255, 255, 255); z-index: 999; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;"><span class="m-brd">Игрок</span></th>
-                    <th class="e-sortable" data-sort="int">№</th>
-                    <th class="e-sortable" data-sort="string">Клуб</th>
-                    <th class="e-sortable" data-sort="int">И</th>
-                    <th class="e-sortable" data-sort="int">Ш</th>
-                    <th class="e-sortable" data-sort="int">А</th>
-                    <th class="e-sortable" data-sort="int">О</th>
-                    <th class="e-sortable" data-sort="int">+/-</th>
-                    <th class="e-sortable" data-sort="int">Штр</th>
-                    <th class="e-sortable" data-sort="int">ШР</th>
-                    <th class="e-sortable" data-sort="int">ШБ</th>
-                    <th class="e-sortable" data-sort="int">ШМ</th>
-                    <th class="e-sortable" data-sort="int">ШО</th>
-                    <th class="e-sortable" data-sort="int">ШП</th>
-                    <th class="e-sortable" data-sort="int">РБ</th>
-                    <th class="e-sortable" data-sort="int">БВ</th>
-                    <th class="e-sortable" data-sort="float">%БВ</th>
-                    <th class="e-sortable" data-sort="float">БВ/И</th>
-                    <th class="e-sortable" data-sort="int">Вбр</th>
-                    <th class="e-sortable" data-sort="int">ВВбр</th>
-                    <th class="e-sortable" data-sort="string">%Вбр</th>
-                    <th class="e-sortable" data-sort="string">ВП/И</th>
-                    <th class="e-sortable" data-sort="float">См/И</th>
-                    <th class="e-sortable" data-sort="int">СПр</th>
-                    <th class="e-sortable" data-sort="int">БлБ</th>
-                    <th class="e-sortable" data-sort="int">ФоП</th>
+                    <th class="m-text_left">Игрок</span></th>
+                    <th>№</th>
+                    <th>Клуб</th>
+                    <th>И</th>
+                    <th>Ш</th>
+                    <th>А</th>
+                    <th>О</th>
+                    <th>+/-</th>
+                    <th>Штр</th>
+                    <th>ШР</th>
+                    <th>ШБ</th>
+                    <th>ШМ</th>
+                    <th>ШО</th>
+                    <th>ШП</th>
+                    <th>РБ</th>
+                    <th>БВ</th>
+                    <th>%БВ</th>
+                    <th>БВ/И</th>
+                    <th>Вбр</th>
+                    <th>ВВбр</th>
+                    <th>%Вбр</th>
+                    <th>ВП/И</th>
+                    <th>См/И</th>
+                    <th>СПр</th>
+                    <th>БлБ</th>
+                    <th>ФоП</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="">
-                    <td class="m-text_left" style="position: relative; left: 0px; background-color: rgb(255, 255, 255); z-index: 999; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">
+                    <td class="m-text_left">
                       <img src="img/person.png" alt="" style="margin-right: 10px;">
-                      <b class="e-player_name">Нильссон Андерс</b>
+                      <span class="e-player_name">Нильссон Андерс</span>
                     </td>
                     <td>1</td>
                     <td>СИБ</td>
@@ -505,9 +483,9 @@
                     <td>1</td>
                   </tr>
                   <tr class="m-tr_even">
-                    <td class="m-text_left" style="position: relative; left: 0px; background-color: rgb(255, 255, 255); z-index: 999; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">
+                    <td class="m-text_left">
                       <img src="img/person.png" alt="" style="margin-right: 10px;">
-                      <b class="e-player_name">Салак Александр</b>
+                      <span class="e-player_name">Салак Александр</span>
                     </td>
                     <td>2</td>
                     <td>СКА</td>
@@ -536,9 +514,9 @@
                     <td>1</td>
                   </tr>
                   <tr>
-                    <td class="m-text_left" style="position: relative; left: 0px; background-color: rgb(255, 255, 255); z-index: 999; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">
+                    <td class="m-text_left">
                       <img src="img/person.png" alt="" style="margin-right: 10px;">
-                      <b class="e-player_name">Коскинен Микко</b>
+                      <span class="e-player_name">Коскинен Микко</span>
                     </td>
                     <td>3</td>
                     <td>ЦСК</td>
@@ -567,9 +545,9 @@
                     <td>1</td>
                   </tr>
                   <tr class="m-tr_even hover">
-                    <td class="m-text_left" style="position: relative; left: 0px; background-color: rgb(255, 255, 255); z-index: 999; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">
+                    <td class="m-text_left">
                       <img src="img/person.png" alt="" style="margin-right: 10px;">
-                      <b class="e-player_name">Лазушин Александр</b>
+                      <span class="e-player_name">Лазушин Александр</span>
                     </td>
                     <td>4</td>
                     <td>АКБ</td>
@@ -598,9 +576,9 @@
                     <td>1</td>
                   </tr>
                   <tr>
-                    <td class="m-text_left" style="position: relative; left: 0px; background-color: rgb(255, 255, 255); z-index: 999; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">
+                    <td class="m-text_left">
                       <img src="img/person.png" alt="" style="margin-right: 10px;">
-                      <b class="e-player_name">Гарипов Эмиль</b>
+                      <span class="e-player_name">Гарипов Эмиль</span>
                     </td>
                     <td>5</td>
                     <td>ТРК</td>

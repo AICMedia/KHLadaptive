@@ -2382,11 +2382,6 @@ UL.m-list>LI:before {
   opacity: 1;
 }
 
-.b-sorttable {
-  width: 100%;
-  border-bottom: 1px solid #d7e6ee;
-}
-
 .m-draggable {
   overflow: hidden;
 }
@@ -2403,44 +2398,21 @@ UL.m-list>LI:before {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d7e6ee', endColorstr='#d7e6ee',GradientType=1 );
 }
 
-.b-sorttable colgroup.hover {
-  background-color: #d9f2ff !important;
-  z-index: 999;
+.b-sorttable TD, .b-sorttable TH {
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-.b-sorttable tr.hover TD {
-  background-color: #d9f2ff !important;
-
-}
 
 .b-sorttable TH {
-  padding: 10px 5px;
-  white-space: nowrap;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  font:12px 'latoheavy';
-  text-align: center;
-  vertical-align: middle;
-  border-bottom: 1px solid #d7e6ee;
-  cursor: pointer;
 }
 
-.b-sorttable TH:first-child {
-  text-align: left;
-}
 
-.b-sorttable TD {
-  padding: 10px 5px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.b-sorttable TD:first-child {
-  text-align: left;
-}
 
 .m-text_left {
   text-align: left !important;
@@ -2467,30 +2439,8 @@ B.e-player_name {
   background: #ddd;
 }
 
-.sorting-asc:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  margin-left: -6px;
-  bottom: -4px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 8px 6px 0 6px;
-  border-color: #03a7fc transparent transparent transparent;
-}
-
-.sorting-desc:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  margin-left: -6px;
-  bottom: -4px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 6px 8px 6px;
-  border-color: transparent transparent #03a7fc transparent;
+.m-draggable table tr>th:first-child {
+  z-index: 999;
 }
 
 .e-sortable {
@@ -2929,7 +2879,7 @@ B.e-player_name {
 
 .m-player .e-player_name .e-bevel {
   font: 24px 'latoheavy';
-  color: #fff; 
+  color: #fff;
 }
 
 .e-translit_name {
@@ -3043,7 +2993,7 @@ TABLE.m-brd {
   font: 18px 'latoregular';
   opacity: 0.6;
   display: inline-block;
-  margin-bottom: 0.5em; 
+  margin-bottom: 0.5em;
 }
 
 .m-season_score .e-cup_date {
@@ -3068,23 +3018,23 @@ TABLE.m-brd {
 }
 
 .b-player_time_scale_cover {
-  
+
 }
 
 .b-player_time_scale_row {
-  
+
 }
 
 .b-player_time_scale {
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 25px 0; 
+  margin: 0 0 25px 0;
 }
 
 .b-player_time_scale IMG {
   width: 30px;
   height: 30px;
-  margin-right: 0.5em; 
+  margin-right: 0.5em;
 }
 
 .b-player_time_scale SPAN {
@@ -3094,7 +3044,7 @@ TABLE.m-brd {
 }
 
 .b-player_time_scale DD {
-  margin-top: 0.5em; 
+  margin-top: 0.5em;
   height: 8px;
   border-radius: 8px;
   background: #00a6ff;
@@ -3103,7 +3053,7 @@ TABLE.m-brd {
 
 .b-blocks_cover.m-share {
   background: #f1fafe;
-  text-align: center; 
+  text-align: center;
   padding: 30px 0;
 }
 

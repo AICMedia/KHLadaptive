@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1.6, minimum-scale=0.25, user-scalable=no" />
   <title>KHL</title>
 
+  <link rel="stylesheet" href="css/dataTables.css">
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 
@@ -15,7 +16,9 @@
   <script type="text/javascript" src="js/lib/slick.js"></script>
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
   <script type="text/javascript" src="js/lib/chart.min.js"></script>
-  <script type="text/javascript" src="js/lib/stupidtable.min.js"></script>
+  <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js">
+
+  </script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -390,11 +393,11 @@
                 <img src="img/player_3.jpg" alt="" />
                 <span class="e-player_name">Дадонов Евгений</span>
               </li>
-            </ul>              
+            </ul>
 
           </form>
         </div>
-      </div>    
+      </div>
 
       <div class="b-blocks_cover">
         <div class="b-middle_block">
@@ -451,7 +454,7 @@
               </td>
             </tr>
           </table>
-        </div>        
+        </div>
 
         <div class="b-middle_block">
           <h5>Статистика игрока в плей-офф 2014-2015</h5>
@@ -521,7 +524,7 @@
             <ul class="e-point_switcher">
               <li class="m-n_0 m-active" style="left:0%">
                 <div class="b-data_col" style="height:120px;">
-                  <div class="b-score_data_cover">                  
+                  <div class="b-score_data_cover">
                     <b class="e-score_total">40</b><br/><span class="e-score_sum">22+18</span><br/>
                   </div>
                 </div>
@@ -606,8 +609,8 @@
               </dl>
             </li>
           </ul>
-          
-        </div> 
+
+        </div>
 
         <div class="b-wide_block">
           <div class="b-blocks_cover m-share">
@@ -622,7 +625,7 @@
         </div>
 
       </div>
-    </div> 
+    </div>
 
     <div class="b-content_section m-stats">
       <div class="b-wide_block m-not_pad">
@@ -641,7 +644,7 @@
         </div>
       </div>
 
-      <div class="b-data_row"> 
+      <div class="b-data_row">
         <div class="b-wide_block">
           <div class="b-gloss s-gloss_1">
             <b class="e-close_btn"></b>
@@ -689,165 +692,147 @@
               <dd class="e-gloss_transcript">сухие игры</dd>
             </dl>
           </div>
-        
-          <div class="m-draggable">
-            <table class="b-sorttable m-table_small m-brd m-not_fix">
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <colgroup></colgroup>
-              <thead>
-                <tr>
-                  <th class='e-sortable m-text_left' data-sort="string">Лига</th>
-                  <th class='e-sortable m-text_left' data-sort="string">Команда</th>
-                  <th class='e-sortable m-text_left' data-sort="string">Сезон</th>
-                  <th class='e-sortable' data-sort="int">№</th>
-                  <th class='e-sortable' data-sort="string">Клуб</th>
-                  <th class='e-sortable' data-sort="int">И</th>
-                  <th class='e-sortable' data-sort="int">В</th>
-                  <th class='e-sortable' data-sort="int">П</th>
-                  <th class='e-sortable' data-sort="int">ИБ</th>
-                  <th class='e-sortable' data-sort="int">Бр</th>
-                  <th class='e-sortable' data-sort="int">ПШ</th>
-                  <th class='e-sortable' data-sort="int">ОБ</th>
-                  <th class='e-sortable' data-sort="int">%ОБ</th>
-                  <th class='e-sortable' data-sort="int">КН</th>
-                  <th class='e-sortable' data-sort="int">Ш</th>
-                  <th class='e-sortable' data-sort="int">А</th>
-                  <th class='e-sortable' data-sort="int">И"0"</th>
-                  <th class='e-sortable' data-sort="int">ШТР</th>
-                  <th class='e-sortable' data-sort="string">ВП</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="m-text_left">НХЛ</td>
-                  <td class="m-text_left"><b>Нэшвиль Предаторс</b></td>
-                  <td class="m-text_left">РЧ 2006-2007</td>
-                  <td>1</td>
-                  <td>22</td>
-                  <td>9</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>38</td>
-                  <td>236</td>
-                  <td>375</td>
-                  <td>375</td>
-                  <td>803:14:00</td>
-                </tr>
-                <tr class='m-tr_even'>
-                  <td class="m-text_left">НХЛ</td>
-                  <td class="m-text_left"><b>Нэшвиль Предаторс</b></td>
-                  <td class="m-text_left">РЧ 2006-2007</td>
-                  <td>2</td>
-                  <td>22</td>
-                  <td>9</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>38</td>
-                  <td>236</td>
-                  <td>375</td>
-                  <td>375</td>
-                  <td>803:14:00</td>
-                </tr>
-                <tr>
-                  <td class="m-text_left">НХЛ</td>
-                  <td class="m-text_left"><b>Нэшвиль Предаторс</b></td>
-                  <td class="m-text_left">РЧ 2006-2007</td>
-                  <td>3</td>
-                  <td>22</td>
-                  <td>9</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>38</td>
-                  <td>236</td>
-                  <td>375</td>
-                  <td>375</td>
-                  <td>803:14:00</td>
-                </tr>
-                <tr class='m-tr_even'>
-                  <td class="m-text_left">НХЛ</td>
-                  <td class="m-text_left"><b>Нэшвиль Предаторс</b></td>
-                  <td class="m-text_left">РЧ 2006-2007</td>
-                  <td>4</td>
-                  <td>22</td>
-                  <td>9</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>38</td>
-                  <td>236</td>
-                  <td>375</td>
-                  <td>375</td>
-                  <td>803:14:00</td>
-                </tr>
-                <tr>
-                  <td class="m-text_left">НХЛ</td>
-                  <td class="m-text_left"><b>Нэшвиль Предаторс</b></td>
-                  <td class="m-text_left">РЧ 2006-2007</td>
-                  <td>5</td>
-                  <td>22</td>
-                  <td>9</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>38</td>
-                  <td>375</td>
-                  <td>375</td>
-                  <td>236</td>
-                  <td>803:14:00</td>
-                </tr>
-              </tbody>
-            </table>
+
+          <div class="b-table_view">
+            <div class="m-draggable">
+              <table class="b-sorttable m-table_small">
+                <thead>
+                  <tr>
+                    <th class="m-text_left">Лига</th>
+                    <th class="m-text_left">Команда</th>
+                    <th class="m-text_left">Сезон</th>
+                    <th>№</th>
+                    <th>Клуб</th>
+                    <th>И</th>
+                    <th>В</th>
+                    <th>П</th>
+                    <th>ИБ</th>
+                    <th>Бр</th>
+                    <th>ПШ</th>
+                    <th>ОБ</th>
+                    <th>%ОБ</th>
+                    <th>КН</th>
+                    <th>Ш</th>
+                    <th>А</th>
+                    <th>И"0"</th>
+                    <th>ШТР</th>
+                    <th>ВП</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="m-text_left">НХЛ</td>
+                    <td class="m-text_left">Нэшвиль Предаторс</td>
+                    <td class="m-text_left">РЧ 2006-2007</td>
+                    <td>1</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>236</td>
+                    <td>375</td>
+                    <td>375</td>
+                    <td>803:14:00</td>
+                  </tr>
+                  <tr>
+                    <td class="m-text_left">НХЛ</td>
+                    <td class="m-text_left">Нэшвиль Предаторс</td>
+                    <td class="m-text_left">РЧ 2006-2007</td>
+                    <td>2</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>236</td>
+                    <td>375</td>
+                    <td>375</td>
+                    <td>803:14:00</td>
+                  </tr>
+                  <tr>
+                    <td class="m-text_left">НХЛ</td>
+                    <td class="m-text_left">Нэшвиль Предаторс</td>
+                    <td class="m-text_left">РЧ 2006-2007</td>
+                    <td>3</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>236</td>
+                    <td>375</td>
+                    <td>375</td>
+                    <td>803:14:00</td>
+                  </tr>
+                  <tr>
+                    <td class="m-text_left">НХЛ</td>
+                    <td class="m-text_left">Нэшвиль Предаторс</td>
+                    <td class="m-text_left">РЧ 2006-2007</td>
+                    <td>4</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>236</td>
+                    <td>375</td>
+                    <td>375</td>
+                    <td>803:14:00</td>
+                  </tr>
+                  <tr>
+                    <td class="m-text_left">НХЛ</td>
+                    <td class="m-text_left">Нэшвиль Предаторс</td>
+                    <td class="m-text_left">РЧ 2006-2007</td>
+                    <td>5</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>375</td>
+                    <td>375</td>
+                    <td>236</td>
+                    <td>803:14:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
       </div>
-    </div> 
+    </div>
 
     <div class="b-content_section m-video">
       <div class="b-wide_block">
@@ -912,7 +897,7 @@
         </div>
 
       </div>
-    </div> 
+    </div>
 
     <div class="b-content_section m-add_news">
       <div class="b-blocks_cover m-text_articles">
@@ -948,13 +933,13 @@
             <img src="img/bnr_2.jpg" alt="">
           </div>
         </div>
-      </div> 
+      </div>
 
       <div class="b-wide_block">
         <a class="e-loadmore" href="#">Загрузить еще</a>
       </div>
 
-    </div>    
+    </div>
 
   </div>
 

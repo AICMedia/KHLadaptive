@@ -161,21 +161,12 @@ $(document).ready(function(){
   $('input, select').styler();
 
   // таблицы с сортировкой
-  $('.b-sorttable').stupidtable();
 
-
-  $(".b-sorttable").delegate('td','mouseover mouseleave', function(e) {
-      thisTable = $(this).parents('table');
-      if (e.type == 'mouseover') {
-        $(this).parent().addClass("hover");
-        $("colgroup", thisTable).eq($(this).index()).addClass("hover");
-      }
-      else {
-        $(this).parent().removeClass("hover");
-        $("colgroup", thisTable).eq($(this).index()).removeClass("hover");
-      }
+  $('.b-sorttable').dataTable({
+    paging: false,
+    info: false,
+    filter: false
   });
-
 
   $('.b-feed_matches.m-slick_slider').slick({
     slidesToShow: 9,
@@ -394,7 +385,6 @@ function DraggableTables() {
     position: 'relative',
     left: 0,
     background: '#fff',
-    'z-index': 999,
     'white-space': 'nowrap'
   });
 
@@ -411,7 +401,7 @@ function DraggableTables() {
 
 function DraggableTablesEnabled() {
   $.each($('.b-table_view'), function(i, e){
-    if ($('table', e).innerWidth() > $('.m-draggable').innerWidth()){
+    if ($('table', e).innerWidth() > $('.m-draggable', e).innerWidth()){
       $(e).addClass('m-draggable_enabled')
     } else {
       $(e).removeClass('m-draggable_enabled')

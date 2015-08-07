@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1.6, minimum-scale=0.25, user-scalable=no" />
   <title>KHL</title>
 
+  <link rel="stylesheet" href="css/dataTables.css">
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 
@@ -14,8 +15,8 @@
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
-  <script type="text/javascript" src="js/lib/chart.min.js"></script>
-  <script type="text/javascript" src="js/lib/stupidtable.min.js"></script>
+  <script src="js/lib/chart.min.js"></script>
+  <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -473,43 +474,25 @@
                 <div class="b-table_view">
                   <div class="m-draggable">
                     <table class="b-sorttable m-table_small">
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
-                      <colgroup></colgroup>
                       <thead>
                         <tr>
-                          <th class='e-sortable m-first'><span class="m-brd">Игрок</span></th>
-                          <th class='e-sortable' data-sort="int">№</th>
-                          <th class='e-sortable' data-sort="string">Клуб</th>
-                          <th class='e-sortable' data-sort="int">И</th>
-                          <th class='e-sortable' data-sort="int">В</th>
-                          <th class='e-sortable' data-sort="int">П</th>
-                          <th class='e-sortable' data-sort="int">ИБ</th>
-                          <th class='e-sortable' data-sort="int">Бр</th>
-                          <th class='e-sortable' data-sort="int">ПШ</th>
-                          <th class='e-sortable' data-sort="int">ОБ</th>
-                          <th class='e-sortable' data-sort="int">%ОБ</th>
-                          <th class='e-sortable' data-sort="int">КН</th>
-                          <th class='e-sortable' data-sort="int">Ш</th>
-                          <th class='e-sortable' data-sort="int">А</th>
-                          <th class='e-sortable' data-sort="int">И"0"</th>
-                          <th class='e-sortable' data-sort="int">ШТР</th>
-                          <th class='e-sortable' data-sort="string">ВП</th>
+                          <th class='m-text_left'><span class="m-brd">Игрок</span></th>
+                          <th>№</th>
+                          <th>Клуб</th>
+                          <th>И</th>
+                          <th>В</th>
+                          <th>П</th>
+                          <th>ИБ</th>
+                          <th>Бр</th>
+                          <th>ПШ</th>
+                          <th>ОБ</th>
+                          <th>%ОБ</th>
+                          <th>КН</th>
+                          <th>Ш</th>
+                          <th>А</th>
+                          <th>И"0"</th>
+                          <th>ШТР</th>
+                          <th>ВП</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -729,32 +712,32 @@
                       <colgroup></colgroup>
                       <thead>
                         <tr>
-                          <th class='e-sortable'><span class="m-brd">Игрок</span></th>
-                          <th class='e-sortable' data-sort="int">№</th>
-                          <th class='e-sortable' data-sort="string">Клуб</th>
-                          <th class='e-sortable' data-sort="int">И</th>
-                          <th class='e-sortable' data-sort="int">Ш</th>
-                          <th class='e-sortable' data-sort="int">А</th>
-                          <th class='e-sortable' data-sort="int">О</th>
-                          <th class='e-sortable' data-sort="int">+/-</th>
-                          <th class='e-sortable' data-sort="int">Штр</th>
-                          <th class='e-sortable' data-sort="int">ШР</th>
-                          <th class='e-sortable' data-sort="int">ШБ</th>
-                          <th class='e-sortable' data-sort="int">ШМ</th>
-                          <th class='e-sortable' data-sort="int">ШО</th>
-                          <th class='e-sortable' data-sort="int">ШП</th>
-                          <th class='e-sortable' data-sort="int">РБ</th>
-                          <th class='e-sortable' data-sort="int">БВ</th>
-                          <th class='e-sortable' data-sort="float">%БВ</th>
-                          <th class='e-sortable' data-sort="float">БВ/И</th>
-                          <th class='e-sortable' data-sort="int">Вбр</th>
-                          <th class='e-sortable' data-sort="int">ВВбр</th>
-                          <th class='e-sortable' data-sort="string">%Вбр</th>
-                          <th class='e-sortable' data-sort="string">ВП/И</th>
-                          <th class='e-sortable' data-sort="float">См/И</th>
-                          <th class='e-sortable' data-sort="int">СПр</th>
-                          <th class='e-sortable' data-sort="int">БлБ</th>
-                          <th class='e-sortable' data-sort="int">ФоП</th>
+                          <th class='m-text_left'><span class="m-brd">Игрок</span></th>
+                          <th>№</th>
+                          <th>Клуб</th>
+                          <th>И</th>
+                          <th>Ш</th>
+                          <th>А</th>
+                          <th>О</th>
+                          <th>+/-</th>
+                          <th>Штр</th>
+                          <th>ШР</th>
+                          <th>ШБ</th>
+                          <th>ШМ</th>
+                          <th>ШО</th>
+                          <th>ШП</th>
+                          <th>РБ</th>
+                          <th>БВ</th>
+                          <th>%БВ</th>
+                          <th>БВ/И</th>
+                          <th>Вбр</th>
+                          <th>ВВбр</th>
+                          <th>%Вбр</th>
+                          <th>ВП/И</th>
+                          <th>См/И</th>
+                          <th>СПр</th>
+                          <th>БлБ</th>
+                          <th>ФоП</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1020,32 +1003,32 @@
                       <colgroup></colgroup>
                       <thead>
                         <tr>
-                          <th class='e-sortable'><span class="m-brd">Игрок</span></th>
-                          <th class='e-sortable' data-sort="int">№</th>
-                          <th class='e-sortable' data-sort="string">Клуб</th>
-                          <th class='e-sortable' data-sort="int">И</th>
-                          <th class='e-sortable' data-sort="int">Ш</th>
-                          <th class='e-sortable' data-sort="int">А</th>
-                          <th class='e-sortable' data-sort="int">О</th>
-                          <th class='e-sortable' data-sort="int">+/-</th>
-                          <th class='e-sortable' data-sort="int">Штр</th>
-                          <th class='e-sortable' data-sort="int">ШР</th>
-                          <th class='e-sortable' data-sort="int">ШБ</th>
-                          <th class='e-sortable' data-sort="int">ШМ</th>
-                          <th class='e-sortable' data-sort="int">ШО</th>
-                          <th class='e-sortable' data-sort="int">ШП</th>
-                          <th class='e-sortable' data-sort="int">РБ</th>
-                          <th class='e-sortable' data-sort="int">БВ</th>
-                          <th class='e-sortable' data-sort="float">%БВ</th>
-                          <th class='e-sortable' data-sort="float">БВ/И</th>
-                          <th class='e-sortable' data-sort="int">Вбр</th>
-                          <th class='e-sortable' data-sort="int">ВВбр</th>
-                          <th class='e-sortable' data-sort="string">%Вбр</th>
-                          <th class='e-sortable' data-sort="string">ВП/И</th>
-                          <th class='e-sortable' data-sort="float">См/И</th>
-                          <th class='e-sortable' data-sort="int">СПр</th>
-                          <th class='e-sortable' data-sort="int">БлБ</th>
-                          <th class='e-sortable' data-sort="int">ФоП</th>
+                          <th class='m-text_left'><span class="m-brd">Игрок</span></th>
+                          <th>№</th>
+                          <th>Клуб</th>
+                          <th>И</th>
+                          <th>Ш</th>
+                          <th>А</th>
+                          <th>О</th>
+                          <th>+/-</th>
+                          <th>Штр</th>
+                          <th>ШР</th>
+                          <th>ШБ</th>
+                          <th>ШМ</th>
+                          <th>ШО</th>
+                          <th>ШП</th>
+                          <th>РБ</th>
+                          <th>БВ</th>
+                          <th>%БВ</th>
+                          <th>БВ/И</th>
+                          <th>Вбр</th>
+                          <th>ВВбр</th>
+                          <th>%Вбр</th>
+                          <th>ВП/И</th>
+                          <th>См/И</th>
+                          <th>СПр</th>
+                          <th>БлБ</th>
+                          <th>ФоП</th>
                         </tr>
                       </thead>
                       <tbody>
