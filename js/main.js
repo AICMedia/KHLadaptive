@@ -344,9 +344,9 @@ function FloatPanel() {
           left: '-260px',
           height: 'auto'
         });
-        $(".b-float_panel_cover").css({
+        /*$(".b-float_panel_cover").css({
           'min-height': heightBlock-startBlock
-        });
+        });*/
       } else if ($(window).scrollTop() < endBlock) {
         $(".b-float_panel").css({
           position: 'fixed',

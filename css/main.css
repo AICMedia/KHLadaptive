@@ -66,7 +66,7 @@ BODY {
   max-width: 1920px;
 }
 TABLE {border-spacing:0; border-collapse:collapse;}
-TD,TH {vertical-align:top; text-align:left;}
+TD,TH {vertical-align:top; text-align:left; font-weight: normal;}
 IMG,FIELDSET {border:none;}
 DIV, DL, DT, DD, UL, LI, FORM {position:relative; box-sizing: border-box;}
 
@@ -3385,8 +3385,12 @@ h4 > .e-timestamp {
   height: 410px;
   margin: 25px 0;
 }
-/******************************* News Page End ******************************/
+/******************************* News Page End ******************************
+******************************* Match text Page ******************************/
 
+
+
+/******************************* Match text Page end ******************************/
 
 
 /**************************************** MOBILE < 1280 ****************************************/
@@ -3926,8 +3930,12 @@ H2 {font-size: 48px;}
 }
 
 .b-middle_block {
-  padding: 30px 3.5% !important;
+  padding: 30px 3.5%;
   width: 100%;
+}
+
+.m-teaser .b-middle_block {
+  padding: 0px !important;
 }
 
 .b-short_block {
@@ -3937,7 +3945,7 @@ H2 {font-size: 48px;}
 
 .m-teaser .b-short_block {
   height: auto;
-  padding: 20px 3.5% 10px 3.5%;
+  padding: 20px 3.5% 10px 3.5% !important;
 }
 
 .b-score_table_cover {
@@ -4100,7 +4108,7 @@ H2 {font-size: 48px;}
 
 /******************************* Clubs Page ******************************/
 
-.b-score_table_cover {
+#clubs .b-score_table_cover {
   position: static !important;
   width: 47.5% !important;
   margin-left: 0 !important;
