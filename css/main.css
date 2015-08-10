@@ -3600,6 +3600,8 @@ h4 > .e-timestamp {
   padding: 0 1.75%;
 }
 /******************************* Statistics Page end ******************************/
+
+/******************************* News Page ******************************/
 .m-news-parameters .b-float_panel_block .m-cover_link {
   width: 100%;
   height: 100%;
@@ -3634,6 +3636,19 @@ h4 > .e-timestamp {
 .m-news .b-title_cover H2 {
   float: none;
 }
+
+/******************************* News Page End ******************************/
+
+
+/******************************* Player Page ******************************/
+
+.e-player_list_item {
+  float: left;
+  width: 33.3333%;
+}
+
+/******************************* Player Page End ******************************/
+
 }
 
 @media (min-width:1280px) {
@@ -4118,6 +4133,77 @@ H2 {font-size: 48px;}
 
 /******************************* News Page End ******************************/
 
+/******************************* Player Page ******************************/
+
+.m-player .b-details H3.e-player_name {
+  font-size: 24px;
+}
+
+.m-player .e-stats_all {
+  display: none;
+}
+
+.m-player .e-diagram {
+  margin-left: 0;
+  padding-top: 0;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.m-player .e-diagram canvas {
+  width: 100%;
+  height: 50%;
+}
+
+
+.m-player .b-details {
+  text-align: center;
+}
+
+.m-player .b-details .b-details_txt {
+  float: none;
+  padding: 0;
+  width: 100%;
+}
+.m-player .e-translit_name {
+  display: none;
+}
+.m-player .b-details_info .e-club {
+  float: none !important;
+}
+
+.m-player .b-details_info .e-club SPAN {
+  text-align: left;
+}
+
+.m-player .e-details_img {
+  float: none;
+  margin: 0 auto;
+}
+
+.m-player .b-player_data H4 {
+  font-size: 18px;
+}
+
+.m-player .b-player_data H4 IMG {
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+.m-player .b-player_data P {
+  font-size: 14px;
+}
+
+.m-player .b-score_data_cover .e-score_total {
+  font-size: 24px;
+}
+
+.m-player .b-score_data_cover .e-score_sum {
+  font-size: 14px;
+}
+
+/******************************* Player Page End ******************************/
+
 }
 
 
@@ -4182,6 +4268,31 @@ H2 {font-size: 48px;}
   height: 160px;
 }
 /******************************* News Page End******************************/
+
+
+/******************************* Player Page ******************************/
+
+.m-player .b-player_data H4 {
+  font-size: 12px;
+}
+
+.m-player .b-player_data H4 IMG {
+  width: 10px;
+  height: 10px;
+}
+.m-player .b-player_data P {
+  font-size: 10px;
+}
+
+.m-player .e-player_list_item {
+  width: 50%;
+}
+
+.m-player .b-short_block .b-details {
+  width: 25%;
+}
+
+/******************************* Player Page End ******************************/
 
 }
 
@@ -4595,5 +4706,68 @@ H5 {
 }
 
 /******************************* News Page End ******************************/
+
+/******************************* Player Page ******************************/
+
+.m-player .b-score_data_cover .e-score_total {
+  font-size: 16px;
+}
+
+.m-player .b-score_data_cover .e-score_sum {
+  font-size: 8px;
+}
+
+.m-player .b-score_data_cover .e-cup_date::before {
+  font-size: 18px;
+  margin-left: -9px;
+  top: -10px;
+}
+
+.m-player .e-point_scale {
+  font-size: 8px;
+}
+
+.m-player .b-short_block .b-details {
+  width: 50%;
+}
+
+.m-player .e-player_list_item {
+  width: 100%;
+}
+
+.m-player .b-details H3.e-player_name {
+  font-size: 16px;
+}
+
+.m-player .b-share H4 {
+  float: none !important;
+  text-align: left;
+}
+
+.m-player .e-details_img {
+  width: 50%;
+}
+
+.m-player .b-player_data H4 {
+  font-size: 10px;
+}
+
+.m-player .b-player_data H4 IMG {
+  display: none;
+}
+.m-player .b-player_data P {
+  font-size: 8px;
+}
+
+.m-player .b-player_data td {
+  width: auto !important;
+}
+
+.m-player .b-player_time_scale SPAN {
+  font-size: 12px;
+}
+
+
+/******************************* Player Page End ******************************/
 
 }
