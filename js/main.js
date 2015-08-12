@@ -158,6 +158,21 @@ $(document).ready(function(){
   }).resize();
 
 
+  $('.b-gallery_placeholders').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.b-gallery_thumbs',
+    prevArrow: '.b-gallery_prev',
+    nextArrow: '.b-gallery_next'
+  });
+  $('.b-gallery_thumbs').slick({
+    slidesToScroll: 1,
+    variableWidth: true,
+    focusOnSelect: true,
+    arrows: false,
+    asNavFor: '.b-gallery_placeholders'
+  });
+
   $('input, select').styler();
 
   // таблицы с сортировкой
