@@ -595,7 +595,8 @@ function ChartRadar1() {
       {
         fillColor: "rgba(1,145,237,0.7)",
         strokeColor: "rgba(1,145,237,0)",
-        data: [21,16,8,13,7,20]
+        data: [21,16,8,13,7,20],
+        additionally: [2.5,102,103,104,105,106]
       }
     ]
   };
@@ -618,7 +619,8 @@ function ChartRadar2() {
       {
         fillColor: "rgba(1,145,237,0.7)",
         strokeColor: "rgba(1,145,237,0)",
-        data: [16,22,7,18,9,17]
+        data: [16,22,7,18,9,17],
+        additionally: [101,102,103,104,105,106]
       }
     ]
   };
@@ -641,7 +643,8 @@ function ChartRadar3() {
       {
         fillColor: "rgba(1,145,237,0.7)",
         strokeColor: "rgba(1,145,237,0)",
-        data: [19,4,12,10,15,21]
+        data: [19,4,12,10,15,21],
+        additionally: [101,102,103,104,105,106]
       }
     ]
   };
@@ -664,7 +667,8 @@ function ChartRadar4() {
       {
         fillColor: "rgba(1,145,237,0.7)",
         strokeColor: "rgba(1,145,237,0)",
-        data: [21,20,7,10,3,19]
+        data: [21,20,7,10,3,19],
+        additionally: [101,102,103,104,105,106]
       }
     ]
   };
@@ -687,7 +691,8 @@ function ChartRadar5() {
       {
         fillColor: "rgba(1,145,237,0.7)",
         strokeColor: "rgba(1,145,237,0)",
-        data: [19,20,17,18,14,17]
+        data: [19,20,17,18,14,17],
+        additionally: [101,102,103,104,105,106]
       }
     ]
   };

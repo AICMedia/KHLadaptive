@@ -3423,12 +3423,12 @@ h4 > .e-timestamp {
 }
 
 .b-match_add_info {
-  overflow: hidden;
 }
 
 .b-match_add_info_item {
-  float: left;
+  display: inline-block;
   width: 25%;
+  white-space: nowrap;
 }
 
 .b-match_add_info_item.m-last {
@@ -3437,19 +3437,43 @@ h4 > .e-timestamp {
 
 .b-match_add_info_item SPAN {
   display: inline-block;
-  vertical-align: top;
+  font-size: 14px;
 }
 
 .b-match_add_info_item .e-num {
   opacity: 0.6;
   font-size: 48px;
+  margin-right: 10px;
+}
+
+.b-match_add_info_item .m-icomoon {
+  font-size: 36px;
+  opacity: 0.6;
+  margin-right: 10px;
 }
 
 .b-match_add_info {
   clear: both;
   background: #28333a;
   margin: 0 -3.5%;
-  padding: 0 15.8%;
+  padding: 20px 15.8%;
+}
+
+.b-match_add_link {
+  padding-bottom: 1em;
+}
+
+.e-go_to.m-video:after {
+  content: "1";
+}
+
+.e-go_to.m-stat:after {
+  content: "M";
+  font-size: 16px;
+}
+
+.b-match_add_link A:first-child {
+  margin-right: 1.5em;
 }
 
 .b-wide_block.m-center {
@@ -4714,51 +4738,136 @@ H2 {font-size: 48px;}
     width: 20%;
   }
 
+  .b-center_scale_point.m-end {
+    width: 100%;
+  }
+
+  .e-event_time_txt {
+    white-space: normal;
+  }  
+
 
   .b-text_translation_item .b-left,
   .b-text_translation_item .b-right {
     float: left;
     left: 0;
+    width: 100%;
     position: relative;
   }
 
+  .b-match_add_info_item {
+    width: 50%;
+    margin-bottom: 10px;
+  }
 
+  .b-match_add_info_item.m-last {
+    width: 100%;
+  }
 
+  .m-match_info .e-details_img {
+    position: absolute;
+  }
 
+  .m-match_info  .m-rightward .e-details_img {
+    right: 0;
+  }
+
+  .m-match_info .b-details_txt {
+    width: 100%;
+    padding: 90px 0 0 0;
+  }
+
+  .m-match_info .m-rightward .b-details_txt {
+    padding: 90px 0 0 0;
+  }
+
+  .b-match_add_info {
+    padding: 20px 3.5%;
+  }
+
+  .b-txt_block {
+    width: 50%;
+    float: left;
+  }
+
+  .b-right .b-video_link,
+  .b-left .b-video_link {
+    left: 0%;
+    margin-left: 0px;
+    text-align: left;
+    float: left;
+  }
+
+  .b-video_link {
+    right: 0px;
+    width: 50%;
+    position: relative;
+  }
+
+  .b-video_link IMG {
+    height: auto;
+    width: 100%;
+  }
+
+  .m-align_cover {
+    display: block;
+  }
+
+  .b-left .b-video_link .e-play_btn, 
+  .b-right .b-video_link .e-play_btn {
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+  }
+
+  .b-text_translation_item .b-left {
+    border-right: none;
+    border-left: 3px solid #d7e6ee; 
+  }  
+
+  .b-right.m-goal, 
+  .b-left.m-goal {
+    border-color: #02a7fd;
+  }
+
+  .b-text_translation_item .b-left::before {
+    right: auto;
+    left: -30px;
+  }  
 
 /******************************* Match text Page end ******************************/
 
 /******************************* Photo Gallery Page ***********************/
 
-.m-photo .b-short_block_cover {
-  float: left;
-  width: 48.25%;
-}
+  .m-photo .b-short_block_cover {
+    float: left;
+    width: 48.25%;
+  }
 
-.b-short_block .m-photo_md .e-photo {
-  height: 160px;
-}
+  .b-short_block .m-photo_md .e-photo {
+    height: 160px;
+  }
 
-.m-photo_md {
-  margin-top: 0 !important;
-}
+  .m-photo_md {
+    margin-top: 0 !important;
+  }
 
-.e-catalog_col {
-  width: 50% !important;
-}
+  .e-catalog_col {
+    width: 50% !important;
+  }
 
-.e-catalog_col .e-catalog_col {
-  width: 100% !important;
-}
+  .e-catalog_col .e-catalog_col {
+    width: 100% !important;
+  }
 
-.b-gallery_next,
-.b-gallery_prev {
-  display: none;
-}
+  .b-gallery_next,
+  .b-gallery_prev {
+    display: none;
+  }
 
-.b-gallery_block {
-  padding-bottom: 30px;
-}
+  .b-gallery_block {
+    padding-bottom: 30px;
+  }
 /******************************* Photo Gallery Page End ***********************/
 
 }
@@ -4841,7 +4950,38 @@ H2 {font-size: 48px;}
   width: 25%;
 }
 
-/******************************* Player Page End ******************************/
+/******************************* Player Page End ******************************
+******************************* Match text Page ******************************/
+
+.b-center_scale_point, .b-center_scale_point.m-end {
+  display: block;
+  float: left;
+}
+
+.b-small_round,
+.b-big_round {
+  position: relative;
+  left: auto;
+  margin: 0;
+}
+
+.b-text_translation_item .b-left, .b-text_translation_item .b-right {
+  float: right;
+  width: 70%;
+}
+
+.b-txt_block,
+.b-video_link {
+  width: 100%;
+}
+
+.m-match_info .b-total_score H3 {
+  font-size: 54px;
+}
+
+
+/******************************* Match text Page End ******************************/
+
 
 }
 
@@ -5150,14 +5290,8 @@ H5 {
 .e-params_btn {
   margin-top: 15px;
 }
-/******************************* Statistics Page end ******************************/
-
-/******************************* Clubs Page ******************************/
-
-/*.b-short_tile_item {
-  width: 95%;
-}*/
-
+/******************************* Statistics Page end ******************************
+******************************* Clubs Page ******************************/
 .b-period_score {
   font-size: 8px;
 }
@@ -5207,10 +5341,8 @@ H5 {
 }
 
 
-/******************************* Clubs Page end ******************************/
-
-
-/******************************* News Page ******************************/
+/******************************* Clubs Page end ******************************
+******************************* News Page ******************************/
 .m-news .b-short_block_cover {
   float: none;
   width: 100%;
@@ -5254,9 +5386,8 @@ H5 {
   height: 160px;
 }
 
-/******************************* News Page End ******************************/
-
-/******************************* Player Page ******************************/
+/******************************* News Page End ******************************
+******************************* Player Page ******************************/
 
 .m-player .b-score_data_cover .e-score_total {
   font-size: 16px;
@@ -5317,9 +5448,8 @@ H5 {
 }
 
 
-/******************************* Player Page End ******************************/
-
-/******************************* Photo Gallery Page ***************************/
+/******************************* Player Page End ******************************
+******************************* Photo Gallery Page ***************************/
 
 .e-catalog_col {
   width: 100% !important;
@@ -5340,7 +5470,65 @@ H5 {
   font-size: 12px;
 }
 
-/******************************* Photo Gallery Page End ***********************/
+/******************************* Photo Gallery Page End ***********************
+******************************* Match text Page ******************************/
+.m-text_translation .e-club_logo {
+  width: 40px;
+} 
 
+.m-text_translation .e-club_logo IMG {
+  width: 100%;
+  height: auto;
+} 
+
+.m-match_info .b-score {
+  width: 100%;
+  position: absolute;
+}
+
+.m-match_info .e-club_name {
+  font-size: 24px;
+}
+
+.b-match_add_info_item {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.m-match_info .b-details_txt {
+  padding: 90px 0 0;
+}
+
+.e-player_honors {
+  display: none;
+}
+
+.m-match_info .b-details.m-club {
+  width: 50%;
+  margin-top: 140px;
+}
+
+.b-left .b-video_link .e-play_btn, 
+.b-right .b-video_link .e-play_btn {
+  margin: -15px 0 0 -15px;
+}
+
+.b-center_scale_point, 
+.b-center_scale_point.m-end {
+  padding:0 0 20px 0;
+}
+
+.b-text_translation_item .b-left, .b-text_translation_item .b-right {
+  float: right;
+  width: 60%;
+}
+
+.b-big_round {
+  height: 100px;
+  width: 100px;
+}
+
+
+/******************************* Match text Page End ******************************/
 
 }
