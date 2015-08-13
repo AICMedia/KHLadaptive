@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-24vyqw');
-	src:url('fonts/icomoon.eot?#iefix-24vyqw') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?-24vyqw') format('truetype'),
-		url('fonts/icomoon.woff?-24vyqw') format('woff'),
-		url('fonts/icomoon.svg?-24vyqw#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-w4ueov');
+	src:url('fonts/icomoon.eot?#iefix-w4ueov') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-w4ueov') format('truetype'),
+		url('fonts/icomoon.woff?-w4ueov') format('woff'),
+		url('fonts/icomoon.svg?-w4ueov#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -130,4 +130,31 @@
 }
 .icon-ico_36:before {
 	content: "\44";
+}
+.icon-ico_37:before {
+	content: "\45";
+}
+.icon-ico_38:before {
+	content: "\46";
+}
+.icon-ico_39:before {
+	content: "\47";
+}
+.icon-ico_40:before {
+	content: "\48";
+}
+.icon-ico_41:before {
+	content: "\49";
+}
+.icon-ico_42:before {
+	content: "\4a";
+}
+.icon-ico_43:before {
+	content: "\4b";
+}
+.icon-ico_44:before {
+	content: "\4c";
+}
+.icon-ico_45:before {
+	content: "\4d";
 }

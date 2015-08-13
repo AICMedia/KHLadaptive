@@ -2678,7 +2678,7 @@ B.e-player_name {
   line-height: 20px;
   margin-top: 0px;
   width: 22px;
-  font: 13px 'latobold';
+  font: 14px 'latobold';
 }
 
 .b-total_score H3 {
@@ -3387,6 +3387,327 @@ h4 > .e-timestamp {
 }
 /******************************* News Page End ******************************
 ******************************* Match text Page ******************************/
+.b-wide_block.m-wide_tile {
+  background: #2c3941;
+  padding-bottom: 0px;
+  color: #fff;
+}
+
+.m-match_info .e-club_name {
+  font: 36px 'latoblack';
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.m-match_info .e-club_sity {
+  font-size: 16px;
+}
+
+.m-match_info .b-total_score H3 {
+  font-size: 72px;
+  color: #fff;
+}
+
+.m-match_info .b-total_score H3 B {
+  color: #fff;
+}
+
+.m-match_info .b-period_score {
+  color: #fff;
+  font-size: 14px;
+}
+
+.e-player_honors {
+  opacity: 0.6;
+  padding: 0 0 30px 0;
+}
+
+.b-match_add_info {
+  overflow: hidden;
+}
+
+.b-match_add_info_item {
+  float: left;
+  width: 25%;
+}
+
+.b-match_add_info_item.m-last {
+  width: 50%;
+}
+
+.b-match_add_info_item SPAN {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.b-match_add_info_item .e-num {
+  opacity: 0.6;
+  font-size: 48px;
+}
+
+.b-match_add_info {
+  clear: both;
+  background: #28333a;
+  margin: 0 -3.5%;
+  padding: 0 15.8%;
+}
+
+.b-wide_block.m-center {
+  text-align: center;
+}
+
+.b-text_translation {
+  margin: 10px auto;
+  width: 20%;
+}
+
+.m-text_translation HR {
+  margin: 30px 0;
+}
+
+.m-text_translation .e-club_logo.m-left {
+  float: left;
+}
+
+.m-text_translation .e-club_logo.m-right {
+  float: right;
+}
+
+.m-text_translation .e-time {
+  font: 14px 'latoheavy';
+}
+
+.m-text_translation .e-time.m-last {
+  margin-bottom: -0.5em;
+}
+
+.b-text_translation:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: #d7e6ee;
+  left: 50%;
+  top: 0;
+  margin-left: -2px;
+}
+
+.b-text_translation_item {
+  margin-bottom: 10px;
+}
+
+.b-text_translation_item .b-left {
+  background: #f1fafe;
+  border-right: 3px solid #d7e6ee;
+  width: 200%;
+  left: -200%; 
+  text-align: left;
+  padding: 20px;
+}
+
+.b-text_translation_item .b-left:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -8px;
+  right: -30px;
+  background: #d7e6ee;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.b-text_translation_item .b-right {
+  background: #f1fafe;
+  border-left: 3px solid #d7e6ee; 
+  width: 200%;
+  right: -100%;
+  text-align: left;
+  padding: 20px;
+}
+
+.b-text_translation_item .b-right:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -8px;
+  left: -30px;
+  background: #d7e6ee;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.b-center_scale_point {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.b-center_scale_point.m-end {
+  position: relative;
+  width: 200%;
+  left: -50%;
+  padding: 20px 0;
+}
+
+.b-center_scale_point.m-end SPAN{
+  background: #fff;
+}
+
+.b-big_round {
+  position: absolute;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  border: 3px solid #d7e6ee;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -63px 0 0 -63px;
+}
+
+.b-small_round {
+  position: absolute;
+  display: inline-block;
+  height: 58px;
+  width: 58px;
+  border-radius: 100%;
+  border: 3px solid #d7e6ee;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+}
+
+.b-small_round.m-del {
+  border-color: #e81c3e;
+}
+
+.b-right.m-del,
+.b-left.m-del {
+  border-color: #e81c3e;
+}
+
+.b-right.m-del:before,
+.b-left.m-del:before {
+  background: #e81c3e;
+}
+
+.b-right.m-goal,
+.b-left.m-goal {
+  border-color: #02a7fd;
+}
+
+.b-right.m-goal:before,
+.b-left.m-goal:before {
+  display: none;
+}
+
+.e-event_time {
+  font: 14px 'latoheavy';
+  line-height: 56px;
+}
+
+.e-event_time.m-not_rownd {
+  line-height: 36px;
+  width: 60px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  margin: -18px 0 0 -30px;
+}
+
+.e-event_time_txt {
+  white-space: nowrap;
+}
+
+.m-end .e-event_time {
+  display: block;
+  line-height: 1.3em;
+}
+
+.b-big_round .e-event_time {
+  display: inline-block;
+  line-height: 1.3em;
+  margin-top: 1em;
+}
+
+.b-big_round H3 {
+  margin: 0;
+  color: #666;
+  font-family: 'latolight';
+}
+
+.b-big_round H3 B {
+  margin: 0;
+  color: #000;
+  font-family: 'latoblack';
+}
+
+.m-replacement:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0px;
+  left: 4px;
+  width: 52px;
+  height: 56px;
+  background: url("../img/re.png") no-repeat scroll 50% 50%;
+}
+
+.b-video_link {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.b-video_link IMG {
+  height: 100%;
+  width: auto;
+}
+
+.b-right .b-video_link {
+  left: -150%;
+  margin-left: -4px;
+  text-align: right;
+}
+
+.b-left .b-video_link {
+  left: 150%;
+  margin-left: 4px;
+}
+
+.m-align_cover {
+  height: 100%;
+  position: relative;
+}
+
+.b-left .b-video_link .e-play_btn,
+.b-right .b-video_link .e-play_btn {
+  left: 50%;
+  margin: 0 0 0 -30px;
+}
+
+.m-del .b-video_link .e-play_btn {
+  margin-top: -100px;
+}
+
+.m-goal .b-video_link .e-play_btn {
+  margin-top: -120px;
+}
+
+.b-video_link:hover .e-play_btn {
+  color: #02a7fd;
+}
+
 
 
 
@@ -3641,10 +3962,8 @@ h4 > .e-timestamp {
   float: none;
 }
 
-/******************************* News Page End ******************************/
-
-
-/******************************* Player Page ******************************/
+/******************************* News Page End ******************************
+******************************* Player Page ******************************/
 
 .e-player_list_item {
   float: left;
@@ -4104,9 +4423,8 @@ H2 {font-size: 48px;}
   display: none;
 }
 
-/******************************* Statistics Page end ******************************/
-
-/******************************* Clubs Page ******************************/
+/******************************* Statistics Page end ******************************
+******************************* Clubs Page ******************************/
 
 #clubs .b-score_table_cover {
   position: static !important;
@@ -4114,10 +4432,8 @@ H2 {font-size: 48px;}
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-/******************************* Clubs Page end ******************************/
-
-
-/******************************* News Page ******************************/
+/******************************* Clubs Page end ******************************
+******************************* News Page ******************************/
 .m-news .b-short_block_cover {
   float: left;
   width: 48.25%;
@@ -4139,9 +4455,8 @@ H2 {font-size: 48px;}
   height: 320px;
 }
 
-/******************************* News Page End ******************************/
-
-/******************************* Player Page ******************************/
+/******************************* News Page End ******************************
+******************************* Player Page ******************************/
 
 .m-player .b-details H3.e-player_name {
   font-size: 24px;
@@ -4210,7 +4525,46 @@ H2 {font-size: 48px;}
   font-size: 14px;
 }
 
-/******************************* Player Page End ******************************/
+/******************************* Player Page End ******************************
+******************************* Match text Page ******************************/
+  .b-text_translation {
+    margin: 10px 0px; 
+    width: 100%;   
+  }
+
+  .b-text_translation::before {
+    display: none;
+  }
+
+  .b-text_translation_item {
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+  }
+
+  .b-center_scale_point,
+  .b-center_scale_point.m-end {
+    left: 0%;
+    display: table-cell;
+    padding: 20px 0;
+    position: relative;
+    width: 20%;
+  }
+
+
+  .b-text_translation_item .b-left,
+  .b-text_translation_item .b-right {
+    float: left;
+    left: 0;
+    position: relative;
+  }
+
+
+
+
+
+/******************************* Match text Page end ******************************/
 
 }
 
@@ -4263,22 +4617,14 @@ H2 {font-size: 48px;}
 }
 
 /******************************* Main Page end ******************************
-******************************* Statistics Page ******************************/
-
-/******************************* Statistics Page end ******************************/
-
-
-
-/******************************* News Page ******************************/
+******************************* News Page ******************************/
 
 .m-news-parameters .m-cover_link .e-photo,
 .m-news-parameters .b-video_block {
   height: 160px;
 }
-/******************************* News Page End******************************/
-
-
-/******************************* Player Page ******************************/
+/******************************* News Page End******************************
+******************************* Player Page ******************************/
 
 .m-player .b-player_data H4 {
   font-size: 12px;
