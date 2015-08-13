@@ -3713,6 +3713,168 @@ h4 > .e-timestamp {
 
 /******************************* Match text Page end ******************************/
 
+/******************************* Photo Gallery Page ***************************/
+.m-photo, .m-photo .b-blocks_cover {
+  background: #2c3941;
+  color: #fff;
+}
+
+.m-photo_lg .e-photo {
+  height: 550px;
+  margin-bottom: 20px;
+}
+
+/*.m-photo_lg H5 {
+  font-size: 24px;
+}*/
+
+.m-teaser_photo  H3 {
+  font-size: 36px;
+}
+
+.m-teaser_photo .b-info_bottom {
+  position: absolute;
+  bottom: 40px;
+  font-size: 14px;
+  color: #ccc;
+  width: 100%;
+  left: 0;
+  padding: 0 3.5% 0;
+}
+
+.m-palette_gray {
+  color: #999999;
+}
+
+.b-info_bottom .e-photos {
+  margin-right: 20px;
+}
+
+.b-gallery_block {
+  background: #2c3941;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.b-photo_details {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.b-photo_details DL {
+  margin-top: 20px;
+}
+.b-photo_details DT {
+  color: #999;
+  padding-bottom: 5px;
+  width: 100px;
+  float: left;
+}
+.b-photo_details DD {
+  padding-left: 100px;
+  padding-bottom: 5px;
+}
+
+.b-gallery_block .b-middle_block {
+  padding-top: 0;
+}
+
+.b-gallery_thumbs {
+  margin-top: 30px;
+}
+
+.b-gallery_prev {
+  position: absolute;
+  left: 0;
+  top: 257px;
+}
+.b-gallery_next {
+  position: absolute;
+  top: 257px;
+  right: 0;
+}
+
+.b-gallery_next::before,
+.b-gallery_prev::before {
+  font-family: 'icomoon';
+  font-size: 36px;
+  color: #fff;
+}
+
+.b-gallery_next::before {
+  content: '#';
+}
+
+.b-gallery_prev::before {
+  content: '"';
+}
+
+.b-gallery_close {
+  font-family: 'icomoon';
+  font-size: 20px;
+  top: 25px;
+  right: 25px;
+  position: absolute;
+  color: #fff;
+}
+
+.b-gallery_thumb {
+  padding: 0 4px 0;
+  width: 74px;
+}
+
+.m-photo_md .e-photo {
+  height: 220px;
+  margin-bottom: 10px;
+}
+
+.m-photo_md H5 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+.m-photo_md + .m-photo_md {
+  margin-top: 30px;
+}
+
+.m-photo {
+  padding-bottom: 30px;
+}
+
+.m-photo_xs .e-photo{
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.m-photo_xs H6 {
+  color: #000;
+  font-size: 14px;
+}
+
+.e-catalog_row {
+  margin: 0 -1.75%;
+}
+
+.e-catalog_row::before,
+.e-catalog_row::after {
+  content: '';
+  display: table;
+}
+
+.e-catalog_row::after {
+  clear: both;
+}
+
+.e-catalog_col {
+  width: 20%;
+  float: left;
+  margin-bottom: 30px;
+  padding: 0 1.75%;
+}
+
+/******************************* Photo Gallery Page End ***********************/
+
+
 
 /**************************************** MOBILE < 1280 ****************************************/
 @media (max-width:1280px) {
@@ -4566,6 +4728,39 @@ H2 {font-size: 48px;}
 
 /******************************* Match text Page end ******************************/
 
+/******************************* Photo Gallery Page ***********************/
+
+.m-photo .b-short_block_cover {
+  float: left;
+  width: 48.25%;
+}
+
+.b-short_block .m-photo_md .e-photo {
+  height: 160px;
+}
+
+.m-photo_md {
+  margin-top: 0 !important;
+}
+
+.e-catalog_col {
+  width: 50% !important;
+}
+
+.e-catalog_col .e-catalog_col {
+  width: 100% !important;
+}
+
+.b-gallery_next,
+.b-gallery_prev {
+  display: none;
+}
+
+.b-gallery_block {
+  padding-bottom: 30px;
+}
+/******************************* Photo Gallery Page End ***********************/
+
 }
 
 
@@ -5123,5 +5318,29 @@ H5 {
 
 
 /******************************* Player Page End ******************************/
+
+/******************************* Photo Gallery Page ***************************/
+
+.e-catalog_col {
+  width: 100% !important;
+}
+
+.m-photo_lg .e-photo,
+.m-photo_xs .e-photo,
+.m-photo_md .e-photo {
+  height: 160px !important;
+}
+
+.m-photo .b-short_block_cover {
+  float: none;
+  width: 100%;
+}
+
+.m-photo_lg .b-info_bottom {
+  font-size: 12px;
+}
+
+/******************************* Photo Gallery Page End ***********************/
+
 
 }
