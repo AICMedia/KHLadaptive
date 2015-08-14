@@ -143,6 +143,7 @@ $(document).ready(function(){
 
     if(winW > 1024){
       $('.b-header_menu_cover').show();
+      $('.b-float_panel').show();
     }
 
     if(winW < 800){
