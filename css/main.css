@@ -400,6 +400,7 @@ UL.m-list>LI:before {
 /*matches*/
 .b-header_bottom_cover {
   background: #f1fafe;
+  height: 80px;
 }
 
 .b-feed_matches {
