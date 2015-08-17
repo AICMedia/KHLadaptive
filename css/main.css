@@ -3526,7 +3526,7 @@ h4 > .e-timestamp {
   background: #f1fafe;
   border-right: 3px solid #d7e6ee;
   width: 200%;
-  left: -200%; 
+  left: -200%;
   text-align: left;
   padding: 20px;
 }
@@ -3546,7 +3546,7 @@ h4 > .e-timestamp {
 
 .b-text_translation_item .b-right {
   background: #f1fafe;
-  border-left: 3px solid #d7e6ee; 
+  border-left: 3px solid #d7e6ee;
   width: 200%;
   right: -100%;
   text-align: left;
@@ -3778,8 +3778,21 @@ h4 > .e-timestamp {
 }
 
 .b-photo_details {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 14px;
+}
+
+.e-photo_buy {
+  font-size: 24px;
+  font-family: 'latoheavy';
+}
+
+.e-photo_buy::before {
+  content: 'E';
+  display: inline-block;
+  margin-right: 12px;
+  font-family: 'icomoon';
+  font-size: ;
 }
 
 .b-photo_details DL {
@@ -3800,19 +3813,33 @@ h4 > .e-timestamp {
   padding-top: 0;
 }
 
+.b-gallery_block .b-share {
+  margin-top: 120px;
+}
+
+.b-gallery_block .b-share h5 {
+  margin-bottom: 20px;
+}
+
+.b-gallery_block .b-share_button {
+  background: transparent;
+  color: #fff;
+  border-color: #566167;
+}
+
 .b-gallery_thumbs {
   margin-top: 30px;
 }
 
 .b-gallery_prev {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 257px;
 }
 .b-gallery_next {
   position: absolute;
   top: 257px;
-  right: 0;
+  right: 10px;
 }
 
 .b-gallery_next::before,
@@ -3837,10 +3864,11 @@ h4 > .e-timestamp {
   right: 25px;
   position: absolute;
   color: #fff;
+  z-index: 9;
 }
 
 .b-gallery_thumb {
-  padding: 0 4px 0;
+  padding: 0 8px 0 0;
   width: 74px;
 }
 
@@ -3872,6 +3900,10 @@ h4 > .e-timestamp {
   font-size: 14px;
 }
 
+.m-photo_xs H4 {
+  color: #000;
+}
+
 .e-catalog_row {
   margin: 0 -1.75%;
 }
@@ -3893,6 +3925,84 @@ h4 > .e-timestamp {
   padding: 0 1.75%;
 }
 
+.m-photo-parameters {
+  color: #000;
+}
+
+.m-photo-parameters .b-float_panel_title {
+  margin-bottom: 20px;
+}
+
+.m-select::before,
+.m-select::after,
+.m-tags::before,
+.m-tags::after {
+  content: '';
+  display: table;
+}
+
+.m-select::after,
+.m-tags::after {
+  clear: both;
+}
+
+.e-tag {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  padding: 5px 10px;
+  color: #000;
+  background: #fff;
+  margin: 0 6px 6px 0;
+  text-align: center;
+}
+
+.e-tag_more {
+  color: #02a7fd;
+  width: 60px;
+}
+
+.e-tag_more::before {
+  content: '•••';
+}
+
+.b-tags {
+  margin-top: 12px;
+}
+
+
+.e-filter_clear {
+  display: block;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: 'latoheavy';
+}
+
+.e-filter_clear::after {
+  content: 'F';
+  display: inline-block;
+  margin-left: 10px;
+  font-family: 'icomoon';
+  font-size: 18px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+.b-select_club {
+  float: left;
+  margin-top: 25px;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.b-select_club img {
+  width: 100%;
+  vertical-align: middle;
+}
+
 /******************************* Photo Gallery Page End ***********************
 ******************************* Video Gallery Page ***************************/
 #videos,
@@ -3911,7 +4021,7 @@ h4 > .e-timestamp {
 .m-video_list .jq-selectbox__dropdown,
 .m-video_pop .b-blocks_cover {
   background: #2c3941;
-  color:#fff; 
+  color:#fff;
 }
 
 .m-video_list .b-float_panel_block,
@@ -3935,7 +4045,7 @@ h4 > .e-timestamp {
 
 .m-video_pop .b-middle_block {
   padding-top: 0px;
-} 
+}
 
 .m-video_pop .b-wide_block {
   padding-bottom: 0px;
@@ -3947,7 +4057,7 @@ h4 > .e-timestamp {
 
 .b-wide_block.m-load_more {
   padding-bottom:60px;
-  padding-top: 0; 
+  padding-top: 0;
 }
 
 #videos .e-title_tab_item.m-active:after {
@@ -3970,7 +4080,7 @@ h4 > .e-timestamp {
   display: inline-block;
   vertical-align: top;
   width: 16.5%;
-  margin:0 1.75% 30px 1.75%; 
+  margin:0 1.75% 30px 1.75%;
 }
 
 .b-video_list_item .b-video_block {
@@ -4004,11 +4114,11 @@ h4 > .e-timestamp {
   background: #2c3941;
 }
 
-.m-future .b-wide_tile, 
+.m-future .b-wide_tile,
 .m-past .b-wide_tile {
   overflow: hidden;
   margin:0 -1.75%;
-} 
+}
 
 .m-future .b-wide_tile_item,
 .m-past .b-wide_tile_item {
@@ -4100,12 +4210,12 @@ h4 > .e-timestamp {
 }
 
 .m-bnr .b-bnr_cover {
-  padding-top: 30px; 
+  padding-top: 30px;
 }
 
 .m-bnr.m-last .b-bnr_cover {
   padding-top: 0px;
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 }
 
 #videos .b-bnr_cover .b-middle_block {
@@ -4300,13 +4410,15 @@ h4 > .e-timestamp {
 /******************************* Main Page end ******************************
 ******************************* Statistics Page ******************************/
 .m-statistic_parameters,
-.m-news-parameters {
+.m-news-parameters,
+.m-photo-parameters {
   overflow: visible;
   display: none;
 }
 
 .m-statistic_parameters .b-float_panel_cover,
-.m-news-parameters .b-float_panel_cover {
+.m-news-parameters .b-float_panel_cover,
+.m-photo-parameters .b-float_panel_cover {
   padding: 30px 3.5%;
   min-height: 0 !important;
   overflow: visible;
@@ -4359,18 +4471,21 @@ h4 > .e-timestamp {
   height: 410px;
 }
 
-.m-news-parameters .b-float_panel_block {
+.m-news-parameters .b-float_panel_block,
+.m-photo-parameters .b-float_panel_block {
   padding-left: 0;
   padding-right: 0;
 }
 
-.m-news-parameters .b-float_panel_cover {
+.m-news-parameters .b-float_panel_cover,
+.m-photo-parameters .b-float_panel_cover {
   padding: 30px 3.5%;
   min-height: 0 !important;
   overflow: visible;
 }
 
-.m-news-parameters {
+.m-news-parameters,
+.m-photo-parameters {
   height: auto !important;
 }
 
@@ -4406,6 +4521,14 @@ h4 > .e-timestamp {
 
 
 /******************************* Video Gallery Page End ***********************/
+
+.m-photo-parameters {
+  color: #fff;
+}
+
+.m-photo-parameters .jqselect {
+  color: #000;
+}
 
 }
 
@@ -4963,8 +5086,8 @@ H2 {font-size: 48px;}
 /******************************* Player Page End ******************************
 ******************************* Match text Page ******************************/
   .b-text_translation {
-    margin: 10px 0px; 
-    width: 100%;   
+    margin: 10px 0px;
+    width: 100%;
   }
 
   .b-text_translation::before {
@@ -4993,7 +5116,7 @@ H2 {font-size: 48px;}
 
   .e-event_time_txt {
     white-space: normal;
-  }  
+  }
 
 
   .b-text_translation_item .b-left,
@@ -5062,7 +5185,7 @@ H2 {font-size: 48px;}
     display: block;
   }
 
-  .b-left .b-video_link .e-play_btn, 
+  .b-left .b-video_link .e-play_btn,
   .b-right .b-video_link .e-play_btn {
     top: 50%;
     left: 50%;
@@ -5071,10 +5194,10 @@ H2 {font-size: 48px;}
 
   .b-text_translation_item .b-left {
     border-right: none;
-    border-left: 3px solid #d7e6ee; 
-  }  
+    border-left: 3px solid #d7e6ee;
+  }
 
-  .b-right.m-goal, 
+  .b-right.m-goal,
   .b-left.m-goal {
     border-color: #02a7fd;
   }
@@ -5082,7 +5205,7 @@ H2 {font-size: 48px;}
   .b-text_translation_item .b-left::before {
     right: auto;
     left: -30px;
-  }  
+  }
 
 /******************************* Match text Page end ******************************
 ******************************* Photo Gallery Page ***********************/
@@ -5104,18 +5227,46 @@ H2 {font-size: 48px;}
     width: 50% !important;
   }
 
-  .e-catalog_col .e-catalog_col {
+  .e-catalog_col_right,
+  .e-catalog_col_left {
+    float: none;
     width: 100% !important;
   }
 
+  .e-catalog_col .e-catalog_row {
+    margin: 0 -1.75% !important;
+  }
+
+  .e-catalog_col .e-catalog_col {
+    padding: 0 1.75% !important;
+  }
+
+  /*.e-catalog_col .e-catalog_col {
+    width: 100% !important;
+  }*/
+
   .b-gallery_next,
   .b-gallery_prev {
-    display: none;
+    display: none !important;
+  }
+
+  .b-gallery_close {
+    right: 5px;
+    top: 10px;
   }
 
   .b-gallery_block {
     padding-bottom: 30px;
   }
+
+  .b-gallery_block .b-photo_details {
+    margin-top: 30px;
+  }
+
+  .b-gallery_block .b-share {
+    margin-top: 30px;
+  }
+
 /******************************* Photo Gallery Page End ***********************
 ******************************* Video Gallery Page ***********************/
 .m-future .b-wide_tile_item, .m-past .b-wide_tile_item {
@@ -5247,6 +5398,13 @@ H2 {font-size: 48px;}
 
 
 /******************************* Match text Page End ******************************/
+
+
+/**** Photo Gallery Page ****/
+.e-catalog_col_left {
+  float: none !important;
+}
+/**** Photo Gallery Pagen End ****/
 
 
 }
@@ -5739,12 +5897,12 @@ H5 {
 ******************************* Match text Page ******************************/
 .m-text_translation .e-club_logo {
   width: 40px;
-} 
+}
 
 .m-text_translation .e-club_logo IMG {
   width: 100%;
   height: auto;
-} 
+}
 
 .m-match_info .b-score {
   width: 100%;
@@ -5773,12 +5931,12 @@ H5 {
   margin-top: 140px;
 }
 
-.b-left .b-video_link .e-play_btn, 
+.b-left .b-video_link .e-play_btn,
 .b-right .b-video_link .e-play_btn {
   margin: -15px 0 0 -15px;
 }
 
-.b-center_scale_point, 
+.b-center_scale_point,
 .b-center_scale_point.m-end {
   padding:0 0 20px 0;
 }
