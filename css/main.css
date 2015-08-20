@@ -6016,6 +6016,120 @@ H5 {
   padding-top: 0;
 }
 
-/******************************* Video Gallery Page End ***********************/
+}
 
+/******************************* Video Gallery Page End ***********************
+******************************* Calendar Page ***********************/
+
+.b-calendar-container{
+  display: table;
+}
+
+.b-calendar-tools{
+  display: table-cell;
+  width: 70px;
+  padding-top: 70px;
+}
+
+.b-calendar-tools .slick-prev,
+.b-calendar-tools .slick-next{
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 0;
+  display: block !important;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.b-calendar-tools .slick-prev:hover:before,
+.b-calendar-tools .slick-next:hover:before{
+  color: #57ccfd;
+}
+
+.b-calendar-tools .slick-prev:before,
+.b-calendar-tools .slick-next:before{
+  font-family: 'icomoon';
+  font-size: 18px;
+  color: #00a6ff;
+}
+
+.b-calendar-tools .slick-prev:before{
+  content: "\3e";
+}
+.b-calendar-tools .slick-next:before{
+  content: "\3f";
+}
+
+.b-calendar-slider{
+  display: table-cell;
+}
+
+.b-calendar-row{
+  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.b-calendar-col{
+  width: 33.333333333%;
+  float: left;
+  padding: 0 20px;
+}
+
+
+.m-calendar-table{
+  margin-left: -15px;
+}
+
+.m-calendar-table thead{
+  color: #999999;
+  font-size: 12px;
+}
+
+.m-calendar-table th,
+.m-calendar-table td{
+  padding: 5px;
+  text-align: center;
+}
+
+.m-calendar-table a{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.m-calendar-table a:hover{
+  border-color: #00a6ff;
+}
+
+.m-calendar-table a.active{
+  background-color: #00a6ff;
+  border-color: #00a6ff;
+  color: #fff;
+}
+
+.m-calendar-table a.active:hover{
+  background-color: #57ccfd;
+  border-color: #57ccfd;
+  color: #fff;
+}
+
+.m-calendar-table a.muted{
+  color: #999999;
+}
+
+.m-calendar-table a.muted:hover{
+  border-color: #999999;
+}
+
+.m-calendar-header{
+  font-family: 'latoheavy';
+  font-size: 24px;
+  margin-bottom: 35px;
 }

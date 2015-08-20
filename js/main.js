@@ -177,6 +177,13 @@ $(document).ready(function(){
     asNavFor: '.b-gallery_placeholders'
   });
 
+  $('.b-calendar-slider').slick({
+    slidesToScroll: 1,
+    vertical: true,
+    appendArrows: $('.b-calendar-tools'),
+    responsive: true
+  });
+
   $('input, select').styler();
 
   // таблицы с сортировкой
