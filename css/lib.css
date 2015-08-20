@@ -681,3 +681,72 @@ input[type="submit"].styler[disabled] {
 	left: auto;
 	right: 0;
 }
+
+/*datepicker*/
+
+
+.ui-datepicker-title{
+  font-family: 'latoheavy';
+  font-size: 24px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.ui-datepicker-calendar thead{
+  color: #999999;
+  font-size: 12px;
+}
+
+.ui-datepicker-calendar td,
+.ui-datepicker-calendar th{
+  padding: 6px;
+}
+
+.ui-datepicker-header .ui-datepicker-prev{
+  float: left;
+}
+
+.ui-datepicker-header .ui-datepicker-next{
+  float: right;
+}
+
+.ui-datepicker-calendar td a{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ui-datepicker-current-day a{
+  border: 2px solid ;
+  border-radius: 50%;
+}
+.ui-datepicker-current-day a:hover{
+  background-color: #57ccfd;
+  border-color: #57ccfd;
+  color: #fff;
+}
+
+.ui-datepicker{
+  background-color: #fff;
+  padding: 15px;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next{
+  font-family: 'icomoon';
+  z-index: 1;
+  cursor: pointer;
+  font-style: 16px;
+  line-height: 35px;
+
+}
+
+.ui-datepicker-prev:before{
+  content: "\3d";
+}
+
+.ui-datepicker-next:before{
+  content: "\2c";
+}

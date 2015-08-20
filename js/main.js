@@ -32,6 +32,9 @@ $(document).ready(function(){
   if($('#s-map').length){
     CustomMap();
   }
+  if($('.datepicker').length){
+    datepicker();
+  }
 
   $('.m-round_diagram').each(function() {
     $(this).knob();
@@ -346,7 +349,7 @@ function FloatShortBlock() {
 
 // Float panel
 function FloatPanel() { 
-  if(winW > 1264){
+  if(winW >= 1264){
     if($('.b-float_panel').length){
       var startBlock = $('.s-float_panel_start').offset().top;
       var heightBlock = $(window).height();
@@ -586,7 +589,7 @@ function AjaxData() {
   $('.e-point_switcher li').on('click', function(){
     $('.b-wide_tile').fadeOut(450);
     setTimeout(function() {
-      $('.s-ajax_cover_cup').load('ajax.html ' + '.b-wide_tile').fadeIn(450);
+      $('.s-ajax_cover_cup').load('ajax.html ' + ' .b-final_cup_date, .b-wide_tile').fadeIn(450);
     }, 400);
   });
 
@@ -616,7 +619,7 @@ function ChartRadar1() {
     scaleOverride: true,
     scaleSteps: 2,
     scaleStepWidth: 11,
-    scaleStartValue: 0,
+    scaleStartValue: 0
   });
 }
 function ChartRadar2() {
@@ -714,6 +717,12 @@ function ChartRadar5() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
+}
+
+//datepicker
+function datepicker(){
+
+  $(".datepicker").datepicker();
 }
 
 // Custom map

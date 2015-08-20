@@ -1152,7 +1152,7 @@ UL.m-list>LI:before {
 }
 
 .m-video .m-cover_link H5 {
-  min-height: 2.55em;
+  min-height: 2.56em;
 }
 
 .m-video H4,
@@ -2217,7 +2217,11 @@ UL.m-list>LI:before {
 
 .b-player_list_item .e-details_img {
   float: none;
-  width: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
 }
 
 .b-player_list_item .e-details_img IMG {
@@ -2807,7 +2811,7 @@ B.e-player_name {
 }
 
 .b-float_panel_block .e-local_search .e-search_field {
-  width: 100%;
+  width: auto;
   height: 35px;
   line-height: 35px;
   font-size: 14px;
@@ -3126,6 +3130,41 @@ TABLE.m-brd {
   font-family: 'icomoon';
   margin-right: 5px;
   color: #cacfd1;
+}
+
+.e-datepicker-field{
+  border: 1px solid #d7e6ee;
+  background: #FFF;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: top;
+  padding: 0 0.9em 0 1em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition-duration: 0.25s;
+}
+
+.e-datepicker-field:hover{
+  border: 1px solid #02a7fd;
+}
+
+.e-filter-apply{
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+.e-filter-apply:after{
+  font-size: 10px;
+  content: "\23";
+  font-family: 'icomoon';
+  margin-left: 5px;
+}
+.e-filter-apply:hover{
+  color: #02a7fd;
 }
 
 .m-text_articles .b-middle_block {
