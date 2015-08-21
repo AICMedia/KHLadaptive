@@ -6199,6 +6199,9 @@ H5 {
   max-height: 50px;
   max-width: 50px;
 }
+#calendar .e-loadmore{
+  border-top: none;
+}
 
 .e-period-score {
   margin-top: 7px;

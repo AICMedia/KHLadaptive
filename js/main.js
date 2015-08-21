@@ -745,31 +745,29 @@ function datepicker(){
 function calendar(){
 
   if (window.innerWidth <= 640)
-    $(".datepicker-first").datepicker({
+    $(".datepicker-calendar").datepicker({
       numberOfMonths:[1,1]
     });
   else if (window.innerWidth > 640 && window.innerWidth < 1024)
-    $(".datepicker-first").datepicker({
+    $(".datepicker-calendar").datepicker({
       numberOfMonths:[1,2]
     });
   else if (window.innerWidth > 1024)
-    $(".datepicker-first").datepicker({
+    $(".datepicker-calendar").datepicker({
       numberOfMonths:[1,3]
     });
 
   $(window).on('resize', function(){
 
     if (window.innerWidth <= 640)
-      $(".datepicker-first").datepicker( "option", "numberOfMonths", [1,1] );
+      $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,1] );
     else if (window.innerWidth > 640 && window.innerWidth < 1024)
-      $(".datepicker-first").datepicker( "option", "numberOfMonths", [1,2] );
+      $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,2] );
     else if (window.innerWidth > 1024)
-      $(".datepicker-first").datepicker( "option", "numberOfMonths", [1,3] );
-
-    console.log(window.innerWidth);
+      $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,3] );
   })
 
-  $(".datepicker-first").datepicker( "option",
+  $(".datepicker-calendar").datepicker( "option",
     $.datepicker.regional[ "ru" ]);
 }
 
