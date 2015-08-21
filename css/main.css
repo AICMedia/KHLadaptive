@@ -4311,7 +4311,6 @@ h4 > .e-timestamp {
 
 
 .b-screen {
-  height: 850px;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -4330,8 +4329,20 @@ h4 > .e-timestamp {
   height: 100%;
 }
 
-.b-screen .b-blocks_cover {
+.b-screen .b-blocks_cover,
+.b-screen .b-wide_block {
   background: transparent;
+}
+
+.b-screen-title {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.b-screen-title H2 {
+  margin-bottom: 0;
 }
 
 
@@ -4388,8 +4399,55 @@ h4 > .e-timestamp {
 }
 
 .b-screen-team-site .b-share_button {
-  
+  line-height: 1;
+  width: auto;
+  height: auto;
+  color: inherit;
+  border: none;
+  background: transparent;
 }
+
+.b-screen-team-site .b-share_button:hover {
+  color: #02a7fd;
+}
+
+.b-screen-video {
+  height: 420px;
+}
+
+.b-screen-video IFRAME {
+  width: 100%;
+  height: 100%;
+}
+
+.b-screen-video-item {
+  font-size: 14px;
+}
+
+.b-screen-video-item.active P {
+  opacity: .3;
+}
+
+.b-screen-video-item-play {
+  float: left;
+  margin-right: 10px;
+  padding-top: 1px;
+  padding-left: 1px;
+  position: relative;
+  z-index: 9;
+}
+
+.b-screen-video-item-play::before {
+  content: '1';
+  font-family: 'icomoon';
+  font-size: 25px;
+  color: #a9aeb2;
+}
+
+.b-screen-video-item-duration {
+  margin-left: 5px;
+}
+
 /**************************************** MOBILE < 1280 ****************************************/
 @media (max-width:1280px) {
 /******************************* Header ******************************/
@@ -5433,6 +5491,12 @@ H2 {font-size: 48px;}
 
 /******************************* Video Gallery Page End ***********************/
 
+/****/
+.b-screen-team-description {
+  padding-left: 250px;
+}
+/***/
+
 }
 
 
@@ -6119,6 +6183,32 @@ H5 {
 #videos .b-score {
   padding-top: 0;
 }
+
+/*******/
+.b-screen-team {
+  text-align: center;
+}
+.b-screen-team-description {
+  padding-left: 0;
+}
+
+.b-share {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.b-screen-team-logo {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.b-screen-team-info {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+
+/*******/
 
 }
 
