@@ -4310,6 +4310,86 @@ h4 > .e-timestamp {
 /******************************* Video Gallery Page End ***********************/
 
 
+.b-screen {
+  height: 850px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.b-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(44,57,65,0) 0%,rgba(44,57,65,1) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.b-screen .b-blocks_cover {
+  background: transparent;
+}
+
+
+.b-screen-team {
+  padding: 60px 0 30px;
+}
+
+.b-screen-team .b-middle_block {
+  padding-top: 0;
+}
+
+.b-screen-team-logo {
+  float: left;
+  margin-right: 50px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.b-screen-team-logo IMG {
+  width: 100%;
+  vertical-align: top;
+}
+
+.b-screen-team-name {
+  margin-bottom: 0;
+}
+
+.b-screen-team-contacts {
+  margin-bottom: 30px;
+}
+
+.inherit-color {
+  color: inherit !important;
+}
+
+
+.b-screen-team-info {
+  margin-top: 50px;
+}
+
+.b-screen-team-info P,
+.b-screen-team-info H4 {
+  margin-bottom: 0;
+}
+
+.b-screen-team-info td {
+  padding: 0 20px;
+  border-left: 1px solid #fff;
+}
+
+.b-screen-team-info td:first-child {
+  padding-left: 0;
+  border: 0;
+}
+
+.b-screen-team-site .b-share_button {
+  
+}
 /**************************************** MOBILE < 1280 ****************************************/
 @media (max-width:1280px) {
 /******************************* Header ******************************/
