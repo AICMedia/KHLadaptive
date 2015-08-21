@@ -777,7 +777,6 @@ function ChartRadar5() {
   });
 }
 
-<<<<<<< HEAD
 //datepicker
 function datepicker(){
 
