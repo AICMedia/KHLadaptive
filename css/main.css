@@ -828,6 +828,15 @@ UL.m-list>LI:before {
   color: #fff!important;
 }
 
+.e-bevel.m-bg_red {
+  background: #ec1b39;
+}
+
+.e-bevel.m-bg_red::before,
+.e-bevel.m-bg_red::after {
+  background-image: url('../img/bevel_red.png');
+}
+
 .b-news_bnr_item .e-bevel {
   font-size: 12px;
 }
@@ -2851,7 +2860,8 @@ B.e-player_name {
   cursor: pointer;
 }
 
-.b-player_list {
+.b-player_list,
+.b-club_list {
 
 }
 
@@ -2859,7 +2869,8 @@ B.e-player_name {
   margin-bottom: 1em;
 }
 
-.e-player_list_item {
+.e-player_list_item,
+.e-club_list_item {
   overflow: hidden;
   margin-bottom: 1em;
 }
@@ -2872,7 +2883,19 @@ B.e-player_name {
   float: left;
 }
 
-.e-player_list_item .e-player_name {
+.e-club_list_item IMG {
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.e-club_list_item .e-club_name {
+  color: #000;
+}
+
+
+.e-player_list_item .e-player_name,
+.e-club_list_item .e-club_name {
   font: 12px 'latoheavy';
   display: table-cell;
   height: 40px;
@@ -4293,6 +4316,144 @@ h4 > .e-timestamp {
 /******************************* Video Gallery Page End ***********************/
 
 
+.b-screen {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.b-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(44,57,65,0) 0%,rgba(44,57,65,1) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.b-screen .b-blocks_cover,
+.b-screen .b-wide_block {
+  background: transparent;
+}
+
+.b-screen-title {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.b-screen-title H2 {
+  margin-bottom: 0;
+}
+
+
+.b-screen-team {
+  padding: 60px 0 30px;
+}
+
+.b-screen-team .b-middle_block {
+  padding-top: 0;
+}
+
+.b-screen-team-logo {
+  float: left;
+  margin-right: 50px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.b-screen-team-logo IMG {
+  width: 100%;
+  vertical-align: top;
+}
+
+.b-screen-team-name {
+  margin-bottom: 0;
+}
+
+.b-screen-team-contacts {
+  margin-bottom: 30px;
+}
+
+.inherit-color {
+  color: inherit !important;
+}
+
+
+.b-screen-team-info {
+  margin-top: 50px;
+}
+
+.b-screen-team-info P,
+.b-screen-team-info H4 {
+  margin-bottom: 0;
+}
+
+.b-screen-team-info td {
+  padding: 0 20px;
+  border-left: 1px solid #fff;
+}
+
+.b-screen-team-info td:first-child {
+  padding-left: 0;
+  border: 0;
+}
+
+.b-screen-team-site .b-share_button {
+  line-height: 1;
+  width: auto;
+  height: auto;
+  color: inherit;
+  border: none;
+  background: transparent;
+}
+
+.b-screen-team-site .b-share_button:hover {
+  color: #02a7fd;
+}
+
+.b-screen-video {
+  height: 420px;
+}
+
+.b-screen-video IFRAME {
+  width: 100%;
+  height: 100%;
+}
+
+.b-screen-video-item {
+  font-size: 14px;
+}
+
+.b-screen-video-item.active P {
+  opacity: .3;
+}
+
+.b-screen-video-item-play {
+  float: left;
+  margin-right: 10px;
+  padding-top: 1px;
+  padding-left: 1px;
+  position: relative;
+  z-index: 9;
+}
+
+.b-screen-video-item-play::before {
+  content: '1';
+  font-family: 'icomoon';
+  font-size: 25px;
+  color: #a9aeb2;
+}
+
+.b-screen-video-item-duration {
+  margin-left: 5px;
+}
+
 /**************************************** MOBILE < 1280 ****************************************/
 @media (max-width:1280px) {
 /******************************* Header ******************************/
@@ -4549,7 +4710,8 @@ h4 > .e-timestamp {
 /******************************* News Page End ******************************
 ******************************* Player Page ******************************/
 
-.e-player_list_item {
+.e-player_list_item,
+.e-club_list_item {
   float: left;
   width: 33.3333%;
 }
@@ -5123,11 +5285,11 @@ H2 {font-size: 48px;}
   font-size: 14px;
 }
 
-.m-player .b-score_data_cover .e-score_total {
+.b-score_data_cover .e-score_total {
   font-size: 24px;
 }
 
-.m-player .b-score_data_cover .e-score_sum {
+.b-score_data_cover .e-score_sum {
   font-size: 14px;
 }
 
@@ -5334,6 +5496,12 @@ H2 {font-size: 48px;}
 }
 
 /******************************* Video Gallery Page End ***********************/
+
+/****/
+.b-screen-team-description {
+  padding-left: 250px;
+}
+/***/
 
 }
 
@@ -5860,21 +6028,21 @@ H5 {
 /******************************* News Page End ******************************
 ******************************* Player Page ******************************/
 
-.m-player .b-score_data_cover .e-score_total {
+.b-score_data_cover .e-score_total {
   font-size: 16px;
 }
 
-.m-player .b-score_data_cover .e-score_sum {
+.b-score_data_cover .e-score_sum {
   font-size: 8px;
 }
 
-.m-player .b-score_data_cover .e-cup_date::before {
+.b-score_data_cover .e-cup_date::before {
   font-size: 18px;
   margin-left: -9px;
   top: -10px;
 }
 
-.m-player .e-point_scale {
+.e-point_scale {
   font-size: 8px;
 }
 
@@ -6021,6 +6189,32 @@ H5 {
 #videos .b-score {
   padding-top: 0;
 }
+
+/*******/
+.b-screen-team {
+  text-align: center;
+}
+.b-screen-team-description {
+  padding-left: 0;
+}
+
+.b-share {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.b-screen-team-logo {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.b-screen-team-info {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+
+/*******/
 
 }
 
@@ -6291,7 +6485,7 @@ H5 {
 }
 @media (min-width: 1024px) and (max-width: 1600px){
 
-  .b-title-option{
+.b-title-option{
     font-size: 10px;
   }
 
@@ -6304,3 +6498,10 @@ H5 {
     vertical-align: middle;
   }
 }
+
+.m-calendar-header{
+  font-family: 'latoheavy';
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
