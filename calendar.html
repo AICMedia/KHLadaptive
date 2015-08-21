@@ -11,6 +11,7 @@
 
   <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/lib/i18n/datepicker-ru.js"></script>
   <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
@@ -24,7 +25,7 @@
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 
-<body id="statistics">
+<body id="calendar">
 
   <div id="wrapper">
     <div id="header">
@@ -61,7 +62,7 @@
               <a href="#" class="m-ico_apple m-icomoon">&</a>
               <a href="#" class="m-ico_android m-icomoon">%</a>
             </div>
-            <div class="e-header_social">
+            <div class="e-header_social"> 
               <span>КХЛ в соцсетях:</span>
               <a href="#" class="m-ico_yt m-icomoon">5</a>
               <a href="#" class="m-ico_vk m-icomoon">4</a>
@@ -381,581 +382,215 @@
         <div class="b-wide_block">
           <div class="b-calendar-container">
             <div class="b-calendar-slider">
-
-              <div class="b-calendar-row">
-                <div class="b-calendar-col">
-                  <div class="m-calendar-header">
-                    Август 2015
-                  </div>
-                  <table class="m-calendar-table">
-                    <thead>
-                      <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a class="muted" href="#">1</a></td>
-                        <td><a class="muted" href="#">2</a></td>
-                      </tr>
-                      <tr>
-                        <td><a class="muted" href="#">3</a></td>
-                        <td><a class="muted" href="#">4</a></td>
-                        <td><a class="muted" href="#">5</a></td>
-                        <td><a class="muted" href="#">6</a></td>
-                        <td><a class="muted" href="#">7</a></td>
-                        <td><a class="muted" href="#">8</a></td>
-                        <td><a class="muted" href="#">9</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#" class="active">22</a></td>
-                        <td><a href="#">23</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                        <td><a class="muted" href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">31</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="b-calendar-col">
-                  <div class="m-calendar-header">
-                    Сентябрь 2015
-                  </div>
-                  <table class="m-calendar-table">
-                    <thead>
-                      <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="#">1</a></td>
-                        <td><a href="#">2</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">3</a></td>
-                        <td><a href="#">4</a></td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">6</a></td>
-                        <td><a href="#">7</a></td>
-                        <td><a href="#">8</a></td>
-                        <td><a href="#">9</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#">22</a></td>
-                        <td><a href="#">23</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                        <td><a href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">31</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="b-calendar-col">
-                  <div class="m-calendar-header">
-                    Октябрь 2015
-                  </div>
-                  <table class="m-calendar-table">
-                    <thead>
-                      <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="#">1</a></td>
-                        <td><a href="#">2</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">3</a></td>
-                        <td><a href="#">4</a></td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">6</a></td>
-                        <td><a href="#">7</a></td>
-                        <td><a href="#">8</a></td>
-                        <td><a href="#">9</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#">22</a></td>
-                        <td><a href="#">23</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                        <td><a href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">31</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="b-calendar-row">
-                <div class="b-calendar-col">
-                  <div class="m-calendar-header">
-                    Август 2015
-                  </div>
-                  <table class="m-calendar-table">
-                    <thead>
-                      <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a class="muted" href="#">1</a></td>
-                        <td><a class="muted" href="#">2</a></td>
-                      </tr>
-                      <tr>
-                        <td><a class="muted" href="#">3</a></td>
-                        <td><a class="muted" href="#">4</a></td>
-                        <td><a class="muted" href="#">5</a></td>
-                        <td><a class="muted" href="#">6</a></td>
-                        <td><a class="muted" href="#">7</a></td>
-                        <td><a class="muted" href="#">8</a></td>
-                        <td><a class="muted" href="#">9</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#" class="active">22</a></td>
-                        <td><a href="#">23</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                        <td><a class="muted" href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">31</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="b-calendar-col">
-                  <div class="m-calendar-header">
-                    Сентябрь 2015
-                  </div>
-                  <table class="m-calendar-table">
-                    <thead>
-                      <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="#">1</a></td>
-                        <td><a href="#">2</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">3</a></td>
-                        <td><a href="#">4</a></td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">6</a></td>
-                        <td><a href="#">7</a></td>
-                        <td><a href="#">8</a></td>
-                        <td><a href="#">9</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#">22</a></td>
-                        <td><a href="#">23</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                        <td><a href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">31</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="b-calendar-col">
-                  <div class="m-calendar-header">
-                    Октябрь 2015
-                  </div>
-                  <table class="m-calendar-table">
-                    <thead>
-                      <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="#">1</a></td>
-                        <td><a href="#">2</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">3</a></td>
-                        <td><a href="#">4</a></td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">6</a></td>
-                        <td><a href="#">7</a></td>
-                        <td><a href="#">8</a></td>
-                        <td><a href="#">9</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#">22</a></td>
-                        <td><a href="#">23</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                        <td><a href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">31</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              <div class="datepicker-first"></div>
             </div>
             <div class="b-calendar-tools">
             </div>
           </div>
+            
           <div class="b-final_cup_date">
             <span class="e-bevel">Регулярный чемпионар</span>
-            <b>21 августа 2015, пт | </b>
-            <small>21 августа 2015, пт </small>
+            <b>21 августа 2015, пт</b>
+            <b>|</b>
+            <small>Неделя 1</small>
           </div>
 
-          <ul class="b-wide_tile">
-            <li class="b-short_tile_item">
-              <dl class="b-details m-club">
-                <dt class="e-details_img">
-                  <img src="img/club_logo_2.png" alt="" />
-                </dt>
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name"><b>Динамо</b></h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-              </dl>
-              <dl class="b-score">
-                <dt class="b-total_score">
-                  <span class="e-round m-bg_color_0">от</span>
-                  <h3><b>2</b> &mdash; 1</h3>
-                </dt>
-                <dd class="b-period_score">
-                  1-0 &nbsp; 0-0 &nbsp; 0-1 &nbsp; 1-0 &nbsp; &mdash;
-                </dd>
-              </dl>
-              <dl class="b-details m-club m-rightward">
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name">ЦСКА</h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-                <dt class="e-details_img">
-                  <img src="img/club_logo_3.png" alt="" />
-                </dt>
-              </dl>
-            </li>
-            <li class="b-short_tile_item">
-              <dl class="b-details m-club">
-                <dt class="e-details_img">
-                  <img src="img/club_logo_1.png" alt="" />
-                </dt>
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name"><b>Динамо</b></h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-              </dl>
-              <dl class="b-score">
-                <dt class="b-total_score">
-                  <h3>1 &mdash; <b>2</b></h3>
-                </dt>
-                <dd class="b-period_score">
-                  1-0 &nbsp; 0-0 &nbsp; 0-1 &nbsp; &mdash; &nbsp; &mdash;
-                </dd>
-              </dl>
-              <dl class="b-details m-club m-rightward">
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name">ЦСКА</h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-                <dt class="e-details_img">
-                  <img src="img/club_logo_4.png" alt="" />
-                </dt>
-              </dl>
-            </li>
-            <li class="b-short_tile_item">
-              <dl class="b-details m-club">
-                <dt class="e-details_img">
-                  <img src="img/club_logo_2.png" alt="" />
-                </dt>
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name"><b>Динамо</b></h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-              </dl>
-              <dl class="b-score">
-                <dt class="b-total_score">
-                  <span class="e-round m-bg_color_0">от</span>
-                  <h3><b>2</b> &mdash; 1</h3>
-                </dt>
-                <dd class="b-period_score">
-                  1-0 &nbsp; 0-0 &nbsp; 0-1 &nbsp; 1-0 &nbsp; &mdash;
-                </dd>
-              </dl>
-              <dl class="b-details m-club m-rightward">
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name">ЦСКА</h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-                <dt class="e-details_img">
-                  <img src="img/club_logo_3.png" alt="" />
-                </dt>
-              </dl>
-            </li>
-            <li class="b-short_tile_item">
-              <dl class="b-details m-club">
-                <dt class="e-details_img">
-                  <img src="img/club_logo_1.png" alt="" />
-                </dt>
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name"><b>Динамо</b></h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-              </dl>
-              <dl class="b-score">
-                <dt class="b-total_score">
-                  <h3>1 &mdash; <b>2</b></h3>
-                </dt>
-                <dd class="b-period_score">
-                  1-0 &nbsp; 0-0 &nbsp; 0-1 &nbsp; &mdash; &nbsp; &mdash;
-                </dd>
-              </dl>
-              <dl class="b-details m-club m-rightward">
-                <dd class="b-details_txt">
-                  <h5 class="e-club_name">ЦСКА</h5>
-                  <p class="e-club_sity">Москва</p>
-                </dd>
-                <dt class="e-details_img">
-                  <img src="img/club_logo_4.png" alt="" />
-                </dt>
-              </dl>
-            </li>
-          </ul>
+          <div class="m-future">
+            <ul class="b-wide_tile">
+              <li class="b-wide_tile_item">
+                <dl class="b-details m-club">
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_2.png" alt="" />
+                  </dt>
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">Автомобилист</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                </dl>
+                <dl class="b-title-option">
+                  <div class="b-title-option-wrapper">
+                    <div class="b-title-option-inner">
+                      <ul>
+                        <li><a href="#">Превью</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li>Билеты</li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Протокол</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Напомнить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </dl>
+                <dl class="b-score">
+                  <dt class="b-total_score">
+                    <b class="e-match-num">№ 53</b>
+                    <h3>1 &mdash; 0</h3>
+                  </dt>
+                  <dd class="b-period_score">
+                    <ul class="e-period-score">
+                      <li><span>0-1</span></li>
+                      <li><span>1-2</span></li>
+                      <li><span class="e-round m-bg_color_1">3</span></li>
+                      <li class="e-empty-point"></li>
+                      <li class="e-empty-point"></li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="b-details m-club m-rightward">
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">Салават Юлаев</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_3.png" alt="" />
+                  </dt>
+                </dl>
+              </li>
+              <li class="b-wide_tile_item">
+                <dl class="b-details m-club">
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_1.png" alt="" />
+                  </dt>
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">Динамо</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                </dl>
+                <dl class="b-title-option">
+                  <div class="b-title-option-wrapper">
+                    <div class="b-title-option-inner">
+                      <ul>
+                        <li><a href="#">Превью</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li>Билеты</li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Протокол</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Напомнить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </dl>
+                <dl class="b-score">
+                  <dt class="b-total_score">
+                    <b class="e-match-num">№ 53</b>
+                    <h3>1 &mdash; 0</h3>
+                  </dt>
+                  <dd class="b-period_score">
+                    <ul class="e-period-score">
+                      <li><span class="e-round m-bg_color_1">1</span></li>
+                      <li class="e-empty-point"></li>
+                      <li class="e-empty-point"></li>
+                      <li class="e-empty-point"></li>
+                      <li class="e-empty-point"></li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="b-details m-club m-rightward">
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">ЦСКА</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_4.png" alt="" />
+                  </dt>
+                </dl>
+              </li>
+              <li class="b-wide_tile_item">
+                <dl class="b-details m-club">
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_1.png" alt="" />
+                  </dt>
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">Динамо</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                </dl>
+                <dl class="b-title-option">
+                  <div class="b-title-option-wrapper">
+                    <div class="b-title-option-inner">
+                      <ul>
+                        <li><a href="#">Превью</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li>Билеты</li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Протокол</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Напомнить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </dl>
+                <dl class="b-score">
+                  <dt class="b-total_score">
+                    <b class="e-match-num">№ 53</b>
+                    <h3>19:00 <small>мск</small></h3>
+                  </dt>
+                  <dd class="b-period_score">
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                </dl>
+                <dl class="b-details m-club m-rightward">
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">ЦСКА</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_4.png" alt="" />
+                  </dt>
+                </dl>
+              </li>
+              <li class="b-wide_tile_item">
+                <dl class="b-details m-club">
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_1.png" alt="" />
+                  </dt>
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">Динамо</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                </dl>
+                <dl class="b-title-option">
+                  <div class="b-title-option-wrapper">
+                    <div class="b-title-option-inner">
+                      <ul>
+                        <li><a href="#">Превью</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li>Билеты</li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Протокол</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Напомнить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </dl>
+                <dl class="b-score">
+                  <dt class="b-total_score">
+                    <b class="e-match-num">№ 53</b>
+                    <h3>19:00 <small>мск</small></h3>
+                  </dt>
+                  <dd class="b-period_score">
+                    <p class="e-club_sity">Санкт-Петербург</p>
+                  </dd>
+                </dl>
+                <dl class="b-details m-club m-rightward">
+                  <dd class="b-details_txt">
+                    <h5 class="e-club_name">ЦСКА</h5>
+                    <p class="e-club_sity">Москва</p>
+                  </dd>
+                  <dt class="e-details_img">
+                    <img src="img/club_logo_4.png" alt="" />
+                  </dt>
+                </dl>
+              </li>           
+            </ul>
+          </div> 
         </div>
       </div>
     </div>

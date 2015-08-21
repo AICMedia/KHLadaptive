@@ -35,6 +35,9 @@ $(document).ready(function(){
   if($('.datepicker').length){
     datepicker();
   }
+  if($('.b-calendar-container').length){
+    calendar();
+  }
 
   $('.m-round_diagram').each(function() {
     $(this).knob();
@@ -177,12 +180,13 @@ $(document).ready(function(){
     asNavFor: '.b-gallery_placeholders'
   });
 
-  $('.b-calendar-slider').slick({
-    slidesToScroll: 1,
-    vertical: true,
-    appendArrows: $('.b-calendar-tools'),
-    responsive: true
-  });
+  // $('.b-calendar-slider').slick({
+  //   slidesToScroll: 1,
+  //   vertical: true,
+  //   verticalSwiping: true,
+  //   appendArrows: $('.b-calendar-tools'),
+  //   responsive: true
+  // });
 
   $('input, select').styler();
 
@@ -293,6 +297,12 @@ function HideShow() {
   });
   $('.b-feed_matches_item').on('mouseleave', function(){
     $(this).find('.e-matches_popup_links').fadeOut(250);
+  });
+
+  $('.b-wide_tile_item').on('mouseenter', function(){
+    $(this).find('.b-title-option').fadeIn(250);
+  }).on('mouseleave', function(){
+    $(this).find('.b-title-option').fadeOut(250);
   });
 
   $('.e-slide_link').on('click', function(){
@@ -729,7 +739,38 @@ function ChartRadar5() {
 //datepicker
 function datepicker(){
 
-  $(".datepicker").datepicker();
+  $(".datepicker-range").datepicker();
+}
+//datepicker
+function calendar(){
+
+  if (window.innerWidth <= 640)
+    $(".datepicker-first").datepicker({
+      numberOfMonths:[1,1]
+    });
+  else if (window.innerWidth > 640 && window.innerWidth < 1024)
+    $(".datepicker-first").datepicker({
+      numberOfMonths:[1,2]
+    });
+  else if (window.innerWidth > 1024)
+    $(".datepicker-first").datepicker({
+      numberOfMonths:[1,3]
+    });
+
+  $(window).on('resize', function(){
+
+    if (window.innerWidth <= 640)
+      $(".datepicker-first").datepicker( "option", "numberOfMonths", [1,1] );
+    else if (window.innerWidth > 640 && window.innerWidth < 1024)
+      $(".datepicker-first").datepicker( "option", "numberOfMonths", [1,2] );
+    else if (window.innerWidth > 1024)
+      $(".datepicker-first").datepicker( "option", "numberOfMonths", [1,3] );
+
+    console.log(window.innerWidth);
+  })
+
+  $(".datepicker-first").datepicker( "option",
+    $.datepicker.regional[ "ru" ]);
 }
 
 // Custom map
