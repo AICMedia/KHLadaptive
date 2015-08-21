@@ -780,6 +780,18 @@ UL.m-list>LI:before {
   padding: 30px 3.5%;
 }
 
+.b-half_block{
+  float: left;
+  width: 50%;
+  padding: 30px 3.5%;
+}
+@media (max-width: 1024px){
+
+  .b-half_block{
+    width: 100%;
+  }
+}
+
 .b-short_block {
   float: left;
   width: 30%;
@@ -6395,6 +6407,182 @@ H5 {
 }
 #calendar .e-loadmore{
   border-top: none;
+}
+
+#calendar-line .b-wide_tile_item:hover{
+  border-color: #02a7fd;
+}
+#calendar-line .b-wide_tile_item:hover+.b-wide_tile_item{
+  border-top-color: #02a7fd;
+}
+#calendar-line .b-score_table_cover{
+  padding-top: 85px;
+}
+#calendar-line .e-bnr{
+  margin: 0 0 20px;
+}
+#calendar-line .b-wide_tile{
+  padding: 1px 0 60px;
+}
+#calendar-line .b-wide_tile .b-details{
+  margin-top: 0;
+}
+#calendar-line .m-club .e-details_img{
+  width: 20%;
+}
+#calendar-line .b-total_score H3{
+  font-size: 24px;
+  font-family: "latoheavy";
+  color: #000;
+  margin: 0 0 5px;
+  line-height: 1;
+}
+#calendar-line .b-total_score H3 small{
+  font-size: 12px;
+  color: #666666;
+}
+#calendar-line .e-club_sity{
+  margin-bottom: 0;
+}
+#calendar-line .e-club_name{
+  margin-bottom: 5px;
+}
+#calendar-line .b-details.m-rightward .b-details_txt{
+  padding: 0 7% 0 0;
+}
+#calendar-line .b-details_txt{
+  padding: 0 0 0 7%;
+}
+#calendar-line .b-title-option li{
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: "latobold";
+}
+#calendar-line .b-details-number {
+  float: left;
+  width: 7%;
+  margin-right: 3%;
+  border-right: 1px solid #d7e6ee;
+}
+#calendar-line .b-wide_tile .b-details{
+  width: 30%;
+}
+#calendar-line .b-details-number{
+  font-family: "latoheavy";
+}
+#calendar-line .b-details-number div{
+  font-size: 14px;
+  line-height: 1;
+}
+#calendar-line .b-details-number b{
+  font-size: 24px;
+}
+#calendar-line .b-title-option{
+  left: 10%;
+}
+#calendar-line .e-loadmore{
+  border-top: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+.b-wide_block:after {
+  position: relative;
+  clear: both;
+  display: block;
+  bottom: 1px;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #d7e6ee;
+}
+@media (max-width: 640px){
+
+  #calendar-line .e-club_sity{
+    font-size: 8px;
+  }
+  #calendar-line .e-period-score li{
+    margin-right: 3px;
+  }
+  #calendar-line .b-details-number{
+    border: none;
+  }
+  #calendar-line .b-wide_tile .b-details{
+    width: 29%;
+  }
+  #calendar-line .b-details-number{
+    width: 9%;
+  }
+}
+
+#team .b-wide_tile_item:hover{
+  border-color: #02a7fd;
+}
+#team .b-wide_tile_item:hover+.b-wide_tile_item{
+  border-top-color: #02a7fd;
+}
+#team .b-score_table_cover{
+  padding-top: 85px;
+}
+#team .e-bnr{
+  margin: 0 0 20px;
+}
+#team .b-wide_tile{
+  padding: 1px 0 60px;
+}
+#team .b-wide_tile .b-details{
+  margin-top: 0;
+}
+#team .m-club .e-details_img{
+  width: 20%;
+}
+#team .b-total_score H3{
+  font-size: 24px;
+  font-family: "latoheavy";
+  color: #000;
+  margin: 0 0 5px;
+  line-height: 1;
+}
+#team .b-total_score H3 small{
+  font-size: 12px;
+  color: #666666;
+}
+#team .e-club_sity{
+  margin-bottom: 0;
+}
+#team .e-club_name{
+  margin-bottom: 5px;
+}
+#team .b-details.m-rightward .b-details_txt{
+  padding: 0 7% 0 0;
+}
+#team .b-details_txt{
+  padding: 0 0 0 7%;
+}
+#team .b-title-option li{
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: "latobold";
+}
+#team .b-wide_tile .b-details{
+  width: 35%;
+}
+#team .b-details-number{
+  font-family: "latoheavy";
+}
+#team .b-details-number div{
+  font-size: 14px;
+  line-height: 1;
+}
+#team .b-details-number b{
+  font-size: 24px;
+}
+#team .e-loadmore{
+  border-top: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+#team .b-wide_title h4{
+  margin-bottom: 20px;
 }
 
 .e-period-score {

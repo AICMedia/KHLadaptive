@@ -226,7 +226,7 @@ $(document).ready(function(){
 
     var $playlist = $('.js-playlist'),
         $playlistBox = $('.js-playlist-box');
-    $playlist.css('height',($playlistBox.height() - $playlist.position().top));
+    // $playlist.css('height',($playlistBox.height() - $playlist.position().top));
 
 
   $('input, select').styler();
