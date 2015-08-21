@@ -828,6 +828,15 @@ UL.m-list>LI:before {
   color: #fff!important;
 }
 
+.e-bevel.m-bg_red {
+  background: #ec1b39;
+}
+
+.e-bevel.m-bg_red::before,
+.e-bevel.m-bg_red::after {
+  background-image: url('../img/bevel_red.png');
+}
+
 .b-news_bnr_item .e-bevel {
   font-size: 12px;
 }
@@ -2845,7 +2854,8 @@ B.e-player_name {
   cursor: pointer;
 }
 
-.b-player_list {
+.b-player_list,
+.b-club_list {
 
 }
 
@@ -2853,7 +2863,8 @@ B.e-player_name {
   margin-bottom: 1em;
 }
 
-.e-player_list_item {
+.e-player_list_item,
+.e-club_list_item {
   overflow: hidden;
   margin-bottom: 1em;
 }
@@ -2866,7 +2877,19 @@ B.e-player_name {
   float: left;
 }
 
-.e-player_list_item .e-player_name {
+.e-club_list_item IMG {
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.e-club_list_item .e-club_name {
+  color: #000;
+}
+
+
+.e-player_list_item .e-player_name,
+.e-club_list_item .e-club_name {
   font: 12px 'latoheavy';
   display: table-cell;
   height: 40px;
@@ -4543,7 +4566,8 @@ h4 > .e-timestamp {
 /******************************* News Page End ******************************
 ******************************* Player Page ******************************/
 
-.e-player_list_item {
+.e-player_list_item,
+.e-club_list_item {
   float: left;
   width: 33.3333%;
 }
@@ -5117,11 +5141,11 @@ H2 {font-size: 48px;}
   font-size: 14px;
 }
 
-.m-player .b-score_data_cover .e-score_total {
+.b-score_data_cover .e-score_total {
   font-size: 24px;
 }
 
-.m-player .b-score_data_cover .e-score_sum {
+.b-score_data_cover .e-score_sum {
   font-size: 14px;
 }
 
@@ -5854,21 +5878,21 @@ H5 {
 /******************************* News Page End ******************************
 ******************************* Player Page ******************************/
 
-.m-player .b-score_data_cover .e-score_total {
+.b-score_data_cover .e-score_total {
   font-size: 16px;
 }
 
-.m-player .b-score_data_cover .e-score_sum {
+.b-score_data_cover .e-score_sum {
   font-size: 8px;
 }
 
-.m-player .b-score_data_cover .e-cup_date::before {
+.b-score_data_cover .e-cup_date::before {
   font-size: 18px;
   margin-left: -9px;
   top: -10px;
 }
 
-.m-player .e-point_scale {
+.e-point_scale {
   font-size: 8px;
 }
 
