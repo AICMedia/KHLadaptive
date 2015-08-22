@@ -3318,40 +3318,75 @@ h4 > .e-timestamp {
 
 .m-typo P {
   margin: 0;
+  line-height: 1.875em;
 }
 
 .m-typo P + P {
-  margin-top: 25px;
+  margin-top: 1.5em;
 
 }
 
+.e-hyphen-list,
+.e-enumerate-list {
+  margin: 1.5em 0;
+}
+
+.e-hyphen-list LI,
+.e-enumerate-list LI {
+  position: relative;
+  padding-left: 1.5em;
+  margin-top: 1.5em;
+}
+
+.e-enumerate-list-num {
+  color: #02a7fd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.875em;
+}
+
+.e-hyphen-list LI::before {
+  content: '–';
+  color: #02a7fd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .e-qoute {
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: 'latoheavy';
   padding-left: 30px;
   border-left: 4px solid #02a7fd;
-  margin: 50px 0 !important;
+  margin: 3em 0 !important;
   line-height: 1.5;
 }
 
 .m-typo STRONG {
   font-family: 'latoheavy';
 }
+.m-typo H2 {
+  margin-bottom: 0;
+  font-size: 2.25em;
+}
+
 .m-typo H4 {
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  font-size: 1.125em;
 }
 .m-typo_important {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .m-typo .e-photo {
   height: 410px;
-  margin: 25px 0;
+  margin: 1.5em 0;
 }
 
 .m-typo .b-table_view {
-  margin: 25px 0 0;
+  margin: 1.5em 0 0;
 }
 
 .e-footnote {
@@ -6556,7 +6591,7 @@ H5 {
 }
 
 .b-file-link + .b-file-link {
-  margin-top: 15px;
+  margin-top: 1.5em;
 }
 .b-file-link-size {
   color: #666666;
@@ -6586,4 +6621,8 @@ H5 {
   padding-right: 30px;
   padding-top: 30px !important;
   padding-bottom: 30px !important;
+}
+
+.m-typo b {
+  font-family: 'latobold';
 }
