@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="css/dataTables.css">
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="all">
 
   <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
@@ -72,7 +74,7 @@
               <a href="#" class="m-ico_gp m-icomoon">+</a>
             </div>
 
-            <a href="#" class="e-lang_btn">English</a>
+            <a href="#enter-modal" class="e-lang_btn popup-modal">Войти</a>
           </div>
         </div>
       </div>
@@ -1042,6 +1044,17 @@
       </li>
     </ul>
   </div>
-
+  <div id="enter-modal" class="white-popup-block mfp-hide">
+    <div class="mpf-content">
+      <div class="mfp-header">
+        <img src="./img/khl_logo_4.png" alt="" />
+        <div class="b-switcher m-light">
+          <span class="e-switcher_item m-first" id="b-table_view">таблица</span>
+          <span class="e-switcher_btn"><b style="left: 12px;"></b></span>
+          <span class="e-switcher_item m-last m-active" id="b-diagram_view">диаграмма</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
