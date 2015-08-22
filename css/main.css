@@ -1319,7 +1319,7 @@ b{
 .e-go_to {
   display: inline-block;
   position: relative;
-  font: 0.666em 'latobold';
+  font-family: 'latobold';
   margin-right: 30px;
 }
 
@@ -1330,6 +1330,12 @@ b{
   display: block;
 }
 
+.m-licensing .e-go_to {
+  font-size: .666em;
+}
+.m-licensing .e-go_to::before {
+  content: "\00a0\00a0";
+}
 .e-go_to:after {
   font-family: 'icomoon';
   content: ',';
@@ -1337,7 +1343,6 @@ b{
   display: inline-block;
   vertical-align: baseline;
   padding-left: .5em;
-  margin-top: .25em;
 }
 
 .m-go_to {
@@ -7231,7 +7236,22 @@ H5 {
   margin-bottom: .75rem;
 }
 
+.m-small {
+  font-size: .875em;
+}
+
+.m-sponsor .b-short_block {
+  padding-bottom: 30px !important;
+}
+.m-sponsor .b-short_block .e-go_to {
+  margin-top: .5rem;
+}
+.m-sponsor .b-short_block H4 {
+  margin-top: 1rem;
+}
+
 @media (max-width: 640px){
+
   .b-lead-persons-col {
     float: none;
     padding-right: 0;
