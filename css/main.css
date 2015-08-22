@@ -4745,6 +4745,11 @@ h4 > .e-timestamp {
   float: left;
 }
 
+.m-page .b-float_panel_cover {
+  padding-left: 3.5% !important;
+  padding-right: 3.5% !important;
+}
+
 }
 
 @media (min-width:1280px) {
@@ -6497,6 +6502,10 @@ H5 {
   #calendar .b-wide_tile_item{
     height: auto;
   }
+
+  .m-typo  {
+    font-size: 12px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1600px){
 
@@ -6551,7 +6560,7 @@ H5 {
 }
 .b-file-link-size {
   color: #666666;
-  font-size: 14px;
+  font-size: .875em;
 }
 
 .m-typo H4:first-child {
@@ -6570,4 +6579,11 @@ H5 {
 
 .b-purchase-table TD + TD {
   padding-left: 30px;
+}
+
+.m-page .b-float_panel_cover {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
