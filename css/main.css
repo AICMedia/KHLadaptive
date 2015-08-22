@@ -6720,10 +6720,85 @@ H5 {
   font-size: .875em;
 }
 
+.b-licensing-types {
+  margin: 0 -3.5%;
+}
+
+.b-licensing-types-col {
+  width: 50%;
+  float: left;
+  padding: 0 3.5%;
+}
+
+.b-licensing-type-view {
+  margin-left: .5em;
+}
+
+.b-licensing-type-view::before {
+  content: "'";
+  font-family: 'icomoon';
+  vertical-align: middle;
+}
+
+.licentiates {
+  margin-top: 1.5rem;
+}
+.licentiate {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4rem .5rem 0;
+}
+
+
+.b-table-de {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-collapse: separate;
+}
+
+.b-table-de TD {
+  padding: 0 1.5em;
+  border-left: 1px solid #d7e6ee;
+  vertical-align: middle;
+}
+.b-table-de TD:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.b-table-de P {
+  font-size: 0.875em;
+}
+.b-table-de H4 {
+  margin-bottom: 0;
+}
+
+.b-table-de-bordered {
+  border: 1px solid #d7e6ee;
+}
+.b-table-de-bordered TD:first-child {
+  padding-left: 1.5em;
+}
+
+.box-container {
+  padding: 1.5rem 30px;
+  background: #f1fafe;
+}
+
+.box-container h4 {
+  margin-bottom: .75rem;
+}
+
 @media (max-width: 640px){
   .b-lead-persons-col {
     float: none;
     padding-right: 0;
+    width: 100%;
+  }
+
+  .b-licensing-types-col {
+    float: none;
     width: 100%;
   }
 
