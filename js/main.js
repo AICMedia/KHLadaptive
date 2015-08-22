@@ -162,6 +162,16 @@ $(document).ready(function(){
       });
     }
 
+    if(winW <1400 && winW >=1000){
+      $('.b-commands_list .m-round_diagram').trigger('configure',{
+          'width':135
+      });
+    } else if (winW <1000){
+      $('.b-commands_list .m-round_diagram').trigger('configure',{
+          'width':100
+      });
+    }
+
   }).resize();
 
   $('.b-gallery_placeholders').slick({
@@ -326,6 +336,10 @@ $(document).ready(function(){
       }
     }
   });
+
+  // $('.popup-modal').magnificPopup({
+  //   type: 'inline'
+  // });
 
 });
 
