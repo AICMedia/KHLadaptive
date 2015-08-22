@@ -3318,24 +3318,24 @@ h4 > .e-timestamp {
 
 .m-typo P {
   margin: 0;
-  line-height: 1.875em;
+  line-height: 1.5em;
 }
 
 .m-typo P + P {
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
 
 }
 
 .e-hyphen-list,
 .e-enumerate-list {
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
 }
 
 .e-hyphen-list LI,
 .e-enumerate-list LI {
   position: relative;
-  padding-left: 1.5em;
-  margin-top: 1.5em;
+  padding-left: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .e-enumerate-list-num {
@@ -3359,22 +3359,22 @@ h4 > .e-timestamp {
   font-family: 'latoheavy';
   padding-left: 30px;
   border-left: 4px solid #02a7fd;
-  margin: 3em 0 !important;
-  line-height: 1.5;
+  margin: 3rem 0 !important;
+  line-height: 1.5em;
 }
 
 .m-typo STRONG {
   font-family: 'latoheavy';
 }
 .m-typo H2 {
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
   font-size: 2.25em;
 }
 
 .m-typo H4 {
-  margin-top: 3em;
-  margin-bottom: 1.5em;
-  font-size: 1.125em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5em;
 }
 .m-typo_important {
   font-size: 1.125em;
@@ -3382,11 +3382,11 @@ h4 > .e-timestamp {
 
 .m-typo .e-photo {
   height: 410px;
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
 }
 
 .m-typo .b-table_view {
-  margin: 1.5em 0 0;
+  margin: 1.5rem 0 0;
 }
 
 .e-footnote {
@@ -5554,6 +5554,10 @@ H2 {font-size: 48px;}
 
 /**************************************** MOBILE < 800 ****************************************/
 @media (max-width:800px) {
+
+.m-typo  {
+  font-size: 12px;
+}
 /******************************* Header ******************************/
 
 /******************************* Header end ******************************
@@ -6271,6 +6275,7 @@ H5 {
   width: 50%;
 }
 
+
 }
 
 /******************************* Video Gallery Page End ***********************
@@ -6538,9 +6543,7 @@ H5 {
     height: auto;
   }
 
-  .m-typo  {
-    font-size: 12px;
-  }
+
 }
 @media (min-width: 1024px) and (max-width: 1600px){
 
@@ -6598,6 +6601,11 @@ H5 {
   font-size: .875em;
 }
 
+
+.m-typo H1 {
+  font-size: 3.375em;
+  margin-bottom: 0;
+}
 .m-typo H4:first-child {
   margin-top: 0;
 }
@@ -6625,4 +6633,78 @@ H5 {
 
 .m-typo b {
   font-family: 'latobold';
+}
+
+.gray {
+  opacity: .6;
+}
+
+
+.b-lead-persons-col {
+  width: 50%;
+  float: left;
+  padding-right: 1.5rem;
+}
+
+.b-lead-person + .b-lead-person {
+  margin-top: 1.5rem;
+}
+
+.b-lead-person SPAN {
+  opacity: .6;
+  font-size: .875em;
+  display: block;
+}
+
+.b-show-person {
+  display: table;
+}
+
+.b-show-person-img {
+  width: 290px;
+  display: table-cell;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+}
+
+.b-show-person-img IMG {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.b-show-person-details {
+  display: table-cell;
+  padding-left: 40px;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 640px){
+  .b-lead-persons-col {
+    float: none;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .b-show-person-details {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .b-show-person-img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  .b-show-person {
+    display: block;
+  }
 }
