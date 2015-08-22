@@ -1319,7 +1319,7 @@ b{
 .e-go_to {
   display: inline-block;
   position: relative;
-  font:16px 'latobold';
+  font: 0.666em 'latobold';
   margin-right: 30px;
 }
 
@@ -1331,15 +1331,13 @@ b{
 }
 
 .e-go_to:after {
-  position: absolute;
-  display: block;
   font-family: 'icomoon';
   content: ',';
-  font-size: 20px;
-  top: 0.3em;
-  right: -30px;
-  margin-top: -4px;
-  transition-duration: 0.25s;
+  position: absolute;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-left: .5em;
+  margin-top: .25em;
 }
 
 .m-go_to {
@@ -6977,7 +6975,7 @@ H5 {
 .b-commands_header .e-header-subname-mini{
   margin-top: 10px;
   margin-bottom: 10px;
-} 
+}
 
 @media (max-width: 1400px){
 
@@ -6991,7 +6989,7 @@ H5 {
   }
 }
 @media (max-width: 1000px){
-  
+
   .b-commands_list .e-round_diagram_item LABEL {
     width: 100%;
     top: 55px;
