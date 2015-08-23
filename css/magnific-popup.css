@@ -47,12 +47,18 @@
   margin: 0 auto;
   text-align: left;
   z-index: 1045;
-  width: 380px;
 }
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
   width: 380px;
   cursor: auto;
+}
+
+@media (max-width:400px){
+
+  .mfp-inline-holder .mfp-content{
+    width: 100%;
+  }
 }
 
 .mfp-header{
