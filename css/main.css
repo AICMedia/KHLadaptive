@@ -1245,6 +1245,10 @@ b{
   background: #d7e6ee;
 }
 
+.b-title_cover.m-nb:after{
+  content: none;
+}
+
 .b-title_cover H2 {
   float: left;
   position: relative;
@@ -4269,6 +4273,12 @@ h4 > .e-timestamp {
   cursor: pointer;
   transition: background 0.25s linear;
 }
+.e-btn.e-btn-lg{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-family: 'latoheavy';
+}
 
 .e-btn.m-bg_color_0 {
   background: #02a7fd;
@@ -4281,6 +4291,40 @@ h4 > .e-timestamp {
 
 .e-btn:hover {
   background: #2c3941;
+}
+.e-input-group{
+  position: relative;
+}
+.e-input-group .s-show-password{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.e-input-group .s-show-password:before{
+  content: '\27';
+  display: inline-block;
+  font-family: 'icomoon';
+  font-size: 18px;
+}
+.e-terms-agree{
+  color: #fff;
+  font-size: 14px;
+}
+
+.e-input{
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  border-left: 1px solid #f3f3f4;
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.e-input.e-input-lg{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
 }
 
 .m-future .b-wide_tile,
@@ -6836,9 +6880,6 @@ H5 {
 .e-match_name{
   margin-right: 30px;
 }
-.e-match_subname{
-  color: #00a6ff;
-}
 
 
 .e-header-right{
@@ -6870,6 +6911,14 @@ H5 {
   margin-bottom: 0;
   overflow: hidden;
   margin-top: 35px;
+}
+.e-header-subname-nums{
+  margin-top: 0;
+  font-size: 18px;
+}
+.e-header-subname-num{
+  font-size: 54px;
+  line-height: 1;
 }
 
 .b-commands_header{
@@ -7011,10 +7060,13 @@ H5 {
   text-align: right;
 }
 
+.b-commands_list .e-round_diagram_item LABEL {
+  width: 100%;
+}
+
 @media (max-width: 1400px){
 
   .b-commands_list .e-round_diagram_item LABEL {
-    width: 100%;
     top: 75px;
   }
   .b-commands_list .e-round_diagram_item INPUT {

@@ -337,10 +337,21 @@ $(document).ready(function(){
     }
   });
 
-  // $('.popup-modal').magnificPopup({
-  //   type: 'inline'
-  // });
+  if ($('.popup-modal').length)
+    $('.popup-modal').magnificPopup();
 
+  $('.s-show-password').on('click', function(e){
+    e.preventDefault();
+    showInput = $(this).siblings('input')
+    showType = showInput.attr('type')
+
+    if (showType == "password"){
+      showInput.attr('type','text')
+    } else{
+      showInput.attr('type','password')
+    }
+    
+  })
 });
 
 

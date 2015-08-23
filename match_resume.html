@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="css/dataTables.css">
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/video.block.css" media="all">
 
   <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
-  <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
@@ -22,11 +21,12 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" media="all">
+  <script src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 
-<body id="main">
-
-  <div class="e-top_main_bnr" style="background:#1eac4d;"><img src="img/bnr_1.jpg" alt=""/></div>
+<body id="match">
 
   <div id="wrapper">
     <div id="header">
@@ -74,7 +74,7 @@
               <a href="#" class="m-ico_gp m-icomoon">+</a>
             </div>
 
-            <a href="#enter-modal" class="e-lang_btn popup-modal">Войти</a>
+            <a href="#" class="e-lang_btn">English</a>
           </div>
         </div>
       </div>
@@ -307,203 +307,7 @@
       </div>
     </div>
 
-    <div class="b-content_section m-teaser">
-      <div class="b-blocks_cover">
-        <div class="b-middle_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
-          <a href="#" class="m-cover_link">
-            <h3>&laquo;Слован&raquo; эпоха первоначального накопления</h3>
-            <span class="e-date">1 июня 2015, 12:10</span>
-
-            <span class="e-bevel">Новость дня</span>
-          </a>
-        </div>
-        <div class="b-short_block">
-
-          <div class="b-switcher_tab_cover">
-            <div class="b-switcher">
-              <span id="s-regular" class="e-switcher_item m-first m-active">Рег. чемпионат</span>
-              <span class="e-switcher_btn"><b></b></span>
-              <span id="s-playoff" class="e-switcher_item m-last">Плей-офф</span>
-            </div>
-            <div class="b-switcher_tab s-regular">
-
-              <div class="b-score_table_cover m-west">
-                <div class="b-score_table_top">
-                  <table class="b-score_table">
-                    <tr><th colspan="2">Запад</th><th width="30">И</th><th width="30">В*</th><th width="30">П*</th><th width="30">О</th></tr>
-                    <tr><td width="30">1</td><td><b>ЦСКА</b></td><td>60</td><td>39</td><td>9</td><td><b>139<b/></td></tr>
-                    <tr><td>2</td><td><b>СКА</b></td><td>60</td><td>36</td><td>14</td><td><b>123<b/></td></tr>
-                    <tr><td>3</td><td><b>Динамо Мск</b></td><td>60</td><td>35</td><td>13</td><td><b>123<b/></td></tr>
-                    <tr><td>4</td><td><b>Йокерит</b></td><td>60</td><td>35</td><td>16</td><td><b>119<b/></td></tr>
-                    <tr><td>5</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                  </table>
-                </div>
-                <div class="b-score_table_bottom">
-                  <table class="b-score_table">
-                    <tr><td width="30">6</td><td><b>Динамо Мн</b></td><td width="30">60</td><td width="30">35</td><td width="30">21</td><td width="30"><b>100<b/></td></tr>
-                    <tr><td>7</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>8</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>9</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>10</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>11</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>12</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>13</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                    <tr><td>14</td><td><b>Динамо Мн</b></td><td>60</td><td>35</td><td>21</td><td><b>100<b/></td></tr>
-                  </table>
-                </div>
-                <hr/>
-                <span class="e-slide_link m-top">Открыть все команды</span>
-              </div>
-
-              <div class="b-score_table_cover m-east">
-                <div class="b-score_table_top">
-                  <table class="b-score_table">
-                    <tr><th colspan="2">Восток</th><th width="30">И</th><th width="30">В*</th><th width="30">П*</th><th width="30">О</th></tr>
-                    <tr><td width="30">1</td><td><b>Ак Барс</b></td><td>60</td><td>34</td><td>14</td><td><b>120<b/></td></tr>
-                    <tr><td>2</td><td><b>Сибирь</b></td><td>60</td><td>34</td><td>20</td><td><b>111<b/></td></tr>
-                    <tr><td>3</td><td><b>Металлург Мг</b></td><td>60</td><td>32</td><td>15</td><td><b>117<b/></td></tr>
-                    <tr><td>4</td><td><b>Авангард</b></td><td>60</td><td>30</td><td>17</td><td><b>108<b/></td></tr>
-                    <tr><td>5</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93<b/></td></tr>
-                  </table>
-                </div>
-                <div class="b-score_table_bottom">
-                  <table class="b-score_table">
-                    <tr><td width="30">6</td><td><b>Барыс</b></td><td width="30">60</td><td width="30">24</td><td width="30">21</td><td width="30"><b>93</b></td></tr>
-                    <tr><td>7</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>8</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>9</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>10</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>11</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>12</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>13</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                    <tr><td>14</td><td><b>Барыс</b></td><td>60</td><td>24</td><td>21</td><td><b>93</b></td></tr>
-                  </table>
-                </div>
-                <hr/>
-                <span class="e-slide_link m-bottom">Открыть все команды</span>
-              </div>
-
-
-            </div>
-            <div class="b-switcher_tab s-playoff">
-
-                <table class="b-score_table m-champ_final">
-                  <thead>
-                    <tr><th colspan="5">Финал чемпионата</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr><td width="20">3</td><td width="35%"><b>СКА</b></td><td><b>4</b> &mdash; 1</td><td width="35%">Ак Барс</td><td>В</td></tr>
-                  </tbody>
-                </table>
-
-                <div class="b-switcher_tab_cover">
-                  <div class="b-switcher">
-                    <span id="s-west" class="e-switcher_item m-first m-active">Запад</span>
-                    <span class="e-switcher_btn"><b></b></span>
-                    <span id="s-east" class="e-switcher_item m-last">Восток</span>
-                  </div>
-                  <div class="b-switcher_tab s-west">
-
-                    <div class="m-mobile_cover">
-                      <table class="b-score_table">
-                        <thead>
-                          <tr><th colspan="5">Финал конференций</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td width="20">2</td><td width="35%">ЦСКА</td><td><b>3</b> &mdash; 4</td><td width="35%"><b>СКА</b></td><td>2</td></tr>
-                        </tbody>
-                      </table>
-
-                      <table class="b-score_table">
-                        <thead>
-                          <tr><th colspan="5">Полуфинал</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td width="20">1</td><td width="35%"><b>СКА</b></td><td><b>4</b> &mdash; 1</td><td width="35%">Ак Барс</td><td>В</td></tr>
-                          <tr><td>2</td><td>ЦСКА</td><td><b>3</b> &mdash; 4</td><td><b>СКА</b></td><td>2</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <table class="b-score_table m-quarter">
-                      <thead>
-                        <tr><th colspan="5">Четвертьфинал</th></tr>
-                      </thead>
-                      <tbody>
-                        <tr><td width="20">1</td><td width="35%"><b>СКА</b></td><td><b>4</b> &mdash; 1</td><td width="35%">Ак Барс</td><td>В</td></tr>
-                        <tr><td>2</td><td>ЦСКА</td><td><b>3</b> &mdash; 4</td><td><b>СКА</b></td><td>2</td></tr>
-                        <tr><td>3</td><td><b>СКА</b></td><td><b>4</b> &mdash; 1</td><td>Ак Барс</td><td>В</td></tr>
-                        <tr><td>4</td><td>ЦСКА</td><td><b>3</b> &mdash; 4</td><td><b>СКА</b></td><td>2</td></tr
-                      </tbody>
-                    </table>
-
-                  </div>
-                  <div class="b-switcher_tab s-east" style="display:none;">
-
-                    <div class="m-mobile_cover">
-                      <table class="b-score_table">
-                        <thead>
-                          <tr><th colspan="5">Финал конференций</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td width="20">3</td><td width="35%">Ак Барс</td><td><b>3</b> &mdash; 1</td><td width="35%"><b>СКА</b></td><td>2</td></tr>
-                        </tbody>
-                      </table>
-
-                      <table class="b-score_table">
-                        <thead>
-                          <tr><th colspan="5">Полуфинал</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td width="20">1</td><td width="35%"><b>Ак Барс</b></td><td><b>4</b> &mdash; 1</td><td width="35%">СКА</td><td>В</td></tr>
-                          <tr><td>2</td><td>ЦСКА</td><td><b>3</b> &mdash; 4</td><td><b>СКА</b></td><td>2</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <table class="b-score_table m-quarter">
-                      <thead>
-                        <tr><th colspan="5">Четвертьфинал</th></tr>
-                      </thead>
-                      <tbody>
-                        <tr><td width="20">1</td><td width="35%"><b>Ак Барс</b></td><td><b>4</b> &mdash; 1</td><td width="35%">СКА</td><td>В</td></tr>
-                        <tr><td>2</td><td>ЦСКА</td><td><b>3</b> &mdash; 4</td><td><b>СКА</b></td><td>2</td></tr>
-                        <tr><td>3</td><td><b>СКА</b></td><td><b>4</b> &mdash; 1</td><td>Ак Барс</td><td>В</td></tr>
-                        <tr><td>4</td><td>ЦСКА</td><td><b>3</b> &mdash; 4</td><td><b>СКА</b></td><td>2</td></tr
-                      </tbody>
-                    </table>
-
-                  </div>
-                </div>
-
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="b-content_section m-video s-float_panel_start">
-      <div class="b-news_bnr">
-          <div class="b-news_bnr_item m-bnr" style="background:#d5e6ee url(img/bnr_2.jpg) 50% 50% no-repeat;">
-            <a href="#" class="m-cover_link"></a>
-          </div>
-          <div class="b-news_bnr_item m-bnr" style="background: url(img/bnr_3.jpg) 50% 50% no-repeat; background-size:cover;">
-            <a href="#" class="m-cover_link">
-              <span class="e-bevel">Цифры и факты</span>
-              <p><b>&laquo;Металлург&raquo; Нк: десятки без изменений</b></p>
-            </a>
-          </div>
-          <div class="b-news_bnr_item m-bnr" style="background: url(img/bnr_4.jpg) 50% 50% no-repeat; background-size:cover;">
-            <a href="#" class="m-cover_link">
-              <span class="e-bevel">Лига</span>
-              <p><b>КХЛ&nbsp;&mdash; самая открытая лига!</b></p>
-            </a>
-          </div>
-      </div>
-
+    <div class="b-content_section m-match_info s-float_panel_start">
       <div class="b-float_panel">
         <div class="b-float_panel_cover m-slick_slider">
           <div class="b-float_panel_item">
@@ -525,14 +329,6 @@
               <p><b>Задание на&nbsp;лето: &laquo;Динамо&raquo; М</b></p>
               <span class="e-date">1 июня 2015, 12:10</span>
             </a>
-          </div>
-
-          <div class="b-float_panel_item m-bnr">
-            <a href="#" class="m-cover_link" style="background: url(img/bnr_5.jpg) 50% 50% no-repeat; background-size:cover;"></a>
-          </div>
-
-          <div class="b-float_panel_item m-bnr">
-            <a href="#" class="m-cover_link" style="background: url(img/bnr_6.jpg) 50% 50% no-repeat; background-size:cover;"></a>
           </div>
 
           <div class="b-float_panel_item">
@@ -571,284 +367,288 @@
           </div>
         </div>
       </div>
-      <div class="b-wide_block">
-        <div class="b-title_cover">
-          <h2 class="m-go_to">Видео</h2>
-          <div class="b-title_tab_cover">
-            <div id="s-ajax_cover_1" class="m-scroll_block">
-              <span class="e-tab_subtitle">Показать ролики:</span>
-              <b id="s-ajax_1_0" class="e-title_tab_item m-active m-ajax">новые</b>
-              <b id="s-ajax_1_1" class="e-title_tab_item m-ajax">популярные</b>
-              <b id="s-ajax_1_2" class="e-title_tab_item m-ajax">рекомендуемые</b>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="b-blocks_cover">
-        <div class="s-ajax_cover_1">
 
-          <div class="b-middle_block">
-            <a href="#" class="m-cover_link">
-              <h4>Лучшие канадские игроки КХЛ за&nbsp;7&nbsp;сезонов</h4>
-
-              <div class="b-info_bottom">
-                <span class="e-date m-fl">1 июня 2015</span>
-                <span class="e-view m-fr">2 047</span>
-              </div>
-            </a>
-            <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
-              <b class="e-play_btn m-icomoon">1</b>
-              <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
-            </div>
-          </div>
-          <div class="b-short_block">
-            <div class="b-short_block_cover m-left">
-              <a href="#" class="m-cover_link">
-                <h5>Лучшие канадские игроки КХЛ за&nbsp;7&nbsp;сезонов</h5>
-                <div class="b-info_bottom">
-                  <span class="e-date m-fl">1 июня 2015</span>
-                  <span class="e-view m-fr">2 047</span>
-                </div>
-              </a>
-              <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
-                <b class="e-play_btn m-icomoon">1</b>
-                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
-              </div>
-            </div>
-
-            <hr/>
-
-            <div class="b-short_block_cover m-right">
-              <a href="#" class="m-cover_link">
-                <h5>Лучшие канадские игроки КХЛ за&nbsp;7&nbsp;сезонов</h5>
-                <div class="b-info_bottom">
-                  <span class="e-date m-fl">1 июня 2015</span>
-                  <span class="e-view m-fr">2 047</span>
-                </div>
-              </a>
-              <div class="b-video_block" style="background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size:cover;">
-                <b class="e-play_btn m-icomoon">1</b>
-                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="b-bnr_cover">
-
-          <div class="b-middle_block">
-            <div class="e-bnr">
-              <img src="img/bnr_7.jpg" alt="" />
-            </div>
-          </div>
-
-          <div class="b-short_block">
-            <div class="e-bnr">
-              <img src="img/bnr_8.jpg" alt="" />
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="b-content_section m-leader">
-
-      <div class="b-wide_block">
-        <div class="b-title_cover">
-          <h2>Лидеры</h2>
-          <div class="b-title_tab_cover">
-            <div class="m-scroll_block">
-              <span class="e-tab_subtitle">Номинации:</span>
-              <b class="e-title_tab_item m-active">бомбардиры</b>
-              <b class="e-title_tab_item">снайперы</b>
-              <b class="e-title_tab_item">ассистенты</b>
-              <b class="e-title_tab_item">плюс/минус</b>
-              <b class="e-title_tab_item">вратари (КН)</b>
-              <b class="e-title_tab_item">вратари (%ОБ)</b>
-              <b class="e-title_tab_item">бомбардиры-защитники</b>
-              <b class="e-title_tab_item">штраф</b>
-            </div>
-          </div>
-        </div>
-
-        <dl class="b-description">
-          <dt class="e-description_name">Бомбардир</dt>
-          <dd class="e-description_txt">
-            <ul class="m-list">
-              <li>это хоккеист, забивший гол или сделавший голевую передачу. После каждой игры набранные очки добавляются в общий бомбардирский рейтинг хоккеиста. При равном количестве очков выше будет тот хоккеист, который забил больше голов или&nbsp;же сыграл меньше число игр.</li>
+      <div class="b-wide_block b-wide_tile m-wide_tile">
+        <dl class="b-details m-club">
+          <dt class="e-details_img">
+            <img src="img/club_logo_2.png" alt="" />
+          </dt>
+          <dd class="b-details_txt">
+            <h3 class="e-club_name">Динамо</h3>
+            <p class="e-club_sity">Москва</p>
+            <ul class="e-player_honors">
+              <li>52. Паршин Денис (8′)</li>
             </ul>
           </dd>
         </dl>
-      </div>
-      <div class="b-blocks_cover">
-        <div class="b-middle_block">
-
-          <div class="s-ajax_cover_2">
-            <dl class="b-details">
-              <dt class="e-details_img">
-                <img src="img/player_1.jpg" alt="" />
-              </dt>
-              <dd class="b-details_txt">
-                <div class="b-details_info_title">
-                  <span class="e-bevel m-fl">1</span>
-                  <span class="e-score m-fr"><b>21</b> <small>очко</small></span>
-                </div>
-                <h3 class="e-player_name">Радулов Александр</h3>
-              </dd>
-              <dd class="b-details_txt m-details">
-                <div class="b-details_info">
-                  <span class="e-club m-fl">
-                    <i style="background: url(img/logo_2.png) 50% 50% no-repeat;"></i><span>ЦСКА (Москва)<br/><small>нападающий</small></span>
-                  </span>
-                  <span class="e-num m-fr"><sup>№</sup>47</span>
-                </div>
-              </dd>
-              <dd class="b-details_txt m-stats">
-                <div class="b-stats">
-                  <a href="#" class="e-stats_one m-fl">Статистика игрока</a>
-                  <a href="#" class="e-stats_all m-fr">Статистика команды</a>
-                </div>
-              </dd>
-            </dl>
-          </div>
-
-          <h5>Статистика игрока в плей-офф 2014-2015</h5>
-
-          <ul class="b-round_diagram_cover">
-            <li class="e-round_diagram_item">
-              <input type="text" value="21" class="m-round_diagram" data-readOnly="true" data-max="21" data-width="155" data-thickness="0.12" data-linecap="round" data-fgColor="#02a7fd" data-bgColor="#ccedff">
-              <label>очко</label>
-            </li>
-            <li class="e-round_diagram_item">
-              <input type="text" value="1.35" class="m-round_diagram" data-readOnly="true" data-max="21" data-width="155" data-thickness="0.12" data-linecap="round" data-fgColor="#02a7fd" data-bgColor="#ccedff">
-              <label>заброшенных<br/>шайб</label>
-            </li>
-            <li class="e-round_diagram_item">
-              <input type="text" value="13" class="m-round_diagram" data-readOnly="true" data-max="21" data-width="155" data-thickness="0.12" data-linecap="round" data-fgColor="#02a7fd" data-bgColor="#ccedff">
-              <label>передач</label>
-            </li>
-            <li class="e-round_diagram_item">
-              <input type="text" value="12" class="m-round_diagram" data-readOnly="true" data-max="21" data-width="155" data-thickness="0.12" data-linecap="round" data-fgColor="#02a7fd" data-bgColor="#ccedff">
-              <label>проведенных<br/>игр</label>
-            </li>
-          </ul>
-
-        </div>
-        <div class="b-short_block" id="s-ajax_cover_2">
-
-          <dl id="s-ajax_2_0" class="b-details m-ajax m-active">
-            <dt class="e-details_img">
-              <img src="img/player_1.jpg" alt="" />
-            </dt>
-            <dd class="b-details_txt">
-              <div class="b-details_info_title">
-                <span class="e-bevel m-fl">1</span>
-                <span class="e-score m-fr"><b>21</b></span>
-              </div>
-              <h5 class="e-player_name">Радулов Александр</h5>
-            </dd>
-          </dl>
-          <dl id="s-ajax_2_1" class="b-details m-ajax">
-            <dt class="e-details_img">
-              <img src="img/player_2.jpg" alt="" />
-            </dt>
-            <dd class="b-details_txt">
-              <div class="b-details_info_title">
-                <span class="e-bevel m-fl">2</span>
-                <span class="e-score m-fr"><b>21</b></span>
-              </div>
-              <h5 class="e-player_name">Шипачёв Вадим</h5>
-            </dd>
-          </dl>
-          <dl id="s-ajax_2_2" class="b-details m-ajax">
-            <dt class="e-details_img">
-              <img src="img/player_3.jpg" alt="" />
-            </dt>
-            <dd class="b-details_txt">
-              <div class="b-details_info_title">
-                <span class="e-bevel m-fl">3</span>
-                <span class="e-score m-fr"><b>21</b></span>
-              </div>
-              <h5 class="e-player_name">Дадонов Евгений</h5>
-            </dd>
-          </dl>
-          <dl id="s-ajax_2_3" class="b-details m-ajax">
-            <dt class="e-details_img">
-              <img src="img/player_4.jpg" alt="" />
-            </dt>
-            <dd class="b-details_txt">
-              <div class="b-details_info_title">
-                <span class="e-bevel m-fl">4</span>
-                <span class="e-score m-fr"><b>21</b></span>
-              </div>
-              <h5 class="e-player_name">Панарин Артемий</h5>
-            </dd>
-          </dl>
-          <dl id="s-ajax_2_4" class="b-details m-ajax">
-            <dt class="e-details_img">
-              <img src="img/player_5.jpg" alt="" />
-            </dt>
-            <dd class="b-details_txt">
-              <div class="b-details_info_title">
-                <span class="e-bevel m-fl">5</span>
-                <span class="e-score m-fr"><b>21</b></span>
-              </div>
-              <h5 class="e-player_name">Григоренко Игорь</h5>
-            </dd>
-          </dl>
-
-          <div class="m-align"><a href="#" class="e-go_to">Перейти ко всем игрокам</a></div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="b-content_section m-photo">
-
-      <div class="b-wide_block m-pad">
-        <div class="b-title_cover">
-          <h2 class="m-go_to">Фото</h2>
-          <div class="b-title_tab_cover">
-            <div class="m-scroll_block">
-              <span class="e-tab_subtitle">Показать:</span>
-              <b class="e-title_tab_item m-active">фото дня</b>
-              <b class="e-title_tab_item">выбор редакции</b>
-              <b class="e-title_tab_item">хит месяца</b>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="b-wide_block">
-        <ul class="b-col_cover m-photo_list">
-          <li class="b-col_2 m-left">
-            <a href="#" class="m-cover_link">
-              <i class="e-photo" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size: cover;"></i>
-              <h5>Фотосессия. Александр Якушев</h5>
-            </a>
-            <div class="b-info_bottom">
-              <span class="e-date">1 июня 2015</span>
-              <span class="e-view m-fr">2 047</span>
-              <span class="e-photos m-fr">7</span>
-            </div>
-          </li>
-          <li class="b-col_2 m-right">
-            <a href="#" class="m-cover_link">
-              <i class="e-photo" style="background: url(img/photo_6.jpg) 50% 50% no-repeat; background-size: cover;"></i>
-              <h5>Благотворительный матч &laquo;Мы&nbsp;за&nbsp;жизнь&raquo;</h5>
-            </a>
-            <div class="b-info_bottom">
-              <span class="e-date">1 июня 2015</span>
-              <span class="e-view m-fr">2 047</span>
-              <span class="e-photos m-fr">7</span>
-            </div>
+        <dl class="b-score">
+          <dt class="b-total_score">
+            <span class="e-goal_time">44′22′′</span>
+            <h3>2 &mdash; <b>6</b></h3>
+          </dt>
+          <dd class="b-period_score">
+            1-2 &nbsp; 1-2 &nbsp; <span class="e-round m-bg_color_1">3</span> &nbsp; &mdash; &nbsp; &mdash;
+          </dd>
+        </dl>
+        <dl class="b-details m-club m-rightward">
+          <dd class="b-details_txt">
+            <h3 class="e-club_name">ЦСКА</h3>
+            <p class="e-club_sity">Москва</p>
+            <ul class="e-player_honors">
+              <li>37. Ахметов Рафаэль (53′)</li>
+            </ul>
+          </dd>
+          <dt class="e-details_img">
+            <img src="img/club_logo_3.png" alt="" />
+          </dt>
+        </dl>
+        <ul class="b-match_add_info">
+          <li class="b-match_add_info_item">
+            <span class="e-num"><sup>№</sup>47</span>
+            <span>4 СЕН 2014<br/>19:30</span>
+          </li><li class="b-match_add_info_item">
+            <span class="m-icomoon">J</span>
+            <span>Арена Омск<br/>12 449 зрителей</span>
+          </li><li class="b-match_add_info_item m-last">
+            <span class="m-icomoon">K</span>
+            <span>Главные судьи: Антонин Йерабек, Константин Оленин<br/>Линейные судьи:   Александр Захаренков, Сергей Шелянин</span>
           </li>
         </ul>
+        <dl class="b-match_video">
+          <h2 class="e-match_name">Трансляция</h2>
+          <h5 class="e-match_subname"><b><a href="#">Текстовая трансляция</a></b></h5>
+          <div class="m-clear"></div>
+          <div class="video-player">
+              <div class="video-player__media">
+                  <div class="video-player__media-image">
+                      <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
+                        <b class="e-play_btn m-icomoon">1</b>
+                        <span class="e-bevel m-bg_color_2 m-left_side">44' <span class="m-color_1">LIVE</span></span>
+                    </div>
+                  </div>
+              </div>
+              <div class="video-player__list js-playlist-box">
+                  <div class="video-list__title-box">
+                    <div class="video-list__title">
+                      <div class="m-fr e-match_video-info">
+                        <span class="video-list__views-icon"></span>
+                        <span>2 047</span>
+                      </div>
+                      <div class="m-fr e-match_video-info">
+                        <span class="video-list__item-icon"></span>
+                        <span>7</span>
+                      </div>
+                      <b>Лучшие моменты</b>
+                    </div>
+                  </div>
+                  <div class="video-list__content js-playlist mCustomScrollbar">
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч. Команда U18 - «Атланты» (Московская область)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>0:44</span>
+                    </div>
+                    <div class="video-list__item video-list__item_no-play">
+                        <div class="video-list__item-tag">Интересные моменты</div>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч.  СКА (Санкт-Петербург) — «Спартак»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка команды «Динамо»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:21</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка юниорской сборной России до 18 лет</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч. Команда U18 - «Атланты» (Московская область))</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч.  СКА (Санкт-Петербург) — «Спартак»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка команды «Динамо»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:21</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка юниорской сборной России до 18 лет</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч. Команда U18 - «Атланты» (Московская область))</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+    
+    <div class="b-content_section">
+      
+      <div class="b-wide_block">
+        <div class="b-blocks_cover m-share">
+          <div class="b-share m-clear">
+            <h4 class="m-fl">Поделиться</h4>
+            <a class="b-share_button m-tw" href="#"></a>
+            <a class="b-share_button m-vk" href="#"></a>
+            <a class="b-share_button m-ok" href="#"></a>
+            <a class="b-share_button m-fb" href="#"></a>
+          </div>
+        </div>
+      </div> 
+    
+      <div class="b-wide_block">
+        <div class="b-title_cover">
+          <h2>Матчи</h2>
+          <div class="b-title_tab_cover">
+            <div class="m-scroll_block">
+              <b class="e-title_tab_item">превью</b>
+              <b class="e-title_tab_item">составы</b>
+              <b class="e-title_tab_item">ход матча</b>
+              <b class="e-title_tab_item">фото</b>
+              <b class="e-title_tab_item m-active">резюме</b>
+            </div>
+          </div>
+          <a id="s-params_1" class="e-params_btn"><span>Параметры</span></a>
+        </div>
       </div>
 
+      <div class="b-wide_block m-not_pad">
+        <div class="b-title_cover b-commands_header m-nb">
+          <div class="e-header-right">
+            <div class="e-header-name">
+              <div class="e-header-img">
+                <img src="./img/club_logo_6.png" alt="" />
+              </div>
+              <div class="e-header-info">
+                <h3>Амур</h3>
+                <span class="muted">Тренер: Сергей Шепелев</span>
+              </div>
+            </div>
+          </div>
+          <div class="e-header-left">
+            <div class="e-header-name">
+              <div class="e-header-img">
+                <img src="./img/club_logo_5.png" alt="" />
+              </div>
+              <div class="e-header-info">
+                <h3>Авангард</h3>
+                <span class="muted">Тренер: Евгений Корноухов</span>
+              </div>
+            </div>
+          </div>
+          <div class="e-header-subname">
+            Статистика матча
+          </div>
+        </div>
+      </div>
+
+      <div class="b-wide_block m-center">
+        <div class="b-title_cover b-commands_header m-nb">
+          <div class="e-header-right">
+            <div class="e-header-name">
+              <div class="e-header-img e-header-img-mini">
+                <img src="./img/club_logo_6.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="e-header-left">
+            <div class="e-header-name">
+              <div class="e-header-img e-header-img-mini">
+                <img src="./img/club_logo_5.png" alt="" />
+              </div>  
+            </div>
+          </div>
+          <div class="e-header-subname e-header-subname-mini">
+            Заброшенные шайбы
+          </div>
+        </div>
+        
+        <div class="b-text_translation_cover">
+          <ul class="b-text_translation">
+            <li class="b-text_translation_item">
+              <div class="b-center_scale_point">
+                <span class="b-big_round">
+                  <span class="e-event_time">59′02′′</span>
+                  <h3>2 — <b>6</b></h3>
+                  <span class="e-abbr">РАВ</span>
+                </span>
+              </div> 
+              <div class="b-right m-goal">
+                <div class="b-scheme_block">
+
+                </div>
+                <div class="b-txt_block">
+                  <h5>Гол: 71. Бурдасов Антон</h5>
+                  <p>В равенстве, в пустые ворота</p>
+                  <p class="e-action_player">44.Белов Николай, 41.Торесен Патрик</p>
+                </div>
+                <div class="b-video_link">
+                  <span class="m-align_cover">
+                    <img src="img/photo_2.jpg" alt="" />
+                    <b class="e-play_btn m-icomoon">1</b>
+                  </span>
+                </div>
+              </div>            
+            </li> 
+            <li class="b-text_translation_item">
+              <div class="b-center_scale_point">
+                <span class="b-big_round">
+                  <span class="e-event_time">59′02′′</span>
+                  <h3>2 — <b>6</b></h3>
+                  <span class="e-abbr">РАВ</span>
+                </span>
+              </div> 
+              <div class="b-left m-goal">
+                <div class="b-scheme_block">
+
+                </div>
+                <div class="b-txt_block">
+                  <h5>Гол: 71. Бурдасов Антон</h5>
+                  <p>В равенстве, в пустые ворота</p>
+                  <p class="e-action_player">44.Белов Николай, 41.Торесен Патрик</p>
+                </div>
+                <div class="b-video_link">
+                  <span class="m-align_cover">
+                    <img src="img/photo_2.jpg" alt="" />
+                    <b class="e-play_btn m-icomoon">1</b>
+                  </span>
+                </div>
+              </div>            
+            </li>  
+            <li class="b-text_translation_item">
+              <div class="b-center_scale_point">
+                <span class="b-big_round">
+                  <span class="e-event_time">59′02′′</span>
+                  <h3>2 — <b>6</b></h3>
+                  <span class="e-abbr">РАВ</span>
+                </span>
+              </div> 
+              <div class="b-left m-goal">
+                <div class="b-scheme_block">
+
+                </div>
+                <div class="b-txt_block">
+                  <h5>Гол: 71. Бурдасов Антон</h5>
+                  <p>В равенстве, в пустые ворота</p>
+                  <p class="e-action_player">44.Белов Николай, 41.Торесен Патрик</p>
+                </div>
+                <div class="b-video_link">
+                  <span class="m-align_cover">
+                    <img src="img/photo_2.jpg" alt="" />
+                    <b class="e-play_btn m-icomoon">1</b>
+                  </span>
+                </div>
+              </div>            
+            </li>                                      
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="b-content_section m-store">
@@ -907,14 +707,8 @@
           </ul>
         </div>
       </div>
-
-      <!--div class="b-wide_block">
-        <div class="b-ya_direct">
-
-        </div>
-      </div-->
-
     </div>
+
   </div>
 
   <div id="footer">
@@ -1044,56 +838,6 @@
       </li>
     </ul>
   </div>
-  <div id="enter-modal" class="mfp-hide">
-    <div class="mfp-content">
-      <div class="mfp-header">
-        <img src="./img/khl_logo_4.png" alt="" />
-        <div class="b-switcher ">
-          <span class="e-switcher_item m-first" id="s-register">регистрация</span>
-          <span class="e-switcher_btn"><b style="left: 12px;"></b></span>
-          <span class="e-switcher_item m-last m-active" id="s-enter">вход</span>
-        </div>
-      </div>
-      <div class="mfp-body">
-        <div class="b-switcher_tab s-enter">
-          <input type="text" placeholder="Email" class="e-input e-input-lg">
-          <div class="e-input-group">
-            <input type="password" placeholder="Пароль" class="e-input e-input-lg">
-            <a href="#" class="s-show-password"></a>
-          </div>
-          <div class="e-forgot-password">
-            <small><a href="#forgot-password" class="popup-modal" >Забыли пароль?</a></small>
-          </div>
-          <input type="button" class="e-btn m-bg_color_0 e-btn-lg" value="Войти">
-        </div>
-        <div class="b-switcher_tab s-register" style="display: none;">
-          <input type="text" placeholder="Email" class="e-input e-input-lg">
-          <div class="e-input-group">
-            <input type="password" placeholder="Пароль" class="e-input e-input-lg">
-            <a href="#" class="s-show-password"></a>
-          </div>
-          <div class="e-terms-agree">
-            <input type="checkbox" id="s-terms">
-            <label for="s-terms">Я принимаю условия </label><a href="#">пользовательского соглашения</a>
-          </div>
-          <input type="button" class="e-btn m-bg_color_0 e-btn-lg" value="Регистрация">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="forgot-password" class="mfp-hide">
-    <div class="mfp-content">
-      <div class="mfp-header">
-        <img src="./img/khl_logo_4.png" alt="" />
-        <h5>Восстановление пароля</h5>
-        <p>Введите email, указанный при регистрации.<br>На него будет выслан код подтверждения.</p>
-        </div>
-      </div>
-      <div class="mfp-body">
-        <input type="text" placeholder="Email" class="e-input e-input-lg">
-        <input type="button" class="e-btn m-bg_color_0 e-btn-lg" value="Отправить">
-      </div>
-    </div>
-  </div>
+
 </body>
 </html>
