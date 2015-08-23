@@ -799,7 +799,6 @@ b{
   padding: 30px 3.5%;
 }
 
-
 .b-half_block{
   float: left;
   width: 50%;
@@ -836,6 +835,67 @@ b{
 
   .b-hidden-mobile{
     display: none;
+  }
+}
+
+.b-small_block{
+  float: left;
+  width: 40%;
+  padding: 1px 3.5%;
+}
+.b-small_block.b-block-offset{
+  position: relative;
+  left: -20%;
+}
+
+@media (max-width: 1024px){
+  
+  .b-small_block{
+    width: 37.5%;
+  }
+  .b-small_block.b-block-offset{
+    left: -25%;
+  }
+}
+@media (max-width: 800px){
+
+  .b-small_block{
+    width: 50%;
+    padding: 0;
+  }
+  .b-small_block.b-block-offset{
+    left: 0;
+  }
+}
+
+.b-extra_small_block{
+  float: left;
+  width: 20%;
+  padding: 1px 0;
+}
+
+.b-extra_small_block.b-block-offset{
+  position: relative;
+  left: 40%;
+}
+
+@media (max-width: 1024px){
+
+  .b-extra_small_block{
+    width: 25%;
+  }
+  .b-extra_small_block.b-block-offset{
+    left: 37.5%;
+  }
+}
+@media (max-width: 800px){
+
+  .b-extra_small_block{
+    width: 100%;
+    padding: 1px 3.5%;
+  }
+  .b-extra_small_block.b-block-offset{
+    left: 0%;
   }
 }
 
@@ -2194,6 +2254,12 @@ b{
 /*stats*/
 .b-wide_block.m-not_pad {
   padding-bottom: 0px;
+}
+
+.b-title_cover.m-not_pad{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .b-subtitle_nav_cover {
@@ -7064,6 +7130,98 @@ H5 {
   width: 100%;
 }
 
+.b-prev-structure .b-details_txt{
+  width: 100%;
+}
+
+.b-prev-structure .b-score{
+  /*padding-top: 20px;*/
+}
+
+.b-prev-structure .b-details{
+  margin-top: 0;
+}
+
+.b-prev-structure .e-club_sity{
+  margin-bottom: 0;
+}
+
+.b-prev-structure .b-total_score H4{
+  color: #666;
+  font-family: 'latolight';
+  margin-bottom: 0;
+}
+.b-prev-structure .b-total_score H4 b{
+  color: #000;
+  font-family: 'latoheavy';
+}
+
+.b-prev-structure .e-period_date{
+  font-size: 11px;
+}
+
+.b-commands_list .b-line-percent{
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #2c3941;
+  margin-top: 15px;
+}
+.b-commands_list .e-left-line{
+  height: 7px;
+  width: 50%;
+  float: left;
+  border-right: 2px solid #fff;
+}
+
+.b-commands_list .e-left-line{
+  background-color: #02a7fd;
+}
+.b-commands_list .b-line-details{
+  font-size: 20px;
+}
+.b-commands_list .b-line-details strong{
+  font-size: 36px;
+  font-weight: normal;
+  font-family: 'latolight';
+}
+.b-commands_list .b-line-details b{
+  font-family: 'latoheavy';
+}
+.b-commands_list .b-details-right{
+  text-align: right;
+}
+.b-commands_list .b-line-table td.b-line-name{
+  overflow: hidden;
+  text-align: center;
+  font-size: 11px;
+  padding: 0 7px;
+  vertical-align: bottom;
+}
+.b-commands_list .b-wide_line_item{
+  overflow: hidden;
+  margin-bottom: 55px;
+}
+.b-commands_list .b-line-table{
+  width: 100%;
+  line-height: 1;
+}
+.b-commands_list .b-line-table td{
+  vertical-align: middle;
+}
+.b-prev-structure .e-club-name-short{
+  display: none;
+}
+.b-prev-structure .e-details_img{
+  width: 30%;
+  float: left;
+}
+.b-prev-structure .e-details_img+.b-details_txt{
+  width: 70%;
+}
+.b-prev-structure .m-rightward .e-details_img{
+  float: right;
+}
+
 @media (max-width: 1400px){
 
   .b-commands_list .e-round_diagram_item LABEL {
@@ -7074,6 +7232,7 @@ H5 {
     margin-left: -115px!important;
   }
 }
+
 @media (max-width: 1000px){
 
   .b-commands_list .e-round_diagram_item LABEL {
@@ -7091,6 +7250,43 @@ H5 {
 @media (max-width: 800px){
   .b-commands_list .e-round_diagram_item{
     display: none;
+  }
+  .b-commands_list .e-club-name-short{
+    display: block;
+  }
+  .b-prev-structure .e-club-name-short{
+    display: block;
+  }
+  .b-prev-structure .e-club_name{
+    display: none;
+  }
+  .b-prev-structure .e-club_sity{
+    display: none;
+  }
+  .b-prev-structure .b-total_score h4{
+    font-size: 18px;
+  }
+  .b-prev-structure .e-period_date{
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 640px){
+
+  .b-prev-structure .e-details_img{
+    display: none;
+  }
+  .b-prev-structure .e-details_img+.b-details_txt{
+    width: 100%;
+  }
+  .b-prev-structure .b-total_score h4{
+    font-size: 14px;
+  }
+  .b-prev-structure .e-club-name-short{
+    font-size: 13px;
+  }
+  .b-prev-structure .e-period_date{
+    font-size: 9px;
   }
 }
 
