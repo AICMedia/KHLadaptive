@@ -99,7 +99,9 @@ $(document).ready(function(){
   });
 
   $(window).resize(function(){
-    winW = $(window).width();
+    // HACK: adaptive
+    // winW = $(window).width();
+    winW = 1280;
     FloatPanel();
     FloatMenu();
     SmartCol();
@@ -109,33 +111,34 @@ $(document).ready(function(){
       if(slider_lock == 0){
         $('.b-float_panel_cover.m-slick_slider').slick({
           slidesToShow: 5,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 4
-              }
-            },
-            {
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1
-              }
-            }
-          ]
+          slidesToScroll: 1
+          // HACK: responsive
+          // responsive: [
+          //   {
+          //     breakpoint: 1024,
+          //     settings: {
+          //       slidesToShow: 4
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 800,
+          //     settings: {
+          //       slidesToShow: 3
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 640,
+          //     settings: {
+          //       slidesToShow: 2
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 480,
+          //     settings: {
+          //       slidesToShow: 1
+          //     }
+          //   }
+          // ]
         });
         slider_lock = 1;
       }
@@ -273,35 +276,35 @@ $(document).ready(function(){
           slidesToScroll: 3,
           slidesToShow: 6
         }
-      },
-        {
-        breakpoint: 1024,
-        settings: {
-          slidesToScroll: 3,
-          slidesToShow: 5
-        }
-      },
-        {
-        breakpoint: 800,
-        settings: {
-          slidesToScroll: 2,
-          slidesToShow: 4
-        }
-      },
-        {
-        breakpoint: 640,
-        settings: {
-          slidesToScroll: 2,
-          slidesToShow: 3
-        }
-      },
-        {
-        breakpoint: 480,
-        settings: {
-          slidesToScroll: 1,
-          slidesToShow: 2
-        }
       }
+      //   {
+      //   breakpoint: 1024,
+      //   settings: {
+      //     slidesToScroll: 3,
+      //     slidesToShow: 5
+      //   }
+      // },
+      //   {
+      //   breakpoint: 800,
+      //   settings: {
+      //     slidesToScroll: 2,
+      //     slidesToShow: 4
+      //   }
+      // },
+      //   {
+      //   breakpoint: 640,
+      //   settings: {
+      //     slidesToScroll: 2,
+      //     slidesToShow: 3
+      //   }
+      // },
+      //   {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToScroll: 1,
+      //     slidesToShow: 2
+      //   }
+      // }
     ]
   });
 
@@ -350,7 +353,7 @@ $(document).ready(function(){
     } else{
       showInput.attr('type','password')
     }
-    
+
   })
 });
 
@@ -450,9 +453,10 @@ function FloatPanel() {
           'min-height': heightBlock-startBlock
         });
       } else if ($(window).scrollTop() < endBlock) {
+        // HACK: adaptive
         $(".b-float_panel").css({
           position: 'fixed',
-          left: 0,
+          left: - $(window).scrollLeft(),
           top: 0,
           height: heightBlock
         });
@@ -522,10 +526,12 @@ function FloatMenu() {
   if(winW < 1008){
     var startBlock = $('#header').offset().top;
     if ($(window).scrollTop() > startBlock ) {
-      $(".b-header_top_cover").css({
-        position: 'fixed',
-        top: 0
-      });
+      return false
+      // HACK: responsive
+      // $(".b-header_top_cover").css({
+      //   position: 'fixed',
+      //   top: 0
+      // });
     } else {
       $(".b-header_top_cover").css({
         position: 'relative',

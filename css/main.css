@@ -71,8 +71,10 @@ BODY {
   background:#e3f2f9;
   color:#000;
   font:16px 'latoregular';
-  min-width:320px;
-  max-width: 1920px;
+  /*min-width:320px;*/
+  /*max-width: 1920px;*/
+  /*remove adaptive*/
+  min-width: 1280px;
 }
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left; font-weight: normal;}
@@ -220,6 +222,8 @@ b{
   width: 100%;
   background: #fff;
   z-index: 99;
+  /* HACK: responsive */
+  min-width: 1280px;
 }
 
 .e-logo_main {
@@ -805,7 +809,7 @@ b{
   padding: 30px 3.5%;
 }
 
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
 
   .b-half_block{
     width: 100%;
@@ -820,10 +824,10 @@ b{
 
 .b-hidden-tablet{
   display: none;
-}
+}*/
 
 
-@media (max-width: 800px){
+/*@media (max-width: 800px){
 
   .b-half_tablet_block{
     width: 100%;
@@ -836,7 +840,7 @@ b{
   .b-hidden-mobile{
     display: none;
   }
-}
+}*/
 
 .b-small_block{
   float: left;
@@ -848,8 +852,8 @@ b{
   left: -20%;
 }
 
-@media (max-width: 1024px){
-  
+/*@media (max-width: 1024px){
+
   .b-small_block{
     width: 37.5%;
   }
@@ -866,7 +870,7 @@ b{
   .b-small_block.b-block-offset{
     left: 0;
   }
-}
+}*/
 
 .b-extra_small_block{
   float: left;
@@ -879,7 +883,7 @@ b{
   left: 40%;
 }
 
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
 
   .b-extra_small_block{
     width: 25%;
@@ -897,7 +901,7 @@ b{
   .b-extra_small_block.b-block-offset{
     left: 0%;
   }
-}
+}*/
 
 
 .b-short_block {
@@ -4663,9 +4667,9 @@ h4 > .e-timestamp {
 }
 
 /**************************************** MOBILE < 1280 ****************************************/
-@media (max-width:1280px) {
+/*@media (max-width:1280px) {*/
 /******************************* Header ******************************/
-.b-header_top_cover {
+/*.b-header_top_cover {
   padding-left: 110px;
 }
 
@@ -4678,11 +4682,11 @@ h4 > .e-timestamp {
 
 .e-header_menu_item A {
   margin: 0 0.8%;
-}
+}*/
 
 
 /******************************* Header end ******************************
-******************************* Footer ******************************/
+******************************* Footer ******************************
 .b-footer_nav,
 .m-adaptive_footer_bottom .m-left {
   width: 220px;
@@ -4707,10 +4711,10 @@ h4 > .e-timestamp {
 .e-copyright_copy {
   margin-left: 0;
 }
-
+*/
 /******************************* Footer end ******************************/
 
-/******************************* Main Page ******************************/
+/******************************* Main Page ******************************
 .b-content_section {
   margin: 0;
   clear: both;
@@ -4737,7 +4741,6 @@ h4 > .e-timestamp {
   top: auto!important;
   left: auto!important;
   width: auto!important;
-  /*height: 105px!important;*/
 }
 
 .b-float_panel_cover {
@@ -4823,9 +4826,10 @@ h4 > .e-timestamp {
   height: 105px;
   padding: 15px 20px;
 }
+*/
 
 /******************************* Main Page end ******************************
-******************************* Statistics Page ******************************/
+******************************* Statistics Page ******************************
 .m-statistic_parameters,
 .m-news-parameters,
 .m-photo-parameters {
@@ -4875,8 +4879,9 @@ h4 > .e-timestamp {
   width: 50%;
   padding: 0 1.75%;
 }
+*/
 /******************************* Statistics Page end ******************************
-******************************* News Page ******************************/
+******************************* News Page ******************************
 .m-news-parameters .b-float_panel_block .m-cover_link {
   width: 100%;
   height: 100%;
@@ -4915,17 +4920,19 @@ h4 > .e-timestamp {
   float: none;
 }
 
+*/
 /******************************* News Page End ******************************
-******************************* Player Page ******************************/
+******************************* Player Page ******************************
 
 .e-player_list_item,
 .e-club_list_item {
   float: left;
   width: 33.3333%;
 }
+*/
 
 /******************************* Player Page End ******************************
-******************************* Video Gallery Page ***********************/
+******************************* Video Gallery Page ***********************
 #videos .b-float_panel_title {
   clear: both;
 }
@@ -4937,8 +4944,8 @@ h4 > .e-timestamp {
   float: n;
 }
 
-
-/******************************* Video Gallery Page End ***********************/
+*/
+/******************************* Video Gallery Page End ***********************
 
 .m-photo-parameters {
   color: #fff;
@@ -4967,12 +4974,13 @@ h4 > .e-timestamp {
   }
 }
 
+*/
 
 
-
-/**************************************** MOBILE < 1024 ****************************************/
+/**************************************** MOBILE < 1024 ****************************************
 @media (max-width:1024px) {
-/******************************* Header ******************************/
+*/
+/******************************* Header ******************************
 .b-header_nav_cover DIV,
 .b-header_menu_cover,
 .b-header_nav_cover .e-logo_ico,
@@ -5149,9 +5157,9 @@ h4 > .e-timestamp {
   display: inline-block;
   float: none;
 }
-
+*/
 /******************************* Header end ******************************
-******************************* Footer ******************************/
+******************************* Footer ******************************
 .m-adaptive_footer_bottom {
   display: none;
 }
@@ -5224,10 +5232,10 @@ h4 > .e-timestamp {
 .e-copyright {
   margin: 0 0 0 175px;
 }
-
+*/
 /******************************* Footer end ******************************/
 
-/******************************* Main Page ******************************/
+/******************************* Main Page ******************************
 H2 {font-size: 48px;}
 
 .b-content_section.m-teaser {
@@ -5381,9 +5389,9 @@ H2 {font-size: 48px;}
   padding-top: 40px;
   width: 44%;
 }
-
+*/
 /******************************* Main Page end ******************************
-******************************* Statistics Page ******************************/
+******************************* Statistics Page ******************************
 .b-gloss_item {
   width: 33.33333%;
 }
@@ -5408,9 +5416,9 @@ H2 {font-size: 48px;}
 .e-params_btn > span {
   display: none;
 }
-
+*/
 /******************************* Statistics Page end ******************************
-******************************* Clubs Page ******************************/
+******************************* Clubs Page ******************************
 
 #clubs .b-score_table_cover {
   position: static !important;
@@ -5418,8 +5426,9 @@ H2 {font-size: 48px;}
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+*/
 /******************************* Clubs Page end ******************************
-******************************* News Page ******************************/
+******************************* News Page ******************************
 .m-news .b-short_block_cover {
   float: left;
   width: 48.25%;
@@ -5440,9 +5449,9 @@ H2 {font-size: 48px;}
 .m-news-parameters .b-video_block {
   height: 320px;
 }
-
+*/
 /******************************* News Page End ******************************
-******************************* Player Page ******************************/
+******************************* Player Page ******************************
 
 .m-player .b-details H3.e-player_name {
   font-size: 24px;
@@ -5510,9 +5519,9 @@ H2 {font-size: 48px;}
 .b-score_data_cover .e-score_sum {
   font-size: 14px;
 }
-
+*/
 /******************************* Player Page End ******************************
-******************************* Match text Page ******************************/
+******************************* Match text Page ******************************
   .b-text_translation {
     margin: 10px 0px;
     width: 100%;
@@ -5634,9 +5643,9 @@ H2 {font-size: 48px;}
     right: auto;
     left: -30px;
   }
-
+*/
 /******************************* Match text Page end ******************************
-******************************* Photo Gallery Page ***********************/
+******************************* Photo Gallery Page ***********************
 
   .m-photo .b-short_block_cover {
     float: left;
@@ -5669,10 +5678,6 @@ H2 {font-size: 48px;}
     padding: 0 1.75% !important;
   }
 
-  /*.e-catalog_col .e-catalog_col {
-    width: 100% !important;
-  }*/
-
   .b-gallery_next,
   .b-gallery_prev {
     display: none !important;
@@ -5694,9 +5699,9 @@ H2 {font-size: 48px;}
   .b-gallery_block .b-share {
     margin-top: 30px;
   }
-
+*/
 /******************************* Photo Gallery Page End ***********************
-******************************* Video Gallery Page ***********************/
+******************************* Video Gallery Page ***********************
 .m-future .b-wide_tile_item, .m-past .b-wide_tile_item {
   width: 96.5%;
 }
@@ -5712,25 +5717,24 @@ H2 {font-size: 48px;}
 #videos .m-cover_link IMG {
   width: auto;
 }
-
+*/
 /******************************* Video Gallery Page End ***********************/
 
-/****/
+/****
 .b-screen-team-description {
   padding-left: 250px;
 }
-/***/
-
 }
+*/
 
 
-
-/**************************************** MOBILE < 800 ****************************************/
+/**************************************** MOBILE < 800 ****************************************
 @media (max-width:800px) {
 
 .m-typo  {
   font-size: 12px;
 }
+*/
 /******************************* Header ******************************/
 
 /******************************* Header end ******************************
@@ -5738,7 +5742,7 @@ H2 {font-size: 48px;}
 
 /******************************* Footer end ******************************/
 
-/******************************* Main Page ******************************/
+/******************************* Main Page ******************************
 .m-teaser H3 {
   font-size: 36px;
 }
@@ -5774,16 +5778,17 @@ H2 {font-size: 48px;}
   height: auto;
   width: 100%;
 }
-
+*/
 /******************************* Main Page end ******************************
-******************************* News Page ******************************/
+******************************* News Page ******************************
 
 .m-news-parameters .m-cover_link .e-photo,
 .m-news-parameters .b-video_block {
   height: 160px;
 }
+*/
 /******************************* News Page End******************************
-******************************* Player Page ******************************/
+******************************* Player Page ******************************
 
 .m-player .b-player_data H4 {
   font-size: 12px;
@@ -5804,9 +5809,9 @@ H2 {font-size: 48px;}
 .m-player .b-short_block .b-details {
   width: 25%;
 }
-
+*/
 /******************************* Player Page End ******************************
-******************************* Match text Page ******************************/
+******************************* Match text Page ******************************
 
 .b-center_scale_point, .b-center_scale_point.m-end {
   display: block;
@@ -5834,15 +5839,16 @@ H2 {font-size: 48px;}
   font-size: 54px;
 }
 
-
+*/
 /******************************* Match text Page End ******************************/
 
 
-/**** Photo Gallery Page ****/
+/**** Photo Gallery Page ****
 .e-catalog_col_left {
   float: none !important;
 }
-/**** Photo Gallery Pagen End ****/
+*/
+/**** Photo Gallery Pagen End ****
 
 .m-page .b-page-nav DT {
   font-size: 10px;
@@ -5853,11 +5859,12 @@ H2 {font-size: 48px;}
 
 }
 
+*/
 
-
-/**************************************** MOBILE < 640 ****************************************/
+/**************************************** MOBILE < 640 ****************************************
 @media (max-width:640px) {
-/******************************* Header ******************************/
+*/
+/******************************* Header ******************************
 .b-header_menu_cover {
   padding: 0 25px 20px;
 }
@@ -5865,9 +5872,9 @@ H2 {font-size: 48px;}
 .b-header_menu_cover .e-header_menu_item {
   width: 50%;
 }
-
+*/
 /******************************* Header end ******************************
-******************************* Footer ******************************/
+******************************* Footer ******************************
 .b-rules_cover,
 .e-bottom_menu_item {
   display: none;
@@ -5880,9 +5887,9 @@ H2 {font-size: 48px;}
 .e-copyright {
   margin: -43px 0 0 175px;
 }
-
+*/
 /******************************* Footer end ******************************
-******************************* Main Page ******************************/
+******************************* Main Page ******************************
 H2 {
   font-size: 36px;
 }
@@ -5904,8 +5911,6 @@ H5 {
 }
 
 .e-header_search {
-  /*width: 30%;
-  border-left: none;*/
   display: none;
 }
 
@@ -6147,9 +6152,9 @@ H5 {
 .m-store .b-title_cover {
   padding-top: 0;
 }
-
+*/
 /******************************* Main Page end ******************************
-******************************* Statistics Page ******************************/
+******************************* Statistics Page ******************************
 .b-gloss_item {
   width: 50%;
 }
@@ -6157,8 +6162,9 @@ H5 {
 .e-params_btn {
   margin-top: 15px;
 }
+*/
 /******************************* Statistics Page end ******************************
-******************************* Clubs Page ******************************/
+******************************* Clubs Page ******************************
 .b-period_score {
   font-size: 8px;
 }
@@ -6207,9 +6213,9 @@ H5 {
   float: none !important;
 }
 
-
+*/
 /******************************* Clubs Page end ******************************
-******************************* News Page ******************************/
+******************************* News Page ******************************
 .m-news .b-short_block_cover {
   float: none;
   width: 100%;
@@ -6252,9 +6258,9 @@ H5 {
 .m-typo .b-video_block {
   height: 160px;
 }
-
+*/
 /******************************* News Page End ******************************
-******************************* Player Page ******************************/
+******************************* Player Page ******************************
 
 .b-score_data_cover .e-score_total {
   font-size: 16px;
@@ -6314,9 +6320,9 @@ H5 {
   font-size: 12px;
 }
 
-
+*/
 /******************************* Player Page End ******************************
-******************************* Photo Gallery Page ***************************/
+******************************* Photo Gallery Page ***************************
 
 .e-catalog_col {
   width: 100% !important;
@@ -6336,9 +6342,9 @@ H5 {
 .m-photo_lg .b-info_bottom {
   font-size: 12px;
 }
-
+*/
 /******************************* Photo Gallery Page End ***********************
-******************************* Match text Page ******************************/
+******************************* Match text Page ******************************
 .m-text_translation .e-club_logo {
   width: 40px;
 }
@@ -6394,9 +6400,9 @@ H5 {
   height: 100px;
   width: 100px;
 }
-
+*/
 /******************************* Match text Page End ******************************
-******************************* Video Gallery Page ***********************/
+******************************* Video Gallery Page ***********************
 .b-video_list_item {
   width: 46.5%;
 }
@@ -6417,8 +6423,8 @@ H5 {
 #videos .b-score {
   padding-top: 0;
 }
-
-/*******/
+*/
+/*******
 .b-screen-team {
   text-align: center;
 }
@@ -6440,9 +6446,9 @@ H5 {
   display: inline-block;
   margin-top: 30px;
 }
+*/
 
-
-/*******/
+/*******
 
 .m-page .b-page-nav {
   width: 50%;
@@ -6450,6 +6456,7 @@ H5 {
 
 
 }
+*/
 
 /******************************* Video Gallery Page End ***********************
 ******************************* Calendar Page ***********************/
@@ -7233,7 +7240,7 @@ H5 {
   }
 }
 
-@media (max-width: 1000px){
+/*@media (max-width: 1000px){
 
   .b-commands_list .e-round_diagram_item LABEL {
     width: 100%;
@@ -7245,9 +7252,9 @@ H5 {
     margin-left: -98px!important;
     font: 32px 'latoregular'!important;
   }
-}
+}*/
 
-@media (max-width: 800px){
+/*@media (max-width: 800px){
   .b-commands_list .e-round_diagram_item{
     display: none;
   }
@@ -7270,8 +7277,8 @@ H5 {
     font-size: 11px;
     white-space: nowrap;
   }
-}
-@media (max-width: 640px){
+}*/
+/*@media (max-width: 640px){
 
   .b-prev-structure .e-details_img{
     display: none;
@@ -7288,7 +7295,7 @@ H5 {
   .b-prev-structure .e-period_date{
     font-size: 9px;
   }
-}
+}*/
 
 
 .m-page {
@@ -7526,7 +7533,7 @@ H5 {
 .m-sponsor .b-short_block H4 {
   margin-top: 1rem;
 }
-
+/*
 @media (max-width: 640px){
 
   .b-lead-persons-col {
@@ -7566,4 +7573,4 @@ H5 {
   .e-biography {
     display: block;
   }
-}
+}*/
