@@ -105,6 +105,10 @@ table.dataTable tbody tr.even td {
   background: #f1fafe !important;
 }
 
+table.dataTable tbody tr td:first-child img{
+  max-width: 40px;
+}
+
 table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
   border-top: 1px solid #ddd;
 }
@@ -467,6 +471,11 @@ table.dataTable td {
   clear: both;
   height: 0;
 }
+.e-table_no-hover.dataTable tbody tr:hover td,
+.e-table_no-hover.dataTable tbody tr.even td{
+  background-color: transparent !important;
+}
+
 
 @media screen and (max-width: 767px) {
   .dataTables_wrapper .dataTables_info,

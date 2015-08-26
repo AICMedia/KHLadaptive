@@ -145,6 +145,25 @@
   box-shadow: none;
   color: #888;
 }
+
+.jq-selectbox.line-select{
+  margin-right: 10px;
+  width: auto;
+}
+.jq-selectbox.line-select .jq-selectbox__select{
+  padding: 0 35px 0 0;
+  height: auto;
+  border: none;
+  background-color: transparent;
+  color: #02a7fd;
+  box-shadow: none;
+}
+.jq-selectbox.line-select .jq-selectbox__select .jq-selectbox__trigger-arrow{
+  border-top-color: #02a7fd;
+}
+.jq-selectbox.line-select .jq-selectbox__select-text{
+  width: auto !important;
+}
 .jq-selectbox__select-text {
   display: block;
   width: 100%;

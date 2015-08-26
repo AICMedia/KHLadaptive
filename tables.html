@@ -1,0 +1,2156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.6, minimum-scale=0.25, user-scalable=no" />
+  <title>KHL</title>
+
+  <link rel="stylesheet" href="css/dataTables.css">
+  <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+
+  <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
+  <script type="text/javascript" src="js/lib/slick.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
+  <script type="text/javascript" src="js/lib/Chart.js"></script>
+  <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body id="statistics">
+
+  <div id="wrapper">
+    <div id="header">
+      <div class="b-mobile_move">
+        <div class="b-header_top_cover">
+
+          <a herf="/" class="e-logo_main"></a>
+
+          <div class="b-header_nav_cover">
+            <a href="#" class="e-logo_ico"><img src="img/logo_1_1.png" alt="" /></a>
+            <form class="e-header_search">
+              <input type="text" name="" value="" placeholder="" class="e-search_field"><input type="button" name="" value=")" class="e-search_btn m-icomoon">
+            </form>
+            <span class="e-mobile_menu_btn m-icomoon"></span>
+          </div>
+          <div class="b-header_menu_cover m-clear">
+            <ul class="b-header_menu">
+              <li class="e-header_menu_item"><a href="#">Новости</a>
+              </li><li class="e-header_menu_item"><a href="#">Видео</a>
+              </li><li class="e-header_menu_item"><a href="#">Календарь</a>
+              </li><li class="e-header_menu_item"><a href="#">Таблицы</a>
+              </li><li class="e-header_menu_item"><a href="#">Клубы</a>
+              </li><li class="e-header_menu_item"><a href="#">Игроки</a>
+              </li><li class="e-header_menu_item"><a href="#">Судьи</a>
+              </li><li class="e-header_menu_item"><a href="#">Статистика</a>
+              </li><li class="e-header_menu_item"><a href="#">Фото</a>
+              </li><li class="e-header_menu_item"><a href="#">Билеты</a>
+              </li><li class="e-header_menu_item"><a href="#">Магазин</a>
+              </li>
+            </ul>
+
+            <div class="e-header_apps">
+              <span>Приложения:</span>
+              <a href="#" class="m-ico_apple m-icomoon">&</a>
+              <a href="#" class="m-ico_android m-icomoon">%</a>
+            </div>
+            <div class="e-header_social">
+              <span>КХЛ в соцсетях:</span>
+              <a href="#" class="m-ico_yt m-icomoon">5</a>
+              <a href="#" class="m-ico_vk m-icomoon">4</a>
+              <a href="#" class="m-ico_tw m-icomoon">3</a>
+              <a href="#" class="m-ico_ok m-icomoon">/</a>
+              <a href="#" class="m-ico_fb m-icomoon">(</a>
+              <a href="#" class="m-ico_in m-icomoon">.</a>
+              <a href="#" class="m-ico_gp m-icomoon">+</a>
+            </div>
+
+            <a href="#" class="e-lang_btn">English</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-header_bottom_cover">
+        <div class="b-feed_matches m-slick_slider">
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч запад</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">3 &ndash; <b>5</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>1-2</em><em>&ndash;</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч запад</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">3 &ndash; <b>5</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>1-2</em><em>&ndash;</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч Восток</td>
+                <td class="e-matches_data_center"><span class="e-round m-bg_color_0">от</span></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">4 &ndash; <b>7</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>2-2</em><em>1-2</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">РЧ Восток</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right"><span class="m-color_1">Сейчас</span></td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ММГ</b></td>
+                <td class="e-matches_data_center"><b>2 &ndash; 1</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>2-0</em><span class="e-round m-bg_color_1">3</span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right"><span class="m-color_1">Сейчас</span></td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ММГ</b></td>
+                <td class="e-matches_data_center"><b>0 &ndash; 1</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><span class="e-round m-bg_color_1 m-icomoon">0</span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ЦСК</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>20:00 мск&nbsp;</em><em>&nbsp;Москва</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-content_section m-stats s-float_panel_start">
+      <div class="b-wide_block m-not_pad e-wide_block-visible">
+        <div class="b-title_cover e-title_no-border">
+          <h2>Таблицы</h2>
+          <div class="b-title_tab_cover">
+            <div class="m-scroll_block">
+              <span class="e-tab_subtitle">Турнир:</span>
+              <select name="3" class="line-select">
+                <option value="1">регулярный чемпионат 2014-2015</option>
+                <option value="2">регулярный чемпионат 2014-2015</option>
+              </select>
+              <select name="5" class="line-select">
+                <option value="3">по конференциям</option>
+                <option value="4">по конференциям</option>
+              </select>
+            </div>
+          </div>
+          <span id="s-gloss_1" class="e-gloss_btn e-gloss_abs">Глоссарий</span>
+        </div>
+
+        <div class="b-gloss s-gloss_1">
+          <b class="e-close_btn"></b>
+          <dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">И</dt>
+            <dd class="e-gloss_transcript">количество проведенных игр</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">ИБ</dt>
+            <dd class="e-gloss_transcript">игры с буллитными сериями</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">ОБ</dt>
+            <dd class="e-gloss_transcript">отраженные броски</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">Ш</dt>
+            <dd class="e-gloss_transcript">заброшенные шайбы</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">Штр</dt>
+            <dd class="e-gloss_transcript">штрафное время</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">В</dt>
+            <dd class="e-gloss_transcript">выигрыши</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">Бр</dt>
+            <dd class="e-gloss_transcript">броски в створ ворот</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">%ОБ</dt>
+            <dd class="e-gloss_transcript">процент отраженных бросков</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">А</dt>
+            <dd class="e-gloss_transcript">голевые передачи</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">ВП</dt>
+            <dd class="e-gloss_transcript">время на площадке</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">П</dt>
+            <dd class="e-gloss_transcript">проигрыши</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">ПШ</dt>
+            <dd class="e-gloss_transcript">пропущено шайб</dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">КН</dt>
+            <dd class="e-gloss_transcript">коэффициент надежности<br/><nobr>= 60 мин × ПШ / ВП</nobr></dd>
+          </dl><dl class="b-gloss_item">
+            <dt class="e-gloss_abbreviation">И &laquo;0&raquo;</dt>
+            <dd class="e-gloss_transcript">сухие игры</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="b-wide_block b-match_tables">
+        <h4>Конференция «Запад»</h4>
+        
+        <div class="m-draggable">
+          <table class="b-sorttable m-table_small">
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <thead>
+              <tr>
+                <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+                <th>№</th>
+                <th>П</th>
+                <th>И</th>
+                <th>Ш</th>
+                <th>А</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_1.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">ЦСКА</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr class='m-tr_even'>
+                <td class="m-text_left">
+                  <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">СКА</b>
+                </td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_2.png" height="39" width="33" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Динамо Мск</b>
+                </td>
+                <td>3</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr class='m-tr_even'>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_3.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Йокерит</b>
+                </td>
+                <td>4</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_4.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Динамо Мн</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_5.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Локомотив</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_6.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Медвешчак</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_7.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Спартак</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_8.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Северсталь</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_9.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Слован</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_10.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Витязь</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_11.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Динамо Р</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_12.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">ХК Сочи</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_13.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Торпедо</b>
+                </td>
+                <td>5</td>
+                <td>2</td>  
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <h4>Конференция «Восток»</h4>
+        <div class="m-draggable">
+          <table class="b-sorttable m-table_small">
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <thead>
+              <tr>
+                <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+                <th>№</th>
+                <th>П</th>
+                <th>И</th>
+                <th>Ш</th>
+                <th>А</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+                <th>О</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Ак Барс</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Сибирь</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_16.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Металлург Мг</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_17.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Авангард</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_18.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Барыс</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_19.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Салават Юлаев</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_20.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Трактор</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_21.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Автомобилист</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_22.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Адмирал</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_23.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Нефтехимик</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_24.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Лада</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_25.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Югра</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_26.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Металлург Нк</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="m-text_left">
+                  <img src="img/mini_logo_27.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Амур</b>
+                </td>
+                <td>1</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+      <div class="b-wide_block m-not_pad e-wide_block-visible">
+        <div class="b-title_cover e-title_no-border">
+          <h2>Таблицы</h2>
+          <div class="b-title_tab_cover">
+            <div class="m-scroll_block">
+              <span class="e-tab_subtitle">Турнир:</span>
+              <select name="3" class="line-select">
+                <option value="1">15/16 плей-офф</option>
+                <option value="2">15/16 плей-офф</option>
+              </select>
+              <select name="5" class="line-select">
+                <option value="3">итоги чемпионата</option>
+                <option value="4">итоги чемпионата</option>
+              </select>
+            </div>
+          </div>
+          <span id="s-gloss_1" class="e-gloss_btn e-gloss_abs">Глоссарий</span>
+        </div>
+      </div>
+      <div class="b-wide_block m-not_pad b-match_tables">
+        <h4>Финал чемпионата</h4>
+        <table class="dataTable m-table_small e-table_no-hover e-match_table">
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <thead>
+            <tr>
+              <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+              <th>1-й матч</th>
+              <th>2-й матч</th>
+              <th>3-й матч</th>
+              <th>4-й матч</th>
+              <th>5-й матч</th>
+              <th>6-й матч</th>
+              <th>7-й матч</th>
+              <th>Счет в серии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="b-wide_block b-match_tables">
+        <h4>Финалы конференций</h4>
+        <h5>Конференция «Запад»</h5>
+        <table class="dataTable m-table_small e-table_no-hover e-match_table">
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <thead>
+            <tr>
+              <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+              <th>1-й матч</th>
+              <th>2-й матч</th>
+              <th>3-й матч</th>
+              <th>4-й матч</th>
+              <th>5-й матч</th>
+              <th>6-й матч</th>
+              <th>7-й матч</th>
+              <th>Счет в серии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h5>Конференция «Восток»</h5>
+        <table class="dataTable m-table_small e-table_no-hover e-match_table">
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <thead>
+            <tr>
+              <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+              <th>1-й матч</th>
+              <th>2-й матч</th>
+              <th>3-й матч</th>
+              <th>4-й матч</th>
+              <th>5-й матч</th>
+              <th>6-й матч</th>
+              <th>7-й матч</th>
+              <th>Счет в серии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>1/2 финала конференций</h4>
+        <h5>Конференция «Запад»</h5>
+        <table class="dataTable m-table_small e-table_no-hover e-match_table">
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <thead>
+            <tr>
+              <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+              <th>1-й матч</th>
+              <th>2-й матч</th>
+              <th>3-й матч</th>
+              <th>4-й матч</th>
+              <th>5-й матч</th>
+              <th>6-й матч</th>
+              <th>7-й матч</th>
+              <th>Счет в серии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h5>Конференция «Восток»</h5>
+        <table class="dataTable m-table_small e-table_no-hover e-match_table">
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <thead>
+            <tr>
+              <th class='m-text_left'><span class="m-brd">Клуб</span></th>
+              <th>1-й матч</th>
+              <th>2-й матч</th>
+              <th>3-й матч</th>
+              <th>4-й матч</th>
+              <th>5-й матч</th>
+              <th>6-й матч</th>
+              <th>7-й матч</th>
+              <th>Счет в серии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span class="e-round m-bg_color_0">от</span>
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Ак Барс</b>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>2 — </span>
+                  <b>4</b>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>0 — </span>
+                  <b>1</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                <div class="e-match-result e-match-result-top">
+                  <span>1 - </span>
+                  <b>4</b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="m-text_left">
+                <img src="img/mini_logo_15.png" alt="" style='margin-right: 10px;' />
+                <b class="e-player_name">Сибирь</b>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="e-match-result">
+                  <b>2 — </b>
+                  <span>1</span>
+                </div>
+              </td>
+              <td>
+                <div class="e-match-result">
+                  <span>1 — </span>
+                  <b>6</b>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="b-wide_block b-match_tables">
+        <h5 class="m-fr">Конференция «Восток»</h5>
+        <h5 class="m-fl">Конференция «Восток»</h5>
+        <div class="m-clear"></div>
+        <table class="score-table">
+          <tr>
+            <td><b>1</b></td>
+            <td class="m-text_left e-line_type1 e-line_active">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_14.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Ак Барс</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type2 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right e-line_active"></td>
+            <td class="m-text_right e-line_type1 e-line_right e-line_active">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Ак Барс</b>
+                  <img src="img/mini_logo_14.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>1</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td class="e-line_type2 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right e-line_active"></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>8</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_12.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">ХК Сочи</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">ХК Сочи</b>
+                  <img src="img/mini_logo_12.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>8</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td class="e-line_type2 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right e-line_active"></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>3</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_3.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Йокерит</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type2"></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Йокерит</b>
+                  <img src="img/mini_logo_3.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>3</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>3</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_4.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Динамо Мн</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type4 e-line_active"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Динамо Мн</b>
+                  <img src="img/mini_logo_4.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>3</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td class="e-line_type6"></td>
+            <td>
+              <div class="e-match-result-top e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td class="e-line_type6"></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>5</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/ska.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Ска</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type2"></td>
+            <td class="e-line_img">
+              <img src="img/ska.png" alt="" />
+            </td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Ска</b>
+                  <img src="img/ska.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>5</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td class="e-line_type2"></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right"></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>5</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_13.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Торпедо</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td class="e-line_type4"></td>
+            <td class="e-line_img">
+              <img src="img/ska.png" alt="" />
+            </td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td class="e-line_type4"></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Торпедо</b>
+                  <img src="img/mini_logo_13.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>5</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>2</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_2.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Динамо Мск</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type2"></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type5"></td>
+            <td></td>
+            <td class="e-line_type2 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Динамо Мск</b>
+                  <img src="img/mini_logo_2.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>2</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td></td>
+            <td>
+              <div class="e-match-result">
+                <span>2 - </span>
+                <b>4</b>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>1</b></td>
+            <td class="m-text_left e-line_type1">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <img src="img/mini_logo_5.png" alt="" style='margin-right: 10px;' />
+                  <b class="e-player_name">Локомотив</b>
+                </div>
+              </div>
+            </td>
+            <td class="e-line_type3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="e-line_type3 e-line_right"></td>
+            <td class="m-text_right e-line_type1 e-line_right">
+              <div class="e-line_container">
+                <div class="e-line_content">
+                  <b class="e-player_name">Локомотив</b>
+                  <img src="img/mini_logo_5.png" alt="" style='margin-left: 10px;' />
+                </div>
+              </div>
+            </td>
+            <td><b>1</b></td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-wide_block">
+        <div class="b-blocks_cover m-share">
+          <div class="b-share m-clear">
+            <h4 class="m-fl">Поделиться</h4>
+            <a class="b-share_button m-tw" href="#"></a>
+            <a class="b-share_button m-vk" href="#"></a>
+            <a class="b-share_button m-ok" href="#"></a>
+            <a class="b-share_button m-fb" href="#"></a>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <div class="b-footer_cover">
+      <div class="b-footer_links">
+        <div class="b-footer_links_cover">
+          <ul class="b-partners_list m-smart_col">
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_03.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_03.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_05.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_05.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный спонсор</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_07.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_07.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный спонсор</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_09.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_09.png" alt="" class="e-ico_gray"/>
+                <span>Официальный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_11.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_11.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_18.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_18.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_19.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_19.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_20.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_20.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_21.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_21.png" alt="" class="e-ico_gray"/>
+                <span>Партнер-плейофф</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_22.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_22.png" alt="" class="e-ico_gray"/>
+                <span>Информационный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_28.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_28.png" alt="" class="e-ico_gray"/>
+                <span>Информационный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item m-last">
+              <a href="#">
+                <img src="img/logo-color_01.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_01.png" alt="" class="e-ico_gray"/>
+                <span class="m-color_2">Сотрудничать с КХЛ</span>
+              </a>
+            </li>
+          </ul>
+          <div class="b-rules_cover">
+            <p class="e-rules">&laquo;КХЛ&raquo;/&laquo;KHL&raquo; без согласования с&nbsp;ООО &laquo;КХЛ&raquo; рассматриваются как нарушение прав собственности в&nbsp;соответствии с&nbsp;действующим законодательством. Запрещается автоматизированное извлечение информации сайта любыми сервисами без официального разрешения. Цитирование с&nbsp;сайта и&nbsp;сателлитных проектов официальных сообщений Лиги допускается только при наличии прямой ссылки на&nbsp;сайт www.khl.ru.</p>
+            <a href="#" class="e-counter"><img src="img/li_counter.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="b-footer_nav">
+        <ul class="b-bottom_menu">
+          <li class="e-bottom_menu_item m-first"><a herf="/" class="e-logo_main_footer"></a></li>
+          <li class="e-bottom_menu_item"><a href="#">КХЛ ТВ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">О КХЛ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Судейство</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Технологии</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Образование</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Контакты</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Медицина</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Реклама</a></li>
+        </ul>
+        <p class="e-copyright">КХЛ 2008&mdash;2015 <nobr>Все права защищены&nbsp; </nobr>
+          <nobr>Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a></nobr>
+        </p>
+      </div>
+    </div>
+    <ul class="m-adaptive_footer_bottom">
+      <li class="m-left">
+        <p class="e-copyright_copy">КХЛ 2008&mdash;2015 <nobr>Все права защищены</nobr><br/>
+          Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a>
+        </p>
+      </li>
+      <li class="m-right">
+        <div class="b-rules_cover_copy">
+          <p class="e-rules_copy">&laquo;КХЛ&raquo;/&laquo;KHL&raquo; без согласования с&nbsp;ООО &laquo;КХЛ&raquo; рассматриваются как нарушение прав собственности в&nbsp;соответствии с&nbsp;действующим законодательством. Запрещается автоматизированное извлечение информации сайта любыми сервисами без официального разрешения. Цитирование с&nbsp;сайта и&nbsp;сателлитных проектов официальных сообщений Лиги допускается только при наличии прямой ссылки на&nbsp;сайт www.khl.ru.</p>
+          <a href="#" class="e-counter_copy"><img src="img/li_counter.png" alt="" /></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

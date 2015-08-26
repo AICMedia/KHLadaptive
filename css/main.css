@@ -816,15 +816,15 @@ b{
   }
 }
 
+*/
+.b-hidden-tablet{
+  display: none;
+}
 .b-half_tablet_block{
   float: left;
   width: 50%;
   padding: 30px 3.5%;
 }
-
-.b-hidden-tablet{
-  display: none;
-}*/
 
 
 /*@media (max-width: 800px){
@@ -1298,7 +1298,7 @@ b{
   color: #02a7fd;
 }
 
-.b-title_cover:after {
+.b-title_cover:after { 
   position: relative;
   clear: both;
   display: block;
@@ -1329,6 +1329,18 @@ b{
   width: 200%;
   height: 15px;
   background: #fff;
+}
+
+.e-wide_block-visible{
+  overflow: visible;
+}
+
+.e-wide_block-visible .b-gloss{
+  margin-bottom: 0;
+}
+
+.e-title_no-border h2:before{
+  content: none;
 }
 
 .m-photo .b-title_cover H2:before {
@@ -2187,6 +2199,10 @@ b{
   transition:color 0.25s linear;
 }
 
+.e-gloss_abs{
+  position: absolute;
+}
+
 .e-params_btn {
   display: none;
   float: right;
@@ -2555,7 +2571,7 @@ b{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d7e6ee', endColorstr='#d7e6ee',GradientType=1 );
 }
 
-.b-sorttable TD, .b-sorttable TH {
+.b-sorttable TD, .b-sorttable TH , .dataTable td, .dataTable th{
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -2574,7 +2590,9 @@ b{
 .m-text_left {
   text-align: left !important;
 }
-
+.m-text_right {
+  text-align: right !important;
+}
 .e-team_logo {
   vertical-align: middle;
   margin-right: 10px;
@@ -2614,7 +2632,7 @@ B.e-player_name {
   font-size: 12px;
 }
 
-.b-sorttable IMG {
+.b-sorttable IMG , .dataTable img{
   vertical-align: middle;
 }
 
@@ -7016,7 +7034,7 @@ H5 {
 .b-commands_header .e-header-img img{
   max-width: 100%;
 }
-@media (max-width: 800px){
+/*@media (max-width: 800px){
   .b-commands_header .e-header-img{
     width: 100%;
     max-height: 50px;
@@ -7057,7 +7075,7 @@ H5 {
   .b-commands_header:after{
     content: none;
   }
-}
+}*/
 
 .b-commands_list{
   margin: 0 -3.5%;
@@ -7228,16 +7246,16 @@ H5 {
 .b-prev-structure .m-rightward .e-details_img{
   float: right;
 }
-
+/*
 @media (max-width: 1400px){
 
-  .b-commands_list .e-round_diagram_item LABEL {
-    top: 75px;
-  }
-  .b-commands_list .e-round_diagram_item INPUT {
-    margin-top: 20px !important;
-    margin-left: -115px!important;
-  }
+}*/
+.b-commands_list .e-round_diagram_item LABEL {
+  top: 75px;
+}
+.b-commands_list .e-round_diagram_item INPUT {
+  margin-top: 20px !important;
+  margin-left: -115px!important;
 }
 
 /*@media (max-width: 1000px){
@@ -7574,3 +7592,244 @@ H5 {
     display: block;
   }
 }*/
+
+.b-match_tables table{
+  margin-bottom: 55px;
+}
+.b-match_tables table tbody th,
+.b-match_tables table tbody td{
+  padding: 15px;
+}
+.b-match_tables table tbody td{
+  font-size: 16px;
+}
+
+.b-match_tables h5{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.e-match_table th{
+  color: #a3a3a3 !important;
+}
+.e-match-result{
+  font-size: 18px;
+  color: #666666;
+  position: relative;
+}
+.e-match-result .e-round{
+  font-size: 10px;
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  margin-left: -7px;
+  width: 15px;
+  height: 15px;
+  line-height: 13px;
+}
+.e-match-result b{
+  font-family: 'latoheavy';
+  color: #000;
+}
+.e-match-result-top{
+  font-size: 36px;
+}
+
+.e-match_table tr td{
+  border-bottom: 1px solid #e0ecf2;
+}
+
+table.e-match_table.dataTable.no-footer{
+  border-bottom: 0;
+}
+
+.score-table{
+  width: 100%;
+  margin-top: 10px;
+}
+.score-table td,
+.score-table th{
+  padding: 0 !important;
+  height: 40px;
+}
+.score-table td:first-child{
+  padding-right: 10px !important;
+}
+.score-table td:last-child{
+  padding-left: 10px !important;
+}
+.score-table td{
+  text-align: center;
+  vertical-align: middle;
+}
+.score-table img{
+  vertical-align: middle;
+}
+
+.e-line_type1 .e-line_container{
+  position: relative;
+  background-color: #fff;
+}
+.e-line_type1 .e-line_container:before{
+  background-color: #d1edff;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+.e-line_type1 .e-line_content{
+  background-color: #fff;
+  display: inline-block;
+  padding-right: 10px;  
+}
+.e-line_type1.e-line_right .e-line_content{
+  padding-right: 0;
+  padding-left: 10px;
+}
+.e-line_type1.e-line_right .e-line_container:before{
+  right: 0;
+}
+.e-line_type1.e-line_active .e-line_container:before{
+  background-color: #1aa7fd;
+}
+
+
+.e-line_type2{
+  position: relative;
+}
+.e-line_type2:before,
+.e-line_type2:after{
+  background-color: #d1edff;
+  position: absolute;
+  content: '';
+  content: '';
+  margin-top: -1px;
+  top: 50%;
+}
+.e-line_type2:before{
+  height: 2px;
+  width: 50%;
+  left: 0;
+}
+.e-line_type2:after{
+  height: 50%;
+  width: 2px;
+  left: 50%;
+  margin-left: -1px;
+}
+.e-line_type2.e-line_right:before{
+  right: 0;
+  left: auto;
+}
+.e-line_type2.e-line_right:after{
+  right: 50%;
+}
+.e-line_type2.e-line_active:before,
+.e-line_type2.e-line_active:after{
+  background-color: #1aa7fd;
+}
+
+
+.e-line_type3{
+  position: relative;
+}
+.e-line_type3:before,
+.e-line_type3:after{
+  background-color: #d1edff;
+  position: absolute;
+  content: '';
+}
+.e-line_type3:before{
+  height: 2px;
+  width: 50%;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+.e-line_type3:after{
+  height: 50%;
+  width: 2px;
+  left: 50%;
+  bottom: 50%;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.e-line_type3.e-line_right:before{
+  left: auto;
+  right: 0;
+}
+.e-line_type3.e-line_right:after{
+  right: 50%;
+}
+.e-line_type3.e-line_active:before,
+.e-line_type3.e-line_active:after{
+  background-color: #1aa7fd;
+}
+
+
+.e-line_type4{
+  position: relative;
+}
+.e-line_type4:after{
+  background-color: #d1edff;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  top: 0;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.e-line_type4.e-line_active:before,
+.e-line_type4.e-line_active:after{
+  background-color: #1aa7fd;
+}
+
+
+.e-line_type5{
+  position: relative;
+}
+.e-line_type5:after{
+  background-color: #d1edff;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.e-line_type5.e-line_active:before,
+.e-line_type5.e-line_active:after{
+  background-color: #1aa7fd;
+}
+
+.e-line_type6{
+  position: relative;
+  width: 25px;
+}
+.e-line_type6:after{
+  background-color: #1aa7fd;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 50%;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.e-line_img{
+  position: relative;
+}
+.e-line_img img{
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
