@@ -451,7 +451,7 @@ function FloatPanel() {
           position: 'absolute',
           top: '0px',
           left: '-260px',
-          height: 'auto'
+          height: heightBlock
         });
         $(".b-float_panel_cover").css({
           'min-height': heightBlock-startBlock

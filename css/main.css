@@ -147,6 +147,7 @@ b{
   clear:both;
 }
 
+
 .m-pseudo {
   border-bottom:1px dashed;
   cursor: pointer;
@@ -175,6 +176,7 @@ b{
 .m-fr {float: right;}
 
 .m-tr {text-align: right;}
+.m-tc {text-align: center;}
 
 
 .m-pl_1_25{ padding-left: 1.25%;}
@@ -3617,23 +3619,28 @@ h4 > .e-timestamp {
   margin-left: 20px;
 }
 
-.b-share_button.m-tw::before {
+.m-tw::before {
   content: '3';
   font-family: 'icomoon';
 }
 
-.b-share_button.m-vk::before {
+.m-vk::before {
   content: '4';
   font-family: 'icomoon';
 }
 
-.b-share_button.m-fb::before {
+.m-fb::before {
   content: '(';
   font-family: 'icomoon';
 }
 
-.b-share_button.m-ok::before {
+.m-ok::before {
   content: '/';
+  font-family: 'icomoon';
+}
+
+.m-ch::before{
+  content: 'B';
   font-family: 'icomoon';
 }
 
@@ -4390,6 +4397,8 @@ h4 > .e-timestamp {
 
 .e-btn.e-btn_inline{
   width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .e-btn.m-bg_color_0 {
@@ -4400,6 +4409,17 @@ h4 > .e-timestamp {
 .e-btn.m-bg_color_0:hover {
   background: #57ccfd;
 }
+
+.e-btn.e-btn-disabled{
+  background: #232c32;
+  color: #999999;
+  cursor: default;
+}
+
+.e-btn.e-btn-disabled:hover {
+  background: #232c32;
+}
+
 
 .e-btn:hover {
   background: #2c3941;
@@ -7909,6 +7929,7 @@ body#lk #wrapper{
 .e-input_group{
   float: left;
   width: 345px;
+  margin-bottom: 30px;
 }
 .e-input_group + .e-input_group{
   margin-left: 40px;
@@ -7938,4 +7959,117 @@ body#lk #wrapper{
 
 .e-input_group + .e-btn{
   margin-top: 26px;
+  margin-left: 40px; 
+}
+
+.b-social_list{
+  float: left;
+  font-size: 18px;
+}
+
+.b-social_list + .b-social_list{
+  margin-left: 40px;
+}
+
+.e-social_list_item{
+  margin-bottom: 25px;
+}
+
+.e-social_list_item .m-icon{
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.e-social_list_item .m-ch{
+  font-size: 12px;
+}
+
+.e-social_list_item_active a{
+  color: #fff;
+}
+
+.b-account_info{
+  padding: 30px;
+  color: #fff;
+}
+
+.b-account_info h6{
+  font: 16px 'latoregular';
+}
+
+.b-account_info hr{
+  background: #59646b;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.b-account_info small{
+  font-size: 12px;
+}
+
+.m-more-money:before{
+  content: '\46';
+  font-family: 'icomoon';
+  transform: rotate(45deg);
+  display: inline-block;
+  font-size: 30px;
+}
+.e-account_table{
+  width: 100%;
+  margin-top: 5px;
+}
+.e-account_table td{
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.e-account_table td:first-child{
+  width: 1%;
+  padding-right: 10px;
+}
+.e-account_table h3{
+  margin-bottom: 0;
+  line-height: 1;
+}
+.e-account_table h6{
+  line-height: 1;
+}
+.e-account_table small{
+  line-height: 18px;
+  display: inline-block;
+}
+
+.m-us:before{
+  content: '\32';
+  font-family: 'icomoon';
+}
+.m-ed:before{
+  content: '\32';
+  font-family: 'icomoon';
+}
+.m-ph:before{
+  content: "\49";
+  font-family: 'icomoon';
+  color: #02a7fd;
+}
+
+.m-ml:before{
+  content: "\47";
+  font-family: 'icomoon';
+  color: #02a7fd;
+  font-size: 14px;
+}
+
+.e-account-links{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.e-account-links li{
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.b-account-more{
+  padding-top: 40px;
+  font: 14px 'latobold';
+  line-height: 24px;
 }
