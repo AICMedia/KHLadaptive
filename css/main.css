@@ -878,6 +878,12 @@ b{
   padding: 1px 0;
 }
 
+.b-medium_block{
+  float: left;
+  width: 30%;
+  padding: 1px 0;
+}
+
 .b-extra_small_block.b-block-offset{
   position: relative;
   left: 40%;
@@ -7185,52 +7191,52 @@ H5 {
   font-size: 11px;
 }
 
-.b-commands_list .b-line-percent{
+.b-line-percent{
   border-radius: 4px;
   overflow: hidden;
   background-color: #2c3941;
   margin-top: 15px;
 }
-.b-commands_list .e-left-line{
+.e-left-line{
   height: 7px;
   width: 50%;
   float: left;
   border-right: 2px solid #fff;
 }
 
-.b-commands_list .e-left-line{
+.e-left-line{
   background-color: #02a7fd;
 }
-.b-commands_list .b-line-details{
+.b-line-details{
   font-size: 20px;
 }
-.b-commands_list .b-line-details strong{
+.b-line-details strong{
   font-size: 36px;
   font-weight: normal;
   font-family: 'latolight';
 }
-.b-commands_list .b-line-details b{
+ .b-line-details b{
   font-family: 'latoheavy';
 }
-.b-commands_list .b-details-right{
+.b-details-right{
   text-align: right;
 }
-.b-commands_list .b-line-table td.b-line-name{
+.b-line-table td.b-line-name{
   overflow: hidden;
   text-align: center;
   font-size: 11px;
   padding: 0 7px;
   vertical-align: bottom;
 }
-.b-commands_list .b-wide_line_item{
+.b-wide_line_item{
   overflow: hidden;
   margin-bottom: 55px;
 }
-.b-commands_list .b-line-table{
+.b-line-table{
   width: 100%;
   line-height: 1;
 }
-.b-commands_list .b-line-table td{
+.b-line-table td{
   vertical-align: middle;
 }
 .b-prev-structure .e-club-name-short{
@@ -7832,4 +7838,40 @@ table.e-match_table.dataTable.no-footer{
   position: absolute;
   left: -20px;
   top: 0;
+}
+
+.b-match_resume .e-round_diagram_item{
+  width: 100%;
+  display: block;
+  height: auto;
+  text-align: center;
+  height: auto;
+  float: none;
+  margin-bottom: 62px;
+}
+
+.b-match_resume .e-round_diagram_item INPUT{
+  margin-top: 50px!important;
+  font: 54px 'latoregular'!important;
+  width: 170px!important;
+  margin-left: -186px!important;
+}
+
+.b-match_resume .e-round_diagram_item LABEL{
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 120px;
+}
+
+.b-match_resume td.b-line-name{
+  font-size: 18px;
+}
+
+.b-footer_nav_v2{
+  float: left;
+}
+
+.b-footer_links_v2{
+  float: none;
 }

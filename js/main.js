@@ -163,6 +163,10 @@ $(document).ready(function(){
       $('.m-round_diagram').trigger('configure',{
           'width':155
       });
+
+      $('.b-match_resume .m-round_diagram').trigger('configure',{
+          'width':200
+      });
     }
 
     if(winW <1400 && winW >=1000){
