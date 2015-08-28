@@ -9,9 +9,11 @@
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/video.block.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="all">
 
   <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
@@ -401,106 +403,291 @@
 
       <div class="b-wide_block b-wide_dark">
         <div class="b-title_cover">
-          <h1>Редактировать профиль</h1>
-        </div>
-      </div>
-    
-      <div class="b-wide_block b-wide_dark">
-        <div class="e-input_group">
-          <label for="">Имя</label>
-          <input type="text" value="Дмитрий Красильщиков" />
-        </div>
-
-        <div class="e-input_group">
-          <label for="">Почта</label>
-          <input type="email" value="dima-krasilshik@gmail.com"/>
+          <h1>Личный кабинет</h1>
         </div>
       </div>
 
-      <div class="m-clear"></div>
+      <div class="b-middle_block b-wide_dark">
+        <table class="e-account_table e-account_table_lg">
+          <tr>
+            <td>
+              <h3>49</h3>
+            </td>
+            <td>
+              <small class="muted">рублей<br>на счете</small>
+            </td>
+            <td  class="m-tc">
+              <div class="e-input_group">
+                <input type="text" id="m-input_price" />
+                <b>₽</b>
+              </div>
+            </td>
+            <td>
+              <button class="e-btn e-btn-lg m-bg_color_0 e-btn_inline" id="m-input_btn">Пополнить</button>
+            </td>
+          </tr>
+        </table>
+        <small>Введите сумму, которую вы желаете перевести на ваш счет. Из этих средств вы сможете оплачивать доступ к трансляциям и прочим услугам. Пополняя счёт, вы соглашаетесь с <a href="#">Пользовательским Соглашением</a></small>
+      </div>
 
+      <div class="b-short_block b-wide_dark">
+        <h4>Операции по счету</h4>
+        <div class="m-slider-price-wrapper">
+          <div class="m-slider-price">
+            <div class="e-slide-price">
+              <table>
+                <tr>
+                  <td>20.08</td>
+                  <td>Пополнение</td>
+                  <td><b>25 ₽</b></td>
+                </tr>
+                <tr>
+                  <td>20.08</td>
+                  <td>Покупка абонемента</td>
+                  <td><b>-225 ₽</b></td>
+                </tr>
+              </table>
+            </div>
+            <div class="e-slide-price">
+              <table>
+                <tr>
+                  <td>20.08</td>
+                  <td>Пополнение</td>
+                  <td><b>25 ₽</b></td>
+                </tr>
+                <tr>
+                  <td>20.08</td>
+                  <td>Покупка абонемента</td>
+                  <td><b>-225 ₽</b></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="e-slider-price-info">
+            <span class="muted">Операции 1–2 из 12</span>
+            <div class="m-slider-price-nav"></div>
+          </div>
+        </div>
+      </div>
 
       <div class="b-wide_block m-not_pad b-wide_dark">
-        <h3>Сменить пароль</h3>
+        <h3>Абонементы</h3>
       </div>
 
-      <div class="b-wide_block b-wide_dark">
-        <div class="m-clear">
-          
-          <div class="e-input_group">
-            <label for="">Текущий пароль</label>
-            <input type="password" value="Дмитрий" />
-          </div>
+      <div class="b-wide_dark b-middle_block">
 
-          <div class="e-input_group">
-            <label for="">Новый пароль</label>
-            <input type="password" value="Дмитрий" />
-          </div>
+        <table class="e-price_table">
+          <thead>
+            <tr>
+              <th>Подписка</th>
+              <th>
+                <h4>24 часа</h4>
+                <b>полный доступ</b>
+              </th>
+              <th>
+                <h4>Сезон</h4>
+                <select class="line-select">
+                  <option value="1">1 команда</option>
+                  <option value="2">ЦСКА</option>
+                </select>
+              </th>
+              <th class="e-active_td">
+                <h4>Сезон</h4>
+                <b>все матчи</b>
+              </th>
+              <th>
+                <h4>Архив</h4>
+                <b>на месяц</b>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Время действия</td>
+              <td>24 часа</td>
+              <td>3 сентября 2015 — 30 апреля 2016</td>
+              <td class="e-active_td">3 сентября 2015 — 30 апреля 2016</td>
+              <td>20 августа 2015 — 20 сентября 2016</td>
+            </tr>
+            <tr>
+              <td>Библиотека роликов КХЛ</td>
+              <td><span class="m-ch"></span></td>
+              <td><span class="m-ch"></span></td>
+              <td class="e-active_td"><span class="m-ch"></span></td>
+              <td><span class="m-ch"></span></td>
+            </tr>
+            <tr>
+              <td>Прямые трансляции</td>
+              <td><span class="m-ch"></span></td>
+              <td>
+                <table>
+                  <tr>
+                    <td><span class="m-ch"></span></td>
+                    <td>для выбранной команды</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="e-active_td"><span class="m-ch"></span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Архив матчей</td>
+              <td><span class="m-ch"></span></td>
+              <td>
+                <table>
+                  <tr>
+                    <td><span class="m-ch"></span></td>
+                    <td>для выбранной команды</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="e-active_td"><span class="m-ch"></span></td>
+              <td><span class="m-ch"></span></td>
+            </tr>
+            <tr>
+              <td>Без рекламы в роликах</td>
+              <td><span class="m-ch"></span></td>
+              <td><span class="m-ch"></span></td>
+              <td class="e-active_td"><span class="m-ch"></span></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>
+                Стоимость
+              </td>
+              <td><h4 class="e-table_price">195 ₽</h4></td>
+              <td><h4 class="e-table_price">1 999 ₽</h4></td>
+              <td class="e-active_td"><h4 class="e-table_price">4 499 ₽</h4></td>
+              <td><h4 class="e-table_price">345 ₽</h4></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="#buy-subscription" class="e-btn m-bg_color_0 popup-modal-lg">Купить</a></td>
+              <td><a href="#buy-subscription" class="e-btn m-bg_color_0 popup-modal-lg">Купить</a></td>
+              <td class="e-active_td"><a href="#buy-subscription" class="e-btn m-bg_color_0 popup-modal-lg">Купить</a></td>
+              <td><a href="#buy-subscription" class="e-btn m-bg_color_0 popup-modal-lg">Купить</a></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="b-short_block b-wide_dark">
+        <div class="e-price_table_info">
+          <h4>Информация</h4>
+          <span>
+            Во все подписки входят события:
+          </span>
+          <ul>
+            <li>– <span>регулярный чемпионат сезона;</span></li>
+            <li>– <span>плей-офф сезона;</span></li>
+            <li>– <span>матч звезд КХЛ;</span></li>
+            <li>– <span>Кубок надежды.</span></li>
+          </ul>
+          <span>Смотрите видеоконтент на устройствах:</span>
+          <div><img src="img/devices.png" alt="" /></div>
+          <p>Не гарантируем показ 100% матчей, что обусловлено телевизионным производством, возможностями доставки сигнала и качеством интернет-соединения.</p>
         </div>
-
-        <div class="m-clear">
-          
-          <div class="e-input_group">
-            <label for="">Новый пароль (еще раз)</label>
-            <input type="password" value="Дмитрий" />
-          </div>
-
-          <button class="e-btn e-btn-lg m-bg_color_0 e-btn_inline">Сохранить изменения</button>
-        </div>
-
-
       </div>
 
       <div class="b-wide_block m-not_pad b-wide_dark">
-        <h3>Подключить телевизор</h3>
+        <h3>Действующие покупки</h3>
       </div>
-      <div class="b-wide_block b-wide_dark">
 
-        <div class="e-input_group">
-          <label for="">Код из раздела «Профиль» Smart TV</label>
-          <input type="text" />
-        </div>
-
-        <button class="e-btn e-btn-lg e-btn_inline e-btn-disabled" disabled>Подключить</button>
-
-        <div class="m-clear"></div>
-        <div class="m-w_50">
-          <small class="muted">
-            Для подключения телевизора необходимо установить приложение КХЛ на телевизоре Samsung, поддерживающем технологию Smart TV. Код подключения находится в разделе «Профиль».
-            <a href="#">Инструкция в разделе «Помощь»</a>
-          </small>
-        </div>
-
-      </div>
-      <div class="b-wide_block m-not_pad b-wide_dark">
-        <h3>Привязать аккаунты соц. сетей </h3>
-      </div>
-      <div class="b-wide_block b-wide_dark">
-        <ul class="b-social_list">
-          <li class="e-social_list_item">
-            <a href="#">+ Вконтакте <span class="m-icon m-vk"></span></a>
+      <div class="b-wide_block m-not_pad b-wide_dark m-future">
+        <ul class="b-wide_tile ">
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="">
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="">
+              </dt>
+            </dl>
           </li>
-          <li class="e-social_list_item">
-            <a href="#">+ Twitter <span class="m-icon m-tw"></span></a>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="">
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="">
+              </dt>
+            </dl>
           </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <h4>Архив</h4>
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">на месяц</h5>
+                <p class="e-club_sity">Подписка</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Все команды</h5>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/khl_logo_1_1.png" alt="">
+              </dt>
+            </dl>
+          </li>           
         </ul>
-        <ul class="b-social_list">
-          <li class="e-social_list_item e-social_list_item_active">
-            <a href="#"><span class="m-icon m-ch"></span> Facebook <span class="m-icon m-fb"></span></a>
-          </li>
-          <li class="e-social_list_item">
-            <a href="#">+ Единый аккаунт КХЛ</a>
-          </li>
-        </ul>
       </div>
-
-
-
-
-      <div class="b-wide_block m-center b-wide_dark">
-
-
-      </div>
+      <div class="b-wide_block m-not_pad b-wide_dark"></div>
+      <div class="b-wide_block b-wide_dark"></div>
+      <div class="b-wide_block m-center b-wide_dark"></div>
     </div>
 
   </div>
@@ -632,6 +819,7 @@
       </li>
     </ul>
   </div>
+
   <div id="buy-subscription" class="mfp-hide">
     <div class="mfp-content">
       <div class="mfp-body mfp-white">

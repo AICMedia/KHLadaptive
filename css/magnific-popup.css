@@ -53,6 +53,23 @@
   width: 380px;
   cursor: auto;
 }
+.modal-lg .mfp-content{
+  width: 440px;
+}
+.modal-payment{
+
+}
+
+.mfp-bg.modal-payment{
+  opacity: 0.5;
+}
+.mfp-wrap.modal-payment{
+  left: 260px;
+  right: 0;
+  width: auto;
+  background: #2c3942;
+}
+
 
 @media (max-width:400px){
 
@@ -97,7 +114,20 @@
   margin-left: 3px;
   cursor: pointer;
 }
-
+.mfp-white{
+  background-color: #fff;
+  padding: 40px;
+}
+.mfp-wrapper{
+  padding: 20px;
+  background-color: #f1fafe;
+  font: 16px 'latobold';
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.mfp-wrapper table{
+  width: 100%;
+}
 
 .mfp-ajax-cur {
   cursor: progress; }

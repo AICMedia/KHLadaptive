@@ -164,6 +164,9 @@
 .jq-selectbox.line-select .jq-selectbox__select-text{
   width: auto !important;
 }
+.jq-selectbox.line-select .jq-selectbox__dropdown{
+  width: auto;
+}
 .jq-selectbox__select-text {
   display: block;
   width: 100%;

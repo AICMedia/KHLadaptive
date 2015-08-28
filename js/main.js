@@ -195,6 +195,11 @@ $(document).ready(function(){
     arrows: false,
     asNavFor: '.b-gallery_placeholders'
   });
+  $('.m-slider-price').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    appendArrows: $('.m-slider-price-nav')
+  });
 
   // $('.b-calendar-slider').slick({
   //   slidesToScroll: 1,
@@ -346,6 +351,23 @@ $(document).ready(function(){
 
   if ($('.popup-modal').length)
     $('.popup-modal').magnificPopup();
+
+  if ($('.popup-modal-lg').length)
+    $('.popup-modal-lg').magnificPopup({
+      mainClass: 'modal-lg modal-payment'
+    });
+
+  if ($('.m-table_switcher').length){
+    $('.m-table_switcher_button').on('click', function(e){
+      e.preventDefault();
+      if ($('#m-table_switcher-2').hasClass('m-hidden')){
+        $('#m-table_switcher-1').addClass('m-hidden')
+        $('#m-table_switcher-2').removeClass('m-hidden')
+        $('#m-table_switcher-2 input').focus();
+      }
+    })
+  }
+
 
   $('.s-show-password').on('click', function(e){
     e.preventDefault();
