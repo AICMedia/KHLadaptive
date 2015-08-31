@@ -1,0 +1,625 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.6, minimum-scale=0.25, user-scalable=no" />
+  <title>KHL</title>
+
+  <link rel="stylesheet" href="css/dataTables.css">
+  <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+
+  <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
+  <script type="text/javascript" src="js/lib/slick.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
+  <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="header">
+      <div class="b-mobile_move">
+        <div class="b-header_top_cover">
+
+          <a herf="/" class="e-logo_main"></a>
+
+          <div class="b-header_nav_cover">
+            <a href="#" class="e-logo_ico"><img src="img/logo_1_1.png" alt="" /></a>
+            <form class="e-header_search">
+              <input type="text" name="" value="" placeholder="" class="e-search_field"><input type="button" name="" value=")" class="e-search_btn m-icomoon">
+            </form>
+            <span class="e-mobile_menu_btn m-icomoon"></span>
+          </div>
+          <div class="b-header_menu_cover m-clear">
+            <ul class="b-header_menu">
+              <li class="e-header_menu_item"><a href="#">Новости</a>
+              </li><li class="e-header_menu_item"><a href="#">Видео</a>
+              </li><li class="e-header_menu_item"><a href="#">Календарь</a>
+              </li><li class="e-header_menu_item"><a href="#">Таблицы</a>
+              </li><li class="e-header_menu_item"><a href="#">Клубы</a>
+              </li><li class="e-header_menu_item"><a href="#">Игроки</a>
+              </li><li class="e-header_menu_item"><a href="#">Судьи</a>
+              </li><li class="e-header_menu_item"><a href="#">Статистика</a>
+              </li><li class="e-header_menu_item"><a href="#">Фото</a>
+              </li><li class="e-header_menu_item"><a href="#">Билеты</a>
+              </li><li class="e-header_menu_item"><a href="#">Магазин</a>
+              </li>
+            </ul>
+
+            <div class="e-header_apps">
+              <span>Приложения:</span>
+              <a href="#" class="m-ico_apple m-icomoon">&</a>
+              <a href="#" class="m-ico_android m-icomoon">%</a>
+            </div>
+            <div class="e-header_social">
+              <span>КХЛ в соцсетях:</span>
+              <a href="#" class="m-ico_yt m-icomoon">5</a>
+              <a href="#" class="m-ico_vk m-icomoon">4</a>
+              <a href="#" class="m-ico_tw m-icomoon">3</a>
+              <a href="#" class="m-ico_ok m-icomoon">/</a>
+              <a href="#" class="m-ico_fb m-icomoon">(</a>
+              <a href="#" class="m-ico_in m-icomoon">.</a>
+              <a href="#" class="m-ico_gp m-icomoon">+</a>
+            </div>
+
+            <a href="#" class="e-lang_btn">English</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-header_bottom_cover">
+        <div class="b-feed_matches m-slick_slider">
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч запад</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">3 &ndash; <b>5</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>1-2</em><em>&ndash;</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч запад</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">3 &ndash; <b>5</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>1-2</em><em>&ndash;</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч Восток</td>
+                <td class="e-matches_data_center"><span class="e-round m-bg_color_0">от</span></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">4 &ndash; <b>7</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>2-2</em><em>1-2</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">РЧ Восток</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right"><span class="m-color_1">Сейчас</span></td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ММГ</b></td>
+                <td class="e-matches_data_center"><b>2 &ndash; 1</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>2-0</em><span class="e-round m-bg_color_1">3</span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right"><span class="m-color_1">Сейчас</span></td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ММГ</b></td>
+                <td class="e-matches_data_center"><b>0 &ndash; 1</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><span class="e-round m-bg_color_1 m-icomoon">0</span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ЦСК</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>20:00 мск&nbsp;</em><em>&nbsp;Москва</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-content_section s-float_panel_start m-page">
+      <div class="b-float_panel">
+        <div class="b-float_panel_cover m-clear">
+            <h5>О Континентальной хоккейной лиге</h5>
+            <dl class="b-page-nav">
+              <dt>Информация о Лиге</dt>
+              <dd><a href="#">Общая информация</a></dd>
+              <dd><a href="#">Структура</a></dd>
+              <dd><a href="#">Дивизионы</a></dd>
+              <dd><a href="#">Кубок Гагарина</a></dd>
+              <dd><a href="#">Логотип</a></dd>
+            </dl>
+            <dl class="b-page-nav">
+              <dt>Сотрудничество с КХЛ</dt>
+              <dd><a href="#">Лицензирование</a></dd>
+              <dd><a href="#">Лицензиаты</a></dd>
+              <dd><a href="#">Спонсоры</a></dd>
+              <dd><a href="#">Для партнеров</a></dd>
+              <dd><a href="#">Закупки</a></dd>
+              <dd><a href="#">Реклама на сайте КХЛ</a></dd>
+              <dd><a href="#">Рекалама на Телеканале КХЛ</a></dd>
+            </dl>
+            <dl class="b-page-nav">
+              <dt>Информация о компании</dt>
+              <dd><a href="#">Руководство КХЛ</a></dd>
+              <dd><a href="#">Документы</a></dd>
+              <dd><a href="#">Контакты</a></dd>
+            </dl>
+            <dl class="b-page-nav">
+              <dt>Прочие ресурсы</dt>
+              <dd><a href="#">Медицинский центр</a></dd>
+              <dd><a href="#">Высшая хоккейная лига</a></dd>
+              <dd><a href="#">Молодежная хоккейная лига</a></dd>
+              <dd><a href="#">Веб-приемная КХЛ</a></dd>
+            </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-content_section m-page m-typo">
+      <div class="b-wide_block m-not_pad">
+        <h1>Руководство КХЛ</h1>
+      </div>
+      <div class="b-blocks_cover">
+        <div class="b-middle_block">
+          <div class="b-show-person m-clear">
+            <div class="b-show-person-img">
+              <img src="img/person_3.png" alt="">
+            </div>
+            <div class="b-show-person-details">
+              <h2>Тимченко Геннадий Николаевич</h2>
+              <p>Председатель Совета директоров КХЛ и Президент ЗАО «Хоккейный клуб СКА»</p>
+            </div>
+          </div>
+          <h4>Совет директоров КХЛ</h4>
+          <div class="b-lead-persons m-clear">
+            <div class="b-lead-persons-col">
+              <div class="b-lead-person">
+                <p>
+                  <b>Тимченко Геннадий Николаевич</b>
+                  <span>Председатель Совета директоров и Президент Закрытого акционерного общества «Хоккейный клуб СКА»</span>
+                </p>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Чернышенко Дмитрий Николаевич</b>
+                  <span>Председатель Правления – Президент КХЛ</span>
+                </p>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Морозов Алексей Алексеевич</b>
+                  <span>Директор Департамента развития зимних видов спорта и международного сотрудничества Министерства спорта Российской Федерации</span>
+                </p>
+              </div>
+            </div>
+            <div class="b-lead-persons-col">
+              <div class="b-lead-person">
+                <p>
+                  <b>Маганов Наиль Ульфатович</b>
+                  <span>Генеральный директор ОАО «Татнефть» им. В.Д. Шашина, Председатель Совета директоров ОАО «ТАНЕКО»</span>
+                </p>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Морозов Алексей Алексеевич</b>
+                  <span>Директор Департамента развития зимних видов спорта и международного сотрудничества Министерства спорта Российской Федерации</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <h4>Правление КХЛ</h4>
+          <div class="b-lead-persons m-clear">
+            <div class="b-lead-persons-col">
+              <div class="b-lead-person">
+                <p>
+                  <b>Чернышенко Дмитрий Николаевич</b>
+                  <span>Председатель Правления – Президент КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Ротенберг Роман Борисович</b>
+                  <span>ХК СКА, г. Санкт-Петербург Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Бескибалов Виктор Иванович</b>
+                  <span>Директор по финансам КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Бережков Владимир Петрович</b>
+                  <span>ХК «Динамо», г. Минск<br/>Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Вайсфельд Леонид Владленович</b>
+                  <span>ХК «Салават Юлаев», г. Уфа<br>Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Величкин Геннадий Иванович</b>
+                  <span>ХК «Металлург», г. Магнитогорск<br>Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Доброхвалов Сергей Андреевич</b>
+                  <span>>Вице-президент ОАО «АК «Транснефть»</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Кикнадзе Александр Васильевич</b>
+                  <span>Генеральный менеджер ХК «Йокерит», член Правления Arena Events Oy</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Кобылянский Георгий Викторович</b>
+                  <span>Вице-президент КХЛ по хоккейным операциям</span>
+              </div>
+            </div>
+            <div class="b-lead-persons-col">
+              <div class="b-lead-person">
+                <p>
+                  <b>Чернышенко Дмитрий Николаевич</b>
+                  <span>Председатель Правления – Президент КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Ротенберг Роман Борисович</b>
+                  <span>ХК СКА, г. Санкт-Петербург Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Бескибалов Виктор Иванович</b>
+                  <span>Директор по финансам КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Бережков Владимир Петрович</b>
+                  <span>ХК «Динамо», г. Минск<br/>Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Вайсфельд Леонид Владленович</b>
+                  <span>ХК «Салават Юлаев», г. Уфа<br>Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Величкин Геннадий Иванович</b>
+                  <span>ХК «Металлург», г. Магнитогорск<br>Представитель по взаимодействию с клубами КХЛ</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Доброхвалов Сергей Андреевич</b>
+                  <span>>Вице-президент ОАО «АК «Транснефть»</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Кикнадзе Александр Васильевич</b>
+                  <span>Генеральный менеджер ХК «Йокерит», член Правления Arena Events Oy</span>
+              </div>
+              <div class="b-lead-person">
+                <p>
+                  <b>Кобылянский Георгий Викторович</b>
+                  <span>Вице-президент КХЛ по хоккейным операциям</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="b-footer_cover">
+      <div class="b-footer_links">
+        <div class="b-footer_links_cover">
+          <ul class="b-partners_list m-smart_col">
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_03.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_03.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_05.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_05.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный спонсор</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_07.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_07.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный спонсор</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_09.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_09.png" alt="" class="e-ico_gray"/>
+                <span>Официальный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_11.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_11.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_18.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_18.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_19.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_19.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_20.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_20.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_21.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_21.png" alt="" class="e-ico_gray"/>
+                <span>Партнер-плейофф</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_22.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_22.png" alt="" class="e-ico_gray"/>
+                <span>Информационный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_28.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_28.png" alt="" class="e-ico_gray"/>
+                <span>Информационный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item m-last">
+              <a href="#">
+                <img src="img/logo-color_01.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_01.png" alt="" class="e-ico_gray"/>
+                <span class="m-color_2">Сотрудничать с КХЛ</span>
+              </a>
+            </li>
+          </ul>
+          <div class="b-rules_cover">
+            <p class="e-rules">&laquo;КХЛ&raquo;/&laquo;KHL&raquo; без согласования с&nbsp;ООО &laquo;КХЛ&raquo; рассматриваются как нарушение прав собственности в&nbsp;соответствии с&nbsp;действующим законодательством. Запрещается автоматизированное извлечение информации сайта любыми сервисами без официального разрешения. Цитирование с&nbsp;сайта и&nbsp;сателлитных проектов официальных сообщений Лиги допускается только при наличии прямой ссылки на&nbsp;сайт www.khl.ru.</p>
+            <a href="#" class="e-counter"><img src="img/li_counter.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="b-footer_nav">
+        <ul class="b-bottom_menu">
+          <li class="e-bottom_menu_item m-first"><a herf="/" class="e-logo_main_footer"></a></li>
+          <li class="e-bottom_menu_item"><a href="#">КХЛ ТВ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">О КХЛ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Судейство</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Технологии</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Образование</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Контакты</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Медицина</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Реклама</a></li>
+        </ul>
+        <p class="e-copyright">КХЛ 2008&mdash;2015 <nobr>Все права защищены&nbsp; </nobr>
+          <nobr>Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a></nobr>
+        </p>
+      </div>
+    </div>
+    <ul class="m-adaptive_footer_bottom">
+      <li class="m-left">
+        <p class="e-copyright_copy">КХЛ 2008&mdash;2015 <nobr>Все права защищены</nobr><br/>
+          Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a>
+        </p>
+      </li>
+      <li class="m-right">
+        <div class="b-rules_cover_copy">
+          <p class="e-rules_copy">&laquo;КХЛ&raquo;/&laquo;KHL&raquo; без согласования с&nbsp;ООО &laquo;КХЛ&raquo; рассматриваются как нарушение прав собственности в&nbsp;соответствии с&nbsp;действующим законодательством. Запрещается автоматизированное извлечение информации сайта любыми сервисами без официального разрешения. Цитирование с&nbsp;сайта и&nbsp;сателлитных проектов официальных сообщений Лиги допускается только при наличии прямой ссылки на&nbsp;сайт www.khl.ru.</p>
+          <a href="#" class="e-counter_copy"><img src="img/li_counter.png" alt="" /></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>

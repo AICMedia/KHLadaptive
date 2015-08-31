@@ -6,6 +6,7 @@
   <title>KHL</title>
 
   <link rel="stylesheet" href="css/dataTables.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 
@@ -315,7 +316,7 @@
 
             <div class="e-local_search">
               <input class="e-search_btn m-icomoon" type="button" name="" value=")">
-              <input class="e-search_field" type="text" name="" value="" placeholder="Фамилия, Имя">
+              <input id='player-q' class="e-search_field" type="text" name="player-q" value="" placeholder="Фамилия, Имя">
             </div>
 
             <ul class="e-alfabet">
@@ -1070,6 +1071,21 @@
       </li>
     </ul>
   </div>
+
+  <script type="text/javascript">
+    var aviablePlayers = [
+      'Аалтонен Юхаматти',
+      'Абдрахманов Руслан',
+      'Абид Рамзи',
+      'Аболс Родриго',
+      'Абрамов Сергей',
+      'Аксёненко Александр'
+    ];
+
+    $('#player-q').autocomplete({
+      source: aviablePlayers
+    });
+  </script>
 
 </body>
 </html>

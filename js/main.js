@@ -32,6 +32,12 @@ $(document).ready(function(){
   if($('#s-map').length){
     CustomMap();
   }
+  if($('.datepicker').length){
+    datepicker();
+  }
+  if($('.b-calendar-container').length){
+    calendar();
+  }
 
   $('.m-round_diagram').each(function() {
     $(this).knob();
@@ -93,7 +99,9 @@ $(document).ready(function(){
   });
 
   $(window).resize(function(){
-    winW = $(window).width();
+    // HACK: adaptive
+    // winW = $(window).width();
+    winW = 1280;
     FloatPanel();
     FloatMenu();
     SmartCol();
@@ -103,33 +111,34 @@ $(document).ready(function(){
       if(slider_lock == 0){
         $('.b-float_panel_cover.m-slick_slider').slick({
           slidesToShow: 5,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 4
-              }
-            },
-            {
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1
-              }
-            }
-          ]
+          slidesToScroll: 1
+          // HACK: responsive
+          // responsive: [
+          //   {
+          //     breakpoint: 1024,
+          //     settings: {
+          //       slidesToShow: 4
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 800,
+          //     settings: {
+          //       slidesToShow: 3
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 640,
+          //     settings: {
+          //       slidesToShow: 2
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 480,
+          //     settings: {
+          //       slidesToShow: 1
+          //     }
+          //   }
+          // ]
         });
         slider_lock = 1;
       }
@@ -154,10 +163,23 @@ $(document).ready(function(){
       $('.m-round_diagram').trigger('configure',{
           'width':155
       });
+
+      $('.b-match_resume .m-round_diagram').trigger('configure',{
+          'width':200
+      });
+    }
+
+    if(winW <1400 && winW >=1000){
+      $('.b-commands_list .m-round_diagram').trigger('configure',{
+          'width':135
+      });
+    } else if (winW <1000){
+      $('.b-commands_list .m-round_diagram').trigger('configure',{
+          'width':100
+      });
     }
 
   }).resize();
-
 
   $('.b-gallery_placeholders').slick({
     slidesToShow: 1,
@@ -173,6 +195,61 @@ $(document).ready(function(){
     arrows: false,
     asNavFor: '.b-gallery_placeholders'
   });
+  $('.m-slider-price').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    appendArrows: $('.m-slider-price-nav')
+  });
+
+  // $('.b-calendar-slider').slick({
+  //   slidesToScroll: 1,
+  //   vertical: true,
+  //   verticalSwiping: true,
+  //   appendArrows: $('.b-calendar-tools'),
+  //   responsive: true
+  // });
+    // Calendar Slider
+    $('.js-calendar-slider').slick({
+        slidesToScroll: 3,
+        slidesToShow: 3,
+        initialSlide: new Date().getMonth(),
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToScroll: 2,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    // Activate video
+    $(document).on('click', '.js-video', function(){
+        var $this = $(this),
+            $collection = $('.js-video');
+        if (!$this.is('.is-active')) {
+            $collection.removeClass('is-active');
+            $this.addClass('is-active');
+        } else {
+            $this.removeClass('is-active');
+        }
+
+        return false;
+    });
+
+    var $playlist = $('.js-playlist'),
+        $playlistBox = $('.js-playlist-box');
+    // $playlist.css('height',($playlistBox.height() - $playlist.position().top));
+
 
   $('input, select').styler();
 
@@ -208,35 +285,35 @@ $(document).ready(function(){
           slidesToScroll: 3,
           slidesToShow: 6
         }
-      },
-        {
-        breakpoint: 1024,
-        settings: {
-          slidesToScroll: 3,
-          slidesToShow: 5
-        }
-      },
-        {
-        breakpoint: 800,
-        settings: {
-          slidesToScroll: 2,
-          slidesToShow: 4
-        }
-      },
-        {
-        breakpoint: 640,
-        settings: {
-          slidesToScroll: 2,
-          slidesToShow: 3
-        }
-      },
-        {
-        breakpoint: 480,
-        settings: {
-          slidesToScroll: 1,
-          slidesToShow: 2
-        }
       }
+      //   {
+      //   breakpoint: 1024,
+      //   settings: {
+      //     slidesToScroll: 3,
+      //     slidesToShow: 5
+      //   }
+      // },
+      //   {
+      //   breakpoint: 800,
+      //   settings: {
+      //     slidesToScroll: 2,
+      //     slidesToShow: 4
+      //   }
+      // },
+      //   {
+      //   breakpoint: 640,
+      //   settings: {
+      //     slidesToScroll: 2,
+      //     slidesToShow: 3
+      //   }
+      // },
+      //   {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToScroll: 1,
+      //     slidesToShow: 2
+      //   }
+      // }
     ]
   });
 
@@ -272,6 +349,38 @@ $(document).ready(function(){
     }
   });
 
+  if ($('.popup-modal').length)
+    $('.popup-modal').magnificPopup();
+
+  if ($('.popup-modal-lg').length)
+    $('.popup-modal-lg').magnificPopup({
+      mainClass: 'modal-lg modal-payment'
+    });
+
+  if ($('.m-table_switcher').length){
+    $('.m-table_switcher_button').on('click', function(e){
+      e.preventDefault();
+      if ($('#m-table_switcher-2').hasClass('m-hidden')){
+        $('#m-table_switcher-1').addClass('m-hidden')
+        $('#m-table_switcher-2').removeClass('m-hidden')
+        $('#m-table_switcher-2 input').focus();
+      }
+    })
+  }
+
+
+  $('.s-show-password').on('click', function(e){
+    e.preventDefault();
+    showInput = $(this).siblings('input')
+    showType = showInput.attr('type')
+
+    if (showType == "password"){
+      showInput.attr('type','text')
+    } else{
+      showInput.attr('type','password')
+    }
+
+  })
 });
 
 
@@ -283,6 +392,12 @@ function HideShow() {
   });
   $('.b-feed_matches_item').on('mouseleave', function(){
     $(this).find('.e-matches_popup_links').fadeOut(250);
+  });
+
+  $('.b-wide_tile_item').on('mouseenter', function(){
+    $(this).find('.b-title-option').fadeIn(250);
+  }).on('mouseleave', function(){
+    $(this).find('.b-title-option').fadeOut(250);
   });
 
   $('.e-slide_link').on('click', function(){
@@ -345,7 +460,7 @@ function FloatShortBlock() {
 }
 
 // Float panel
-function FloatPanel() { 
+function FloatPanel() {
   if(winW > 1264){
     if($('.b-float_panel').length){
       var startBlock = $('.s-float_panel_start').offset().top;
@@ -358,15 +473,16 @@ function FloatPanel() {
           position: 'absolute',
           top: '0px',
           left: '-260px',
-          height: 'auto'
+          height: heightBlock
         });
         $(".b-float_panel_cover").css({
           'min-height': heightBlock-startBlock
         });
       } else if ($(window).scrollTop() < endBlock) {
+        // HACK: adaptive
         $(".b-float_panel").css({
           position: 'fixed',
-          left: 0,
+          left: - $(window).scrollLeft(),
           top: 0,
           height: heightBlock
         });
@@ -378,7 +494,7 @@ function FloatPanel() {
     }
   }
 
-  if (winW < 1264){ 
+  if (winW < 1264){
     $(".b-float_panel_cover").css({
       'min-height': 'auto'
     });
@@ -436,10 +552,12 @@ function FloatMenu() {
   if(winW < 1008){
     var startBlock = $('#header').offset().top;
     if ($(window).scrollTop() > startBlock ) {
-      $(".b-header_top_cover").css({
-        position: 'fixed',
-        top: 0
-      });
+      return false
+      // HACK: responsive
+      // $(".b-header_top_cover").css({
+      //   position: 'fixed',
+      //   top: 0
+      // });
     } else {
       $(".b-header_top_cover").css({
         position: 'relative',
@@ -714,6 +832,41 @@ function ChartRadar5() {
     scaleStepWidth: 11,
     scaleStartValue: 0,
   });
+}
+
+//datepicker
+function datepicker(){
+
+  $(".datepicker-range").datepicker();
+}
+//datepicker
+function calendar(){
+
+  if (window.innerWidth <= 640)
+    $(".datepicker-calendar").datepicker({
+      numberOfMonths:[1,1]
+    });
+  else if (window.innerWidth > 640 && window.innerWidth < 1024)
+    $(".datepicker-calendar").datepicker({
+      numberOfMonths:[1,2]
+    });
+  else if (window.innerWidth > 1024)
+    $(".datepicker-calendar").datepicker({
+      numberOfMonths:[1,3]
+    });
+
+  $(window).on('resize', function(){
+
+    if (window.innerWidth <= 640)
+      $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,1] );
+    else if (window.innerWidth > 640 && window.innerWidth < 1024)
+      $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,2] );
+    else if (window.innerWidth > 1024)
+      $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,3] );
+  })
+
+  $(".datepicker-calendar").datepicker( "option",
+    $.datepicker.regional[ "ru" ]);
 }
 
 // Custom map

@@ -145,6 +145,28 @@
   box-shadow: none;
   color: #888;
 }
+
+.jq-selectbox.line-select{
+  margin-right: 10px;
+  width: auto;
+}
+.jq-selectbox.line-select .jq-selectbox__select{
+  padding: 0 35px 0 0;
+  height: auto;
+  border: none;
+  background-color: transparent;
+  color: #02a7fd;
+  box-shadow: none;
+}
+.jq-selectbox.line-select .jq-selectbox__select .jq-selectbox__trigger-arrow{
+  border-top-color: #02a7fd;
+}
+.jq-selectbox.line-select .jq-selectbox__select-text{
+  width: auto !important;
+}
+.jq-selectbox.line-select .jq-selectbox__dropdown{
+  width: auto;
+}
 .jq-selectbox__select-text {
   display: block;
   width: 100%;
@@ -503,4 +525,250 @@ input[type="submit"].styler[disabled] {
   display: block;
   height: auto;
   border: 1px solid transparent;
+}
+
+/*!
+ * jQuery UI CSS Framework 1.11.4
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*!
+ * jQuery UI Autocomplete 1.11.4
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/autocomplete/#theming
+ */
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+
+/*!
+ * jQuery UI Menu 1.11.4
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/menu/#theming
+ */
+.ui-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	outline: none;
+  border-top: 1px solid #d7e6ee;
+}
+.ui-menu .ui-menu {
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	position: relative;
+  font-size: 14px;
+	margin: 0;
+	padding: .5em 1em .5em 1em;
+  background: #fff;
+	cursor: pointer;
+	min-height: 0;
+  border-bottom: 1px solid #d7e6ee;
+  border-left: 1px solid #d7e6ee;
+  border-right: 1px solid #d7e6ee;
+}
+.ui-menu .ui-menu-divider {
+	margin: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item {
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: .2em;
+	margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	left: auto;
+	right: 0;
+}
+
+/*datepicker*/
+
+
+.ui-datepicker-title{
+  font-family: 'latoheavy';
+  font-size: 24px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.ui-datepicker-calendar thead{
+  color: #999999;
+  font-size: 12px;
+}
+
+.ui-datepicker-calendar td,
+.ui-datepicker-calendar th{
+  padding: 6px;
+}
+
+.ui-datepicker-header .ui-datepicker-prev{
+  float: left;
+}
+
+.ui-datepicker-header .ui-datepicker-next{
+  float: right;
+}
+
+.ui-datepicker-calendar td a{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ui-datepicker-current-day a{
+  border: 2px solid ;
+  border-radius: 50%;
+}
+.ui-datepicker-current-day a:hover{
+  background-color: #57ccfd;
+  border-color: #57ccfd;
+  color: #fff;
+}
+
+.ui-datepicker{
+  background-color: #fff;
+  padding: 15px;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next{
+  font-family: 'icomoon';
+  z-index: 1;
+  cursor: pointer;
+  font-style: 16px;
+  line-height: 35px;
+
+}
+
+.ui-datepicker-prev:before{
+  content: "\3d";
+}
+
+.ui-datepicker-next:before{
+  content: "\2c";
 }

@@ -1,0 +1,1541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.6, minimum-scale=0.25, user-scalable=no" />
+  <title>KHL. Inner. Online</title>
+
+  <link rel="stylesheet" href="css/dataTables.css">
+  <link rel="stylesheet" type="text/css" href="css/lib.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/video.block.css" media="all">
+
+  <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
+  <script type="text/javascript" src="js/lib/slick.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
+  <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+  <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" media="all">
+  <script src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+
+</head>
+
+<body id="videos">
+
+  <div id="wrapper">
+    <div id="header">
+      <div class="b-mobile_move">
+        <div class="b-header_top_cover">
+
+          <a herf="/" class="e-logo_main"></a>
+
+          <div class="b-header_nav_cover">
+            <a href="#" class="e-logo_ico"><img src="img/logo_1_1.png" alt="" /></a>
+            <form class="e-header_search">
+              <input type="text" name="" value="" placeholder="" class="e-search_field"><input type="button" name="" value=")" class="e-search_btn m-icomoon">
+            </form>
+            <span class="e-mobile_menu_btn m-icomoon"></span>
+          </div>
+          <div class="b-header_menu_cover m-clear">
+            <ul class="b-header_menu">
+              <li class="e-header_menu_item"><a href="#">Новости</a>
+              </li><li class="e-header_menu_item"><a href="#">Видео</a>
+              </li><li class="e-header_menu_item"><a href="#">Календарь</a>
+              </li><li class="e-header_menu_item"><a href="#">Таблицы</a>
+              </li><li class="e-header_menu_item"><a href="#">Клубы</a>
+              </li><li class="e-header_menu_item"><a href="#">Игроки</a>
+              </li><li class="e-header_menu_item"><a href="#">Судьи</a>
+              </li><li class="e-header_menu_item"><a href="#">Статистика</a>
+              </li><li class="e-header_menu_item"><a href="#">Фото</a>
+              </li><li class="e-header_menu_item"><a href="#">Билеты</a>
+              </li><li class="e-header_menu_item"><a href="#">Магазин</a>
+              </li>
+            </ul>
+
+            <div class="e-header_apps">
+              <span>Приложения:</span>
+              <a href="#" class="m-ico_apple m-icomoon">&</a>
+              <a href="#" class="m-ico_android m-icomoon">%</a>
+            </div>
+            <div class="e-header_social">
+              <span>КХЛ в соцсетях:</span>
+              <a href="#" class="m-ico_yt m-icomoon">5</a>
+              <a href="#" class="m-ico_vk m-icomoon">4</a>
+              <a href="#" class="m-ico_tw m-icomoon">3</a>
+              <a href="#" class="m-ico_ok m-icomoon">/</a>
+              <a href="#" class="m-ico_fb m-icomoon">(</a>
+              <a href="#" class="m-ico_in m-icomoon">.</a>
+              <a href="#" class="m-ico_gp m-icomoon">+</a>
+            </div>
+
+            <a href="#" class="e-lang_btn">English</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-header_bottom_cover">
+        <div class="b-feed_matches m-slick_slider">
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч запад</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">3 &ndash; <b>5</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>1-2</em><em>&ndash;</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч запад</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">3 &ndash; <b>5</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>1-2</em><em>&ndash;</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">Рч Восток</td>
+                <td class="e-matches_data_center"><span class="e-round m-bg_color_0">от</span></td>
+                <td class="e-matches_data_right">26 мая, чт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left">ММГ</td>
+                <td class="e-matches_data_center">4 &ndash; <b>7</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>1-2</em><em>2-2</em><em>1-2</em><em>&ndash;</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Резюме</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-past">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">РЧ Восток</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right"><span class="m-color_1">Сейчас</span></td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ММГ</b></td>
+                <td class="e-matches_data_center"><b>2 &ndash; 1</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><em>2-0</em><span class="e-round m-bg_color_1">3</span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right"><span class="m-color_1">Сейчас</span></td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ММГ</b></td>
+                <td class="e-matches_data_center"><b>0 &ndash; 1</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>0-1</em><span class="e-round m-bg_color_1 m-icomoon">0</span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>ЦСК</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><em>20:00 мск&nbsp;</em><em>&nbsp;Москва</em></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+          <div class="b-feed_matches_item m-now">
+            <table class="b-matches_data m-w_100">
+              <tr class="b-matches_data_top">
+                <td class="e-matches_data_left">по-1/4</td>
+                <td class="e-matches_data_center"></td>
+                <td class="e-matches_data_right">27 мая, пт</td>
+              </tr>
+              <tr class="b-matches_data_middle">
+                <td class="e-matches_data_left"><b>СКА</b></td>
+                <td class="e-matches_data_center"><b>&mdash;</b></td>
+                <td class="e-matches_data_right"><b>СИБ</b></td>
+              </tr>
+              <tr class="b-matches_data_bottom">
+                <td colspan="3" class="e-matches_data_left"><span class="e-cut"><em>20:00 мск&nbsp;</em><em>&nbsp;Санкт-Петербург</em></span></td>
+              </tr>
+            </table>
+            <ul class="e-matches_popup_links">
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Текст</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-content_section m-video_list s-float_panel_start">
+
+      <div class="b-wide_block">
+          <div class="video-player">
+              <div class="video-player__media">
+                  <div class="video-player__media-image">
+                      <img src="img/video-player-02.jpg" alt="video"/>
+                  </div>
+                  <div class="video-player__media-description">
+                        <div class="video-media__title">Гол. 1:6. Роман Червенка (СКА) с двух метров переправил шайбув «домик» </div>
+                        <div class="video-media__row">
+                            <div class="video-media__date">1 июня 2015</div>
+                            <div class="video-media__like">2 047</div>
+                        </div>
+                      <div class="video-media__row">
+                          Гол! 1:6 СКА, Червенка Роман (№70). 58’57. В равенстве
+                      </div>
+                      <div class="video-media__row">
+                          <div class="video-media__label">Игроки:</div><div class="video-media__tags">
+                              <a class="video-media__link" href="#">Панарин Артемий</a>,
+                              <a class="video-media__link" href="#">Белов Антон</a>
+                          </div>
+                      </div>
+                      <div class="video-media__row">
+                          <div class="video-media__label">Событие:</div><div class="video-media__tags">
+                              <a class="video-media__link" href="#">Ярмарка талантов</a>
+                          </div>
+                      </div>
+                  </div>
+              </div><div class="video-player__list js-playlist-box">
+                  <div class="video-list__title-box">
+                    <h5 class="video-list__title">
+                        Авангард — СКА
+                        <select>
+                            <option value="1">Архив матча</option>
+                            <option value="2">Сondensed game</option>
+                            <option value="3">Хайлайтс</option>
+                        </select>
+                    </h5>
+                    <div class="video-list__title-panel">
+                        <div class="video-list__date">1 июня 2015</div><div class="video-list__qty">
+                            <a class="video-list__qty-icon" href="#">26</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="video-list__content js-playlist mCustomScrollbar">
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч. Команда U18 - «Атланты» (Московская область)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>0:44</span>
+                    </div>
+                    <div class="video-list__item video-list__item_no-play">
+                        <div class="video-list__item-tag">Интересные моменты</div>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч.  СКА (Санкт-Петербург) — «Спартак»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка команды «Динамо»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:21</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка юниорской сборной России до 18 лет</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч. Команда U18 - «Атланты» (Московская область))</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч.  СКА (Санкт-Петербург) — «Спартак»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка команды «Динамо»(Москва)</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:21</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Тренировка юниорской сборной России до 18 лет</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                    <div class="video-list__item js-video">
+                        <a class="video-list__item-text" href="#">Товарищеский матч. Команда U18 - «Атланты» (Московская область))</a>
+                        <span class="video-list__item-time"><span class="video-list__item-icon"></span>1:44</span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="video-more">
+              <h3 class="b-wide_block__title">Похожие видео</h3>
+              <ul class="b-video_list_cover">
+                  <li class="b-video_list_item">
+                      <a href="#" class="m-cover_link">
+                          <div class="b-video_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+                              <b class="e-play_btn m-icomoon">1</b>
+                          </div>
+                          <p>Ромбик снова в моде: «Спартак» возвращается!</p>
+                      </a>
+                  </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Тренировка команды СКА (Санкт-Петербург)</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>«Слован» эпоха первоначального накопления</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Последние две минуты третьего периода</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+                  </a>
+              </li><li class="b-video_list_item">
+                  <a href="#" class="m-cover_link">
+                      <div class="b-video_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+                          <b class="e-play_btn m-icomoon">1</b>
+                      </div>
+                      <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+                  </a>
+              </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="b-wide_block m-not_pad">
+        <div class="b-title_cover m-no_tab">
+          <h2>Матчи</h2>
+            <div class="b-title-calendar">
+                <a class="b-title-calendar__link" href="#">Календарь трансляций</a>
+            </div>
+          <a id="s-params_1" class="e-params_btn"><span>Параметры</span></a>
+        </div>
+      </div>
+      <div class="m-top_panel">
+        <div class="b-float_panel m-videos-parameters">
+          <div class="b-float_panel_cover">
+            <a href="#" class="e-params_close"></a>
+            <form class="b-float_panel_block">
+              <h5 class="b-float_panel_title">Ваш профиль</h5>
+              <div class="b-field_wrap">
+                <input type="button" value="Вход" class="e-btn"/>
+                <input type="button" value="Регистрация" class="e-btn m-bg_color_0"/>
+              </div>
+              <br/>
+              <h5 class="b-float_panel_title">Параметры</h5>
+
+              <div class="b-field_cover m-select">
+                <label>Клубы</label>
+                <select>
+                  <option>Не выбрано</option>
+                  <option>СКА</option>
+                  <option>Динамо</option>
+                </select>
+              </div>
+
+              <div class="b-field_cover m-select">
+                <label class="m-w_100">Интервал</label>
+                <span class="m-w_45 m-fl m-pr_1_25">
+                  <select>
+                    <option>Начало</option>
+                  </select>
+                </span>
+                <span class="m-w_45 m-fr m-pl_1_25">
+                  <select>
+                    <option>Конец</option>
+                  </select>
+                </span>
+              </div>
+
+              <div class="b-field_wrap m-scale">
+                <div class="e-point_switcher_title">Сезон</div>
+
+                <div id="season" class="b-point_switcher_cover m-pad">
+                  <ul class="e-point_switcher">
+                    <li style="left:0%"></li>
+                    <li style="left:14.28571%"></li>
+                    <li style="left:28.57142%"></li>
+                    <li style="left:42.85714%"></li>
+                    <li style="left:57.14285%"></li>
+                    <li style="left:71.42857%"></li>
+                    <li style="left:85.71428%"></li>
+                    <li style="left:100%"></li>
+                  </ul>
+                </div>
+                <ul class="e-point_scale m-pad">
+                    <li class="m-n_0" style="left:0%"><span>08</span></li>
+                    <li class="m-n_1" style="left:12.5%"><span>09</span></li>
+                    <li class="m-n_2" style="left:25%"><span>10</span></li>
+                    <li class="m-n_3" style="left:37.5%"><span>11</span></li>
+                    <li class="m-n_4" style="left:50%"><span>12</span></li>
+                    <li class="m-n_5" style="left:62.5%"><span>13</span></li>
+                    <li class="m-n_6" style="left:75%"><span>14</span></li>
+                    <li class="m-n_7" style="left:87.5%"><span>15</span></li>
+                    <li class="m-n_8" style="left:100%"><span>16</span></li>
+                </ul>
+              </div>              
+              <div class="b-field_wrap m-last">
+                <div class="b-field_cover m-select">
+                  <label>Этап, кубки</label>
+                  <select>
+                    <option>Плей-офф</option>
+                    <option>Плей-офф</option>
+                    <option>Плей-офф</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-content_section m-future">
+      <div class="b-wide_block">
+        <h3>Будущие</h3>
+        <ul class="b-wide_tile">
+          <li class="b-wide_tile_item">
+            <span class="e-resolution m-color_1">HD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_2.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Автомобилист</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="m-color_1">LIVE</span>
+                <h3>1 &mdash; 0</h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Салават Юлаев</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_3.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution">SD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="m-color_1">LIVE</span>
+                <h3>1 &mdash; 0</h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3>19:00 <small>мск</small></h3>
+              </dt>
+              <dd class="b-period_score">
+                <a href="#"><span class="m-icomoon">E</span> <span><nobr>Купить за</nobr> 47&nbsp;р</span></a>
+              </dd>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>            
+        </ul>
+      </div> 
+
+      <div class="b-blocks_cover m-teaser m-teaser_video">
+        <div class="b-wide_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+          <a href="#" class="m-cover_link">
+            <img src="img/khl_logo_3.png" alt="" />
+            <h3>Фотосессия. СКА (Санкт-Петербург)</h3>
+            <span class="e-go_to e-date">Узнать тарифы и предложения</span>
+          </a>
+          
+        </div>
+      </div>         
+    </div>
+
+    <div class="b-content_section m-past">
+      <div class="b-wide_block">
+        <div class="b-subtitle_nav_cover m-clear">
+          <h3 class="m-fl">Прошедшие</h3>
+
+          <div class="b-switcher">
+            <span class="e-switcher_item m-first  m-active">скрыть счет</span>
+            <span class="e-switcher_btn"><b></b></span>
+            <span class="e-switcher_item m-last">показать счет</span>
+          </div>
+        </div>
+
+        <ul class="b-wide_tile">
+          <li class="b-wide_tile_item">
+            <span class="e-resolution m-color_1">HD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_2.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_3.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution">SD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution m-color_1">HD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_2.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_3.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution">SD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution m-color_1">HD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_2.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_3.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution">SD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution m-color_1">HD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_2.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_3.png" alt="" />
+              </dt>
+            </dl>
+          </li>
+          <li class="b-wide_tile_item">
+            <span class="e-resolution">SD</span>
+            <dl class="b-details m-club">
+              <dt class="e-details_img">
+                <img src="img/club_logo_1.png" alt="" />
+              </dt>
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">Динамо</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+            </dl>
+            <dl class="b-score">
+                <dt class="b-score__hide">
+                    <ul class="b-score-list">
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Архив матча</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Сondensed game</a>
+                        </li>
+                        <li class="b-score-list__item">
+                            <a class="b-link" href="#">Хайлайтс</a>
+                        </li>
+                    </ul>
+                </dt>
+              <dt class="b-total_score">
+                <span class="e-video_time">21 августа, пт</span>
+                <h3> &mdash; </h3>
+              </dt>
+            </dl>
+            <dl class="b-details m-club m-rightward">
+              <dd class="b-details_txt">
+                <h5 class="e-club_name">ЦСКА</h5>
+                <p class="e-club_sity">Москва</p>
+              </dd>
+              <dt class="e-details_img">
+                <img src="img/club_logo_4.png" alt="" />
+              </dt>
+            </dl>
+          </li>                                
+        </ul>
+      </div>      
+    </div>
+
+    <div class="b-content_section m-video_pop">
+      <div class="b-wide_block">
+        <div class="b-title_cover">
+          <h2>Моменты</h2>
+          <div class="b-title_tab_cover">
+            <div class="m-scroll_block ui-draggable">
+              <span class="e-tab_subtitle">Показать:</span>
+              <b class="e-title_tab_item m-active">рекомендуемые</b>
+              <b class="e-title_tab_item">популярные</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="b-subtitle_nav_cover m-clear">
+          <h3 class="m-fl">Популярное</h3>
+
+          <div class="b-switcher">
+            <span class="e-switcher_item m-first m-active">за неделю</span>
+            <span class="e-switcher_btn"><b></b></span>
+            <span class="e-switcher_item m-last">за всё время</span>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="b-blocks_cover">
+
+        <div class="b-middle_block">
+          
+            <a href="#" class="m-cover_link">
+              <div class="b-video_block" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <h4>Фотосессия. Александр Якушев</h4>
+            </a>
+            <div class="b-info_bottom">
+              <span class="e-date">1 июня 2015</span>
+              <span class="e-view m-fr">2 047</span>
+            </div>
+          </div>
+     
+        <div class="b-short_block">
+          <div class="b-short_block_cover m-left">
+            <a href="#" class="m-cover_link">
+              <div class="b-video_block" style="background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <h5>Дмитрий Соколов на Ярмарке<br />Талантов 2015</h5>
+            </a>
+            <div class="b-info_bottom">
+              <span class="e-date">1 июня 2015</span>
+              <span class="e-view m-fr">2 047</span>
+            </div>
+          </div>
+          <div class="b-short_block_cover m-right">
+            <a href="#" class="m-cover_link">
+              <div class="b-video_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <h5>Дмитрий Соколов на Ярмарке<br />Талантов 2015</h5>
+            </a>
+            <div class="b-info_bottom">
+              <span class="e-date">1 июня 2015</span>
+              <span class="e-view m-fr">2 047</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-blocks_cover">
+
+        <div class="b-middle_block">
+          <a href="#" class="m-cover_link">
+            <div class="b-video_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+              <b class="e-play_btn m-icomoon">1</b>
+              <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+            </div>
+            <h4>Фотосессия. Александр Якушев</h4>
+          </a>
+          <div class="b-info_bottom">
+            <span class="e-date">1 июня 2015</span>
+            <span class="e-view m-fr">2 047</span>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="b-short_block_cover m-left">
+            <a href="#" class="m-cover_link">
+              <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <h5>Дмитрий Соколов на Ярмарке<br />Талантов 2015</h5>
+            </a>
+            <div class="b-info_bottom">
+              <span class="e-date">1 июня 2015</span>
+              <span class="e-view m-fr">2 047</span>
+            </div>
+          </div>
+          <div class="b-short_block_cover m-right">
+            <a href="#" class="m-cover_link">
+              <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                <b class="e-play_btn m-icomoon">1</b>
+                <span class="e-bevel m-bg_color_2 m-left_side">3:15</span>
+              </div>
+              <h5>Дмитрий Соколов на Ярмарке<br />Талантов 2015</h5>
+            </a>
+            <div class="b-info_bottom">
+              <span class="e-date">1 июня 2015</span>
+              <span class="e-view m-fr">2 047</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-wide_block m-load_more">
+        <div class="m-align">
+          <a class="e-go_to" href="#">Загрузить ещё</a>
+        </div>
+      </div> 
+    </div> 
+
+    <div class="b-content_section m-bnr">
+      <div class="b-bnr_cover">
+        <div class="b-middle_block">
+          <div class="e-bnr">
+              <a href="#" class="m-cover_link">
+                <img alt="" src="img/bnr_7.jpg">
+              </a>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="e-bnr">
+              <a href="#" class="m-cover_link">
+                <img alt="" src="img/bnr_8.jpg">
+              </a>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <div class="b-content_section m-top_10">
+
+      <div class="b-wide_block">
+        <div class="b-title_cover">
+          <h2>ТОП-10</h2>
+          <div class="b-title_tab_cover">
+            <div class="m-scroll_block">
+              <span class="e-tab_subtitle">Показать:</span>
+              <b class="e-title_tab_item m-active">голы</b>
+              <b class="e-title_tab_item">сейвы</b>
+              <b class="e-title_tab_item">силовые приёмы</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-wide_block">
+        <ul class="b-video_list_cover">
+          <li class="b-video_list_item">
+              <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Ромбик снова в моде: «Спартак» возвращается!</p>
+              </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Тренировка команды СКА (Санкт-Петербург)</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>«Слован» эпоха первоначального накопления</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Последние две минуты третьего периода</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_5.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_4.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_3.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_2.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+            </a>
+          </li><li class="b-video_list_item">
+            <a href="#" class="m-cover_link">
+                <div class="b-video_block" style="background: url(img/photo_1.jpg) 50% 50% no-repeat; background-size:cover;">
+                  <b class="e-play_btn m-icomoon">1</b>
+                </div>
+                <p>Кутейкин щёлкнул от синей линии, Лаланд фиксирует шайбу</p>
+            </a>
+          </li>                                                  
+        </ul>
+      </div>
+    </div>
+
+    <div class="b-content_section m-bnr m-last">
+      <div class="b-bnr_cover">
+        <div class="b-middle_block">
+          <div class="e-bnr">
+              <a href="#" class="m-cover_link">
+                <img alt="" src="img/bnr_7.jpg">
+              </a>
+          </div>
+        </div>
+        <div class="b-short_block">
+          <div class="e-bnr">
+              <a href="#" class="m-cover_link">
+                <img alt="" src="img/bnr_8.jpg">
+              </a>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <div class="b-footer_cover">
+      <div class="b-footer_links">
+        <div class="b-footer_links_cover">
+          <ul class="b-partners_list m-smart_col">
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_03.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_03.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_05.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_05.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный спонсор</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_07.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_07.png" alt="" class="e-ico_gray"/>
+                <span>Генеральный спонсор</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_09.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_09.png" alt="" class="e-ico_gray"/>
+                <span>Официальный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_11.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_11.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_18.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_18.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_19.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_19.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_20.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_20.png" alt="" class="e-ico_gray"/>
+                <span>Партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_21.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_21.png" alt="" class="e-ico_gray"/>
+                <span>Партнер-плейофф</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_22.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_22.png" alt="" class="e-ico_gray"/>
+                <span>Информационный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item">
+              <a href="#">
+                <img src="img/logo-color_28.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_28.png" alt="" class="e-ico_gray"/>
+                <span>Информационный партнер</span>
+              </a>
+            </li>
+            <li class="e-partners_list_item m-last">
+              <a href="#">
+                <img src="img/logo-color_01.png" alt="" class="e-ico_color"/><br/>
+                <img src="img/logo-gray_01.png" alt="" class="e-ico_gray"/>
+                <span class="m-color_2">Сотрудничать с КХЛ</span>
+              </a>
+            </li>
+          </ul>
+          <div class="b-rules_cover">
+            <p class="e-rules">&laquo;КХЛ&raquo;/&laquo;KHL&raquo; без согласования с&nbsp;ООО &laquo;КХЛ&raquo; рассматриваются как нарушение прав собственности в&nbsp;соответствии с&nbsp;действующим законодательством. Запрещается автоматизированное извлечение информации сайта любыми сервисами без официального разрешения. Цитирование с&nbsp;сайта и&nbsp;сателлитных проектов официальных сообщений Лиги допускается только при наличии прямой ссылки на&nbsp;сайт www.khl.ru.</p>
+            <a href="#" class="e-counter"><img src="img/li_counter.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="b-footer_nav">
+        <ul class="b-bottom_menu">
+          <li class="e-bottom_menu_item m-first"><a herf="/" class="e-logo_main_footer"></a></li>
+          <li class="e-bottom_menu_item"><a href="#">КХЛ ТВ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">О КХЛ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Судейство</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Технологии</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Образование</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Контакты</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Медицина</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Реклама</a></li>
+        </ul>
+        <p class="e-copyright">КХЛ 2008&mdash;2015 <nobr>Все права защищены&nbsp; </nobr>
+          <nobr>Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a></nobr>
+        </p>
+      </div>
+    </div>
+    <ul class="m-adaptive_footer_bottom">
+      <li class="m-left">
+        <p class="e-copyright_copy">КХЛ 2008&mdash;2015 <nobr>Все права защищены</nobr><br/>
+          Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a>
+        </p>
+      </li>
+      <li class="m-right">
+        <div class="b-rules_cover_copy">
+          <p class="e-rules_copy">&laquo;КХЛ&raquo;/&laquo;KHL&raquo; без согласования с&nbsp;ООО &laquo;КХЛ&raquo; рассматриваются как нарушение прав собственности в&nbsp;соответствии с&nbsp;действующим законодательством. Запрещается автоматизированное извлечение информации сайта любыми сервисами без официального разрешения. Цитирование с&nbsp;сайта и&nbsp;сателлитных проектов официальных сообщений Лиги допускается только при наличии прямой ссылки на&nbsp;сайт www.khl.ru.</p>
+          <a href="#" class="e-counter_copy"><img src="img/li_counter.png" alt="" /></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
