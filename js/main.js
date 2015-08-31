@@ -582,7 +582,8 @@ function SmartCol() {
     var colNum = Math.floor(colWrap / 145);
   }
   var colFixed = Math.floor(colWrap / colNum);
-  $('.m-smart_col li').css({ 'width' : colFixed-1});
+  console.log(colWrap)
+  $('.m-smart_col li').css({ 'width' : colFixed-1}); 
 }
 
 
@@ -838,30 +839,33 @@ function ChartRadar5() {
 function datepicker(){
 
   $(".datepicker-range").datepicker();
+  $(".datepicker-range").datepicker( "option",
+    $.datepicker.regional[ "ru" ]);
 }
 //datepicker
 function calendar(){
+  winInW = 1280;
 
-  if (window.innerWidth <= 640)
+  if (winInW <= 640)
     $(".datepicker-calendar").datepicker({
       numberOfMonths:[1,1]
     });
-  else if (window.innerWidth > 640 && window.innerWidth < 1024)
+  else if (winInW > 640 && window.innerWidth < 1024)
     $(".datepicker-calendar").datepicker({
       numberOfMonths:[1,2]
     });
-  else if (window.innerWidth > 1024)
+  else if (winInW > 1024)
     $(".datepicker-calendar").datepicker({
       numberOfMonths:[1,3]
     });
 
   $(window).on('resize', function(){
 
-    if (window.innerWidth <= 640)
+    if (winInW <= 640)
       $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,1] );
-    else if (window.innerWidth > 640 && window.innerWidth < 1024)
+    else if (winInW > 640 && winInW < 1024)
       $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,2] );
-    else if (window.innerWidth > 1024)
+    else if (winInW > 1024)
       $(".datepicker-calendar").datepicker( "option", "numberOfMonths", [1,3] );
   })
 

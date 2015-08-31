@@ -641,11 +641,11 @@ b{
 }
 
 .b-footer_links {
-  padding: 40px 260px 2000px 0px;
+  padding: 40px 0px 2000px 0px;
   color: #999;
   background: #1e1e1f;
   float: right;
-  margin:0 -260px -2000px 0;
+  margin:0 0px -2000px 0;
   max-width: 100%;
 }
 
@@ -1725,7 +1725,7 @@ b{
 }
 
 .e-num SUP {
-  margin-top: 1.3em;
+  /*margin-top: 1.3em;*/
   font:bold 16px 'Arial';
   display: inline-block;
 }
@@ -3717,8 +3717,9 @@ h4 > .e-timestamp {
 
 .b-match_add_info_item {
   display: inline-block;
+  vertical-align: top;
   width: 25%;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .b-match_add_info_item.m-last {
@@ -3734,11 +3735,19 @@ h4 > .e-timestamp {
   opacity: 0.6;
   font-size: 48px;
   margin-right: 10px;
+  line-height: 38px;
 }
 
 .b-match_add_info_item .m-icomoon {
   font-size: 36px;
   opacity: 0.6;
+  margin-right: 10px;
+  float: left;
+}
+
+.b-match_add_info_item .m-icomoon + span{
+  display: block;
+  margin-left: 47px;
   margin-right: 10px;
 }
 
@@ -3854,6 +3863,17 @@ h4 > .e-timestamp {
   width: 15px;
   border-radius: 100%;
 }
+.b-text_translation_list .b-text_translation_item .b-right:before{
+
+}
+
+.b-text_translation_list{
+  margin: 10px 0;
+}
+.b-text_translation_list .b-text_translation_item .b-right{
+  width: 400%;
+}
+
 
 .b-center_scale_point {
   position: absolute;
@@ -3981,11 +4001,17 @@ h4 > .e-timestamp {
   display: inline-block;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+
+.b-video_link + .b-txt_block{
+  min-height: 160px;
 }
 
 .b-video_link IMG {
-  height: 100%;
+  height: auto;
   width: auto;
+  max-width: 100%;
 }
 
 .b-right .b-video_link {
@@ -3999,9 +4025,32 @@ h4 > .e-timestamp {
   margin-left: 4px;
 }
 
+.b-right .b-scheme_block {
+  float: left;
+  margin-right: 15px;
+  width: 70px;
+}
+.b-left .b-scheme_block{
+  float: right;
+  margin-left: 15px;
+}
+
+.b-scheme_block img{
+  max-width: 100%;
+}
+
+.b-right .b-scheme_block ~ .b-txt_block{
+  margin-left: 85px;
+}
+
+.b-left .b-scheme_block ~ .b-txt_block{
+  margin-right: 85px;
+}
+
 .m-align_cover {
-  height: 100%;
+  max-height: 100%;
   position: relative;
+  display: inline-block;
 }
 
 .b-left .b-video_link .e-play_btn,
@@ -4011,11 +4060,13 @@ h4 > .e-timestamp {
 }
 
 .m-del .b-video_link .e-play_btn {
-  margin-top: -100px;
+  top: 50%;
+  margin-top: -30px;
 }
 
 .m-goal .b-video_link .e-play_btn {
-  margin-top: -120px;
+  top: 50%;
+  margin-top: -30px;
 }
 
 .b-video_link:hover .e-play_btn {
@@ -6691,6 +6742,14 @@ H5 {
 
 #calendar .e-club_name {
   color: #000;
+  font-family: "latoheavy";
+}
+
+#calendar .e-club_name a{
+  color: inherit;
+}
+#calendar .e-club_name a:hover{
+  color: #02a7fd;
 }
 
 #calendar .b-total_score H3 {
@@ -6727,6 +6786,8 @@ H5 {
 }
 #calendar-line .b-score_table_cover{
   padding-top: 85px;
+  position: absolute;
+  top: 0;
 }
 #calendar-line .e-bnr{
   margin: 0 0 20px;
@@ -6756,6 +6817,12 @@ H5 {
 }
 #calendar-line .e-club_name{
   margin-bottom: 5px;
+}
+#calendar-line .e-club_name a{
+  color: inherit;
+}
+#calendar-line .e-club_name a:hover{
+  color: #02a7fd;
 }
 #calendar-line .b-details.m-rightward .b-details_txt{
   padding: 0 7% 0 0;
@@ -7149,6 +7216,19 @@ H5 {
 }
 .b-commands_list .b-commands-leaders .b-details_txt{
   width: 80%;
+}
+.b-commands_list .b-commands-leaders .e-player_name{
+  word-break: break-word;
+}
+.b-commands_list .b-commands-leaders .e-player_num{
+  float: right;
+  margin-left: 10px;
+  margin-top: -7px;
+  font: 36px 'latoregular';
+}
+.b-commands_list .b-commands-leaders .e-player_num sup{
+  font-size: 16px;
+  margin-right: 2px;
 }
 .b-commands_list .b-round_diagram_cover{
   margin-top: 0;
@@ -7929,12 +8009,16 @@ table.e-match_table.dataTable.no-footer{
   font-size: 18px;
 }
 
-.b-footer_nav_v2{
+.b-footer_nav{
   float: left;
 }
 
-.b-footer_links_v2{
+.b-footer_links{
   float: none;
+}
+
+.b-footer_links .b-footer_links_cover{
+  margin-left: 260px;
 }
 
 .b-float_panel_lk{
@@ -8318,4 +8402,20 @@ body#lk #wrapper{
 }
 .m-hidden{
   display: none;
+}
+
+.b-small_round.m-txt{
+  border: transparent;
+  background: #fff;
+  height: 35px;
+  margin: -20px 0 0 -32px;
+}
+.b-small_round.m-txt .e-event_time{
+  line-height: 35px;
+}
+
+.b-text_translation_item .b-right.m-txt{
+  background-color: transparent;
+  border: none;
+  padding: 20px 0;
 }
