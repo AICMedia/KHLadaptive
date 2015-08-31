@@ -706,7 +706,16 @@ input[type="submit"].styler[disabled] {
 
 /*datepicker*/
 
-
+#ui-datepicker-div{
+  padding: 0;
+  z-index: 113 !important;
+}
+#ui-datepicker-div .ui-datepicker-header{
+  margin: 15px 15px 0 15px;
+}
+#ui-datepicker-div .ui-datepicker-calendar{
+  margin: 0 15px 15px 15px;
+}
 .ui-datepicker-title{
   font-family: 'latoheavy';
   font-size: 24px;

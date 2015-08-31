@@ -3674,6 +3674,8 @@ h4 > .e-timestamp {
 .m-typo .b-video_block {
   height: 410px;
   margin: 25px 0;
+  display: block;
+  position: relative;
 }
 /******************************* News Page End ******************************
 ******************************* Match text Page ******************************/
@@ -6686,7 +6688,7 @@ H5 {
   content: "\3f";
 }
 
-@media (max-width: 640px){
+/*@media (max-width: 640px){
   .b-calendar-container .ui-datepicker-group,
   .b-calendar-container .ui-datepicker{
     width: 100%;
@@ -6697,7 +6699,7 @@ H5 {
   .b-calendar-container .ui-datepicker-group{
     width: 50%;
   }
-}
+}*/
 
 .e-match-num{
   display: block;
@@ -7005,7 +7007,7 @@ H5 {
   margin-bottom: 15px;
 }
 
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 
   .b-title-option{
     font-size: 8px;
@@ -7038,13 +7040,19 @@ H5 {
   #calendar .b-wide_tile_item{
     height: auto;
   }
+}*/
+@media (max-width: 1600px){
 
+  .b-title-option{
+    font-size: 12px;
+    width: 30%;
+  }
 
-}
-@media (min-width: 1024px) and (max-width: 1600px){
-
-.b-title-option{
-    font-size: 10px;
+  .b-title-option ul:first-child{
+    padding-left: 0;
+  }
+  .b-title-option ul:last-child{
+    padding-right: 0;
   }
 
   .b-title-option li{
