@@ -8649,11 +8649,6 @@ body#lk #wrapper{
   z-index: 1;
 }
 
-.e-scheme_active{
-  border: 2px solid #02a7fd;
-  line-height: 20px;
-}
-
 .e-scheme_start{
   background-color: #02a7fd;
   color: #fff;
@@ -8685,7 +8680,7 @@ body#lk #wrapper{
   z-index: -1;
 }
 .e-scheme_bright:before{
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .e-scheme_to_b:before{
   left: -2px;
@@ -8798,3 +8793,9 @@ body#lk #wrapper{
   transform: rotate(45deg);
   transform-origin: bottom;
 } 
+
+.e-scheme_active{
+  border: 2px solid #02a7fd;
+  line-height: 20px;
+  z-index: 2;
+}
