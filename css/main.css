@@ -1215,7 +1215,8 @@ b{
   background: #000;
   border-radius: 10px;
   margin: 0 0.5em;
-  top:0.1em;
+  top:0;
+  vertical-align: middle;
 }
 
 .e-switcher_btn B {
@@ -2509,6 +2510,14 @@ b{
   width: 100%;
 }
 
+.b-data_table TD A {
+  color: #000;
+}
+
+.b-data_table TD A:hover {
+  color: #02a7fd;
+}
+
 .b-data_table TR:hover TD {
   background:#f1fafe;
 }
@@ -2613,7 +2622,6 @@ b{
   white-space: nowrap;
 }
 
-
 .b-sorttable TH {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2622,7 +2630,9 @@ b{
   user-select: none;
 }
 
-
+ .b-sorttable TD.m-text_left IMG {
+  border-radius: 100%;
+ }
 
 .m-text_left {
   text-align: left !important;
