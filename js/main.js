@@ -12,6 +12,7 @@ $(document).ready(function(){
   DiagramData();
   AjaxData();
   DraggableTables();
+  // inputFocus();
 
   if($('#canvas_01').length){
     ChartRadar1();
@@ -437,6 +438,16 @@ function MobileMenu() {
     $(this).toggleClass('m-active');
     $('.b-header_menu_cover').slideToggle();
   });
+}
+
+function inputFocus() {
+  $('.e-search_btn').on('click', function(e){
+    fInput = $(this).siblings('input[type=text]')
+    if (!fInput.val()){
+      e.preventDefault();
+      fInput.focus();
+    }
+  })
 }
 
 
