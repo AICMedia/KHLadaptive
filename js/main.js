@@ -52,7 +52,13 @@ $(document).ready(function(){
     range: "min",
     min: 0,
     max: 3,
-    step: 1
+    step: 1,
+    slide: function( event, ui ) {
+      $('.s-ajax_cover_stat .b-data_table').fadeOut(450);
+      setTimeout(function() {
+        $('.s-ajax_cover_stat').load('ajax.html ' + '.s-ajax_stat_'+ui.value).fadeIn(450);
+      }, 400);    
+    }
   });
 
   $("#season").slider({
@@ -593,7 +599,6 @@ function SmartCol() {
     var colNum = Math.floor(colWrap / 145);
   }
   var colFixed = Math.floor(colWrap / colNum);
-  console.log(colWrap)
   $('.m-smart_col li').css({ 'width' : colFixed-1}); 
 }
 
