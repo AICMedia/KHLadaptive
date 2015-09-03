@@ -151,6 +151,16 @@ $(document).ready(function(){
       }
     } else {
       setTimeout(function() {
+
+      var heightBlock = $(window).height();
+      var minHeightBlock =  $('.b-float_panel_block').height();
+      if (heightBlock > minHeightBlock) {
+        $('.s-float_panel_start').css({
+          'min-height': minHeightBlock+60,
+          'background': '#fff'
+        });
+      } 
+
         $('.b-float_panel_cover.m-slick_slider').unslick();
         slider_lock = 0;
       }, 100);
@@ -482,29 +492,30 @@ function FloatPanel() {
     if($('.b-float_panel').length){
       var startBlock = $('.s-float_panel_start').offset().top;
       var heightBlock = $(window).height();
+      var minHeightBlock =  $('.b-float_panel_block').height();
       var endBlock = ($('#footer').offset().top)-($('.b-float_panel').height());
-      var stopBlock = $('body').height()-$('#footer').height()-$(window).height()-$(window).scrollTop();
+      var stopBlock = $('body').height()-$('#footer').height()-$(window).height()-$(window).scrollTop(); 
 
       if ($(window).scrollTop() < startBlock ) {
-        $(".b-float_panel").css({
+        $('.b-float_panel').css({
           position: 'absolute',
           top: '0px',
           left: '-260px',
           height: heightBlock
         });
-        $(".b-float_panel_cover").css({
+        $('.b-float_panel_cover').css({
           'min-height': heightBlock-startBlock
         });
       } else if ($(window).scrollTop() < endBlock) {
         // HACK: adaptive
-        $(".b-float_panel").css({
+        $('.b-float_panel').css({
           position: 'fixed',
           left: - $(window).scrollLeft(),
           top: 0,
           height: heightBlock
         });
       } else if ($(window).scrollTop() > endBlock) {
-        $(".b-float_panel").css({
+        $('.b-float_panel').css({
           top: stopBlock
         });
       }
@@ -512,7 +523,7 @@ function FloatPanel() {
   }
 
   if (winW < 1264){
-    $(".b-float_panel_cover").css({
+    $('.b-float_panel_cover').css({
       'min-height': 'auto'
     });
   }
