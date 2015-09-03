@@ -3659,6 +3659,7 @@ h4 > .e-timestamp {
   width: 60px;
   height: 60px;
   margin-right: 15px;
+  border-radius: 100%;
 }
 
 .b-article_reference SPAN {
