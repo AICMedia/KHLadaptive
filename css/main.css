@@ -2636,7 +2636,20 @@ b{
 }
 
 B.e-player_name {
-  font-weight: 'latoheavy';
+  font-family: 'latoheavy';
+}
+
+.e-player_img{
+  display: inline-block;
+  margin-right: 10px;
+}
+.e-player_img img{
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  overflow: hidden;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .m-draggable_enabled .b-sorttable .m-brd:after,
@@ -2914,12 +2927,39 @@ B.e-player_name {
 .b-wide_tile .e-club_name {
   color: #666;
   font-family: 'latoregular';
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
 }
 
 .b-wide_tile .e-club_name B {
   color: #000;
   font-weight: normal;
   font-family: 'latobold';
+}
+
+.b-wide_tile .e-club_name a{
+  color: inherit;
+}
+.b-wide_tile .e-club_name a:hover{
+  color: #57ccfd;
+}
+.b-wide_tile .e-club_name a:hover b{
+  color: inherit;
+}
+
+.b-prev-structure .e-club_name{
+  margin-top: 0.5em;
+}
+
+@media (min-width: 1530px){
+  .b-wide_tile .e-club_name{
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+  }
 }
 
 .b-period_score {
@@ -3947,6 +3987,10 @@ h4 > .e-timestamp {
 }
 .b-txt_block p {
   margin-bottom: 0;
+}
+.e-action_player{
+  font-size: 14px;
+  color: #969696;
 }
 .b-small_round.m-txt .e-event_time,
 .b-small_round.m-txt .e-event_result{
@@ -7271,6 +7315,10 @@ H5 {
 .e-header-subname-nums{
   margin-top: 0;
   font-size: 18px;
+  position: absolute;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
 }
 .e-header-subname-num{
   font-size: 54px;
@@ -7462,6 +7510,15 @@ H5 {
 .b-prev-structure .e-period_date{
   font-size: 11px;
 }
+.b-prev-structure .b-title-option li{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1600px){
+  .b-prev-structure .b-title-option{
+    font-size: 11px;
+  } 
+}
 
 .b-line-percent{
   border-radius: 4px;
@@ -7474,6 +7531,10 @@ H5 {
   width: 50%;
   float: left;
   border-right: 2px solid #fff;
+}
+
+.e-left-line[style="width:0%"]{
+  border-right: 0;
 }
 
 .e-left-line{
@@ -8666,7 +8727,7 @@ body#lk #wrapper{
   content: '';
   position: absolute;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.35;
 }
 .e-scheme_line:after{
   content: '';
@@ -8680,7 +8741,7 @@ body#lk #wrapper{
   z-index: -1;
 }
 .e-scheme_bright:before{
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .e-scheme_to_b:before{
   left: -2px;
