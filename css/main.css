@@ -2233,6 +2233,10 @@ b{
   position: relative!important;
 }
 
+.b-float_panel .jq-selectbox__dropdown UL {
+  max-height: 12em!important;
+}
+
 /*glossary*/
 .e-gloss_btn,
 .e-params_btn {
