@@ -1740,9 +1740,13 @@ b{
 }
 
 .e-num SUP {
-  /*margin-top: 1.3em;*/
+  margin-top: 1.3em;
   font:bold 16px 'Arial';
   display: inline-block;
+}
+
+.b-match_add_info_item .e-num SUP{
+  margin-top: 0
 }
 
 .b-details_info .e-num SUP {
@@ -1996,7 +2000,7 @@ b{
 
 .m-store .b-middle_block {
   padding: 0 3.5%;
-  margin: 30px 0 50px 0;
+  margin: 0 0 50px 0;
   z-index: 2;
 }
 

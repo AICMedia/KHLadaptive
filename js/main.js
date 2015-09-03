@@ -484,6 +484,9 @@ function FloatPanel() {
       var heightBlock = $(window).height();
       var endBlock = ($('#footer').offset().top)-($('.b-float_panel').height());
       var stopBlock = $('body').height()-$('#footer').height()-$(window).height()-$(window).scrollTop();
+      var innerHeightBlock = $('.b-float_panel_cover').prop("scrollHeight");
+
+      var offsetTopHeight = $(window).scrollTop()-startBlock;
 
       if ($(window).scrollTop() < startBlock ) {
         $(".b-float_panel").css({
@@ -503,11 +506,20 @@ function FloatPanel() {
           top: 0,
           height: heightBlock
         });
+        console.log('here')
       } else if ($(window).scrollTop() > endBlock) {
         $(".b-float_panel").css({
           top: stopBlock
         });
       }
+
+      // (offsetTopHeight/(endBlock-startBlock))*100 <= 100 ? prercentScroll = (offsetTopHeight/endBlock)*100 : prercentScroll =  100      
+      // prercentScroll = prercentScroll.toFixed(0)*1;
+      // prercentScroll > 0 ? percentLeftScroll = offsetTopHeight*prercentScroll/100 : percentLeftScroll = 0
+      // console.log(offsetTopHeight)
+      // console.log(prercentScroll)
+      // console.log(percentLeftScroll)
+      // $('.b-float_panel_cover').scrollTop(percentLeftScroll)
     }
   }
 
