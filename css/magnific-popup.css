@@ -64,10 +64,9 @@
   opacity: 0.5;
 }
 .mfp-wrap.modal-payment{
-  left: 260px;
   right: 0;
   width: auto;
-  background: #2c3942;
+  background: rgba(44, 57, 66, 0.47);
 }
 
 
