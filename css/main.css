@@ -7138,6 +7138,7 @@ H5 {
 
 .e-period-score {
   margin-top: 7px;
+  font-size: 14px;
 }
 
 .e-period-score li{
@@ -7165,6 +7166,7 @@ H5 {
   z-index: 1;
   font-size: 14px;
   display: none;
+  font-family: 'latobold'
 }
 
 .b-title-option-wrapper{
