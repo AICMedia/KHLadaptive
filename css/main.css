@@ -2524,7 +2524,8 @@ b{
 
 .b-data_table TH {
   border-bottom: 1px solid #d7e6ee;
-  padding: 0 0 0.5em 0;
+  padding: 0 1em 0.5em 0;
+  white-space: nowrap;
 }
 
 .b-data_table TH B {
@@ -2534,6 +2535,7 @@ b{
 
 .b-data_table TD {
   padding: 30px 1em 30px 0;
+  white-space: nowrap;
 }
 
 .b-data_table .b-details {
@@ -2603,6 +2605,11 @@ b{
 
 .m-draggable {
   overflow: hidden;
+  cursor: default!important;
+}
+
+.m-draggable_enabled .m-draggable {
+  cursor: move!important;
 }
 
 .b-table_view.m-draggable_enabled:after {
