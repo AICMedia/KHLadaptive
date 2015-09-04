@@ -781,3 +781,17 @@ input[type="submit"].styler[disabled] {
 .ui-datepicker-next:before{
   content: "\2c";
 }
+
+.video-player .mCSB_scrollTools .mCSB_draggerRail{
+  background-color: #1f282d;
+  width: 7px;
+}
+
+.video-player .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #fff;
+  width: 7px;
+}
+
+.video-player .mCSB_container{
+  padding-bottom: 35px;
+}
