@@ -152,9 +152,9 @@ $(document).ready(function(){
     } else {
       setTimeout(function() {
 
-      var heightBlock = $(window).height();
+      var heightBlock = $('.s-float_panel_start').height();
       var minHeightBlock =  $('.b-float_panel_block').height();
-      if (heightBlock > minHeightBlock) {
+      if (heightBlock < minHeightBlock) {
         $('.s-float_panel_start').css({
           'min-height': minHeightBlock+60,
           'background': '#fff'
@@ -502,12 +502,21 @@ function FloatPanel() {
         $('.b-float_panel').css({
           position: 'absolute',
           top: '0px',
-          left: '-260px',
-          height: heightBlock
+          left: '-260px'
         });
         $('.b-float_panel_cover').css({
           'min-height': heightBlock-startBlock
         });
+
+        if (heightBlock > minHeightBlock) {
+          $('.b-float_panel').css({
+            height: heightBlock
+          });
+        } else {
+          $('.b-float_panel').css({
+            height: minHeightBlock
+          });
+        }
       } else if ($(window).scrollTop() < endBlock) {
         // HACK: adaptive
         $('.b-float_panel').css({
