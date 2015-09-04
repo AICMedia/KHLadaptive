@@ -502,21 +502,13 @@ function FloatPanel() {
         $('.b-float_panel').css({
           position: 'absolute',
           top: '0px',
-          left: '-260px'
+          left: '-260px',
+          height: heightBlock
         });
         $('.b-float_panel_cover').css({
           'min-height': heightBlock-startBlock
         });
 
-        if (heightBlock > minHeightBlock) {
-          $('.b-float_panel').css({
-            height: heightBlock
-          });
-        } else {
-          $('.b-float_panel').css({
-            height: minHeightBlock
-          });
-        }
       } else if ($(window).scrollTop() < endBlock) {
         // HACK: adaptive
         $('.b-float_panel').css({
