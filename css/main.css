@@ -1733,6 +1733,10 @@ b{
   font-size: 14px;
 }
 
+.e-club .b-in_to {
+  font:14px 'latobold';
+}
+
 .b-details_info .e-num {
   font-size: 54px;
   font-family: arial;
@@ -2370,6 +2374,10 @@ b{
   text-align: center;
   padding: 0;
   border: none!important;
+}
+
+.ui-menu .ui-menu-item:hover {
+  background-color: #f1fafe;
 }
 
 .b-subtitle_nav_cover .b-switcher {
@@ -3189,7 +3197,39 @@ B.e-player_name {
 }
 
 .m-player .e-club I {
-  margin: 0 0 0 30px;
+  margin: -30px 0 0 30px;
+}
+
+.m-player .e-club_name {
+  position: relative;
+  top:-1em;
+}
+
+.e-club_name .e-prompt {
+  position: absolute;
+  background: #f1fafe;
+  display: none;
+  border: 1px solid #d7e6ee;
+  padding: 1em 2em;
+  left:0;
+  top: 1em;
+  font: 14px 'latoregular';
+}
+
+.e-club_name .e-prompt DIV {
+  white-space: nowrap;
+}
+
+.e-club_name .e-prompt LI {
+  margin: 0;
+}
+
+.e-club_name .e-prompt LI {
+  font: 14px 'latobold';
+}
+
+.e-club_name:hover .e-prompt {
+  display: inline-block;
 }
 
 .m-player .e-stats_all {
