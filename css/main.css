@@ -3197,12 +3197,19 @@ B.e-player_name {
 }
 
 .m-player .e-club I {
-  margin: -30px 0 0 30px;
+  margin: 0 0 0 30px;
 }
 
-.m-player .e-club_name {
-  position: relative;
-  top:-1em;
+.b-details_txt.m-details {
+  margin: -30px 0 0 0;
+}
+
+.b-nomination {
+  padding: 0 0 1em 0;
+}
+
+.b-nomination SMALL {
+  font-size: 12px;
 }
 
 .e-club_name .e-prompt {
