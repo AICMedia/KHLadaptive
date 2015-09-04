@@ -1733,6 +1733,10 @@ b{
   font-size: 14px;
 }
 
+.e-club .b-in_to {
+  font:14px 'latobold';
+}
+
 .b-details_info .e-num {
   font-size: 54px;
   font-family: arial;
@@ -2370,6 +2374,10 @@ b{
   text-align: center;
   padding: 0;
   border: none!important;
+}
+
+.ui-menu .ui-menu-item:hover {
+  background-color: #f1fafe;
 }
 
 .b-subtitle_nav_cover .b-switcher {
@@ -3189,7 +3197,12 @@ B.e-player_name {
 }
 
 .m-player .e-club I {
-  margin: 0 0 0 30px;
+  margin: -30px 0 0 30px;
+}
+
+.m-player .e-club_name {
+  position: relative;
+  top:-1em;
 }
 
 .m-player .e-stats_all {
