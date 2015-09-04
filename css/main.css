@@ -4321,6 +4321,11 @@ h4 > .e-timestamp {
   padding-top: 40px;
 }
 
+.b-gallery_block.b-gallery_white{
+  background: #fff;
+  color: inherit;
+}
+
 .b-photo_details {
   margin-top: 40px;
   font-size: 14px;
@@ -8892,4 +8897,86 @@ body#lk #wrapper{
   border: 2px solid #02a7fd;
   line-height: 20px;
   z-index: 2;
+}
+
+.e-area_link{
+  font:18px 'latoheavy';
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.e-area_num{
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.e-area_num small{
+  font-size: 14px;
+  display: block;
+}
+
+.e-gallery_overflow{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 6px;
+  bottom: 0;
+  border: 3px solid #02a7fd;
+  z-index: 2;
+  background-color: rgba(0,0,0,.45);
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+}
+
+.e-gallery_num{
+  color: #fff;
+  font: 12px 'latobold';
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -6px;
+  text-align: center;
+}
+
+.b-gallery_thumb:hover .e-gallery_overflow{
+  opacity: 1;
+}
+
+.m-map_block{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#b-arena_map{
+  height: 450px;
+}
+
+.b-wide_block{
+  position: relative;
+}
+
+.e-arena_map_info{
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  background-color: #fff;
+  padding: 40px;
+  width: 340px;
+  z-index: 10;
+}
+.m-store_more{
+  padding-top: 40px;
+}
+
+table.m-table_team tr th,
+table.m-table_team tr td{
+  text-align: left;
+}
+
+.m-team_country{
+  margin-right: 5px;
 }
