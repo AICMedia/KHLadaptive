@@ -57,7 +57,7 @@ $(document).ready(function(){
       $('.s-ajax_cover_stat .b-data_table').fadeOut(450);
       setTimeout(function() {
         $('.s-ajax_cover_stat').load('ajax.html ' + '.s-ajax_stat_'+ui.value).fadeIn(450);
-      }, 400);    
+      }, 400);
     }
   });
 
@@ -160,7 +160,7 @@ $(document).ready(function(){
           'min-height': minHeightBlock+60,
           'background': '#fff'
         });
-      } 
+      }
 
         $('.b-float_panel_cover.m-slick_slider').unslick();
         slider_lock = 0;
@@ -407,6 +407,16 @@ $(document).ready(function(){
       scrollInertia: 200
     });
   };
+
+  $(document).on('click', '.e-search_btn', function (e) {
+    e.preventDefault();
+    $(this).parent().find('.e-search_field').focus();
+    $(this).parent().addClass('active');
+  });
+
+  $(document).on('blur', '.e-search_field', function (e) {
+    $(this).parent().removeClass('active');
+  });
 });
 
 
@@ -544,7 +554,7 @@ function FloatPanel() {
         });
       }
 
-      // (offsetTopHeight/(endBlock-startBlock))*100 <= 100 ? prercentScroll = (offsetTopHeight/endBlock)*100 : prercentScroll =  100      
+      // (offsetTopHeight/(endBlock-startBlock))*100 <= 100 ? prercentScroll = (offsetTopHeight/endBlock)*100 : prercentScroll =  100
       // prercentScroll = prercentScroll.toFixed(0)*1;
       // prercentScroll > 0 ? percentLeftScroll = offsetTopHeight*prercentScroll/100 : percentLeftScroll = 0
       // console.log(offsetTopHeight)
@@ -642,7 +652,7 @@ function SmartCol() {
     var colNum = Math.floor(colWrap / 145);
   }
   var colFixed = Math.floor(colWrap / colNum);
-  $('.m-smart_col li').css({ 'width' : colFixed-1}); 
+  $('.m-smart_col li').css({ 'width' : colFixed-1});
 }
 
 
