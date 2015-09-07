@@ -111,6 +111,7 @@ $(document).ready(function(){
     winW = 1280;
     FloatPanel();
     FloatMenu();
+    FloatShortBlock();
     SmartCol();
     SlideTable();
 
@@ -479,16 +480,27 @@ function FloatShortBlock() {
   if (Modernizr.mq('(min-width: 1025px)')) {
     $.each($('.b-short_block'), function(i, e){
       var cover = $(e).parent();
+      var maxWidth = ($('.b-short_block').width()) - (($('.b-short_block').width()*3.5)/100);
+
       var top = $(window).scrollTop() > $(e).parent().offset().top
       var bottom = $(window).scrollTop() < $(e).parent().innerHeight() + $(e).parent().offset().top - $(e).find('.b-score_table_cover.m-scrollable').innerHeight()
       if (top && bottom) {
         TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {
           position: 'fixed',
-          top: 0
+          top: 0,
+          width: maxWidth
         })
       } else {
-        if (top) { TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {position: 'absolute', top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover.m-scrollable').innerHeight()})}
-        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {position: 'absolute', top: 0})}
+        if (top) { TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {
+          position: 'absolute', 
+          top: $(e).parent().innerHeight() - $(e).find('.b-score_table_cover.m-scrollable').innerHeight(),
+          width: maxWidth
+        })}
+        if (bottom) { TweenMax.set($(e).find('.b-score_table_cover.m-scrollable'), {
+          position: 'absolute', 
+          top: 0,
+          width: maxWidth
+        })}
       }
     })
   }
