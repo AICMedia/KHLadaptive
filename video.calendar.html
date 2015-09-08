@@ -16,6 +16,7 @@
   <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
   <script type="text/javascript" src="js/lib/slick.js"></script>
   <script type="text/javascript" src="js/lib/jquery.knob.min.js"></script>
+  <script type="text/javascript" src="js/lib/i18n/datepicker-ru.js"></script>
   <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
   <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
@@ -310,6 +311,9 @@
       <div class="b-wide_block m-not_pad">
         <div class="b-title_cover m-no_tab">
           <h2><a class="b-link" href="#">Видео</a> <span class="separate">\</span> Календарь событий</h2>
+            <div class="b-title-calendar">
+                <a class="b-title-calendar__link" href="#"><span>Календарь трансляций</span></a>
+            </div>
           <a id="s-params_1" class="e-params_btn"><span>Параметры</span></a>
         </div>
       </div>
@@ -363,9 +367,10 @@
 
 
           <!-- block calendar -->
-
-          <div class="b-calendar">
-              <div class="b-calendar__list js-calendar-slider" id="calendar"></div>
+          <div class="b-calendar-container">
+              <div class="datepicker-calendar"></div>
+              <div class="b-calendar-tools">
+              </div>
           </div>
       </div>
       <div class="b-wide_block">
@@ -378,7 +383,7 @@
                 <img src="img/club_logo_2.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Автомобилист</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Автомобилист</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -393,7 +398,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Салават Юлаев</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Салават Юлаев</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -408,7 +413,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -423,7 +428,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -437,7 +442,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -452,7 +457,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -466,7 +471,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -481,7 +486,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -495,7 +500,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -510,7 +515,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -524,7 +529,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -539,7 +544,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -553,7 +558,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -568,7 +573,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -582,7 +587,7 @@
                 <img src="img/club_logo_1.png" alt="" />
               </dt>
               <dd class="b-details_txt">
-                <h5 class="e-club_name">Динамо</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">Динамо</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
             </dl>
@@ -597,7 +602,7 @@
             </dl>
             <dl class="b-details m-club m-rightward">
               <dd class="b-details_txt">
-                <h5 class="e-club_name">ЦСКА</h5>
+                <h5 class="e-club_name"><a class="b-link" href="#">ЦСКА</a></h5>
                 <p class="e-club_sity">Москва</p>
               </dd>
               <dt class="e-details_img">
@@ -641,6 +646,22 @@
 
   <div id="footer">
     <div class="b-footer_cover">
+      <div class="b-footer_nav">
+        <ul class="b-bottom_menu">
+          <li class="e-bottom_menu_item m-first"><a herf="/" class="e-logo_main_footer"></a></li>
+          <li class="e-bottom_menu_item"><a href="#">КХЛ ТВ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">О КХЛ</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Судейство</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Технологии</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Образование</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Контакты</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Медицина</a></li>
+          <li class="e-bottom_menu_item"><a href="#">Реклама</a></li>
+        </ul>
+        <p class="e-copyright">КХЛ 2008&mdash;2015 <nobr>Все права защищены&nbsp; </nobr>
+          <nobr>Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a></nobr>
+        </p>
+      </div>
       <div class="b-footer_links">
         <div class="b-footer_links_cover">
           <ul class="b-partners_list m-smart_col">
@@ -735,22 +756,6 @@
           </div>
         </div>
       </div>
-      <div class="b-footer_nav">
-        <ul class="b-bottom_menu">
-          <li class="e-bottom_menu_item m-first"><a herf="/" class="e-logo_main_footer"></a></li>
-          <li class="e-bottom_menu_item"><a href="#">КХЛ ТВ</a></li>
-          <li class="e-bottom_menu_item"><a href="#">О КХЛ</a></li>
-          <li class="e-bottom_menu_item"><a href="#">Судейство</a></li>
-          <li class="e-bottom_menu_item"><a href="#">Технологии</a></li>
-          <li class="e-bottom_menu_item"><a href="#">Образование</a></li>
-          <li class="e-bottom_menu_item"><a href="#">Контакты</a></li>
-          <li class="e-bottom_menu_item"><a href="#">Медицина</a></li>
-          <li class="e-bottom_menu_item"><a href="#">Реклама</a></li>
-        </ul>
-        <p class="e-copyright">КХЛ 2008&mdash;2015 <nobr>Все права защищены&nbsp; </nobr>
-          <nobr>Дизайн &ndash; <a href="http://www.aic.ru/" target="_blank" class="e-aic_logo m-icomoon">C</a></nobr>
-        </p>
-      </div>
     </div>
     <ul class="m-adaptive_footer_bottom">
       <li class="m-left">
@@ -766,10 +771,6 @@
       </li>
     </ul>
   </div>
-
-
-    <!-- Создание календаря -->
-    <script src="js/createCalendar.js"></script>
 
 </body>
 </html>
