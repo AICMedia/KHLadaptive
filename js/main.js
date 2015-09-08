@@ -94,6 +94,7 @@ $(document).ready(function(){
     slide: function( event, ui ) {
       $.scrollTo('.s-scroll_to', 400);
 
+
       $('.m-round_diagram').each(function() {
 
         var fakeData = Math.floor(Math.random() * (21 - 0 + 1)) + 0;
@@ -106,7 +107,14 @@ $(document).ready(function(){
               }
             });
       });
+
+
+      $('.s-ajax_best_player dl').fadeOut(450);
+      setTimeout(function() {
+        $('.s-ajax_best_player').load('ajax.html ' + '.s-ajax_cover_'+ui.value).fadeIn(450);
+      }, 400);
       
+
       $('.e-point_scale li, .e-point_switcher li').removeClass('m-active');
       $('.e-point_switcher').find('.m-n_' + ui.value).addClass('m-active');
       $('.e-point_scale').find('.m-n_' + ui.value).addClass('m-active').next().addClass('m-active');
