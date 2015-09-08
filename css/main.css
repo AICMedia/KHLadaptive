@@ -3241,8 +3241,9 @@ B.e-player_name {
   font-size: 12px;
 }
 
-.e-club_name .e-prompt {
+.b-player_time_scale_cover .e-prompt {
   position: absolute;
+  z-index: 2;
   background: #f1fafe;
   display: none;
   border: 1px solid #d7e6ee;
@@ -3252,19 +3253,19 @@ B.e-player_name {
   font: 14px 'latoregular';
 }
 
-.e-club_name .e-prompt DIV {
+.b-player_time_scale_cover .e-prompt DIV {
   white-space: nowrap;
 }
 
-.e-club_name .e-prompt LI {
+.b-player_time_scale_cover .e-prompt LI {
   margin: 0;
 }
 
-.e-club_name .e-prompt LI {
+.b-player_time_scale_cover .e-prompt LI {
   font: 14px 'latobold';
 }
 
-.e-club_name:hover .e-prompt {
+.b-player_time_scale_cover DT:hover .e-prompt {
   display: inline-block;
 }
 

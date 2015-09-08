@@ -92,6 +92,21 @@ $(document).ready(function(){
     max: 7,
     step: 1,
     slide: function( event, ui ) {
+      $.scrollTo('.s-scroll_to', 400);
+
+      $('.m-round_diagram').each(function() {
+
+        var fakeData = Math.floor(Math.random() * (21 - 0 + 1)) + 0;
+
+        $(this).knob();
+        var that =  $(this);
+            that.animate({animatedVal: fakeData}, {
+              step: function() {
+                that.val(Math.ceil(this.animatedVal)).trigger('change');
+              }
+            });
+      });
+      
       $('.e-point_scale li, .e-point_switcher li').removeClass('m-active');
       $('.e-point_switcher').find('.m-n_' + ui.value).addClass('m-active');
       $('.e-point_scale').find('.m-n_' + ui.value).addClass('m-active').next().addClass('m-active');
