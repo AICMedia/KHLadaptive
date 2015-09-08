@@ -2381,8 +2381,9 @@ b{
   border: none!important;
 }
 
-.ui-menu .ui-menu-item:hover {
-  background-color: #f1fafe;
+.ui-menu .ui-menu-item:hover,
+.ui-menu .ui-state-focus {
+  color:#000;
 }
 
 .b-subtitle_nav_cover .b-switcher {
