@@ -154,12 +154,12 @@ $(document).ready(function(){
 
       var heightBlock = $('.s-float_panel_start').height();
       var minHeightBlock =  $('.b-float_panel_block').height();
-      if (heightBlock < minHeightBlock) {
-        $('.s-float_panel_start').css({
-          'min-height': minHeightBlock+60,
-          'background': '#fff'
-        });
-      }
+      // if (heightBlock < minHeightBlock) {
+      //   $('.s-float_panel_start').css({
+      //     'min-height': minHeightBlock+60,
+      //     'background': '#fff'
+      //   });
+      // }
 
         $('.b-float_panel_cover.m-slick_slider').unslick();
         slider_lock = 0;
@@ -227,29 +227,6 @@ $(document).ready(function(){
   //   appendArrows: $('.b-calendar-tools'),
   //   responsive: true
   // });
-    // Calendar Slider
-    $('.js-calendar-slider').slick({
-        slidesToScroll: 3,
-        slidesToShow: 3,
-        initialSlide: new Date().getMonth(),
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToScroll: 2,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToScroll: 1,
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
 
     // Activate video
     $(document).on('click', '.js-video', function(){
@@ -267,8 +244,15 @@ $(document).ready(function(){
 
     var $playlist = $('.js-playlist'),
         $playlistBox = $('.js-playlist-box');
-    // $playlist.css('height',($playlistBox.height() - $playlist.position().top));
+    if($playlist.length) {
+        $playlist.css('height',($playlistBox.height() - $playlist.position().top));
+    }
 
+    if ($(".js-scroll-bar").length) {
+        $(".js-scroll-bar").mCustomScrollbar({
+            scrollInertia: 500
+        });
+    }
 
   $('input, select').styler();
 
