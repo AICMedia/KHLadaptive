@@ -2544,6 +2544,26 @@ b{
   color: #02a7fd;
 }
 
+.m-draggable TD A {
+  color: #000;
+}
+
+.m-draggable TD A:hover {
+  color: #02a7fd;
+}
+
+.m-loose {
+  opacity: 0.6;
+}
+
+.e-match-result * {
+  transition-duration: 0.25s;
+}
+
+.e-match-result:hover * {
+  color: #57ccfd!important;
+}
+
 .b-data_table TR:hover TD {
   background:#f1fafe;
 }
