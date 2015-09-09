@@ -568,14 +568,6 @@
   overflow: hidden;
   margin: 0 -1.75%;
 }
-.m-future .b-wide_tile_item,
-.m-past .b-wide_tile_item {
-  width: 46.5%;
-  float: left;
-  border: 1px solid transparent;
-  margin: 0 1.75% 30px 1.75%;
-  height: 160px;
-}
 .m-past .b-wide_tile_item:hover {
   border: 1px solid #02a7fd;
 }
@@ -589,7 +581,7 @@
 .b-title-calendar {
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: 30px;
   font-family: latobold;
 }
 .b-title-calendar a {
@@ -601,4 +593,7 @@
   top: 2px;
   left: -30px;
   font-family: icomoon-video;
+}
+.m-video_list .jq-selectbox__not-found {
+  background: #2c3941;
 }
